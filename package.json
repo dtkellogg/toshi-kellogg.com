@@ -1,0 +1,24 @@
+{
+  "name": "toshi-kellogg.com",
+  "version": "1.0.0",
+  "description": "Portfolio Project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "set HTTPS=true --prefix frontend && npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node seeder",
+    "data:destroy": "node seeder -d",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dtkellogg/toshi-kellogg.com.git"
+  },
+  "author": "Damian Kellogg",
+  "license": "ISC",
+  "dependencies": {
+    "create-react-app": "^4.0.1"
+  }
+}
