@@ -12,6 +12,10 @@
     "data:destroy": "node seeder -d",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dtkellogg/toshi-kellogg.com.git"
+  },
   "author": "Damian Kellogg",
   "license": "ISC",
   "dependencies": {
