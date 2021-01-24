@@ -1,0 +1,94 @@
+.home {
+    height: 100vh;
+    width: 100%;
+    padding: 2rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    &__text {
+        margin: 1rem 0;
+
+        &--1 {
+            // animation-delay: 2s;
+        }
+
+        &--2 {
+            -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+        }
+
+        &--3 {
+            -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+        }
+
+        &--4 {
+            -webkit-animation-delay: 4s;
+            animation-delay: 4s;
+        }
+    }
+}
+
+@keyframes fadeIn {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+@keyframes fadeOut {
+  from {opacity: 1}
+  to {opacity: 0}
+}
+
+.fadeInAnimated--1 {
+  opacity: 0;
+  animation: fadeIn 2s forwards; /* forwards (animation-fill-mode) retains the style from the last keyframe when the animation ends */
+
+}
+
+.fadeInAnimated--2 {
+  opacity: 0;
+  animation: fadeIn 2s forwards; /* forwards (animation-fill-mode) retains the style from the last keyframe when the animation ends */
+  animation-delay: 1s;
+
+  &:hover {
+    opacity: 1;
+    animation: fadeOut 0.5s forwards;
+  }
+}
+
+.fadeInAnimated--3 {
+  opacity: 0;
+  animation: fadeIn 2s forwards; /* forwards (animation-fill-mode) retains the style from the last keyframe when the animation ends */
+  animation-delay: 2s;
+
+  &:hover {
+    opacity: 1;
+    animation: fadeOut 0.5s forwards;
+  }
+}
+
+.fadeInAnimated--4 {
+  opacity: 0;
+  animation: fadeIn 2s forwards; /* forwards (animation-fill-mode) retains the style from the last keyframe when the animation ends */
+  animation-delay: 3.5s;
+}
+
+.fadeInAnimated--5 {
+  opacity: 0;
+  animation: fadeIn 2s forwards; /* forwards (animation-fill-mode) retains the style from the last keyframe when the animation ends */
+  animation-delay: 4.5s;
+}
+
+.fadeInAnimated--6 {
+  opacity: 0;
+  animation: fadeIn 2s forwards; /* forwards (animation-fill-mode) retains the style from the last keyframe when the animation ends */
+  animation-delay: 5.5s;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0}
+  to {opacity: 1}
+}

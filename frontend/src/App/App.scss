@@ -6,4 +6,15 @@
 @import "styles/base/routeTransitions";
 @import "styles/base/typography";
 
+@import "styles/components/btns";
+@import "styles/components/modal";
+@import "styles/components/nav";
+@import "styles/components/loading";
+
 @import "styles/layout/containers";
+
+@import "styles/screens/about";
+@import "styles/screens/contact";
+@import "styles/screens/home";
+@import "styles/screens/projects";
+@import "styles/screens/skills";

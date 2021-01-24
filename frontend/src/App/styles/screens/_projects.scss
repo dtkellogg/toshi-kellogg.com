@@ -1,0 +1,324 @@
+.projects {
+    height: 100%;
+    position: relative;
+
+    &__container {
+        height: 100vh;
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        align-items: center;
+        justify-items: center;
+
+        background-color: $white;
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 24%;
+        // bottom: 50%;
+        // left: 50%;
+        // right: 50%;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity .2s, visibility .2s;
+        width: min-content;
+        color: $white;
+
+        &--title {
+            position: absolute;
+            // top: 90%;
+            bottom: 15%;
+            // left: 50%;
+            // right: 50%;
+            text-align: center;
+            // visibility: hidden;
+            opacity: 0;
+            transition: opacity .2s, visibility .2s;
+            width: 100%;
+            color: $black;
+            z-index: 99999;
+            overflow: visible;
+            height: min-content;
+        }
+    }
+
+    &__item {
+        object-fit: cover;
+        width: 100%;
+        max-height: 100%;
+        overflow: hidden;
+        position: relative;
+        background-color: $white;
+
+        &:hover .projects__details,
+        &:hover .projects__details--title,
+        &:hover .btn__expand-project-details {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        &:hover .projects__photo {
+            opacity: .1;
+        }
+
+        &:hover .projects__photo {
+            opacity: 1;
+            animation: fadeOut 0.5s forwards;
+        }
+
+        &:hover .projects__details {
+            opacity: 1;
+            animation: fadeIn 0.5s forwards;
+        }
+
+        &--1 {
+            grid-row: 1 / span 1;
+            grid-column: 1 / span 1;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        &--2 {
+            grid-row: 1 / span 1;
+            grid-column: 2 / span 1;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        &--3 {
+            grid-row: 1 / span 1;
+            grid-column: 3 / span 1;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        &--4 {
+            grid-row: 1 / span 1;
+            grid-column: 4 / span 1;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        &--5 {
+            grid-row: 2 / span 1;
+            grid-column: 1 / span 1;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        &--6 {
+            grid-row: 2 / span 1;
+            grid-column: 2 / span 1;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        &--7 {
+            grid-row: 2 / span 1;
+            grid-column: 3 / span 1;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        &--8 {
+            grid-row: 2 / span 1;
+            grid-column: 4 / span 1;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        &--9 {
+            grid-row: 3 / span 1;
+            grid-column: 1 / span 1;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        &--10 {
+            grid-row: 3 / span 1;
+            grid-column: 2 / span 1;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        &--11 {
+            grid-row: 3 / span 1;
+            grid-column: 3 / span 1;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        &--12 {
+            grid-row: 3 / span 1;
+            grid-column: 4 / span 1;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            height: 100%;
+            overflow: hidden;
+        }
+    }
+
+    &__photo{
+        transition: opacity .2s, visibility .2s;
+
+        &--1, &--2, &--3, &--4, &--5, &--6, &--7, &--8, &--9, &--10, &--11, &--12 {
+            // transform: scale(0.12);
+            width: 100%;
+            justify-self: flex-end;
+            position: absolute;
+            top: 0;
+
+            &::after {
+                color: $white;
+            }
+        }
+
+        &--1 {
+            &::after {
+                content: 'Kellogg Tutoring';
+                color: $white;
+            }
+        }
+
+        &--2 {
+            &::after {
+                content: 'Davis Night Market';
+                color: $white;
+            }
+        }
+
+        &--3 {
+            &::after {
+                content: 'Thalassa Resort';
+                color: $white;
+            }
+        }
+
+        &--4 {
+            &::after {
+                content: 'Indonesia Trip (2015)';
+                color: $white;
+            }
+        }
+
+        &--5 {
+            &::after {
+                content: 'Hackernews Clone';
+                color: $white;
+            }
+        }
+
+        &--6 {
+            &::after {
+                content: 'Github Battle';
+                color: $white;
+            }
+        }
+
+        &--7 {
+            &::after {
+                content: 'Tetris';
+                color: $white;
+            }
+        }
+
+        &--8 {
+            &::after {
+                content: 'Hangman';
+                color: $white;
+            }
+        }
+
+        &--9 {
+            &::after {
+                content: 'Omnifood';
+                color: $white;
+            }
+        }
+
+        &--10 {
+            &::after {
+                content: 'Nexter';
+                color: $white;
+            }
+        }
+
+        &--11 {
+            &::after {
+                content: 'Natours';
+                color: $white;
+            }
+        }
+
+        &--12 {
+            &::after {
+                content: 'Hash Basketball';
+                color: $white;
+            }
+        }
+    }
+}

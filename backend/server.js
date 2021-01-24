@@ -6,13 +6,46 @@ const enforce = require("express-sslify");
 const https = require("https");
 const colors = require("colors");
 
+// middleware
+const cors = require("cors")
+const compression = require('compression')
 
+// database
+const connectDB = require('./config/db.js')
+
+// routes
+const messageRoutes = require('./routes/messageRoutes')
+
+
+
+
+dotenv.config();
+
+connectDB();
 
 const app = express();
 
 app.use(express.json());
 
+// compress responses
+app.use(compression({ threshold: 0 }));
 
+// CORS
+app.use(cors())
+
+var corsMiddleware = function(req, res, next) {
+  res.header('Access-Control-Allow-Origin', 'toshi-kellogg.com');
+  res.header('Access-Control-Allow-Methods', 'OPTIONS, GET, PUT, PATCH, POST, DELETE');
+  res.header('Access-Control-Allow-Headers', 'Content-Type, X-Requested-With, Authorization');
+
+  next();
+}
+
+app.use(corsMiddleware);
+
+
+// routes
+app.use('/api/messages', messageRoutes)
 
 // static build files for react side of app
 const modifiedPath = __dirname.split("/").slice(0, -1).join("/");
