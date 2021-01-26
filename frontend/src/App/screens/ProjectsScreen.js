@@ -6,6 +6,7 @@ import Modal from '../components/Modal'
 
 // actions
 import { getProjectDetails, listProjects } from "../actions/projectActions"
+import { modalToggleOpen } from "../actions/modalActions"
 
 // images
 import thalassa from '../img/thalassa.png'
@@ -24,22 +25,20 @@ import hackerNewsClone from '../img/hackerNewsClone.png'
 import githubBattle from '../img/githubBattle.png'
 
 function ProjectsScreen() {
-  const [modalOpen, setModalOpen] = useState(false)
+  // const [modalOpen, setModalOpen] = useState(false)
   const [project, setProject] = useState("")
 
   const dispatch = useDispatch()
 
-  // const isModalOpen = useSelector((state) => state.isModalOpen);
-  // const { loading, error, userInfo } = isModalOpen;
+  const modalIsOpen = useSelector((state) => state.modalIsOpen);
+  const { isOpen } = modalIsOpen;
 
   const projectList = useSelector((state) => state.projectList);
   const { loading, error, projects } = projectList;
 
-  const handleModal = (project) => {
-    // dispatch(modalOpen(modalOpen))
-    setModalOpen(!modalOpen)
-    setProject(project)
-    console.log(`modalOpen: ${modalOpen}`)
+  const handleModal = (e) => {
+    e.preventDefault();
+    dispatch(modalToggleOpen())
   }
 
   React.useEffect(() => {
@@ -54,13 +53,37 @@ function ProjectsScreen() {
     console.log(error);
   }
 
+  console.log(`isOpen: ${isOpen}`)
+
   return (
     <div className="projects">
-      {modalOpen && <Modal project={project} />}
+      {isOpen && <Modal project={project} />}
       <div
         className="projects__container"
         // style={modalOpen ? { opacity: 0.7 } : { opacity: 1 }}
       >
+        {/* {projects.map((project, i) => {
+          console.log(`project.picture: ${project.picture}`)
+          return (
+          <div className={`projects__item projects__item--${i}`}>
+            <img
+              src={project.picture}
+              alt={`${project.name} img`}
+              className={`fadeInAnimated--${i} projects__photo projects__photo--${i}`}
+            />
+            <span className="projects__details--title text-size-2">
+              {project.name}
+            </span>
+            <div className="projects__details">
+              <button
+                className="btn__expand-project-details"
+                onClick={() => handleModal(project.name)}
+              >
+                Details
+              </button>
+            </div>
+          </div>
+        )})} */}
         <div className="projects__item projects__item--1">
           <img
             src={kelloggTutoring}
@@ -73,7 +96,8 @@ function ProjectsScreen() {
           <div className="projects__details">
             <button
               className="btn__expand-project-details"
-              onClick={() => handleModal("Kellogg Tutoring")}
+              onClick={(e) => handleModal(e)}
+              // onClick={() => handleModal("Kellogg Tutoring")}
             >
               Details
             </button>

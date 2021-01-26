@@ -64,7 +64,7 @@ exports.sendMessage = async (req, res, next) => {
             subject: "Developer Inquiry", // Subject line
             text: "Hello!", // plain text body
             html: output, // html body
-            uri: "https://kelloggtutoring.com"
+            uri: "http://localhost:3000"
         };
 
         // console.log(output)
@@ -93,7 +93,8 @@ exports.sendMessage = async (req, res, next) => {
             // });
 
         },
-            console.log("Made it through message controller."))
+
+        console.log("Made it through message controller."))
         next()
     } catch (err) {
         console.log(err)

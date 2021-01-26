@@ -20,8 +20,6 @@ const messageRoutes = require('./routes/messageRoutes')
 const projectRoutes = require('./routes/projectRoutes')
 
 
-console.log('IN BACKEND')
-
 dotenv.config();
 
 connectDB();

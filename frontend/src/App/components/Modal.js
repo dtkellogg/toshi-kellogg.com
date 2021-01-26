@@ -1,16 +1,24 @@
 import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { modalToggleOpen } from "../actions/modalActions";
 
 export default function Modal({ project }) {
-    const [modalOpen, setModalOpen] = useState(true)
+  const dispatch = useDispatch();
 
-    const handleBack = () => {
-        setModalOpen(false)
-    }
+  const modalIsOpen = useSelector((state) => state.modalIsOpen);
+  const { isOpen } = modalIsOpen;
+
+
+    // const [modalOpen, setModalOpen] = useState(true)
+const handleModal = (e) => {
+  e.preventDefault();
+  dispatch(modalToggleOpen());
+};
     return (
       <div
         className="modal"
         style={
-          !modalOpen
+          !isOpen
             ? { opacity: "0", backgroundColor: "transparent", display: "none"}
             : { opacity: "1", backgroundColor: "rgba(0, 0, 0, 0.685)" }
         }
@@ -20,7 +28,7 @@ export default function Modal({ project }) {
           <div className="modal__title">{project}</div>
           <div className="modal__skills">lorem50 weweq r rqw</div>
           <div className="modal__paragraph">lorem50 weweq r rqw</div>
-          <button className="modal__button" onClick={() => handleBack()}>
+          <button className="modal__button" onClick={(e) => handleModal(e)}>
             Back
           </button>
         </div>
