@@ -4,6 +4,9 @@ import { useDispatch, useSelector } from "react-redux";
 // components
 import Modal from '../components/Modal'
 
+// actions
+import { getProjectDetails, listProjects } from "../actions/projectActions"
+
 // images
 import thalassa from '../img/thalassa.png'
 import budgetTracker from '../img/budgetTracker.png'
@@ -29,11 +32,26 @@ function ProjectsScreen() {
   // const isModalOpen = useSelector((state) => state.isModalOpen);
   // const { loading, error, userInfo } = isModalOpen;
 
+  const projectList = useSelector((state) => state.projectList);
+  const { loading, error, projects } = projectList;
+
   const handleModal = (project) => {
     // dispatch(modalOpen(modalOpen))
     setModalOpen(!modalOpen)
     setProject(project)
     console.log(`modalOpen: ${modalOpen}`)
+  }
+
+  React.useEffect(() => {
+    dispatch(listProjects());
+  }, []);
+
+  React.useEffect(() => {
+    console.log(projects);
+  }, [projects]);
+
+  if(error) {
+    console.log(error);
   }
 
   return (

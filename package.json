@@ -8,7 +8,7 @@
     "server": "nodemon backend/server.js",
     "client": "set HTTPS=true --prefix frontend && npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "data:import": "node seeder",
+    "data:import": "node backend/seeder",
     "data:destroy": "node seeder -d",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },

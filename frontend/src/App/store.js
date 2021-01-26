@@ -9,10 +9,13 @@ import { composeWithDevTools } from 'redux-devtools-extension'
 
 // reducers
 import { messageCreateReducer } from './reducers/messageReducer';
+import { projectDetailsReducer, projectListReducer } from './reducers/projectReducer';
 
 
 const reducer = combineReducers({
-    messageCreate: messageCreateReducer
+    messageCreate: messageCreateReducer,
+    projectList: projectListReducer,
+    projectDetails: projectDetailsReducer,
 })
 
 const initialState = {
