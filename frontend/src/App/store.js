@@ -11,7 +11,7 @@ import { composeWithDevTools } from 'redux-devtools-extension'
 import { messageCreateReducer } from './reducers/messageReducer';
 import { projectDetailsReducer, projectListReducer } from './reducers/projectReducer';
 import {
-  modalCurrentProjectReducer,
+  modalSetProjectReducer,
   modalIsOpenReducer,
 } from "./reducers/modalReducer";
 
@@ -20,7 +20,7 @@ const reducer = combineReducers({
     messageCreate: messageCreateReducer,
     projectList: projectListReducer,
     projectDetails: projectDetailsReducer,
-    modalCurrentProject: modalCurrentProjectReducer,
+    modalSetProject: modalSetProjectReducer,
     modalIsOpen: modalIsOpenReducer
 })
 

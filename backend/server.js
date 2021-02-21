@@ -7,6 +7,7 @@ const https = require("https");
 const colors = require("colors");
 const bodyParser = require("body-parser")
 const cookieParser = require("cookie-parser");
+const multer = require("multer")
 
 // middleware
 const cors = require("cors")
@@ -43,6 +44,7 @@ var corsMiddleware = function(req, res, next) {
 }
 
 app.use(corsMiddleware);
+
 
 // redirect all url requests to https
 // app.use(enforce.HTTPS({ trustProtoHeader: true }));

@@ -1,0 +1,137 @@
+.contact {
+    height: 100vh;
+    width: 100%;
+    padding: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    // background: $red;
+
+    &__header {
+        margin-bottom: 2rem;
+        text-shadow: 2px 4px 3px rgba(0,0,0,0.25);
+    }
+
+    &__paragraph {
+        margin-bottom: 1rem;
+        // text-shadow: 2px 4px 3px rgba(0,0,0,0.02);
+    }
+
+    &__container {
+        &--left {
+            width: 50%;
+            height: 100%;
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+
+            // background: $green;
+        }
+
+        &--right {
+            // width: 50%;
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            // background: $gold;
+            overflow: hidden;
+        }
+    }
+
+    &__form {
+        width: 100%;
+        height: 30rem;
+
+        display: grid;
+        grid-template-rows: repeat(5, 5rem);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+
+        // background: red;
+
+        &--element {
+            width: 100%;
+            height: 100%;
+
+            position: relative;
+        }
+
+        // &--label {
+
+        // }
+
+        &--input {
+            width: 100%;
+            height: 100%;
+            padding: 2rem;
+            outline: none;
+
+            border-radius: 3px;
+            border: 1px solid $grey-light-3;
+            background-color: $grey-light-7;
+            box-shadow: 0.05rem 0.05rem .1rem $black;
+
+            position: relative;
+            transition: 0.3s;
+
+            &:focus ~ .contact__focus-border {
+                // outline: none;
+                // border-bottom: 3px solid black;
+                width: 100%;
+                transition: 0.3s;
+            }
+
+            &:focus {
+                background-color: $grey-light-8;
+            }
+            
+        }
+    }
+
+    &__element {
+        &--name {
+            grid-row: 1 / span 1;
+            grid-column: 1 / span 1;
+        }
+
+        &--email {
+            grid-row: 1 / span 1;
+            grid-column: 2 / span 1;
+        }
+
+        &--subject {
+            grid-row: 2 / span 1;
+            grid-column: 1 / span 2;
+        }
+
+        &--message {
+            grid-row: 3 / span 3;
+            grid-column: 1 / span 2;
+        }
+    }
+}
+
+textarea {
+   font-family: inherit;
+   font-size: inherit;
+}
+
+
+.contact__focus-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    height: 2px;
+    width: 0;
+    background-color: $green;
+}

@@ -4,6 +4,9 @@ import { useDispatch, useSelector } from "react-redux";
 // actions
 import { sendMessage } from "../actions/messageActions";
 
+// components
+import Map from "../components/Map"
+
 function ContactScreen() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -62,62 +65,79 @@ function ContactScreen() {
 
   return (
     <div className="contact">
-      <h1>Contact me</h1>
-      <p>I am interested in entry level positions - especially those that 
-        will allow me to grow the most as a developer. If you have any questions
-        or interest in learning more about me, please don't hesitate to contact me
-        using the form below.
-      </p>
+      <div className="contact__container--left">
+        <h1 className="contact__header text-size-0">Contact me</h1>
+        <p className="contact__paragraph text-size-4">
+          I am interested in entry level positions - especially those that will
+          allow me to grow the most as a developer. If you have any questions or
+          interest in learning more about me, please don't hesitate to contact
+          me using the form below.
+        </p>
 
-      <form className="contact__form">
-        <div className="contact__form--element">
-          <label className="contact__form--label"></label>
-          <input 
-            type="name" 
-            className="contact__form--input" 
-            placeholder="name" value={name || ""}
-            onChange={(e) => setName(e.target.value)}
-          />
-        </div>
+        <form className="contact__form">
+          <div className="contact__form--element contact__element--name">
+            {/* <label className="contact__form--label"></label> */}
+            <input
+              type="name"
+              className="contact__form--input text-size-5"
+              placeholder="Name"
+              value={name || ""}
+              onChange={(e) => setName(e.target.value)}
+            />
+            <span className="contact__focus-border"></span>
+          </div>
 
-        <div className="contact__form--element">
-          <label className="contact__form--label"></label>
-          <input
-            type="email"
-            className="contact__form--input"
-            placeholder="email" value={email || ""}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-        </div>
+          <div className="contact__form--element contact__element--email">
+            {/* <label className="contact__form--label"></label> */}
+            <input
+              type="email"
+              className="contact__form--input text-size-5"
+              placeholder="Email"
+              value={email || ""}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <span className="contact__focus-border"></span>
+          </div>
 
-        <div className="contact__form--element">
-          <label className="contact__form--label"></label>
-          <input
-            type="subject"
-            className="contact__form--input"
-            placeholder="subject" value={subject || ""}
-            onChange={(e) => setSubject(e.target.value)}
-          />
-        </div>
+          <div className="contact__form--element contact__element--subject">
+            {/* <label className="contact__form--label"></label> */}
+            <input
+              type="subject"
+              className="contact__form--input text-size-5"
+              placeholder="Subject"
+              value={subject || ""}
+              onChange={(e) => setSubject(e.target.value)}
+            />
+            <span className="contact__focus-border"></span>
+          </div>
 
-        <div className="contact__form--element">
-          <label className="contact__form--label"></label>
-          <textarea
-            type="text"
-            className="contact__form--input"
-            placeholder="message" value={message || ""}
-            onChange={(e) => setMessage(e.target.value)}
-          />
-        </div>
+          <div className="contact__form--element contact__element--message">
+            {/* <label className="contact__form--label"></label> */}
+            <textarea
+              type="text"
+              className="contact__form--input text-size-5"
+              placeholder="Message"
+              value={message || ""}
+              onChange={(e) => setMessage(e.target.value)}
+            />
+            <span className="contact__focus-border"></span>
+          </div>
+        </form>
 
         <button
-          className="contact__form--button"
+          className="btn__contact-form"
           onClick={handleSubmit}
           disabled={submitted || failed.length > 0}
         >
           Submit
         </button>
-      </form>
+      </div>
+
+      <div className="contact__container--right">
+        <div className="">
+          <Map />
+        </div>
+      </div>
     </div>
   );
 }

@@ -24,6 +24,10 @@
 
       &--item {
         margin-top: 0.75rem;
+
+        &:hover .social-media-icon {
+          color: $black;
+        }
       }
 
     }
@@ -76,6 +80,6 @@
 
   &:hover {
     fill: 1px solid var(--grey-light-6);
-    opacity: 0.6;
+    opacity: 1.0;
   }
 }

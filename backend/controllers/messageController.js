@@ -18,9 +18,6 @@ const Message = require("../models/messageModel");
 // @access Public
 exports.sendMessage = async (req, res, next) => {
     console.log(`in node mailer`)
-    // console.log(req)
-    // console.log(`emailFrom: ${emailFrom}`)
-    // console.log(`process.env.NODEMAILER_FROM_EMAIL: ${process.env.NODEMAILER_FROM_EMAIL}`)
     try {
 
         console.log("Inside the nodemail server.js post request");
@@ -67,9 +64,6 @@ exports.sendMessage = async (req, res, next) => {
             uri: "http://localhost:3000"
         };
 
-        // console.log(output)
-        // console.log(transporter)
-        // console.log(mailOptions)
 
         // send mail with defined transport object
         transporter.sendMail(mailOptions, (error, info) => {

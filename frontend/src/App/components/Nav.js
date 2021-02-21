@@ -30,7 +30,7 @@ function Nav({ history }) {
         </li>
 
         <li className="nav__list--item">
-          <HoverNavLink text={"About"}  to={"/about"}>
+          <HoverNavLink text={"About"} to={"/about"}>
             <FaUser
               size={30}
               fill="var(--grey-light-2)"
@@ -40,7 +40,7 @@ function Nav({ history }) {
         </li>
 
         <li className="nav__list--item">
-          <HoverNavLink text={"Skills"}  to={"/skills"}>
+          <HoverNavLink text={"Skills"} to={"/skills"}>
             <FaCog
               size={30}
               fill="var(--grey-light-2)"
@@ -50,7 +50,7 @@ function Nav({ history }) {
         </li>
 
         <li className="nav__list--item">
-          <HoverNavLink text={"Projects"}  to={"/projects"}>
+          <HoverNavLink text={"Projects"} to={"/projects"}>
             <FaFolder
               size={30}
               fill="var(--grey-light-2)"
@@ -60,7 +60,7 @@ function Nav({ history }) {
         </li>
 
         <li className="nav__list--item" {...attrs}>
-          <HoverNavLink text={"Contact"}  to={"/contact"}>
+          <HoverNavLink text={"Contact"} to={"/contact"}>
             <FaEnvelope
               size={30}
               fill="var(--grey-light-2)"
@@ -81,7 +81,7 @@ function Nav({ history }) {
           </a>
         </li>
         <li className="nav__social-media-list--item">
-          <a href="#">
+          <a href="https://github.com/dtkellogg">
             <FaGithub
               size={30}
               fill="var(--grey-light-2)"

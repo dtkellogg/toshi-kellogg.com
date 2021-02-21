@@ -24,8 +24,6 @@ export default function Loading({ text = "Loading", speed = 300 }) {
     }
   });
 
-  console.log(content);
-
   React.useEffect(() => {
     const id = window.setInterval(() => {
       setContent((content) => {

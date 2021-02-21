@@ -1,6 +1,10 @@
 import React from "react";
 
 function HomeScreen() {
+  // React.useEffect(() => {
+  //     document.title = "Toshi Kellogg | Developer";
+  // });
+
   return (
     <div className="home">
       <div className="fadeInAnimated--1 home__text home__text--1 text-size-3">Hello,</div>
