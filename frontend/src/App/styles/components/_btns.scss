@@ -1,4 +1,5 @@
 .btn {
+  
   &__expand-project-details {
     height: 10rem;
     width: 10rem;
@@ -9,7 +10,7 @@
     cursor: pointer;
     
     // border: 1px solid $black;\
-    border: 1px solid transparent;
+    border: 1px solid $black;
     // box-shadow: 0 0 20px $white;
     transition: 0.5s;
     background: transparent;
@@ -32,12 +33,19 @@
       // background-color: $grey-light-7;
       // color: $grey-dark-3;
 
-      border: 1px solid $black;
+      border: 1px solid $blue;
+      color: $blue;
 
       // scale: 0.3;
       // transform: scale(1.05);
       transition: 0.15s;
     }
+
+    // &:active {
+    //   color: $red;
+    //   border: 1px solid $red;
+
+    // }
   }
 
   &__contact-form {
@@ -63,6 +71,7 @@
   }
 
   &__modal {
+
     &--close {
       position: absolute;
       top: 7%;

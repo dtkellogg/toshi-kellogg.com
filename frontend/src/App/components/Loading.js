@@ -35,7 +35,7 @@ export default function Loading({ text = "Loading", speed = 300 }) {
   }, [text, speed]);
 
   // return <p style={styles.content}>{content}</p>;
-  return <div class="dots-loader"></div>;
+  return <div className="dots-loader"></div>;
 }
 
 Loading.propTypes = {

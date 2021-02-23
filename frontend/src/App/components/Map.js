@@ -10,7 +10,7 @@ export default function Map() {
     zoom: 9,
   });
 
-  console.log(`mapbox token: ${process.env.REACT_APP_MAPBOX_TOKEN}`);
+  // console.log(`mapbox token: ${process.env.REACT_APP_MAPBOX_TOKEN}`);
 
   return (
     <div className="map">

@@ -1,0 +1,62 @@
+@keyframes fadeIn {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+@keyframes fadeOut {
+  from {opacity: 1}
+  to {opacity: 0}
+}
+
+.fadeInAnimated--1 {
+  opacity: 0;
+  animation: fadeIn 2s forwards; /* forwards (animation-fill-mode) retains the style from the last keyframe when the animation ends */
+
+}
+
+.fadeInAnimated--2 {
+  opacity: 0;
+  animation: fadeIn 2s forwards; /* forwards (animation-fill-mode) retains the style from the last keyframe when the animation ends */
+  animation-delay: 1s;
+}
+
+.fadeInAnimated--3 {
+  opacity: 0;
+  animation: fadeIn 2s forwards; /* forwards (animation-fill-mode) retains the style from the last keyframe when the animation ends */
+  animation-delay: 2.25s;
+}
+
+.fadeInAnimated--4 {
+  opacity: 0;
+  animation: fadeIn 2s forwards; /* forwards (animation-fill-mode) retains the style from the last keyframe when the animation ends */
+  animation-delay: 3.25s;
+}
+
+.fadeInAnimated--5 {
+  opacity: 0;
+  animation: fadeIn 2s forwards; /* forwards (animation-fill-mode) retains the style from the last keyframe when the animation ends */
+  animation-delay: 4.5s;
+}
+
+.fadeInAnimated--6 {
+  opacity: 0;
+  animation: fadeIn 2s forwards; /* forwards (animation-fill-mode) retains the style from the last keyframe when the animation ends */
+  animation-delay: 5.5s;
+}
+
+.fadeInAnimated--7 {
+  opacity: 0;
+  animation: fadeIn 2s forwards; /* forwards (animation-fill-mode) retains the style from the last keyframe when the animation ends */
+  animation-delay: 5.5s;
+}
+
+.fadeInAnimated--8 {
+  opacity: 0;
+  animation: fadeIn 2s forwards; /* forwards (animation-fill-mode) retains the style from the last keyframe when the animation ends */
+  animation-delay: 5.5s;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0}
+  to {opacity: 1}
+}

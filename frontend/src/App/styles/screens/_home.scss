@@ -1,7 +1,7 @@
 .home {
     height: 100vh;
     width: 100%;
-    padding: 2rem;
+    padding: 2.5rem;
     
     display: flex;
     flex-direction: column;
@@ -11,6 +11,10 @@
     &__text {
         margin: 1rem 0;
         // text-shadow: 2px 4px 3px rgba(0,0,0,0.15);
+
+        &--name {
+          color: $blue;
+        }
 
         &--1 {
             // animation-delay: 2s;
@@ -35,63 +39,3 @@
     }
 }
 
-@keyframes fadeIn {
-  from {opacity: 0}
-  to {opacity: 1}
-}
-
-@keyframes fadeOut {
-  from {opacity: 1}
-  to {opacity: 0}
-}
-
-.fadeInAnimated--1 {
-  opacity: 0;
-  animation: fadeIn 2s forwards; /* forwards (animation-fill-mode) retains the style from the last keyframe when the animation ends */
-
-}
-
-.fadeInAnimated--2 {
-  opacity: 0;
-  animation: fadeIn 2s forwards; /* forwards (animation-fill-mode) retains the style from the last keyframe when the animation ends */
-  animation-delay: .5s;
-
-  // &:hover {
-  //   opacity: 1;
-  //   animation: fadeOut 1s forwards;
-  // }
-}
-
-.fadeInAnimated--3 {
-  opacity: 0;
-  animation: fadeIn 2s forwards; /* forwards (animation-fill-mode) retains the style from the last keyframe when the animation ends */
-  animation-delay: 1s;
-
-  // &:hover {
-  //   opacity: 1;
-  //   animation: fadeOut 0.5s forwards;
-  // }
-}
-
-.fadeInAnimated--4 {
-  opacity: 0;
-  animation: fadeIn 2s forwards; /* forwards (animation-fill-mode) retains the style from the last keyframe when the animation ends */
-  animation-delay: 1.5s;
-}
-
-.fadeInAnimated--5 {
-  opacity: 0;
-  animation: fadeIn 2s forwards; /* forwards (animation-fill-mode) retains the style from the last keyframe when the animation ends */
-  animation-delay: 4.5s;
-}
-
-.fadeInAnimated--6 {
-  opacity: 0;
-  animation: fadeIn 2s forwards; /* forwards (animation-fill-mode) retains the style from the last keyframe when the animation ends */
-  animation-delay: 5.5s;
-}
-
-@keyframes fadeIn {
-  from {opacity: 0}
-  to {opacity: 1}
-}

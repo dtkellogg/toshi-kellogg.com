@@ -5,14 +5,14 @@ import { useDispatch, useSelector } from "react-redux";
 import Modal from '../components/Modal'
 
 // actions
-import { getProjectDetails, listProjects } from "../actions/projectActions"
+import { listProjects } from "../actions/projectActions"
 import { modalToggleOpen, modalSetProject } from "../actions/modalActions"
 
 // images
 import thalassa from '../img/thalassa.png'
-import budgetTracker from '../img/budgetTracker.png'
+// import budgetTracker from '../img/budgetTracker.png'
 import kelloggTutoring from '../img/kelloggtutoring.png'
-import lightsOut from '../img/lights-out.png'
+// import lightsOut from '../img/lights-out.png'
 import tetris from '../img/tetris.png'
 import hangman from '../img/hangman.png'
 import nightMarket from '../img/nightMarket.png'
@@ -27,7 +27,7 @@ import githubBattle from '../img/githubBattle.png'
 
 function ProjectsScreen() {
   // const [modalOpen, setModalOpen] = useState(false)
-  const [project, setProject] = useState("")
+  const [project, setProject] = useState("") // eslint-disable-line no-unused-vars
 
   const dispatch = useDispatch()
 
@@ -35,7 +35,7 @@ function ProjectsScreen() {
   const { isOpen } = modalIsOpen;
 
   const projectList = useSelector((state) => state.projectList);
-  const { loading, error, projects } = projectList;
+  const { loading, error, projects } = projectList; // eslint-disable-line no-unused-vars
 
   const handleModal = (e, modalName) => {
     e.preventDefault();
@@ -45,19 +45,15 @@ function ProjectsScreen() {
 
   React.useEffect(() => {
     dispatch(listProjects());
-  }, []);
+  }, [dispatch]);
 
-  React.useEffect(() => {
-    console.log(projects);
-  }, [projects]);
+  // React.useEffect(() => {
+  //   console.log(projects);
+  // }, [projects]);
 
   if(error) {
     console.log(error);
   }
-
-  console.log(`isOpen: ${isOpen}`)
-
-  project && console.log(project[0])
 
   return (
     <div className="projects">

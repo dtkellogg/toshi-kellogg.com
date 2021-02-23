@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import {FaReact, FaRedux, FaReactRouter, FaNodeJs, FaCss3Alt, FaSass} from "react-icons/fa"
+// import {FaReact, FaRedux, FaReactRouter, FaNodeJs, FaCss3Alt, FaSass} from "react-icons/fa"
 
 // actions
 import { modalToggleOpen } from "../actions/modalActions";
@@ -9,14 +9,18 @@ import { modalToggleOpen } from "../actions/modalActions";
 import kelloggtutoring__video from '../videos/kelloggtutoring.mov'
 import davisnightmarket__video from '../videos/nightmarket.mov'
 
+// constants
+import { MODAL_SETPROJECT_RESET } from '../constants/modalConstants'
+
 const icons = {
   "React": "vscode-icons:file-type-reactjs",
   "Redux": "simple-icons:redux",
   "React-router": "logos-react-router",
   "NodeJS": "logos:nodejs",
   "CSS3": "vscode-icons:file-type-css",
-  "SASS": "logos:sass",
+  "SCSS": "vscode-icons:file-type-scss",
   "HTML5": "vscode-icons:file-type-html",
+  "JavaScript": "logos:javascript"
 };
 
 export default function Modal() {
@@ -27,7 +31,7 @@ export default function Modal() {
 
   const modalSetProject = useSelector((state) => state.modalSetProject);
   const { project } = modalSetProject;
-  const { description, github, name, picture, skills, video, url } = project
+  const { description__1, description__2, github, name, skills, video, url } = project
 
 
 
@@ -40,6 +44,7 @@ export default function Modal() {
     // const [modalOpen, setModalOpen] = useState(true)
   const handleModal = (e) => {
     e.preventDefault();
+    dispatch({ type: MODAL_SETPROJECT_RESET })
     dispatch(modalToggleOpen());
   };
 
@@ -66,6 +71,7 @@ export default function Modal() {
           <div className="modal__container--top">
             <div className="modal__title text-size-2">{name}</div>
             {/* <div className="modal__video"> */}
+
             <video
               src={kelloggtutoring__video}
               // src={`${modifiedName}__video`}
@@ -81,18 +87,21 @@ export default function Modal() {
             {skills && (
               <div className="modal__skills">
                 {skills.map((skill) => (
-                  <div className="text-size-5">
+                  <div className="modal__skills--el-container text-size-5">
                     <span
-                      class="iconify"
+                      className="iconify"
                       data-icon={icons[skill]}
                       data-inline="false"
+                      
                     ></span>
-                    {skill}
+                    <div className="modal__skills--text">{skill}</div>
                   </div>
                 ))}
               </div>
             )}
-            <div className="modal__paragraph text-size-5">{description}</div>
+
+            <div className="modal__paragraph--1 text-size-5">{description__1}</div>
+            <div className="modal__paragraph--2 text-size-5">{description__2}</div>
           </div>
 
           <div className="modal__container--bottom">

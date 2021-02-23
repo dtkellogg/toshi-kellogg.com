@@ -9,7 +9,11 @@ const projectSchema = mongoose.Schema({
     type: Array,
     required: true,
   },
-  description: {
+  description__1: {
+    type: String,
+    required: true,
+  },
+  description__2: {
     type: String,
     required: true,
   },

@@ -1,4 +1,8 @@
+// react
 import React from 'react'
+
+// images
+import aboutImage from '../img/aboutImage.jpg'
 
 function AboutScreen() {
     return (
@@ -28,7 +32,11 @@ function AboutScreen() {
         </div>
 
         <div className="about__container--right fadeInAnimated--4">
-          <div className="">Insert Toshi's Photo</div>
+          <img
+            src={aboutImage}
+            alt="Kellogg Tutoring img"
+            className="about__image fadeInAnimated--1"
+          />
         </div>
       </div>
     );

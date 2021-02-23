@@ -66,15 +66,15 @@ function ContactScreen() {
   return (
     <div className="contact">
       <div className="contact__container--left">
-        <h1 className="contact__header text-size-0">Contact me</h1>
-        <p className="contact__paragraph text-size-4">
+        <h1 className="contact__header text-size-0 fadeInAnimated--1">Contact me</h1>
+        <p className="contact__paragraph text-size-4 fadeInAnimated--2">
           I am interested in entry level positions - especially those that will
           allow me to grow the most as a developer. If you have any questions or
           interest in learning more about me, please don't hesitate to contact
           me using the form below.
         </p>
 
-        <form className="contact__form">
+        <form className="contact__form fadeInAnimated--3">
           <div className="contact__form--element contact__element--name">
             {/* <label className="contact__form--label"></label> */}
             <input
@@ -125,7 +125,7 @@ function ContactScreen() {
         </form>
 
         <button
-          className="btn__contact-form"
+          className="btn__contact-form fadeInAnimated--3"
           onClick={handleSubmit}
           disabled={submitted || failed.length > 0}
         >
@@ -133,8 +133,8 @@ function ContactScreen() {
         </button>
       </div>
 
-      <div className="contact__container--right">
-        <div className="">
+      <div className="contact__container--right fadeInAnimated--4">
+        <div className="contact__map">
           <Map />
         </div>
       </div>

@@ -26,7 +26,7 @@
         border: 3px solid $black;
 
         &--top {
-            height: 60vh;
+            height: 100%;
             // position: absolute;
             // bottom: 9rem;
             padding: 3rem;
@@ -34,7 +34,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: space-between;
+            // justify-content: space-between;
             overflow: hidden;
 
 
@@ -42,7 +42,7 @@
         }
 
         &--bottom {
-            height: 9rem;
+            height: 6rem;
 
             display: flex;
             flex-direction: column;
@@ -55,8 +55,8 @@
     }
 
     &__video {
-        height: 27.5rem;
         width: 45rem;
+        height: auto;
         // background-color: $red;
         overflow: hidden;
 
@@ -66,7 +66,7 @@
     }
 
     &__title {
-
+        margin-bottom: 1rem;
     }
 
     &__skills {
@@ -75,7 +75,17 @@
         justify-content: space-around;
 
         width: 100%;
+        margin: 2rem 0;
         // background-color: red;
+
+        &--el-container {
+            display: flex;
+            align-items: center;
+        }
+
+        &--text {
+            margin-left: 0.5rem;
+        }
 
     }
 
@@ -137,7 +147,14 @@
     }
 
     &__paragraph {
+        &--1 {
+            margin-bottom: 0.5rem;
+            align-self: flex-start;
+        }
 
+        &--2 {
+            align-self: flex-start;
+        }
     }
 
     &__back {
