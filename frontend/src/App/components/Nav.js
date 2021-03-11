@@ -1,25 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { NavLink, withRouter } from "react-router-dom";
-import { FaHome, FaUser, FaCog, FaFolder, FaEnvelope, FaInstagram, FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaHome, FaUser, FaCog, FaFolder, FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
+
+// components
 import HoverNavLink from "../components/HoverNavLink"
+
 // hooks
 import useHover from "../hooks/useHover"
 
 const activeStyle = {
   color: "var(--blue-4)",
   fill: "var(--blue-4)",
-  backgroundColor: "var(--old-blue-2-opacity-2)",
   borderLeft: "4px solid var(--blue-3)",
-  // fontWeight: 900,
 };
 
 function Nav({ history }) {
-  const [hoveringHome, setHoveringHome] = React.useState(false);
-  const [hoveringAbout, setHoveringAbout] = React.useState(false);
-  const [hoveringSkills, setHoveringSkills] = React.useState(false);
-  const [hoveringProjects, setHoveringProjects] = React.useState(false);
-  const [hoveringContact, setHoveringContact] = React.useState(false);
+  const [hoveringHome, setHoveringHome] = useState(false);
+  const [hoveringAbout, setHoveringAbout] = useState(false);
+  const [hoveringSkills, setHoveringSkills] = useState(false);
+  const [hoveringProjects, setHoveringProjects] = useState(false);
+  const [hoveringContact, setHoveringContact] = useState(false);
 
   return (
     <nav className="nav fadeInAnimated--6">
@@ -37,8 +38,6 @@ function Nav({ history }) {
             ?
               <FaHome
                 size={30}
-                // fill={!activeStyle ? "var(--grey-6)" : "var(--blue-4)"}
-                // fill="var(--grey-6)"
                 className="nav__icon grey-11"
               />
             :

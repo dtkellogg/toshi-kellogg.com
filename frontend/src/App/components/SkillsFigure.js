@@ -23,6 +23,7 @@ export default function SkillsFigure() {
             <div className="content">
                 <div className="content-1">
                     <p>Some content</p>
+                    <p>Some content</p>
                 </div>
                 <div className="content-2">
                     <p>Some content</p>
