@@ -26,8 +26,8 @@ const projects = [
     description__2: "Proper SCSS architecture was implemented, including a 7 directory system (abstracts, base, components, laout, pages, themes, & vendors). I used the website of a dive resort I visited while in Sulawesi, Indonesia as inspiration, and focused on making a better UI than what they currently have.",
     picture: "../img/thalassa.png",
     video: "#",
-    github: "#",
-    url: "#",
+    github: "https://github.com/dtkellogg/thalassa",
+    url: "https://thalassa-website.herokuapp.com/",
   },
   {
     name: "Indonesia (2015)",
@@ -36,8 +36,8 @@ const projects = [
     description__2: "Basic CSS skills, such as flex-box and css grid were implemented, as well as basic animations using javascript.",
     picture: "../img/indonesia2015.png",
     video: "#",
-    github: "#",
-    url: "#",
+    github: "https://github.com/dtkellogg/indonesia2015",
+    url: "https://indonesia2015.herokuapp.com/",
   },
   {
     name: "Hackernews Clone",
@@ -46,8 +46,8 @@ const projects = [
     description__2: "The project was primarily used to practice retrieving data from a database.",
     picture: "../img/hackerNewsClone.png",
     video: "#",
-    github: "#",
-    url: "#",
+    github: "https://github.com/dtkellogg/hacker-news-clone",
+    url: "https://kellogg-hacker-news.herokuapp.com/",
   },
   {
     name: "Github Battle",
@@ -66,8 +66,8 @@ const projects = [
     description__2: "The intended purpose was to practice making a game using React. I was able to get used to thinking in terms of how a game is programmed, as well as how component logic can be broken down to make code cleaner and more concise.",
     picture: "../img/tetris.png",
     video: "#",
-    github: "#",
-    url: "#",
+    github: "https://github.com/dtkellogg/tetris",
+    url: "https://kellogg-tetris.herokuapp.com/",
   },
   {
     name: "Hangman",
@@ -76,8 +76,8 @@ const projects = [
     description__2: "It's intended use was to practice coding in the context of a simple game.",
     picture: "../img/hangman.png",
     video: "#",
-    github: "#",
-    url: "#",
+    github: "https://github.com/dtkellogg/kellogg-hangman",
+    url: "https://kellogg-hangman.herokuapp.com/",
   },
   {
     name: "Omnifood",
@@ -86,8 +86,8 @@ const projects = [
     description__2: "It's intended purpose was to practice fundamental web design skills, including basic markup, UI design, and JavaScript animations.",
     picture: "../img/omnifood.png",
     video: "#",
-    github: "#",
-    url: "#",
+    github: "https://github.com/dtkellogg/kellogg-omnifood",
+    url: "https://kellogg-omnifood.herokuapp.com/",
   },
   {
     name: "Nexter",
@@ -96,8 +96,8 @@ const projects = [
     description__2: "It was used to practice using CSS grid and flex-box as complementary UI design tools. In addition, I was able to learn new ways of making web site beautiful.",
     picture: "../img/nexter.png",
     video: "#",
-    github: "#",
-    url: "#",
+    github: "https://github.com/dtkellogg/kellogg-nexter",
+    url: "https://kellogg-nexter.herokuapp.com/",
   },
   {
     name: "Natours",
@@ -106,8 +106,8 @@ const projects = [
     description__2: "It's focus was on learning and implementing advanced CSS skills, such as animations (using pure CSS), cutting images at arbitrary angles, and linear-gradients for unique color combinations.",
     picture: "../img/natours.png",
     video: "#",
-    github: "#",
-    url: "#",
+    github: "https://github.com/dtkellogg/kellogg-natours",
+    url: "https://kellogg-natours.herokuapp.com/",
   },
   {
     name: "Hash Basketball",
@@ -116,8 +116,8 @@ const projects = [
     description__2: "Intended purpose was to study the React-router v5, and learn how to use and implement the built in functionality of React-Router",
     picture: "../img/hashBasketball.png",
     video: "#",
-    github: "#",
-    url: "#",
+    github: "https://github.com/dtkellogg/kellogg-hash-basketball",
+    url: "https://kellogg-hash-basketball.herokuapp.com/",
   },
 ];
 

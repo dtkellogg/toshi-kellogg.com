@@ -1,40 +1,33 @@
 .home {
-    height: 100vh;
-    width: 100%;
-    padding: 2.5rem;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    @include heightWidth100($height: 100vh);
+    @include flexCenterCenter($flex-direction: column, $align-items: flex-start);
+    padding: 3rem;
 
     &__text {
         margin: 1rem 0;
-        // text-shadow: 2px 4px 3px rgba(0,0,0,0.15);
 
         &--name {
-          color: $blue;
+          background-image: $blue-gradient-1;
+          -webkit-background-clip: text;
+          color: transparent;
+          letter-spacing: .2rem;
+        }
+
+        &--im {
+            margin-right: 1.5rem;
         }
 
         &--1 {
-            // animation-delay: 2s;
         }
 
         &--2 {
-            -webkit-animation-delay: 2s;
-            animation-delay: 2s;
-
             text-shadow: 2px 4px 3px rgba(0,0,0,0.15)
         }
 
         &--3 {
-            -webkit-animation-delay: 3s;
-            animation-delay: 3s;
         }
 
         &--4 {
-            -webkit-animation-delay: 4s;
-            animation-delay: 4s;
         }
     }
 }

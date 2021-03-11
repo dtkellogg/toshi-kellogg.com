@@ -1,37 +1,44 @@
 $black: #000;
 $white: #fff;
 
-$grey-dark-0: #080808;
-$grey-dark-1: #181818;
-$grey-dark-2: #282828;
-$grey-dark-3: #383838;
-$grey-dark-4: #484848;
+$grey-0: #080808;
+$grey-1: #181818;
+$grey-2: #282828;
+$grey-3: #383838;
+$grey-4: #484848;
 
-$grey-light-1: #585858;
-$grey-light-2: #686868;
-$grey-light-3: #787878;
-$grey-light-4: #888888;
-$grey-light-5: #989898;
+$grey-5: #585858;
+$grey-6: #686868;
+$grey-7: #787878;
+$grey-8: #888888;
+$grey-9: #989898;
 
-$grey-light-6: #D0D0D0;
-$grey-light-7:#E0E0E0;
-$grey-light-8:#F0F0F0;
-$grey-light-9:hsl(0, 0%, 96%);
+$grey-10: #D0D0D0;
+$grey-11:#E0E0E0;
+$grey-12:#F0F0F0;
+$grey-13:hsl(0, 0%, 96%);
 
-$red: rgb(230, 36, 36);
-$red-light-1: rgb(255, 24, 24);
-$red-light-2: rgb(247, 162, 162);
-$yellow: #fbff23;
+$red-1: rgb(230, 36, 36);
+$red-2: rgb(255, 24, 24);
+$red-3: rgb(247, 162, 162);
+
+$yellow-1: #fbff23;
+$yellow-2: #f4f5c5;
+
 $gold: #f5d020;
-$yellow-light: #f4f5c5;
-$green: rgb(39, 170, 39);
-$green-light-1: rgb(155, 192, 155);
+
+$green-1: rgb(39, 170, 39);
+$green-2: rgb(155, 192, 155);
+
+$blue-1: #6CB4EE;
+$blue-2: #318CE7;
+$blue-3: #007FFF;
+$blue-4: #0066b2;
 
 $facebook: #3b5998;
 $instagram: #FD1D1D;
 $twitter: #1dc;
 
-$blue: #6CB4EE;
-$blue-2: #318CE7;
-$blue-3: #007FFF;
-$blue-4: #0066b2;
+$blue-gradient-1: linear-gradient(to right, $blue-3, $blue-4);
+$blue-gradient-2: linear-gradient(to right, $blue-3, $blue-1);
+$blue-gradient-2--light: linear-gradient(to right, rgb(38, 147, 255), #2977b3);

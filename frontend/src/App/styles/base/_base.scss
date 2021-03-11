@@ -1,20 +1,25 @@
 :root {
-  --grey-dark-0: #080808;
-  --grey-dark-1: #181818;
-  --grey-dark-2: #282828;
-  --grey-dark-3: #383838;
-  --grey-dark-4: #484848;
+  --grey-0: #080808;
+  --grey-1: #181818;
+  --grey-2: #282828;
+  --grey-3: #383838;
+  --grey-4: #484848;
 
-  --grey-light-1: #585858;
-  --grey-light-2: #686868;
-  --grey-light-3: #787878;
-  --grey-light-4: #888888;
-  --grey-light-5: #989898;
+  --grey-5: #585858;
+  --grey-6: #686868;
+  --grey-7: #787878;
+  --grey-8: #888888;
+  --grey-9: #989898;
 
-  --grey-light-6: #D0D0D0;
-  --grey-light-7:#E0E0E0;
-  --grey-light-8:#F0F0F0;
-  --grey-light-9:hsl(0, 0%, 96%);
+  --grey-10: #D0D0D0;
+  --grey-11:#E0E0E0;
+  --grey-12:#F0F0F0;
+  --grey-13:hsl(0, 0%, 96%);
+
+  --blue: #6CB4EE;
+  --blue-2: #318CE7;
+  --blue-3: #007FFF;
+  --blue-4: #0066b2;
 }
 
 /* --------------------------------------------------------------------- */
@@ -43,8 +48,12 @@ body {
 a {
   text-decoration: none;
   color: inherit;
- }
+}
 
 li {
   list-style-type: none;
+}
+
+textarea {
+  resize: none;
 }

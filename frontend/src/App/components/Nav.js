@@ -7,44 +7,124 @@ import HoverNavLink from "../components/HoverNavLink"
 import useHover from "../hooks/useHover"
 
 const activeStyle = {
-  color: "var(--old-blue-2)",
+  color: "var(--blue-4)",
+  fill: "var(--blue-4)",
   backgroundColor: "var(--old-blue-2-opacity-2)",
-  border: "1px dotted var(--old-blue-2)",
-  fontWeight: 900,
+  borderLeft: "4px solid var(--blue-3)",
+  // fontWeight: 900,
 };
 
 function Nav({ history }) {
-  const [hovering, attrs] = useHover();
+  const [hoveringHome, setHoveringHome] = React.useState(false);
+  const [hoveringAbout, setHoveringAbout] = React.useState(false);
+  const [hoveringSkills, setHoveringSkills] = React.useState(false);
+  const [hoveringProjects, setHoveringProjects] = React.useState(false);
+  const [hoveringContact, setHoveringContact] = React.useState(false);
 
   return (
     <nav className="nav fadeInAnimated--6">
       <ul className="nav__list">
-        <li className="nav__list--item">
-          <HoverNavLink text={"Home"} to={"/"}>
-            <FaHome
-              size={30}
-              fill="var(--grey-light-2)"
-              className="social-media-icon grey-light-7"
-            />
-          </HoverNavLink>
-        </li>
 
-        <li className="nav__list--item">
-          <HoverNavLink text={"About"} to={"/about"}>
+        <NavLink 
+          className="nav__list--item nav__link text-size-5 letter-spacing-sm"
+          exact 
+          to={"/"}
+          activeStyle={activeStyle}
+          onMouseOver={() => setHoveringHome(true)}
+          onMouseLeave={() => setHoveringHome(false)}
+        >
+          {!hoveringHome
+            ?
+              <FaHome
+                size={30}
+                // fill={!activeStyle ? "var(--grey-6)" : "var(--blue-4)"}
+                // fill="var(--grey-6)"
+                className="nav__icon grey-11"
+              />
+            :
+              <span className="nav__hovering--text">Home</span>
+          }
+        </NavLink>
+
+        <NavLink 
+          className="nav__list--item nav__link text-size-5 letter-spacing-sm"
+          to={"/about"}
+          activeStyle={activeStyle}
+          onMouseOver={() => setHoveringAbout(true)}
+          onMouseLeave={() => setHoveringAbout(false)}
+        >
+          {!hoveringAbout
+            ?
             <FaUser
               size={30}
-              fill="var(--grey-light-2)"
-              className="social-media-icon grey-light-7"
+              className="nav__icon grey-11"
             />
-          </HoverNavLink>
-        </li>
+            :
+            <span className="nav__hovering--text">About</span>
+          }
+        </NavLink>
 
-        <li className="nav__list--item">
+        <NavLink
+          className="nav__list--item nav__link text-size-5 letter-spacing-sm"
+          to={"/skills"}
+          activeStyle={activeStyle}
+          onMouseOver={() => setHoveringSkills(true)}
+          onMouseLeave={() => setHoveringSkills(false)}
+        >
+          {!hoveringSkills
+            ?
+            <FaCog
+              size={30}
+              className="nav__icon grey-11"
+            />
+            :
+            <span className="nav__hovering--text">Skills</span>
+          }
+        </NavLink>
+
+        <NavLink
+          className="nav__list--item nav__link text-size-5 letter-spacing-sm"
+          to={"/projects"}
+          activeStyle={activeStyle}
+          onMouseOver={() => setHoveringProjects(true)}
+          onMouseLeave={() => setHoveringProjects(false)}
+        >
+          {!hoveringProjects
+            ?
+            <FaFolder
+              size={30}
+              className="nav__icon grey-11"
+            />
+            :
+            <span className="nav__hovering--text">Projects</span>
+          }
+        </NavLink>
+
+        <NavLink
+          className="nav__list--item nav__link text-size-5 letter-spacing-sm"
+          to={"/contact"}
+          activeStyle={activeStyle}
+          onMouseOver={() => setHoveringContact(true)}
+          onMouseLeave={() => setHoveringContact(false)}
+        >
+          {!hoveringContact
+            ?
+            <FaEnvelope
+              size={30}
+              className="nav__icon grey-11"
+            />
+            :
+            <span className="nav__hovering--text">Contact</span>
+          }
+        </NavLink>
+
+
+        {/* <li className="nav__list--item">
           <HoverNavLink text={"Skills"} to={"/skills"}>
             <FaCog
               size={30}
-              fill="var(--grey-light-2)"
-              className="social-media-icon grey-light-7"
+              fill="var(--grey-6)"
+              className="nav__icon grey-11"
             />
           </HoverNavLink>
         </li>
@@ -53,21 +133,21 @@ function Nav({ history }) {
           <HoverNavLink text={"Projects"} to={"/projects"}>
             <FaFolder
               size={30}
-              fill="var(--grey-light-2)"
-              className="social-media-icon grey-light-7"
+              fill="var(--grey-6)"
+              className="nav__icon grey-11"
             />
           </HoverNavLink>
         </li>
 
-        <li className="nav__list--item" {...attrs}>
+        <li className="nav__list--item">
           <HoverNavLink text={"Contact"} to={"/contact"}>
             <FaEnvelope
               size={30}
-              fill="var(--grey-light-2)"
-              className="social-media-icon grey-light-7"
+              fill="var(--grey-6)"
+              className="nav__icon grey-11"
             />
           </HoverNavLink>
-        </li>
+        </li> */}
       </ul>
 
       <ul className="nav__social-media-list">
@@ -75,8 +155,8 @@ function Nav({ history }) {
           <a href="#">
             <FaLinkedin
               size={30}
-              fill="var(--grey-light-2)"
-              className="social-media-icon grey-light-7"
+              fill="var(--grey-6)"
+              className="nav__icon grey-11"
             />
           </a>
         </li>
@@ -84,8 +164,8 @@ function Nav({ history }) {
           <a href="https://github.com/dtkellogg">
             <FaGithub
               size={30}
-              fill="var(--grey-light-2)"
-              className="social-media-icon grey-light-7"
+              fill="var(--grey-6)"
+              className="nav__icon grey-11"
             />
           </a>
         </li>

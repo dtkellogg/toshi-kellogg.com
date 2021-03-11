@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 // import {FaReact, FaRedux, FaReactRouter, FaNodeJs, FaCss3Alt, FaSass} from "react-icons/fa"
 
@@ -35,18 +35,38 @@ export default function Modal() {
 
 
 
+  useEffect(() => {
+    // add when mounted
+    document.addEventListener("click", handleClick);
+    // return function to be called when unmounted
+    return () => {
+      document.removeEventListener("click", handleClick);
+    };
+  }, []);
+
+  const handleClick = e => {
+    if (node.current.contains(e.target)) {
+      // inside click
+      return;
+    }
+  // outside click 
+    dispatch({ type: MODAL_SETPROJECT_RESET })
+    dispatch(modalToggleOpen());
+};
 
 
   console.log(url)
   // console.log(modifiedName)
 
+  const node = useRef();
+
 
     // const [modalOpen, setModalOpen] = useState(true)
-  const handleModal = (e) => {
-    e.preventDefault();
-    dispatch({ type: MODAL_SETPROJECT_RESET })
-    dispatch(modalToggleOpen());
-  };
+  // const handleModal = (e) => {
+  //   e.preventDefault();
+  //   dispatch({ type: MODAL_SETPROJECT_RESET })
+  //   dispatch(modalToggleOpen());
+  // };
 
   // if (name) {
   //   const modifiedName = name.split(" ").join("").toLowerCase();
@@ -63,11 +83,13 @@ export default function Modal() {
             : { opacity: "1", backgroundColor: "rgba(0, 0, 0, 0.685)" }
         }
       >
-          <button className="btn__modal--close" onClick={(e) => handleModal(e)}>
-            X
-          </button>
+        <button className="btn__modal--close" 
+        // onClick={(e) => handleModal(e)}
+        >
+          X
+        </button>
 
-        <div className="modal__container">
+        <div className="modal__container" ref={node}>
           <div className="modal__container--top">
             <div className="modal__title text-size-2">{name}</div>
             {/* <div className="modal__video"> */}
@@ -117,12 +139,6 @@ export default function Modal() {
                 <button className="modal__url--btn">Launch Application</button>
               </a>
             </div>
-            {/* <button
-              className="modal__back--btn btn--2"
-              onClick={(e) => handleModal(e)}
-            >
-              Back
-            </button> */}
           </div>
         </div>
       </div>

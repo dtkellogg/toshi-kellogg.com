@@ -21,7 +21,7 @@
   height: 8px;
   background: transparent;
   border-radius: 100%;
-  box-shadow: $blue -14px -14px 0 7px, $blue-2 14px -14px 0 7px, $blue-3 14px 14px 0 7px, $blue-4 -14px 14px 0 7px;
+  box-shadow: $blue-1 -14px -14px 0 7px, $blue-2 14px -14px 0 7px, $blue-3 14px 14px 0 7px, $blue-4 -14px 14px 0 7px;
   // box-shadow: #f86 -14px -14px 0 7px, #fc6 14px -14px 0 7px, #6d7 14px 14px 0 7px, #4ae -14px 14px 0 7px;
   animation: dots-loader 5s infinite ease-in-out;
   transform-origin: 50% 50%;
@@ -31,55 +31,55 @@
 
 @keyframes dots-loader {
   0% {
-    box-shadow: $blue -14px -14px 0 7px, $blue-2 14px -14px 0 7px, $blue-3 14px 14px 0 7px, $blue-4 -14px 14px 0 7px;
+    box-shadow: $blue-1 -14px -14px 0 7px, $blue-2 14px -14px 0 7px, $blue-3 14px 14px 0 7px, $blue-4 -14px 14px 0 7px;
     // box-shadow: #f86 -14px -14px 0 7px, #fc6 14px -14px 0 7px, #6d7 14px 14px 0 7px, #4ae -14px 14px 0 7px;
   }
   8.33% {
-    box-shadow: $blue 14px -14px 0 7px, $blue-2 14px -14px 0 7px, $blue-3 14px 14px 0 7px, $blue-4 -14px 14px 0 7px;
+    box-shadow: $blue-1 14px -14px 0 7px, $blue-2 14px -14px 0 7px, $blue-3 14px 14px 0 7px, $blue-4 -14px 14px 0 7px;
     // box-shadow: #f86 14px -14px 0 7px, #fc6 14px -14px 0 7px, #6d7 14px 14px 0 7px, #4ae -14px 14px 0 7px;
   }
   16.67% {
-    box-shadow: $blue 14px 14px 0 7px, $blue-2 14px 14px 0 7px, $blue-3 14px 14px 0 7px, $blue-4 -14px 14px 0 7px;
+    box-shadow: $blue-1 14px 14px 0 7px, $blue-2 14px 14px 0 7px, $blue-3 14px 14px 0 7px, $blue-4 -14px 14px 0 7px;
     // box-shadow: #f86 14px 14px 0 7px, #fc6 14px 14px 0 7px, #6d7 14px 14px 0 7px, #4ae -14px 14px 0 7px;
   }
   25% {
-    box-shadow: $blue -14px 14px 0 7px, $blue-2 -14px 14px 0 7px, $blue-3 -14px 14px 0 7px, $blue-4 -14px 14px 0 7px;
+    box-shadow: $blue-1 -14px 14px 0 7px, $blue-2 -14px 14px 0 7px, $blue-3 -14px 14px 0 7px, $blue-4 -14px 14px 0 7px;
     // box-shadow: #f86 -14px 14px 0 7px, #fc6 -14px 14px 0 7px, #6d7 -14px 14px 0 7px, #4ae -14px 14px 0 7px;
   }
   33.33% {
-    box-shadow: $blue -14px -14px 0 7px, $blue-2 -14px 14px 0 7px, $blue-3 -14px -14px 0 7px, $blue-4 -14px -14px 0 7px;
+    box-shadow: $blue-1 -14px -14px 0 7px, $blue-2 -14px 14px 0 7px, $blue-3 -14px -14px 0 7px, $blue-4 -14px -14px 0 7px;
     // box-shadow: #f86 -14px -14px 0 7px, #fc6 -14px 14px 0 7px, #6d7 -14px -14px 0 7px, #4ae -14px -14px 0 7px;
   }
   41.67% {
-    box-shadow: $blue 14px -14px 0 7px, $blue-2 -14px 14px 0 7px, $blue-3 -14px -14px 0 7px, $blue-4 14px -14px 0 7px;
+    box-shadow: $blue-1 14px -14px 0 7px, $blue-2 -14px 14px 0 7px, $blue-3 -14px -14px 0 7px, $blue-4 14px -14px 0 7px;
     // box-shadow: #f86 14px -14px 0 7px, #fc6 -14px 14px 0 7px, #6d7 -14px -14px 0 7px, #4ae 14px -14px 0 7px;
   }
   50% {
-    box-shadow: $blue 14px 14px 0 7px, $blue-2 -14px 14px 0 7px, $blue-3 -14px -14px 0 7px, $blue-4 14px -14px 0 7px;
+    box-shadow: $blue-1 14px 14px 0 7px, $blue-2 -14px 14px 0 7px, $blue-3 -14px -14px 0 7px, $blue-4 14px -14px 0 7px;
     // box-shadow: #f86 14px 14px 0 7px, #fc6 -14px 14px 0 7px, #6d7 -14px -14px 0 7px, #4ae 14px -14px 0 7px;
   }
   58.33% {
-    box-shadow: $blue -14px 14px 0 7px, $blue-2 -14px 14px 0 7px, $blue-3 -14px -14px 0 7px, $blue-4 14px -14px 0 7px;
+    box-shadow: $blue-1 -14px 14px 0 7px, $blue-2 -14px 14px 0 7px, $blue-3 -14px -14px 0 7px, $blue-4 14px -14px 0 7px;
     // box-shadow: #f86 -14px 14px 0 7px, #fc6 -14px 14px 0 7px, #6d7 -14px -14px 0 7px, #4ae 14px -14px 0 7px;
   }
   66.67% {
-    box-shadow: $blue -14px -14px 0 7px, $blue-2 -14px -14px 0 7px, $blue-3 -14px -14px 0 7px, $blue-4 14px -14px 0 7px;
+    box-shadow: $blue-1 -14px -14px 0 7px, $blue-2 -14px -14px 0 7px, $blue-3 -14px -14px 0 7px, $blue-4 14px -14px 0 7px;
     // box-shadow: #f86 -14px -14px 0 7px, #fc6 -14px -14px 0 7px, #6d7 -14px -14px 0 7px, #4ae 14px -14px 0 7px;
   }
   75% {
-    box-shadow: $blue 14px -14px 0 7px, $blue-2 14px -14px 0 7px, $blue-3 14px -14px 0 7px, $blue-4 14px -14px 0 7px;
+    box-shadow: $blue-1 14px -14px 0 7px, $blue-2 14px -14px 0 7px, $blue-3 14px -14px 0 7px, $blue-4 14px -14px 0 7px;
     // box-shadow: #f86 14px -14px 0 7px, #fc6 14px -14px 0 7px, #6d7 14px -14px 0 7px, #4ae 14px -14px 0 7px;
   }
   83.33% {
-    box-shadow: $blue 14px 14px 0 7px, $blue-2 14px -14px 0 7px, $blue-3 14px 14px 0 7px, $blue-4 14px 14px 0 7px;
+    box-shadow: $blue-1 14px 14px 0 7px, $blue-2 14px -14px 0 7px, $blue-3 14px 14px 0 7px, $blue-4 14px 14px 0 7px;
     // box-shadow: #f86 14px 14px 0 7px, #fc6 14px -14px 0 7px, #6d7 14px 14px 0 7px, #4ae 14px 14px 0 7px;
   }
   91.67% {
-    box-shadow: $blue -14px 14px 0 7px, $blue-2 14px -14px 0 7px, $blue-3 14px 14px 0 7px, $blue-4 -14px 14px 0 7px;
+    box-shadow: $blue-1 -14px 14px 0 7px, $blue-2 14px -14px 0 7px, $blue-3 14px 14px 0 7px, $blue-4 -14px 14px 0 7px;
     // box-shadow: #f86 -14px 14px 0 7px, #fc6 14px -14px 0 7px, #6d7 14px 14px 0 7px, #4ae -14px 14px 0 7px;
   }
   100% {
-    box-shadow: $blue -14px -14px 0 7px, $blue-2 14px -14px 0 7px, $blue-3 14px 14px 0 7px, $blue-4 -14px 14px 0 7px;
+    box-shadow: $blue-1 -14px -14px 0 7px, $blue-2 14px -14px 0 7px, $blue-3 14px 14px 0 7px, $blue-4 -14px 14px 0 7px;
     // box-shadow: #f86 -14px -14px 0 7px, #fc6 14px -14px 0 7px, #6d7 14px 14px 0 7px, #4ae -14px 14px 0 7px;
   }
 }

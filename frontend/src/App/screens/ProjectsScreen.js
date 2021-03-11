@@ -76,7 +76,7 @@ function ProjectsScreen() {
             </span>
             <div className="projects__details">
               <button
-                className="btn__expand-project-details"
+                className="btn__project-details"
                 onClick={() => handleModal(project.name)}
               >
                 Details
@@ -89,14 +89,14 @@ function ProjectsScreen() {
             <img
               src={kelloggTutoring}
               alt="Kellogg Tutoring img"
-              className="projects__photo projects__photo--1 fadeInAnimated--1"
+              className="projects__photo projects__photo--1 fadeInAnimated--0"
             />
             {/* <span className="projects__details--title text-size-2">
               Kellogg Tutoring
             </span> */}
             {/* <div className="projects__details"> */}
               <button
-                className="btn__expand-project-details"
+                className="btn__project-details"
                 onClick={(e) => handleModal(e, projects[0]._id)}
                 // onClick={() => handleModal("Kellogg Tutoring")}
               >
@@ -112,14 +112,14 @@ function ProjectsScreen() {
           <img
             src={nightMarket}
             alt="Night Market img"
-            className="projects__photo projects__photo--2 fadeInAnimated--2"
+            className="projects__photo projects__photo--2 fadeInAnimated--1"
           />
           {/* <span className="projects__details--title text-size-2">
             Davis Night Market
           </span> */}
           {/* <div className="projects__details"> */}
             <button
-              className="btn__expand-project-details"
+              className="btn__project-details"
               onClick={(e) => handleModal(e, projects[1]._id)}
             >
               Details
@@ -133,14 +133,14 @@ function ProjectsScreen() {
           <img
             src={thalassa}
             alt="Thalassa Dive Resort img"
-            className="projects__photo projects__photo--3 fadeInAnimated--3"
+            className="projects__photo projects__photo--3 fadeInAnimated--2"
           />
           {/* <span className="projects__details--title text-size-2">
             Thalassa Resort
           </span> */}
           {/* <div className="projects__details"> */}
             <button
-              className="btn__expand-project-details"
+              className="btn__project-details"
               onClick={(e) => handleModal(e, projects[2]._id)}
             >
               Details
@@ -154,14 +154,14 @@ function ProjectsScreen() {
           <img
             src={indo2015}
             alt="Indo 2015 img"
-            className="projects__photo projects__photo--4 fadeInAnimated--4"
+            className="projects__photo projects__photo--4 fadeInAnimated--3"
           />
           {/* <span className="projects__details--title text-size-2">
             Indonesia Trip (2015)
           </span> */}
           {/* <div className="projects__details"> */}
             <button
-              className="btn__expand-project-details"
+              className="btn__project-details"
               onClick={(e) => handleModal(e, projects[3]._id)}
             >
               Details
@@ -175,14 +175,14 @@ function ProjectsScreen() {
           <img
             src={hackerNewsClone}
             alt="Hacker News Clone img"
-            className="projects__photo projects__photo--5 fadeInAnimated--1"
+            className="projects__photo projects__photo--5 fadeInAnimated--0"
           />
           {/* <span className="projects__details--title text-size-2">
             Hackernews Clone
           </span> */}
           {/* <div className="projects__details"> */}
             <button
-              className="btn__expand-project-details"
+              className="btn__project-details"
               onClick={(e) => handleModal(e, projects[4]._id)}
             >
               Details
@@ -196,14 +196,14 @@ function ProjectsScreen() {
           <img
             src={githubBattle}
             alt="Github Battle img"
-            className="projects__photo projects__photo--6 fadeInAnimated--2"
+            className="projects__photo projects__photo--6 fadeInAnimated--1"
           />
           {/* <span className="projects__details--title text-size-2">
             Github Battle
           </span> */}
           {/* <div className="projects__details"> */}
             <button
-              className="btn__expand-project-details"
+              className="btn__project-details"
               onClick={(e) => handleModal(e, projects[5]._id)}
             >
               Details
@@ -217,12 +217,12 @@ function ProjectsScreen() {
           <img
             src={tetris}
             alt="Tetris img"
-            className="projects__photo projects__photo--7 fadeInAnimated--3"
+            className="projects__photo projects__photo--7 fadeInAnimated--2"
           />
           {/* <span className="projects__details--title text-size-2">Tetris</span> */}
           {/* <div className="projects__details"> */}
             <button
-              className="btn__expand-project-details"
+              className="btn__project-details"
               onClick={(e) => handleModal(e, projects[6]._id)}
             >
               Details
@@ -236,12 +236,12 @@ function ProjectsScreen() {
           <img
             src={hangman}
             alt="Hangman img"
-            className="projects__photo projects__photo--8 fadeInAnimated--4"
+            className="projects__photo projects__photo--8 fadeInAnimated--3"
           />
           {/* <span className="projects__details--title text-size-2">Hangman</span> */}
           {/* <div className="projects__details"> */}
             <button
-              className="btn__expand-project-details"
+              className="btn__project-details"
               onClick={(e) => handleModal(e, projects[7]._id)}
             >
               Details
@@ -255,12 +255,12 @@ function ProjectsScreen() {
           <img
             src={omnifood}
             alt="Omnifood img"
-            className="projects__photo projects__photo--9 fadeInAnimated--1"
+            className="projects__photo projects__photo--9 fadeInAnimated--0"
           />
           {/* <span className="projects__details--title text-size-2">Omnifood</span> */}
           {/* <div className="projects__details"> */}
             <button
-              className="btn__expand-project-details"
+              className="btn__project-details"
               onClick={(e) => handleModal(e, projects[8]._id)}
             >
               Details
@@ -274,12 +274,12 @@ function ProjectsScreen() {
           <img
             src={nexter}
             alt="Nexter img"
-            className="projects__photo projects__photo--10 fadeInAnimated--2"
+            className="projects__photo projects__photo--10 fadeInAnimated--1"
           />
           {/* <span className="projects__details--title text-size-2">Nexter</span> */}
           {/* <div className="projects__details"> */}
             <button
-              className="btn__expand-project-details"
+              className="btn__project-details"
               onClick={(e) => handleModal(e, projects[9]._id)}
             >
               Details
@@ -293,12 +293,12 @@ function ProjectsScreen() {
           <img
             src={natours}
             alt="Natours img"
-            className="projects__photo projects__photo--11 fadeInAnimated--3"
+            className="projects__photo projects__photo--11 fadeInAnimated--2"
           />
           {/* <span className="projects__details--title text-size-2">Natours</span> */}
           {/* <div className="projects__details"> */}
             <button
-              className="btn__expand-project-details"
+              className="btn__project-details"
               onClick={(e) => handleModal(e, projects[10]._id)}
             >
               Details
@@ -312,14 +312,14 @@ function ProjectsScreen() {
           <img
             src={hashBasketball}
             alt="Hashbasketball img"
-            className="projects__photo projects__photo--12 fadeInAnimated--4"
+            className="projects__photo projects__photo--12 fadeInAnimated--3"
           />
           {/* <span className="projects__details--title text-size-2"> */}
             {/* Hash Basketball */}
           {/* </span> */}
           {/* <div className="projects__details"> */}
             <button
-              className="btn__expand-project-details"
+              className="btn__project-details"
               onClick={(e) => handleModal(e, projects[11]._id)}
             >
               Details

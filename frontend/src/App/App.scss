@@ -1,6 +1,6 @@
 @import "styles/abstracts/animations";
 // @import "styles/abstracts/functions";
-// @import "styles/abstracts/mixins";
+@import "styles/abstracts/mixins";
 @import "styles/abstracts/variables";
 
 @import "styles/base/base";
@@ -12,6 +12,7 @@
 @import "styles/components/map";
 @import "styles/components/nav";
 @import "styles/components/loading";
+@import "styles/components/skillsFigure";
 
 @import "styles/layout/containers";
 
