@@ -1,19 +1,35 @@
-import React from "react";
+import React, { useEffect } from "react";
+
+import { useToasts } from "react-toast-notifications";
 
 function HomeScreen() {
-  // React.useEffect(() => {
-  //     document.title = "Toshi Kellogg | Developer";
-  // });
+
+  useEffect(() => {
+    
+    window.setTimeout(() => {
+      addToast(`I am currently looking for web-development positions. For inquiries, please message me via the Contact Page.`, {
+        appearance: "info",
+        autoDismiss: true,
+      });
+    }, 6500);
+
+  }, [])
+
+  const { addToast } = useToasts();
 
   return (
     <div className="home">
-      <div className="fadeInAnimated--0 home__text home__text--1 text-size-3">Hello,</div>
-      <div className="home__text home__text--2 text-size-0">
-        <span className="fadeInAnimated--1 home__text--im">I'm</span>
-        <span className="fadeInAnimated--1-5 home__text--name">Toshi</span>
+      <div className="home__container--left">
+        <div className="fadeInAnimated--0 home__text home__text--1 text-size-3">Hello,</div>
+        <div className="home__text home__text--2 text-size-0">
+          <span className="fadeInAnimated--1 home__text--im">I'm</span>
+          <span className="fadeInAnimated--1-5 home__text--name">Toshi</span>
+        </div>
+        <div className="fadeInAnimated--2-25 home__text home__text--3 text-size-1">I like to build things for the web.</div>
+        <div className="fadeInAnimated--3 home__text home__text--5 text-size-3">I am a novice web developer based in San Francisco, specializing in MERN stacks.</div>
       </div>
-      <div className="fadeInAnimated--2-25 home__text home__text--3 text-size-1">I like to build things for the web.</div>
-      <div className="fadeInAnimated--3 home__text home__text--5 text-size-3">I am a novice web developer based in San Francisco, specializing in MERN stacks.</div>
+
+      <div className="home__container--right text-size-tk home__text--tk fadeInAnimated--4">TK</div>
     </div>
   );
 }

@@ -8,11 +8,20 @@ import HoverNavLink from "../components/HoverNavLink"
 
 // hooks
 import useHover from "../hooks/useHover"
+import useWindowDimensions from '../hooks/useWindowDimensions'
 
-const activeStyle = {
+const activeStyleOver950 = {
   color: "var(--blue-4)",
   fill: "var(--blue-4)",
   borderLeft: "4px solid var(--blue-3)",
+  transition: "all 0.01s"
+};
+
+const activeStyleUnder950 = {
+  color: "var(--blue-4)",
+  fill: "var(--blue-4)",
+  borderTop: "5px solid var(--blue-3)",
+  transition: "all 0.01s"
 };
 
 function Nav({ history }) {
@@ -22,6 +31,8 @@ function Nav({ history }) {
   const [hoveringProjects, setHoveringProjects] = useState(false);
   const [hoveringContact, setHoveringContact] = useState(false);
 
+  const { width } = useWindowDimensions()
+
   return (
     <nav className="nav fadeInAnimated--6">
       <ul className="nav__list">
@@ -30,7 +41,7 @@ function Nav({ history }) {
           className="nav__list--item nav__link text-size-5 letter-spacing-sm"
           exact 
           to={"/"}
-          activeStyle={activeStyle}
+          activeStyle={width > 950 ? activeStyleOver950 : activeStyleUnder950}
           onMouseOver={() => setHoveringHome(true)}
           onMouseLeave={() => setHoveringHome(false)}
         >
@@ -48,7 +59,7 @@ function Nav({ history }) {
         <NavLink 
           className="nav__list--item nav__link text-size-5 letter-spacing-sm"
           to={"/about"}
-          activeStyle={activeStyle}
+          activeStyle={width > 950 ? activeStyleOver950 : activeStyleUnder950}
           onMouseOver={() => setHoveringAbout(true)}
           onMouseLeave={() => setHoveringAbout(false)}
         >
@@ -66,7 +77,7 @@ function Nav({ history }) {
         <NavLink
           className="nav__list--item nav__link text-size-5 letter-spacing-sm"
           to={"/skills"}
-          activeStyle={activeStyle}
+          activeStyle={width > 950 ? activeStyleOver950 : activeStyleUnder950}
           onMouseOver={() => setHoveringSkills(true)}
           onMouseLeave={() => setHoveringSkills(false)}
         >
@@ -84,7 +95,7 @@ function Nav({ history }) {
         <NavLink
           className="nav__list--item nav__link text-size-5 letter-spacing-sm"
           to={"/projects"}
-          activeStyle={activeStyle}
+          activeStyle={width > 950 ? activeStyleOver950 : activeStyleUnder950}
           onMouseOver={() => setHoveringProjects(true)}
           onMouseLeave={() => setHoveringProjects(false)}
         >
@@ -102,7 +113,7 @@ function Nav({ history }) {
         <NavLink
           className="nav__list--item nav__link text-size-5 letter-spacing-sm"
           to={"/contact"}
-          activeStyle={activeStyle}
+          activeStyle={width > 950 ? activeStyleOver950 : activeStyleUnder950}
           onMouseOver={() => setHoveringContact(true)}
           onMouseLeave={() => setHoveringContact(false)}
         >

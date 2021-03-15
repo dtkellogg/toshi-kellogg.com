@@ -38,6 +38,7 @@ export const modalSetProject = (id) => async (dispatch) => {
 
         const { data } = await axios.get(`/api/projects/${id}`);
 
+        console.log(`data from modalSetProject: ${data}`)
         console.log(data)
 
         dispatch({

@@ -17,6 +17,10 @@ const projectSchema = mongoose.Schema({
     type: String,
     required: true,
   },
+  description__3: {
+    type: String,
+    required: true,
+  },
   video: {
     type: String,
     required: true,

@@ -1,19 +1,31 @@
 .contact {
     @include heightWidth100($height: 100vh);
-    @include flexCenterCenter();
+    @include flexCenterCenter($justify-content: space-between);
     padding: 3rem;
 
+    @media (max-width: 950px) {
+        padding: 2.5rem 6.0rem 10rem 6.0rem;
+        @include heightWidth100($width: 100vw);
+        @include flexCenterCenter($flex-direction: column, $justify-content: space-between);
+    }
+
+    @media (max-width: 720px) {
+        padding: 2.5rem 4.0rem 10rem 4.0rem;
+        @include heightWidth100($width: 100vw);
+        @include flexCenterCenter($flex-direction: column, $justify-content: space-between);
+    }
+
     &__header {
+        letter-spacing: .2rem;
         margin-bottom: 2rem;
         text-shadow: 2px 4px 3px rgba(0,0,0,0.25);
         background-image: $blue-gradient-2;
-          -webkit-background-clip: text;
-          color: transparent;
-          letter-spacing: .2rem;
+        -webkit-background-clip: text;
+        color: transparent;
     }
 
     &__paragraph {
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
         line-height: 2.25rem;
         // text-shadow: 2px 4px 3px rgba(0,0,0,0.02);
     }
@@ -22,22 +34,38 @@
 
         &--left {
             @include flexCenterCenter($flex-direction: column, $align-items: flex-start);
-            width: 50%;
+            width: 51rem;
             height: 100%;
+
+            @media (max-width: 1400px) {
+                width: 45rem;
+            }
+
+            @media (max-width: 1250px) {
+                width: 40rem;
+            }
+
+            @media (max-width: 1150px) {
+                width: 35rem;
+            }
+
+            @media (max-width: 950px) {
+                width: 100%;
+                margin-bottom: 5rem;
+            }
         }
 
         &--right {
-            // width: 50%;
-            width: 100%;
+            @include flexCenterCenter($flex-direction: column);
+            width: auto;
             height: 100%;
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-            // background: $gold;
+            padding: 3rem;
             overflow: hidden;
+
+            @media (max-width: 950px) {
+                padding: 0;
+                width: 100%;
+            }
         }
     }
 
@@ -49,8 +77,6 @@
         grid-template-rows: repeat(7, 5rem);
         grid-template-columns: repeat(2, 1fr);
         gap: 0.5rem;
-
-        // background: red;
 
         &--element {
             width: 100%;
@@ -69,6 +95,7 @@
             padding: 2rem;
             outline: none;
             font-weight: 400;
+            font-family: 'Sacramento', cursive;
 
             border-radius: 3px;
             border: 1px solid $grey-7;
@@ -115,9 +142,44 @@
     }
 
     &__map {
-        width: 80rem;
-        height: auto;
+        width: 110rem;
+        height: 100%;
         box-shadow: 0.3rem 0.3rem 0.6rem $black;
+
+        @media (max-width: 1800px) {
+            width: 90rem;
+        }
+
+        @media (max-width: 1600px) {
+            width: 70rem;
+        }
+
+        @media (max-width: 1400px) {
+            // width: 50rem;
+        }
+
+        @media (max-width: 1350px) {
+            width: 60rem;
+        }
+
+        @media (max-width: 1250px) {
+            width: 55rem;
+        }
+
+        @media (max-width: 1150px) {
+            width: 50rem;
+        }
+
+        @media (max-width: 1050px) {
+            width: 45rem;
+        }
+
+        @media (max-width: 950px) {
+            height: 60rem;
+            width: 100%;
+        }
+
+        
     }
 
     &__loader {

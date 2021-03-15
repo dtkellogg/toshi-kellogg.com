@@ -15,6 +15,21 @@
         justify-items: center;
 
         background-color: $white;
+
+        @media (max-width: 950px) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem);
+            height: 200vh;
+        }
+
+        @media (max-width: 950px) {
+            height: 200%;
+        }
+
+        @media (max-width: 500px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem);
+        }
     }
 
     &__details {
@@ -55,6 +70,7 @@
 
     &__card {
         @include flexCenterCenter();
+        @include heightWidth100();
         max-width: fit-content;
 
         &:hover .projects__photo {
@@ -145,6 +161,24 @@
 
             &::after {
                 color: $white;
+            }
+            @media (max-width: 1100px) {
+                transform: scale(.8);
+            }
+            @media (max-width: 1000px) {
+                transform: scale(.75);
+            }
+            @media (max-width: 950px) {
+                transform: scale(0.8);
+            }
+            @media (max-width: 800px) {
+                transform: scale(0.7);
+            }
+            @media (max-width: 700px) {
+                transform: scale(0.6);
+            }
+            @media (max-width: 600px) {
+                transform: scale(0.5);
             }
         }
     }

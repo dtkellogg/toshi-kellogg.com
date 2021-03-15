@@ -1,7 +1,24 @@
 .home {
     @include heightWidth100($height: 100vh);
-    @include flexCenterCenter($flex-direction: column, $align-items: flex-start);
+    @include flexCenterCenter($justify-content: space-between);
     padding: 3rem;
+    position: relative;
+
+    &__container {
+        &--left {
+            @include flexCenterCenter($flex-direction: column, $align-items: flex-start);
+        }
+
+        &--right {
+            width: 50%;
+            text-align: center;
+            z-index: 1;
+            position: absolute;
+            left: 65%;
+            left: 60vw;
+            top: 30vh;
+        }
+    }
 
     &__text {
         margin: 1rem 0;
@@ -11,23 +28,41 @@
           -webkit-background-clip: text;
           color: transparent;
           letter-spacing: .2rem;
+          font-family: 'Sacramento', cursive;
         }
 
         &--im {
             margin-right: 1.5rem;
+            font-family: 'Sacramento', cursive;
+            // font-weight: 300;
         }
 
         &--1 {
         }
 
         &--2 {
-            text-shadow: 2px 4px 3px rgba(0,0,0,0.15)
+            text-shadow: 2px 4px 3px rgba(0,0,0,0.15);
         }
 
         &--3 {
         }
 
         &--4 {
+        }
+        &--5 {
+            z-index: 999999;
+            white-space: nowrap;
+        }
+
+        &--tk {
+          background-image: $blue-gradient-1;
+          -webkit-background-clip: text;
+          color: transparent;
+          letter-spacing: .2rem;
+          font-family: 'Sacramento', cursive;
+          transform: scale(3.0);
+          height: 40rem;
+          text-shadow: 2px 4px 3px rgba(0,0,0,0.15)
         }
     }
 }

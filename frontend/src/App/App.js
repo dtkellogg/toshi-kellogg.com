@@ -8,12 +8,16 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 import Nav from "./components/Nav";
 import Loading from "./components/Loading";
 
+// react-toast-notifications
+import { ToastProvider } from "react-toast-notifications";
+
 // screens   
 const Home = React.lazy(() => import("./screens/HomeScreen"));
 const About = React.lazy(() => import("./screens/AboutScreen"));
 const Skills = React.lazy(() => import("./screens/SkillsScreen"));
 const Projects = React.lazy(() => import("./screens/ProjectsScreen"));
 const Contact = React.lazy(() => import("./screens/ContactScreen"));
+
 
 export default function App() {
     const location = useLocation();
@@ -29,7 +33,7 @@ export default function App() {
 
 
     return (
-      <>
+      <ToastProvider>
           <div className="container__main">
             <Nav />
             <div className="container__body">
@@ -52,6 +56,6 @@ export default function App() {
           }
           </div>
         </div>
-      </>
+      </ToastProvider>
     );
 }

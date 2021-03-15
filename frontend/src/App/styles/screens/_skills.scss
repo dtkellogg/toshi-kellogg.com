@@ -5,15 +5,30 @@
     display: flex;
     align-items: center;
 
+    @media (max-width: 950px) {
+        flex-direction: column;
+        height: 100%;
+    }
+
     &__container {
         &--left {
             @include flexCenterCenter($flex-direction: column, $align-items: flex-start, $justify-content: flex-end);
             width: 50%;
+
+            @media (max-width: 950px) {
+                width: 100%;
+                margin-bottom: 10rem;
+                @include flexCenterCenter($flex-direction: column)
+            }
         }
 
         &--right {
             width: 50%;
             text-align: center;
+
+            @media (max-width: 950px) {
+                width: 100%;
+            }
         }
     }
 
@@ -43,6 +58,12 @@
 
         }
 
+    }
+
+    &__blue-text {
+        background-image: $blue-gradient-1;
+        -webkit-background-clip: text;
+        color: transparent;
     }
 
 }

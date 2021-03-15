@@ -31,13 +31,17 @@ export default function Modal() {
 
   const modalSetProject = useSelector((state) => state.modalSetProject);
   const { project } = modalSetProject;
-  const { description__1, description__2, github, name, skills, video, url } = project
+  const { description__1, description__2, description__3, github, name, skills, 
+    // video, 
+    url } = project
 
 
 
   useEffect(() => {
     // add when mounted
-    document.addEventListener("click", handleClick);
+    window.setTimeout(() => {
+      document.addEventListener("click", handleClick);
+    }, 100);
     // return function to be called when unmounted
     return () => {
       document.removeEventListener("click", handleClick);
@@ -94,36 +98,41 @@ export default function Modal() {
             <div className="modal__title text-size-2">{name}</div>
             {/* <div className="modal__video"> */}
 
-            <video
+            {/* <video
               src={kelloggtutoring__video}
               // src={`${modifiedName}__video`}
+              // controls="controls"
               width="600"
               height="300"
-              controls="controls"
-              autoplay="true"
-              loop="true"
               className="modal__video"
-            />
+              controls={false}
+              autoPlay={true}
+              loop={true}
+              muted={true}
+            /> */}
             {/* </div> */}
 
             {skills && (
               <div className="modal__skills">
                 {skills.map((skill) => (
-                  <div className="modal__skills--el-container text-size-5">
+                  <div className="modal__skills--container ">
                     <span
-                      className="iconify"
+                      className="iconify modal__skills--icon"
                       data-icon={icons[skill]}
                       data-inline="false"
-                      
+                      style={{fontSize: "1.6rem"}}
                     ></span>
-                    <div className="modal__skills--text">{skill}</div>
+                    <div className="modal__skills--text text-size-5">{skill}</div>
                   </div>
                 ))}
               </div>
             )}
 
-            <div className="modal__paragraph--1 text-size-5">{description__1}</div>
-            <div className="modal__paragraph--2 text-size-5">{description__2}</div>
+            <div className="modal__paragraph--container">
+              <focus className="modal__subheader--1 text-size-3">Focus of project:</focus><div className="modal__paragraph--1 text-size-5">{description__1}</div>
+              <focus className="modal__subheader--2 text-size-3">What I learned:</focus><div className="modal__paragraph--2 text-size-5">{description__2}</div>
+              <focus className="modal__subheader--3 text-size-3">About the code:</focus><div className="modal__paragraph--3 text-size-5">{description__3}</div>
+            </div>
           </div>
 
           <div className="modal__container--bottom">

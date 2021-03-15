@@ -2,6 +2,18 @@
   @include flexCenterCenter($flex-direction: column, $justify-content: space-around);
   margin: 3rem 0;
   width: 100%;
+  z-index: 999999999999999;
+
+  @media (max-width: 950px) {
+    @include flexCenterCenter($flex-direction: row, $justify-content: space-around);
+    margin: 0 3rem 0 0;
+    height: 100%;
+    width: auto;
+  }
+
+  @media (max-width: 550px) {
+    margin: 0;
+  }
 
   &__list {
     @include heightWidth100();
@@ -10,14 +22,28 @@
     display: flex;
     flex-direction: column;
 
+    @media (max-width: 950px) {
+      flex-direction: row;
+      align-items: center;
+    }
+
     &--item {
       margin: 2rem 0;
       padding: 0.5rem 0;
       border-left: 4px solid $white;
       height: 4.25rem;
-      transition: all 0.2s;
+      // transition: all 0.2s;
       fill: $grey-6;
       color: $grey-6;
+
+      @media (max-width: 950px) {
+        margin: 0 2rem;
+        padding: 0 0.5rem;
+        height: 100%;
+        width: 4.25rem;
+        border-left: none;
+        border-top: 5px solid $white;
+      }
     }
   }
 
@@ -26,10 +52,25 @@
 
     &--item {
       margin-top: 0.75rem;
+      border-left: 5px solid $white;
 
       &:hover .social-media-icon {
         color: $black;
       }
+
+      @media (max-width: 950px) {
+        margin: 0 1.5rem 0 0;
+        border-top: 5px solid $white;
+        border-left: none;
+      }
+    }
+
+    @media (max-width: 950px) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
     }
 
   }

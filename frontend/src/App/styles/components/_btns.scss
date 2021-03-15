@@ -1,6 +1,7 @@
 .btn {
   
   &__project-details {
+    font-family: inherit;
     height: 10rem;
     width: 10rem;
     line-height: 10rem;
@@ -46,6 +47,10 @@
     //   border: 1px solid $red-1;
 
     // }
+
+    @media (max-width: 950px) {
+      top: 39%;
+    }
   }
 
   &__contact-form {
@@ -60,24 +65,14 @@
     color: $grey-4;
     border: 1px solid $grey-7;
     background-color: $grey-11;
-    // border: 1px solid $blue-3;
-    // background-color: $blue-1;
     box-shadow: 0.05rem 0.05rem .1rem $black;
 
     display: flex;
     align-items: center;
     justify-content: center;
-
-    &:hover {
-      background-color: $grey-12;
-      color: $grey-3;
-
-      border: 1px solid $blue-3;
-      background-color: $blue-1;
-
-      transition: 0.15s;
-    }
-
+    cursor: pointer;
+    font-family: inherit ;
+    transition: all 0.3s;
   }
 
   &__modal {
@@ -120,6 +115,21 @@
 
         transition: 0.15s;
       }
+    }
+  }
+  &__about-screen {
+    &--left, &--right {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+    
+    &--left {
+
+    }
+
+    &--right {
+
     }
   }
 }
