@@ -3,6 +3,7 @@
     @include flexCenterCenter($justify-content: space-between);
     padding: 3rem;
     position: relative;
+    overflow: hidden;
 
     &__container {
         &--left {
