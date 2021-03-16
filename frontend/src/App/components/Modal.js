@@ -6,8 +6,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { modalToggleOpen } from "../actions/modalActions";
 
 // videos
-import kelloggtutoring__video from '../videos/kelloggtutoring.mov'
-import davisnightmarket__video from '../videos/nightmarket.mov'
+// import kelloggtutoring__video from '../videos/kelloggtutoring.mov'
+// import davisnightmarket__video from '../videos/nightmarket.mov'
 
 // constants
 import { MODAL_SETPROJECT_RESET } from '../constants/modalConstants'
