@@ -90,9 +90,9 @@ const projects = [
   {
     name: "Omnifood",
     skills: ["HTML5", "CSS3", "JavaScript"],
-    description__1: "This project was made following the instruction of Jonas Schmedtmann.",
-    description__2: "It's intended purpose was to practice fundamental web design skills, including basic markup, UI design, and JavaScript animations.",
-    description__3: "#",
+    description__1: "This was my first web development project that incorporated HTML, CSS and JS. It was part of a course by Jonas Schmedtmann.",
+    description__2: "This project gave me hands-on experience to feel more comfortable applying HTML, CSS and JS together in a single application. In regards to HTML, I learned basics such as creating links, making forms and using icons. The CSS helped me solidify my understanding of Flexbox and helped think about how to name classes (not BEM, but still helpful to see someone else’s naming style. The CSS is this course also taught me how to support functionality across all browsers using webkit. The project taught me about basic web design and gave me ideas for future endeavors. The JavaScript taught me how to animate portions of the UI to add a better user experience.",
+    description__3: "The code is composed of two main directories: resources and vendors. The vendors, as I found out here, are code snippets or multimedia that come from external sources. The resources folder holds the CSS and JS code. Everything else is pretty standard.",
     picture: "../img/omnifood.png",
     video: "#",
     github: "https://github.com/dtkellogg/kellogg-omnifood",
