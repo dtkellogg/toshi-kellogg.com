@@ -61,15 +61,18 @@
 
         @media (max-width: 950px) {
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem);
+            grid-template-rows: 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem);
+            // grid-template-rows: minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem);
             height: 200vh;
         }
         @media (max-width: 950px) {
             height: 200%;
         }
         @media (max-width: 500px) {
-			display: block;
+			// display: block;
 			height: 100%;
+
+			@include flexCenterCenter($flex-direction: column);
         }
 	}
 	

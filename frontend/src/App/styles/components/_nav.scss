@@ -44,6 +44,10 @@
         border-left: none;
         border-top: 5px solid $white;
       }
+
+      @media (max-width: 500px) {
+        margin: 0 1rem;
+      }
     }
   }
 
