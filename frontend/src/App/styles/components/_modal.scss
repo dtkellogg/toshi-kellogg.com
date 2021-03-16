@@ -5,27 +5,7 @@
     background-color: rgba(0, 0, 0, 0.685);
     z-index: 9999999999;
 
-    &__container {
-        height: 80vh;
-        width: 50vw;
-        background-color: $white;
-        border-radius: 3rem;
-        transform: translate(50%, 11vh);
-
-        @include flexCenterCenter($flex-direction: column, $justify-content: space-between, $align-items: flex-start);
-
-        &--top {
-            @include heightWidth100();
-            padding: 3rem;
-            overflow: hidden;
-
-            @include flexCenterCenter($flex-direction: column, $justify-content: flex-start);
-        }
-
-        &--bottom {
-            height: 6rem;
-        }
-    }
+    
 
     &__video {
         width: 45rem;

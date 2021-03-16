@@ -95,9 +95,9 @@ function ProjectsScreen() {
         )})} */}
           <div className="projects__item projects__item--1">
             <div className="projects__card">
-              {width > 550 
-                ? (
-                  <>
+              {/* {width > 550  */}
+                {/* ? ( */}
+                  {/* <> */}
                     <img
                       src={kelloggTutoring}
                       alt="Kellogg Tutoring img"
@@ -110,21 +110,21 @@ function ProjectsScreen() {
                     >
                       Details
                     </button>
-                  </>
-                ) : 
-                <button className="" onClick={(e) => handleModal(e, sortedProjects[6]._id)}>
-                Kellogg Tutoring
-              </button>
-              }
+                  {/* </> */}
+                {/* ) :  */}
+                {/* <button className="" onClick={(e) => handleModal(e, sortedProjects[6]._id)}> */}
+                {/* Kellogg Tutoring */}
+              {/* </button> */}
+              {/* } */}
 
             </div>
           </div>
 
           <div className="projects__item projects__item--2">
             <div className="projects__card">
-              {width > 550 
-                ? (
-                  <>
+              {/* {width > 550  */}
+                {/* ? ( */}
+                  {/* <> */}
                     <img
                       src={nightMarket}
                       alt="Night Market img"
@@ -140,20 +140,20 @@ function ProjectsScreen() {
                     >
                       Details
                     </button>
-                  </>
-                ) :
-                <button className="" onClick={(e) => handleModal(e, sortedProjects[1]._id)}>
-                  Night Market
-                </button>
-              }
+                  {/* </> */}
+                {/* ) : */}
+                {/* <button className="" onClick={(e) => handleModal(e, sortedProjects[1]._id)}> */}
+                  {/* Night Market */}
+                {/* </button> */}
+              {/* } */}
             </div>
           </div>
 
           <div className="projects__item projects__item--3">
             <div className="projects__card">
-              {width > 550 
-                ? (
-                  <>
+              {/* {width > 550  */}
+                {/* ? ( */}
+                  {/* <> */}
                     <img
                       src={thalassa}
                       alt="Thalassa Dive Resort img"
@@ -169,20 +169,20 @@ function ProjectsScreen() {
                     >
                       Details
                     </button>
-                  </>
-                ) :
-                <button className="" onClick={(e) => handleModal(e, sortedProjects[1]._id)}>
-                  Thalassa Dive Resort
-                </button>
-              }
+                  {/* </> */}
+                {/* ) : */}
+                {/* <button className="" onClick={(e) => handleModal(e, sortedProjects[1]._id)}> */}
+                  {/* Thalassa Dive Resort */}
+                {/* </button> */}
+              {/* } */}
             </div>
           </div>
 
           <div className="projects__item projects__item--4">
             <div className="projects__card">
-              {width > 550 
-                ? (
-                  <>
+              {/* {width > 550  */}
+                {/* ? ( */}
+                  {/* <> */}
                     <img
                       src={indo2015}
                       alt="Indo 2015 img"
@@ -198,20 +198,20 @@ function ProjectsScreen() {
                     >
                       Details
                     </button>
-                  </>
-                ) :
-                <button className="" onClick={(e) => handleModal(e, sortedProjects[1]._id)}>
-                  Indonesia 2015
-                </button>
-              }
+                  {/* </> */}
+                {/* ) : */}
+                {/* <button className="" onClick={(e) => handleModal(e, sortedProjects[1]._id)}> */}
+                  {/* Indonesia 2015 */}
+                {/* </button> */}
+              {/* } */}
             </div>
           </div>
 
           <div className="projects__item projects__item--5">
             <div className="projects__card">
-              {width > 550 
-                ? (
-                  <>
+              {/* {width > 550  */}
+                {/* ? ( */}
+                  {/* <> */}
                     <img
                       src={hackerNewsClone}
                       alt="Hacker News Clone img"
@@ -227,20 +227,20 @@ function ProjectsScreen() {
                     >
                       Details
                     </button>
-                  </>
-                ) :
-                <button className="" onClick={(e) => handleModal(e, sortedProjects[1]._id)}>
-                  Hacker News Clone
-                </button>
-              }
+                  {/* </> */}
+                {/* ) : */}
+                {/* <button className="" onClick={(e) => handleModal(e, sortedProjects[1]._id)}> */}
+                  {/* Hacker News Clone */}
+                {/* </button> */}
+              {/* } */}
             </div>
           </div>
 
           <div className="projects__item projects__item--6">
             <div className="projects__card">
-              {width > 550 
-                ? (
-                  <>
+              {/* {width > 550  */}
+                {/* ? ( */}
+                  {/* <> */}
                     <img
                       src={githubBattle}
                       alt="Github Battle img"
@@ -256,20 +256,20 @@ function ProjectsScreen() {
                     >
                       Details
                     </button>
-                  </>
-                ) :
-                <button className="" onClick={(e) => handleModal(e, sortedProjects[1]._id)}>
-                  Github Battle
-                </button>
-              }
+                  {/* </> */}
+                {/* ) : */}
+                {/* <button className="" onClick={(e) => handleModal(e, sortedProjects[1]._id)}> */}
+                  {/* Github Battle */}
+                {/* </button> */}
+              {/* } */}
             </div>
           </div>
 
           <div className="projects__item projects__item--7">
             <div className="projects__card">
-              {width > 550 
-                ? (
-                  <>
+              {/* {width > 550  */}
+                {/* ? ( */}
+                  {/* <> */}
                     <img
                       src={tetris}
                       alt="Tetris img"
@@ -283,20 +283,20 @@ function ProjectsScreen() {
                     >
                       Details
                     </button>
-                  </>
-                ) :
-                <button className="" onClick={(e) => handleModal(e, sortedProjects[1]._id)}>
-                  Tetris
-                </button>
-              }
+                  {/* </> */}
+                {/* ) : */}
+                {/* <button className="" onClick={(e) => handleModal(e, sortedProjects[1]._id)}> */}
+                  {/* Tetris */}
+                {/* </button> */}
+              {/* } */}
             </div>
           </div>
 
           <div className="projects__item projects__item--8">
             <div className="projects__card">
-              {width > 550 
-                ? (
-                  <>
+              {/* {width > 550  */}
+                {/* ? ( */}
+                  {/* <> */}
                     <img
                       src={hangman}
                       alt="Hangman img"
@@ -310,20 +310,20 @@ function ProjectsScreen() {
                     >
                       Details
                     </button>
-                  </>
-                ) :
-                <button className="" onClick={(e) => handleModal(e, sortedProjects[1]._id)}>
-                  Hangman
-                </button>
-              }
+                  {/* </> */}
+                {/* ) : */}
+                {/* <button className="" onClick={(e) => handleModal(e, sortedProjects[1]._id)}> */}
+                  {/* Hangman */}
+                {/* </button> */}
+              {/* } */}
             </div>
           </div>
 
           <div className="projects__item projects__item--9">
             <div className="projects__card">
-              {width > 550 
-                ? (
-                  <>
+              {/* {width > 550  */}
+                {/* ? ( */}
+                  {/* <> */}
                     <img
                       src={omnifood}
                       alt="Omnifood img"
@@ -337,20 +337,20 @@ function ProjectsScreen() {
                     >
                       Details
                     </button>
-                  </>
-                ) :
-                <button className="" onClick={(e) => handleModal(e, sortedProjects[1]._id)}>
-                  Omnifood
-                </button>
-              }
+                  {/* </> */}
+                {/* ) : */}
+                {/* <button className="" onClick={(e) => handleModal(e, sortedProjects[1]._id)}> */}
+                  {/* Omnifood */}
+                {/* </button> */}
+              {/* } */}
             </div>
           </div>
 
           <div className="projects__item projects__item--10">
             <div className="projects__card">
-              {width > 550 
-                ? (
-                  <>
+              {/* {width > 550  */}
+                {/* ? ( */}
+                  {/* <> */}
                     <img
                       src={nexter}
                       alt="Nexter img"
@@ -364,20 +364,20 @@ function ProjectsScreen() {
                     >
                       Details
                     </button>
-                  </>
-                ) :
-                <button className="" onClick={(e) => handleModal(e, sortedProjects[1]._id)}>
-                  Nexter
-                </button>
-              }
+                  {/* </> */}
+                {/* ) : */}
+                {/* <button className="" onClick={(e) => handleModal(e, sortedProjects[1]._id)}> */}
+                  {/* Nexter */}
+                {/* </button> */}
+              {/* } */}
             </div>
           </div>
 
           <div className="projects__item projects__item--11">
             <div className="projects__card">
-              {width > 550 
-                ? (
-                  <>
+              {/* {width > 550  */}
+                {/* ? ( */}
+                  {/* <> */}
                     <img
                       src={natours}
                       alt="Natours img"
@@ -391,20 +391,20 @@ function ProjectsScreen() {
                     >
                       Details
                     </button>
-                  </>
-                ) :
-                <button className="" onClick={(e) => handleModal(e, sortedProjects[1]._id)}>
-                  Natours
-                </button>
-              }
+                  {/* </> */}
+                {/* ) : */}
+                {/* <button className="" onClick={(e) => handleModal(e, sortedProjects[1]._id)}> */}
+                  {/* Natours */}
+                {/* </button> */}
+              {/* } */}
             </div>
           </div>
 
           <div className="projects__item projects__item--12">
             <div className="projects__card">
-              {width > 550 
-                ? (
-                  <>
+              {/* {width > 550  */}
+                {/* ? ( */}
+                  {/* <> */}
                     <img
                       src={hashBasketball}
                       alt="Hashbasketball img"
@@ -420,12 +420,12 @@ function ProjectsScreen() {
                     >
                       Details
                     </button>
-                  </>
-                ) :
-                <button className="" onClick={(e) => handleModal(e, sortedProjects[1]._id)}>
-                  Hashbasketball
-                </button>
-              }
+                  {/* </> */}
+                {/* ) : */}
+                {/* <button className="" onClick={(e) => handleModal(e, sortedProjects[1]._id)}> */}
+                  {/* Hashbasketball */}
+                {/* </button> */}
+              {/* } */}
             </div>
           </div>
         </div>
