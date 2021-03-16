@@ -2,7 +2,7 @@
   @include flexCenterCenter($flex-direction: column, $justify-content: space-around);
   margin: 3rem 0;
   width: 100%;
-  z-index: 999999999999999;
+  // z-index: 999999999999999;
 
   @media (max-width: 950px) {
     @include flexCenterCenter($flex-direction: row, $justify-content: space-around);
