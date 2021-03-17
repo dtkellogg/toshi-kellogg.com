@@ -13,6 +13,7 @@ export default function Map() {
     width: "100%",
     height: "100%",
     zoom: 8.3,
+    display: "block"
   });
 
 
