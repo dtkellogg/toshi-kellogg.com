@@ -47,7 +47,7 @@ app.use(corsMiddleware);
 
 
 // redirect all url requests to https
-// app.use(enforce.HTTPS({ trustProtoHeader: true }));
+app.use(enforce.HTTPS({ trustProtoHeader: true }));
 
 // // Body Parser Middleware
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -60,7 +60,60 @@ app.use('/api/messages', messageRoutes)
 app.use('/api/projects', projectRoutes)
 
 // static build files for react side of app
-const modifiedPath = __dirname.split("/").slice(0, -1).join("/");
+// const modifiedPath = __dirname.split("/").slice(0, -1).join("/");
+
+// if (process.env.NODE_ENV === "production") {
+//   app.use(express.static(path.join(modifiedPath, "/frontend/build")));
+
+//   app.get("*", (req, res) =>
+//     res.sendFile(path.resolve(modifiedPath, "frontend", "build", "index.html"))
+//   );
+// } else {
+//   app.get("/", (req, res) => {
+//     res.send("API is running....");
+//   });
+// }
+
+// //////////////
+// // To run in production:
+// if (process.env.NODE_ENV === "production") {
+//   const PORT = process.env.PORT || 5000;
+
+//   app.listen(
+//     PORT,
+//     console.log(
+//       `Server running in ${process.env.NODE_ENV} mode on port ${PORT}`.yellow
+//         .bold
+//     )
+//   );
+// }
+
+// // To run in development:
+// if (process.env.NODE_ENV === "development") {
+//   const PORT = process.env.PORT || 5000;
+
+//   const options = {
+//   };
+
+//   app.listen(
+//     PORT,
+//     console.log(
+//       `Server running in ${process.env.NODE_ENV} mode on port ${PORT}`.yellow
+//         .bold
+//     )
+//   );
+
+  // https.createServer(options, app).listen(PORT, () => {
+  //   console.log(
+  //     `Server running in ${process.env.NODE_ENV} mode on port ${PORT}`.yellow
+  //       .bold
+  //   );
+  // });
+// }
+//////////////
+
+// static build files for react side of app
+const modifiedPath = __dirname.split('/').slice(0, -1).join('/')
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(modifiedPath, "/frontend/build")));
@@ -74,17 +127,15 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
+
 //////////////
 // To run in production:
 if (process.env.NODE_ENV === "production") {
-  const PORT = process.env.PORT || 5000;
+  const PORT = process.env.PORT || 5000
 
   app.listen(
     PORT,
-    console.log(
-      `Server running in ${process.env.NODE_ENV} mode on port ${PORT}`.yellow
-        .bold
-    )
+    console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`.yellow.bold)
   );
 }
 
@@ -93,21 +144,14 @@ if (process.env.NODE_ENV === "development") {
   const PORT = process.env.PORT || 5000;
 
   const options = {
+    key: fs.readFileSync("./SSL/server.key", "utf8"),
+    cert: fs.readFileSync("./SSL/toshikellogg_com.crt", "utf8"),
   };
 
-  app.listen(
-    PORT,
+  https.createServer(options, app).listen(PORT, () => {
     console.log(
-      `Server running in ${process.env.NODE_ENV} mode on port ${PORT}`.yellow
-        .bold
-    )
-  );
-
-  // https.createServer(options, app).listen(PORT, () => {
-  //   console.log(
-  //     `Server running in ${process.env.NODE_ENV} mode on port ${PORT}`.yellow
-  //       .bold
-  //   );
-  // });
+      `Server running in ${process.env.NODE_ENV} mode on port ${PORT}`.yellow.bold
+    );
+  });
 }
 //////////////
