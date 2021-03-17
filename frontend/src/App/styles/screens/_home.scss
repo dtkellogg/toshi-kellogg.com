@@ -24,37 +24,36 @@
     &__text {
         margin: 1rem 0;
 
-        &--name {
+        &--toshi {
           background-image: $blue-gradient-1;
           -webkit-background-clip: text;
           color: transparent;
           letter-spacing: .2rem;
           font-family: 'Sacramento', cursive;
+          z-index: 9999999999999;
+          position: relative;
         }
 
-        &--im {
-            margin-right: 1.5rem;
-            font-family: 'Sacramento', cursive;
-            // font-weight: 300;
-        }
+        
 
         &--1 {
         }
-
         &--2 {
             text-shadow: 2px 4px 3px rgba(0,0,0,0.15);
         }
-
         &--3 {
         }
-
         &--4 {
         }
         &--5 {
             z-index: 999999;
             // white-space: nowrap;
         }
-
+        &--im {
+            margin-right: 1.5rem;
+            font-family: 'Sacramento', cursive;
+            // font-weight: 300;
+        }
         &--tk {
           background-image: $blue-gradient-1;
           -webkit-background-clip: text;
