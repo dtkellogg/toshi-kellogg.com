@@ -16,8 +16,8 @@ export default function Map() {
   });
 
 
-  // console.log(process.env.REACT_APP_MAPBOX_TOKEN)
-  // console.log({ REACT_APP_MAPBOX_TOKEN });
+  console.log(process.env.REACT_APP_MAPBOX_TOKEN)
+  console.log({ REACT_APP_MAPBOX_TOKEN });
   
   return (
     <div className="map">
