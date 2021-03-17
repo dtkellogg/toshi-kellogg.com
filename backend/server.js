@@ -36,7 +36,7 @@ app.use(compression({ threshold: 0 }));
 app.use(cors())
 
 var corsMiddleware = function(req, res, next) {
-  res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Methods', 'OPTIONS, GET, PUT, PATCH, POST, DELETE');
   res.header('Access-Control-Allow-Headers', 'Content-Type, X-Requested-With, Authorization');
 
@@ -147,6 +147,8 @@ if (process.env.NODE_ENV === "development") {
     key: fs.readFileSync("./SSL/server.key", "utf8"),
     cert: fs.readFileSync("./SSL/toshikellogg_com.crt", "utf8"),
   };
+
+  console.log(options)
 
   https.createServer(options, app).listen(PORT, () => {
     console.log(

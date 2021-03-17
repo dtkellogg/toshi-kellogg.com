@@ -27,6 +27,8 @@ import hashBasketball from '../img/hashBasketball.png'
 import hackerNewsClone from '../img/hackerNewsClone.png'
 import githubBattle from '../img/githubBattle.png'
 
+import projects from '../data/projects'
+
 
 function ProjectsScreen() {
   // const [modalOpen, setModalOpen] = useState(false)
@@ -37,30 +39,35 @@ function ProjectsScreen() {
   const modalIsOpen = useSelector((state) => state.modalIsOpen);
   const { isOpen } = modalIsOpen;
 
-  const projectList = useSelector((state) => state.projectList);
-  const { loading, error, projects } = projectList; // eslint-disable-line no-unused-vars
+  // const projectList = useSelector((state) => state.projectList);
+  // const { loading, error, projects } = projectList; // eslint-disable-line no-unused-vars
 
   const { width } = useWindowDimensions()
 
-  React.useEffect(() => {
-    dispatch(listProjects());
-  }, [dispatch]);
+  // React.useEffect(() => {
+  //   dispatch(listProjects());
+  // }, [dispatch]);
 
   const handleModal = (e, modalName) => {
     e.preventDefault();
+    setProject(modalName)
+
     dispatch(modalSetProject(modalName));
     dispatch(modalToggleOpen());
   };
 
   var sortedProjects = projects.sort((a, b) => (a.name > b.name ? 1 : -1));
 
-  if (error) {
-    console.log(error);
-  }
+  // if (error) {
+    // console.log(error);
+  // }
 
   if (isOpen) {
     console.log(`isOpen: ${isOpen}`);
   }
+
+  console.log(`projects: ${projects}`)
+  // console.log(`projects: ${projects}`)
 
 
   if (sortedProjects) {
@@ -105,14 +112,14 @@ function ProjectsScreen() {
                     />
                     <button
                       className="btn__project-details text-size-3"
-                      onClick={(e) => handleModal(e, sortedProjects[6]._id)}
+                      onClick={(e) => handleModal(e, sortedProjects[6])}
                       // onClick={() => handleModal("Kellogg Tutoring")}
                     >
                       Details
                     </button>
                   {/* </> */}
                 {/* ) :  */}
-                {/* <button className="" onClick={(e) => handleModal(e, sortedProjects[6]._id)}> */}
+                {/* <button className="" onClick={(e) => handleModal(e, sortedProjects[6])}> */}
                 {/* Kellogg Tutoring */}
               {/* </button> */}
               {/* } */}
@@ -136,13 +143,13 @@ function ProjectsScreen() {
                     {/* <div className="projects__details"> */}
                     <button
                       className="btn__project-details text-size-3"
-                      onClick={(e) => handleModal(e, sortedProjects[0]._id)}
+                      onClick={(e) => handleModal(e, sortedProjects[0])}
                     >
                       Details
                     </button>
                   {/* </> */}
                 {/* ) : */}
-                {/* <button className="" onClick={(e) => handleModal(e, sortedProjects[1]._id)}> */}
+                {/* <button className="" onClick={(e) => handleModal(e, sortedProjects[1])}> */}
                   {/* Night Market */}
                 {/* </button> */}
               {/* } */}
@@ -165,13 +172,13 @@ function ProjectsScreen() {
                     {/* <div className="projects__details"> */}
                     <button
                       className="btn__project-details text-size-3"
-                      onClick={(e) => handleModal(e, sortedProjects[11]._id)}
+                      onClick={(e) => handleModal(e, sortedProjects[11])}
                     >
                       Details
                     </button>
                   {/* </> */}
                 {/* ) : */}
-                {/* <button className="" onClick={(e) => handleModal(e, sortedProjects[1]._id)}> */}
+                {/* <button className="" onClick={(e) => handleModal(e, sortedProjects[1])}> */}
                   {/* Thalassa Dive Resort */}
                 {/* </button> */}
               {/* } */}
@@ -194,13 +201,13 @@ function ProjectsScreen() {
                     {/* <div className="projects__details"> */}
                     <button
                       className="btn__project-details text-size-3"
-                      onClick={(e) => handleModal(e, sortedProjects[5]._id)}
+                      onClick={(e) => handleModal(e, sortedProjects[5])}
                     >
                       Details
                     </button>
                   {/* </> */}
                 {/* ) : */}
-                {/* <button className="" onClick={(e) => handleModal(e, sortedProjects[1]._id)}> */}
+                {/* <button className="" onClick={(e) => handleModal(e, sortedProjects[1])}> */}
                   {/* Indonesia 2015 */}
                 {/* </button> */}
               {/* } */}
@@ -223,13 +230,13 @@ function ProjectsScreen() {
                     {/* <div className="projects__details"> */}
                     <button
                       className="btn__project-details text-size-3"
-                      onClick={(e) => handleModal(e, sortedProjects[2]._id)}
+                      onClick={(e) => handleModal(e, sortedProjects[2])}
                     >
                       Details
                     </button>
                   {/* </> */}
                 {/* ) : */}
-                {/* <button className="" onClick={(e) => handleModal(e, sortedProjects[1]._id)}> */}
+                {/* <button className="" onClick={(e) => handleModal(e, sortedProjects[1])}> */}
                   {/* Hacker News Clone */}
                 {/* </button> */}
               {/* } */}
@@ -252,13 +259,13 @@ function ProjectsScreen() {
                     {/* <div className="projects__details"> */}
                     <button
                       className="btn__project-details text-size-3"
-                      onClick={(e) => handleModal(e, sortedProjects[1]._id)}
+                      onClick={(e) => handleModal(e, sortedProjects[1])}
                     >
                       Details
                     </button>
                   {/* </> */}
                 {/* ) : */}
-                {/* <button className="" onClick={(e) => handleModal(e, sortedProjects[1]._id)}> */}
+                {/* <button className="" onClick={(e) => handleModal(e, sortedProjects[1])}> */}
                   {/* Github Battle */}
                 {/* </button> */}
               {/* } */}
@@ -279,13 +286,13 @@ function ProjectsScreen() {
                     {/* <div className="projects__details"> */}
                     <button
                       className="btn__project-details text-size-3"
-                      onClick={(e) => handleModal(e, sortedProjects[10]._id)}
+                      onClick={(e) => handleModal(e, sortedProjects[10])}
                     >
                       Details
                     </button>
                   {/* </> */}
                 {/* ) : */}
-                {/* <button className="" onClick={(e) => handleModal(e, sortedProjects[1]._id)}> */}
+                {/* <button className="" onClick={(e) => handleModal(e, sortedProjects[1])}> */}
                   {/* Tetris */}
                 {/* </button> */}
               {/* } */}
@@ -306,13 +313,13 @@ function ProjectsScreen() {
                     {/* <div className="projects__details"> */}
                     <button
                       className="btn__project-details text-size-3"
-                      onClick={(e) => handleModal(e, sortedProjects[3]._id)}
+                      onClick={(e) => handleModal(e, sortedProjects[3])}
                     >
                       Details
                     </button>
                   {/* </> */}
                 {/* ) : */}
-                {/* <button className="" onClick={(e) => handleModal(e, sortedProjects[1]._id)}> */}
+                {/* <button className="" onClick={(e) => handleModal(e, sortedProjects[1])}> */}
                   {/* Hangman */}
                 {/* </button> */}
               {/* } */}
@@ -333,13 +340,13 @@ function ProjectsScreen() {
                     {/* <div className="projects__details"> */}
                     <button
                       className="btn__project-details text-size-3"
-                      onClick={(e) => handleModal(e, sortedProjects[9]._id)}
+                      onClick={(e) => handleModal(e, sortedProjects[9])}
                     >
                       Details
                     </button>
                   {/* </> */}
                 {/* ) : */}
-                {/* <button className="" onClick={(e) => handleModal(e, sortedProjects[1]._id)}> */}
+                {/* <button className="" onClick={(e) => handleModal(e, sortedProjects[1])}> */}
                   {/* Omnifood */}
                 {/* </button> */}
               {/* } */}
@@ -360,13 +367,13 @@ function ProjectsScreen() {
                     {/* <div className="projects__details"> */}
                     <button
                       className="btn__project-details text-size-3"
-                      onClick={(e) => handleModal(e, sortedProjects[8]._id)}
+                      onClick={(e) => handleModal(e, sortedProjects[8])}
                     >
                       Details
                     </button>
                   {/* </> */}
                 {/* ) : */}
-                {/* <button className="" onClick={(e) => handleModal(e, sortedProjects[1]._id)}> */}
+                {/* <button className="" onClick={(e) => handleModal(e, sortedProjects[1])}> */}
                   {/* Nexter */}
                 {/* </button> */}
               {/* } */}
@@ -387,13 +394,13 @@ function ProjectsScreen() {
                     {/* <div className="projects__details"> */}
                     <button
                       className="btn__project-details text-size-3"
-                      onClick={(e) => handleModal(e, sortedProjects[7]._id)}
+                      onClick={(e) => handleModal(e, sortedProjects[7])}
                     >
                       Details
                     </button>
                   {/* </> */}
                 {/* ) : */}
-                {/* <button className="" onClick={(e) => handleModal(e, sortedProjects[1]._id)}> */}
+                {/* <button className="" onClick={(e) => handleModal(e, sortedProjects[1])}> */}
                   {/* Natours */}
                 {/* </button> */}
               {/* } */}
@@ -416,13 +423,13 @@ function ProjectsScreen() {
                     {/* <div className="projects__details"> */}
                     <button
                       className="btn__project-details text-size-3"
-                      onClick={(e) => handleModal(e, sortedProjects[4]._id)}
+                      onClick={(e) => handleModal(e, sortedProjects[4])}
                     >
                       Details
                     </button>
                   {/* </> */}
                 {/* ) : */}
-                {/* <button className="" onClick={(e) => handleModal(e, sortedProjects[1]._id)}> */}
+                {/* <button className="" onClick={(e) => handleModal(e, sortedProjects[1])}> */}
                   {/* Hashbasketball */}
                 {/* </button> */}
               {/* } */}

@@ -23,14 +23,14 @@ const icons = {
   "JavaScript": "logos:javascript"
 };
 
-export default function Modal() {
+export default function Modal({project}) {
   const dispatch = useDispatch();
 
   const modalIsOpen = useSelector((state) => state.modalIsOpen);
   const { isOpen } = modalIsOpen;
 
-  const modalSetProject = useSelector((state) => state.modalSetProject);
-  const { project } = modalSetProject;
+  // const modalSetProject = useSelector((state) => state.modalSetProject);
+  // const { project } = modalSetProject;
   const { description__1, description__2, description__3, github, name, skills, 
     // video, 
     url } = project

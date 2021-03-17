@@ -20,7 +20,7 @@
 	}
 	@media (max-width: 950px) {
 		width: 100%;
-		height: 30rem;
+		height: 53rem;
 	}
 }
 
@@ -222,6 +222,11 @@
 	border-radius: 0 3px 3px 3px;
 	
 	vertical-align: text-bottom;
+
+	@media (max-width: 950px) {
+		height: 531px;
+    }
+
 }
 
 .content div {
