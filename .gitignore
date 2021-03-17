@@ -13,3 +13,5 @@ SSL/
 
 server.csr
 server.key
+
+frontend/.env

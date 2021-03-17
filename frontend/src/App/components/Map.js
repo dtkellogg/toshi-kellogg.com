@@ -1,6 +1,9 @@
 import React from "react";
 import ReactMapGL, { Marker } from "react-map-gl";
 
+const { REACT_APP_MAPBOX_TOKEN, REACT_APP_MAPBOX_STYLES } = process.env;
+
+
 
 export default function Map() {
   
@@ -13,14 +16,15 @@ export default function Map() {
   });
 
 
-  console.log(process.env.REACT_APP_MAPBOX_TOKEN)
+  // console.log(process.env.REACT_APP_MAPBOX_TOKEN)
+  // console.log({ REACT_APP_MAPBOX_TOKEN });
   
   return (
     <div className="map">
       <ReactMapGL
         {...viewport}
-        mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
-        mapStyle={process.env.REACT_APP_MAPBOX_STYLES}
+        mapboxApiAccessToken={REACT_APP_MAPBOX_TOKEN}
+        mapStyle={REACT_APP_MAPBOX_STYLES}
         // mapStyle={"mapbox://styles/dtkellogg/ckm7b4o3j0pss17k440gn2z9f"}
         onViewportChange={(viewport) => setViewport(viewport)}
         scrollZoom={true}
