@@ -13,11 +13,13 @@ export default function Map() {
   });
 
 
+  console.log(process.env.MAPBOX_TOKEN)
+  
   return (
     <div className="map">
       <ReactMapGL
         {...viewport}
-        mapboxApiAccessToken={"pk.eyJ1IjoiZHRrZWxsb2dnIiwiYSI6ImNrZWlzMW9jNDAwYW8yenBmcHM4azQ1NGUifQ.z29ERW4wAUvbgQkoa7By1A"}
+        mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
         mapStyle={"mapbox://styles/dtkellogg/ckm7b4o3j0pss17k440gn2z9f"}
         onViewportChange={(viewport) => setViewport(viewport)}
         scrollZoom={true}
