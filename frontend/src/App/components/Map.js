@@ -25,7 +25,6 @@ export default function Map() {
         {...viewport}
         mapboxApiAccessToken={REACT_APP_MAPBOX_TOKEN}
         mapStyle={REACT_APP_MAPBOX_STYLES}
-        // mapStyle={"mapbox://styles/dtkellogg/ckm7b4o3j0pss17k440gn2z9f"}
         onViewportChange={(viewport) => setViewport(viewport)}
         scrollZoom={true}
         userInteractionEnabled={true}
