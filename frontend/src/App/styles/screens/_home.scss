@@ -32,6 +32,10 @@
           font-family: 'Sacramento', cursive;
           z-index: 9999999999999;
           position: relative;
+
+          @media (max-height: 793px) {
+              color: $blue-2;
+          }
         }
 
         
