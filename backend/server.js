@@ -148,7 +148,6 @@ if (process.env.NODE_ENV === "development") {
     cert: fs.readFileSync("./SSL/toshikellogg_com.crt", "utf8"),
   };
 
-  console.log(options)
 
   https.createServer(options, app).listen(PORT, () => {
     console.log(

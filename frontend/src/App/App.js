@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import { useDispatch } from "react-redux";
 import { Switch, Route, useLocation } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
-
+import dotenv from 'dotenv'
 
 // components
 import Nav from "./components/Nav";
@@ -30,6 +30,8 @@ export default function App() {
     if(!loading) {
       document.title = "Toshi Kellogg | Developer";
     }
+
+    console.log(process.env)
 
 
     return (
