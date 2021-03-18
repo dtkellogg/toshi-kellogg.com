@@ -73,23 +73,25 @@ const projects = [
     name: "Github Battle",
     skills: ["React", "React-router", "SCSS"],
     description__1:
-      "This is a project I made as part of Tyler McGinnis's React Course.",
+      "This application was made as part of Tyler McGinnis’s React hooks course. The app was made from scratch (without a boilerplate i.e. create-react-app), and thus not only taught about React Hooks, but also discussed the inner workings of webpack.",
     description__2:
-      "It was used to practice retrieving and using data from a database. Combining that with React-router and CSS3, I was able to continue improving my fundamental web development skills. In addition, I used this project to become familiar with the implementation of custom hooks.",
-    description__3: "#",
+      "This course taught me a lot about React. It includes the use of many of React’s useful functionality, from providing a context or theme throughout the application to discussing the advantages of importing files when necessary to improve load speeds. The course also involved creating my first custom hook, as well as the fundamentals of React Router. Besides going into the different aspects of React Hooks, the course did an excellent job illustrating what create-react-app does because the application was built from scratch. Unfortunately, I have been unsuccessful with running the app on Heroku due to a current inadequate understanding of webpack. Nonetheless, the process of going through creating my own webpack file has given me the foundation to learn more about the topic on my own.",
+    description__3:
+      "As stated previously, the application has been built from scratch, including the index.html and webpack. The project is divided into two main directories, although the backend was built only to host the application on Heroku. The application follows fairly standard React architecture, as the React side is still connected to the application through a node.",
     picture: "../img/githubBattle.png",
     video: "#",
-    github: "#",
-    url: "#",
+    github: "https://github.com/dtkellogg/kellogg-github-battle",
+    url: "https://github-battle.ui.dev/",
   },
   {
     name: "Tetris",
     skills: ["React", "CSS3"],
     description__1:
-      "This project was made following freeCodeCamp's instruction on Youtube.",
+      "I chose this project independent of any paid class I signed up for as I thought it would expose me to a different implementation of web design than websites. This project introduced me to different applications of JS, helping me understand a bit more of its potential.",
     description__2:
-      "The intended purpose was to practice making a game using React. I was able to get used to thinking in terms of how a game is programmed, as well as how component logic can be broken down to make code cleaner and more concise.",
-    description__3: "#",
+      "This application taught me how to create a game using React. It taught me about how I can break down a game into JavaScript, and it got me thinking of how I can potentially apply this thought process in future endeavours. The application also taught me about a popular CSS technique in React: Styled Components. Although I prefer to use CSS classes and SASS, I find it useful as knowing the various different syntaxes is necessary to understand all React code. The app also taught me about keycodes and how they can be implemented.",
+    description__3:
+      "The project has both front and back ends, but the back end is built solely to run the app on Heroku. The front end was built using create-react-app, and has directories for components, font, hooks, and images. The components directory is further divided, as there is a directory holding styled components for each component. The CSS file is thus relatively concise, as it only has code for non component aspects. The logic is logically broken down from the largest scale (the board/stage) to the smallest (a single cell). Tetrominos, or the tetris pieces, are written as matrices. Component logic is broken down not only into smaller components, but also taken out and placed in custom hooks.",
     picture: "../img/tetris.png",
     video: "#",
     github: "https://github.com/dtkellogg/tetris",
@@ -139,12 +141,13 @@ const projects = [
   },
   {
     name: "Natours",
-    skills: ["HTML5", "CSS3"],
+    skills: ["HTML5", "SCSS"],
     description__1:
-      "This project was made following the instruction of Jonas Schmedtmann.",
+      "This is a project that is part of Jonas Schmedtmann’s Advanced CSS course. The focus was on learning how to use SASS, as well as learning some usual application of CSS to drive animations.",
     description__2:
-      "It's focus was on learning and implementing advanced CSS skills, such as animations (using pure CSS), cutting images at arbitrary angles, and linear-gradients for unique color combinations.",
-    description__3: "#",
+      "This course helped me understand and learn how to apply various CSS concepts. Not only did I learn how to animate using only CSS, but I also learned how to created color gradients in texts, how to use pseudo classes to add effects to buttons and text, how to use clip-path to ambiguous create polygons, and the different states of a button. The course also taught me about SASS, including a logical file structure and the BEM syntax. These methods have drastically organized my CSS, something that I have learned to value as I have used it since. Making this project helped me understand what directory different types of CSS go to. Of minor significance, I also learned how to create the same effect of CSS Grid with only Flexbox. This is obviously not necessary for future projects as CSS Grid simplifies the process. But it helped me see how the two are related, and eventually understand how to use them both together (which I have read is the intended use).",
+    description__3:
+      "The code is relatively basic, with no backend or frontend framework. There is a SASS directory in the root that is organized into directories for abstracts, base, components, layout, and pages. A directory containing the images of the application takes up a majority of the file size and can also be found in the directory. An index.html holds all the relevant HTML.",
     picture: "../img/natours.png",
     video: "#",
     github: "https://github.com/dtkellogg/kellogg-natours",
@@ -154,10 +157,11 @@ const projects = [
     name: "Hash Basketball",
     skills: ["React", "React-router", "CSS3"],
     description__1:
-      "This project was made following the instruction of Tyler McGinnis.",
+      "This project was made as part of Tyler McGinnis’s React Router V5 course. It focused on implementing the different built in hooks of React Router.",
     description__2:
-      "Intended purpose was to study the React-router v5, and learn how to use and implement the built in functionality of React-Router",
-    description__3: "#",
+      "As this course's intention, I was able to learn about React Router V5 and how to use it. The different hooks from the react-router-dom package comprised a majority of the focus, and application as well as Tyler’s instruction made it very easy to understand. I did not master React Router simply by completing this course; it did, however, give me enough base knowledge to experiment with areas that my understanding was weak in when I applied it to different projects.",
+    description__3:
+      "The code consists of both front and back ends, but the back end is built only to run the application on Heroku. The frontend was built using create-react-app. It is composed of two main directories (components and hooks) and CSS files. As the focus of the project was on React Router, much of the meat of the code focuses on areas such as the switch and its relevant routes (used in multiple functions for nested routes), creating a custom Link with an active class, and using useParams to extract IDs from the URL. The six different custom hooks deal with making requests and using responses from an API (from the frontend).",
     picture: "../img/hashBasketball.png",
     video: "#",
     github: "https://github.com/dtkellogg/kellogg-hash-basketball",
