@@ -4,6 +4,9 @@ import ReactMapGL, { Marker } from "react-map-gl";
 import * as MapboxGl from 'mapbox-gl'
 import 'mapbox-gl/dist/mapbox-gl.css'
 
+// eslint-disable-next-line import/no-webpack-loader-syntax
+MapboxGl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
+
 const { REACT_APP_MAPBOX_TOKEN, REACT_APP_MAPBOX_STYLES } = process.env;
 
 
@@ -30,15 +33,19 @@ export default function Map() {
   //   if (mapDiv.style.visibility === true) map.resize();
   // }, [mapDiv])
 
+  console.log(MapboxGl);
+  console.log(ReactMapGL);
+
+
   
 
   const onLoaded = (map) => {
     map.resize();
   };
 
-  console.log(process.env.REACT_APP_MAPBOX_TOKEN);
-  console.log({ REACT_APP_MAPBOX_TOKEN });
-  console.log(REACT_APP_MAPBOX_TOKEN, REACT_APP_MAPBOX_STYLES);
+  // console.log(process.env.REACT_APP_MAPBOX_TOKEN);
+  // console.log({ REACT_APP_MAPBOX_TOKEN });
+  // console.log(REACT_APP_MAPBOX_TOKEN, REACT_APP_MAPBOX_STYLES);
 
   return (
     <div className="map">
