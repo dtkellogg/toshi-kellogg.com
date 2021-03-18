@@ -1,6 +1,5 @@
 import React from "react";
 import ReactMapGL, { Marker } from "react-map-gl";
-// import ReactMapboxGl, { Marker } from 'react-mapbox-gl'
 import * as MapboxGl from 'mapbox-gl'
 import 'mapbox-gl/dist/mapbox-gl.css'
 
@@ -8,7 +7,6 @@ import 'mapbox-gl/dist/mapbox-gl.css'
 MapboxGl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
 
 const { REACT_APP_MAPBOX_TOKEN, REACT_APP_MAPBOX_STYLES } = process.env;
-
 
 
 export default function Map() {
@@ -21,31 +19,9 @@ export default function Map() {
     display: "block",
   });
 
-  // // your code that shows the map div
-  // $("#map-div").show();
-
-  // // detect the map's new width and height and resize it
-  // map.resize();
-
-  // var mapDiv = document.getElementById("map");
-
-  // React.useEffect(()=> {
-  //   if (mapDiv.style.visibility === true) map.resize();
-  // }, [mapDiv])
-
-  console.log(MapboxGl);
-  console.log(ReactMapGL);
-
-
-  
-
-  const onLoaded = (map) => {
-    map.resize();
-  };
-
-  // console.log(process.env.REACT_APP_MAPBOX_TOKEN);
-  // console.log({ REACT_APP_MAPBOX_TOKEN });
-  // console.log(REACT_APP_MAPBOX_TOKEN, REACT_APP_MAPBOX_STYLES);
+  // const onLoaded = (map) => {
+  //   map.resize();
+  // };
 
   return (
     <div className="map">
@@ -56,7 +32,7 @@ export default function Map() {
         onViewportChange={(viewport) => setViewport(viewport)}
         scrollZoom={true}
         userInteractionEnabled={true}
-        onStyleLoad={(map) => onLoaded(map)}
+        // onStyleLoad={(map) => onLoaded(map)}
       >
         <Marker latitude={37.9158} longitude={-122.158}>
           <div className="text-size-3 map__marker--lafayette">Lafayette</div>
