@@ -18,6 +18,10 @@
         color: transparent;
         letter-spacing: .2rem;
         align-self: flex-start;
+
+        @media (max-width: 950px) {
+            align-self: center;
+        }
     }
 
     &__image {

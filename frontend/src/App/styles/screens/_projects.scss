@@ -115,10 +115,16 @@
             height: 100%;
             overflow: hidden;
 
-            // @media (max-width: 950px) {
-            //     height: 30rem;
-            //     width: 40rem;
-            // }
+            @media (max-width: 950px) {
+                height: 30rem;
+                width: 60rem;
+                margin: 4rem 0;
+            }
+            @media (max-width: 600px) {
+                height: 30rem;
+                width: 50rem;
+                margin: 4rem 0;
+            }
             @media (max-width: 500px) {
                 height: 30rem;
                 width: 40rem;
