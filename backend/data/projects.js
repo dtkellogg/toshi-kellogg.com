@@ -1,5 +1,6 @@
 const projects = [
   {
+    _id: 1,
     name: "Kellogg Tutoring",
     skills: ["NodeJS", "React", "React-router", "Redux", "SCSS"],
     description__1:
@@ -14,6 +15,7 @@ const projects = [
     url: "https://kelloggtutoring.com",
   },
   {
+    _id: 2,
     name: "Davis Night Market",
     skills: ["NodeJS", "React", "React-router", "CSS3"],
     description__1:
@@ -28,6 +30,7 @@ const projects = [
     url: "https://shrouded-thicket-84837.herokuapp.com",
   },
   {
+    _id: 3,
     name: "Thalassa Dive Resort",
     skills: ["HTML5", "SCSS"],
     description__1:
@@ -42,6 +45,7 @@ const projects = [
     url: "https://thalassa-website.herokuapp.com/",
   },
   {
+    _id: 4,
     name: "Indonesia (2015)",
     skills: ["HTML5", "CSS3", "JavaScript"],
     description__1:
@@ -56,6 +60,7 @@ const projects = [
     url: "https://indonesia2015.herokuapp.com/",
   },
   {
+    _id: 5,
     name: "Hackernews Clone",
     skills: ["React", "React-router", "CSS3"],
     description__1:
@@ -70,6 +75,7 @@ const projects = [
     url: "https://kellogg-hacker-news.herokuapp.com/",
   },
   {
+    _id: 6,
     name: "Github Battle",
     skills: ["React", "React-router", "SCSS"],
     description__1:
@@ -84,6 +90,7 @@ const projects = [
     url: "https://github-battle.ui.dev/",
   },
   {
+    _id: 7,
     name: "Tetris",
     skills: ["React", "CSS3"],
     description__1:
@@ -98,6 +105,7 @@ const projects = [
     url: "https://kellogg-tetris.herokuapp.com/",
   },
   {
+    _id: 8,
     name: "Hangman",
     skills: ["React", "CSS3"],
     description__1:
@@ -112,6 +120,7 @@ const projects = [
     url: "https://kellogg-hangman.herokuapp.com/",
   },
   {
+    _id: 9,
     name: "Omnifood",
     skills: ["HTML5", "CSS3", "JavaScript"],
     description__1:
@@ -126,6 +135,7 @@ const projects = [
     url: "https://kellogg-omnifood.herokuapp.com/",
   },
   {
+    _id: 10,
     name: "Nexter",
     skills: ["HTML5", "CSS3"],
     description__1:
@@ -140,6 +150,7 @@ const projects = [
     url: "https://kellogg-nexter.herokuapp.com/",
   },
   {
+    _id: 11,
     name: "Natours",
     skills: ["HTML5", "SCSS"],
     description__1:
@@ -154,6 +165,7 @@ const projects = [
     url: "https://kellogg-natours.herokuapp.com/",
   },
   {
+    _id: 12,
     name: "Hash Basketball",
     skills: ["React", "React-router", "CSS3"],
     description__1:
@@ -169,4 +181,4 @@ const projects = [
   },
 ];
 
-module.exports = projects
+module.exports = projects;

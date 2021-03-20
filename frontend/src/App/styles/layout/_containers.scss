@@ -271,10 +271,10 @@
 			position: absolute;
 		}
 
-		@media (max-width: 600px) {
-			width: 70%;
+		@media (max-width: 800px) {
+			width: 80%;
 			transform: translate(0, 11vh);
-			left: 15%;
+			left: 10%;
 		}
 		@media (max-width: 500px) {
 			width: 90%;

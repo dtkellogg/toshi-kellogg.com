@@ -17,6 +17,7 @@ const About = React.lazy(() => import("./screens/AboutScreen"));
 const Skills = React.lazy(() => import("./screens/SkillsScreen"));
 const Projects = React.lazy(() => import("./screens/ProjectsScreen"));
 const Contact = React.lazy(() => import("./screens/ContactScreen"));
+const Modal = React.lazy(() => import("./components/Modal"));
 
 
 export default function App() {
@@ -36,28 +37,29 @@ export default function App() {
 
     return (
       <ToastProvider>
-          <div className="container__main">
-            <Nav />
-            <div className="container__body">
-            {!loading ?
-              <React.Suspense fallback={<Loading />}>
-                <TransitionGroup>
-                  <CSSTransition timeout={250} classNames="fade" key={location.key}>
-                    <Switch location={location}>
-                      <Route exact path="/" component={Home} />
-                      <Route exact path="/about" component={About} />
-                      <Route exact path="/skills" component={Skills} />
-                      <Route exact path="/projects" component={Projects} />
-                      <Route exact path="/contact" component={Contact} />
-                      <Route path="*" component={Home} />
-                    </Switch>
-                  </CSSTransition>
-                </TransitionGroup>
-              </React.Suspense>
-            : <Loading />
-          }
-          </div>
+        <div className="container__main">
+          <Nav />
+          <div className="container__body">
+          {!loading ?
+            <React.Suspense fallback={<Loading />}>
+              <TransitionGroup>
+                <CSSTransition timeout={250} classNames="fade" key={location.key}>
+                  <Switch location={location}>
+                    <Route exact path="/" component={Home} />
+                    <Route exact path="/about" component={About} />
+                    <Route exact path="/skills" component={Skills} />
+                    <Route exact path="/projects" component={Projects} />
+                    <Route exact path="/projects/:project" component={Modal} />
+                    <Route exact path="/contact" component={Contact} />
+                    <Route path="*" component={Home} />
+                  </Switch>
+                </CSSTransition>
+              </TransitionGroup>
+            </React.Suspense>
+          : <Loading />
+        }
         </div>
-      </ToastProvider>
-    );
+      </div>
+    </ToastProvider>
+  );
 }
