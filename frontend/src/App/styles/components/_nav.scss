@@ -15,7 +15,7 @@
     margin: 0;
   }
 
-  &__list {
+  &__primary {
     @include heightWidth100();
     text-align: center;
 
@@ -61,8 +61,9 @@
     }
   }
 
-  &__social-media-list {
+  &__secondary {
     text-align: center;
+    @include flexCenterCenter($flex-direction: column);
 
     &--item {
       margin-top: 0.75rem;
@@ -85,6 +86,20 @@
       align-items: center;
       justify-content: center;
       height: 100%;
+    }
+
+    &__icon {
+      opacity: 1;
+      transition: all .5s;
+      // animation-delay: 2s;
+      height: 100%;
+      // color: $grey-6;
+      fill: inherit;
+    
+      &:hover {
+        fill: $black;
+        opacity: 1.0;
+      }
     }
 
   }
@@ -130,17 +145,5 @@
     }
   }
 
-  &__icon {
-    opacity: 1;
-    transition: all .5s;
-    // animation-delay: 2s;
-    height: 100%;
-    // color: $grey-6;
-    fill: inherit;
   
-    &:hover {
-      fill: 1px solid var(--grey-10);
-      opacity: 1.0;
-    }
-  }
 }
