@@ -61,7 +61,7 @@ export default function Modal({project}) {
 
       <div className="modal__container" ref={node}>
         <div className="modal__container--top">
-          <div className="modal__title text-size-2">{name}</div>
+          <div className="modal__header text-size-2">{name}</div>
           {/* <div className="modal__video"> */}
 
           {/* <video
@@ -87,8 +87,8 @@ export default function Modal({project}) {
                     data-icon={icons[skill]}
                     data-inline="false"
                     style={{fontSize: "1.6rem"}}
-                  ></span>
-                  <div className="modal__skills--text text-size-5">{skill}</div>
+                  />
+                  <div className="modal__skills--text">{skill}</div>
                 </li>
               ))}
             </ul>

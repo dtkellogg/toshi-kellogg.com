@@ -300,3 +300,90 @@
     }
 }
 
+.modal {
+  &__skills {
+        &--text {
+            margin-left: 0.5rem;
+            font-size: 2rem;
+
+            @media (max-width: 700px) {
+              font-size: 1.7rem;
+              margin-left: 0.45rem;
+            }
+
+            @media (max-width: 500px) {
+              font-size: 1.5rem;
+              margin-left: 0.4rem;
+            }
+        }
+    }
+
+    &__header {
+        margin-bottom: 1rem;
+        font-size: 3rem;
+
+        @media (max-width: 700px) {
+              font-size: 2.8rem;
+            }
+
+            @media (max-width: 560px) {
+              font-size: 2.5rem;
+            }
+    }
+
+    &__subheader {
+
+        &--1 {
+            align-self: flex-start;
+            line-height: 3rem;
+            font-family: 'Sacramento', cursive;
+        }
+
+        &--2 {
+            align-self: flex-start;
+            line-height: 3rem;
+            font-family: 'Sacramento', cursive;
+        }
+
+        &--3 {
+            align-self: flex-start;
+            line-height: 3rem;
+            font-family: 'Sacramento', cursive;
+        }
+    }
+
+    &__paragraph {
+
+        &--1 {
+            align-self: flex-start;
+            line-height: 2.2rem;
+            margin-bottom: 1.5rem;
+
+            @media (max-width: 950px) {
+                line-height: 1.8rem;
+                margin-bottom: 1rem;
+            }
+        }
+
+        &--2 {
+            align-self: flex-start;
+            line-height: 2.2rem;
+            margin-bottom: 1.5rem;
+
+            @media (max-width: 950px) {
+                line-height: 1.8rem;
+                margin-bottom: 1rem;
+            }
+        }
+
+        &--3 {
+            align-self: flex-start;
+            line-height: 2.2rem;
+
+            @media (max-width: 950px) {
+                line-height: 1.8rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}

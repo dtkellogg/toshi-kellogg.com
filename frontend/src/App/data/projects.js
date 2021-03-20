@@ -2,7 +2,7 @@ const projects = [
   {
     _id: 1,
     name: "Kellogg Tutoring",
-    skills: ["NodeJS", "React", "React-router", "Redux", "SCSS"],
+    skills: ["NodeJS", "React", "React-Router", "Redux", "SCSS"],
     description__1:
       "This is a full stack MERN application I made and designed for my own small business. This project applied the depth of my knowledge in regards to MERN stacks, Redux, and SCSS. Before attempting to take on any paid clientele, I thought what better way to practice my MERN stack skills than by making a website for something that I am personally invested. The application also gave me a platform to make my company more legitimate, as well as giving my students and their parents a place to keep track of appointments. As this is essentially the culmination of my work so far(granted, not everything concept can be displayed), I worked hard to put forth a piece of work that is representative of my current level of understanding of programming.",
     description__2:
@@ -17,7 +17,7 @@ const projects = [
   {
     _id: 2,
     name: "Davis Night Market",
-    skills: ["NodeJS", "React", "React-router", "CSS3"],
+    skills: ["NodeJS", "React", "React-Router", "CSS3"],
     description__1:
       "This application was initially designed to be used by a philanthropy in Davis whose work I really admire. In the end, I decided not to give my work to the group as they mistreated one of their founders, who is a dear friend of mine.",
     description__2:
@@ -62,7 +62,7 @@ const projects = [
   {
     _id: 5,
     name: "Hackernews Clone",
-    skills: ["React", "React-router", "CSS3"],
+    skills: ["React", "React-Router", "CSS3"],
     description__1:
       "This project was part of a React course by Tyler McGinnis. It was designed to teach how to use React with functional components, React Router, JSX, and interacting with an API from the client side.",
     description__2:
@@ -77,7 +77,7 @@ const projects = [
   {
     _id: 6,
     name: "Github Battle",
-    skills: ["React", "React-router", "SCSS"],
+    skills: ["React", "React-Router", "SCSS"],
     description__1:
       "This application was made as part of Tyler McGinnis’s React hooks course. The app was made from scratch (without a boilerplate i.e. create-react-app), and thus not only taught about React Hooks, but also discussed the inner workings of webpack.",
     description__2:
@@ -167,7 +167,7 @@ const projects = [
   {
     _id: 12,
     name: "Hash Basketball",
-    skills: ["React", "React-router", "CSS3"],
+    skills: ["React", "React-Router", "CSS3"],
     description__1:
       "This project was made as part of Tyler McGinnis’s React Router V5 course. It focused on implementing the different built in hooks of React Router.",
     description__2:

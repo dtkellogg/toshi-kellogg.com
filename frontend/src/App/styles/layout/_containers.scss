@@ -368,11 +368,11 @@
 		}
 
 		@media (max-width: 800px) {
-			width: 80%;
+			width: 85%;
 			transform: translate(0, 11vh);
-			left: 10%;
+			left: 7.5%;
 		}
-		@media (max-width: 500px) {
+		@media (max-width: 525px) {
 			width: 90%;
 			height: 155vh;
 			transform: translate(0, 11vh);
@@ -390,5 +390,21 @@
         &--bottom {
             height: 6rem;
         }
-    }
+	}
+	
+	&__skills {
+
+        &--container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+	}
+
+	&__paragraph {
+        &--container {
+            overflow-y: scroll;
+            padding: 0.5rem 0;
+        }
+	}
 }
