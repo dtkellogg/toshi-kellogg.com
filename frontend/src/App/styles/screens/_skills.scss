@@ -1,7 +1,6 @@
 .skills {
     @include heightWidth100($height: 100vh);
     padding: 3rem;
-
     display: flex;
     align-items: center;
 
@@ -9,66 +8,4 @@
         flex-direction: column;
         height: 150vh;
     }
-
-    &__container {
-        &--left {
-            @include flexCenterCenter($flex-direction: column, $align-items: flex-start, $justify-content: flex-end);
-            width: 50%;
-
-            @media (max-width: 950px) {
-                width: 100%;
-                margin-bottom: 10rem;
-                @include flexCenterCenter($flex-direction: column)
-            }
-        }
-
-        &--right {
-            width: 50%;
-            text-align: center;
-
-            @media (max-width: 950px) {
-                width: 100%;
-            }
-        }
-    }
-
-    &__header {
-        margin-bottom: 2rem;
-        text-shadow: 2px 4px 3px rgba(0,0,0,0.25);
-        background-image: $blue-gradient-2;
-        -webkit-background-clip: text;
-        color: transparent;
-        letter-spacing: .2rem;
-        align-self: flex-start;
-
-        @media (max-width: 950px) {
-            align-self: center;
-        }
-    }
-
-    &__paragraph {
-        &--1 {
-
-        }
-
-        &--2 {
-
-        }
-
-        &--3 {
-
-        }
-
-        &--4 {
-
-        }
-
-    }
-
-    &__blue-text {
-        background-image: $blue-gradient-1;
-        -webkit-background-clip: text;
-        color: transparent;
-    }
-
 }

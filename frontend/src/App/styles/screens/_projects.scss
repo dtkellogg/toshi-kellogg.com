@@ -2,44 +2,6 @@
     height: 100%;
     position: relative;
 
-    
-
-    &__details {
-        @include flexCenterCenter($flex-direction: column);
-        position: absolute;
-        top: 24%;
-        // bottom: 50%;
-        // left: 50%;
-        // right: 50%;
-        visibility: hidden;
-        opacity: 0;
-        transition: opacity .2s, visibility .2s;
-        width: min-content;
-        color: $white;
-
-        height: 10rem;
-        width: 10rem;
-        line-height: 10rem;
-        border-radius: 50%;
-
-        &--title {
-            position: absolute;
-            // top: 90%;
-            bottom: 15%;
-            // left: 50%;
-            // right: 50%;
-            text-align: center;
-            // visibility: hidden;
-            opacity: 0;
-            transition: opacity .2s, visibility .2s;
-            width: 100%;
-            color: $black;
-            z-index: 99999;
-            overflow: visible;
-            height: min-content;
-        }
-    }
-
     &__card {
         @include flexCenterCenter();
         @include heightWidth100();

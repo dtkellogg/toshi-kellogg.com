@@ -99,3 +99,204 @@
   font-size: 29rem;
   font-weight: 300;
 }
+
+.projects {
+
+    &__details {
+        @include flexCenterCenter($flex-direction: column);
+        position: absolute;
+        top: 24%;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity .2s, visibility .2s;
+        width: min-content;
+        color: $white;
+
+        height: 10rem;
+        width: 10rem;
+        line-height: 10rem;
+        border-radius: 50%;
+
+        &--title {
+            position: absolute;
+            bottom: 15%;
+            text-align: center;
+            opacity: 0;
+            transition: opacity .2s, visibility .2s;
+            width: 100%;
+            color: $black;
+            z-index: 99999;
+            overflow: visible;
+            height: min-content;
+        }
+    }
+}
+
+.skills {
+  &__header {
+        margin-bottom: 2rem;
+        text-shadow: 2px 4px 3px rgba(0,0,0,0.25);
+        background-image: $blue-gradient-2;
+        -webkit-background-clip: text;
+        color: transparent;
+        letter-spacing: .2rem;
+        align-self: flex-start;
+
+        @media (max-width: 950px) {
+            align-self: center;
+            text-align: center;
+        }
+    }
+
+    &__paragraph {
+        &--1 {
+
+        }
+
+        &--2 {
+
+        }
+
+        &--3 {
+
+        }
+
+        &--4 {
+
+        }
+
+    }
+
+    &__blue-text {
+        // background-image: $blue-gradient-1;
+        // -webkit-background-clip: text;
+        // color: transparent;
+        color: $blue-3;
+    }
+
+}
+
+
+.contact {
+  &__header {
+        letter-spacing: .2rem;
+        margin-bottom: 2rem;
+        text-shadow: 2px 4px 3px rgba(0,0,0,0.25);
+        background-image: $blue-gradient-2;
+        -webkit-background-clip: text;
+        color: transparent;
+        align-self: flex-start;
+
+        @media (max-width: 950px) {
+            align-self: center;
+        }
+    }
+
+
+
+    &__paragraph {
+        margin-bottom: 1.5rem;
+        line-height: 2.25rem;
+        // text-shadow: 2px 4px 3px rgba(0,0,0,0.02);
+    }
+}
+
+.about {
+    @include heightWidth100($height: 100vh);
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 950px) {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    &__header {
+        margin-bottom: 2rem;
+        text-shadow: 2px 4px 3px rgba(0,0,0,0.25);
+        background-image: $blue-gradient-2;
+        -webkit-background-clip: text;
+        color: transparent;
+        letter-spacing: .2rem;
+        align-self: flex-start;
+
+        @media (max-width: 950px) {
+            align-self: center;
+        }
+    }
+
+    &__text {
+        &--1 {
+            line-height: 2.4rem;
+        }
+
+        &--2 {
+            line-height: 2.4rem;
+        }
+
+        &--3 {
+            line-height: 2.4rem;
+        }
+    }
+
+    &__arrows {
+      &--text {
+
+      }
+    }
+}
+
+.home {
+
+    &__text {
+        margin: 1rem 0;
+
+        &--toshi {
+          background-image: $blue-gradient-1;
+          -webkit-background-clip: text;
+          color: transparent;
+          letter-spacing: .2rem;
+          font-family: 'Sacramento', cursive;
+          z-index: 9999999999999;
+          position: relative;
+
+          @media (max-height: 793px) {
+              color: $blue-2;
+          }
+        }
+
+        
+
+        &--1 {
+        }
+        &--2 {
+            text-shadow: 2px 4px 3px rgba(0,0,0,0.15);
+        }
+        &--3 {
+        }
+        &--4 {
+        }
+        &--5 {
+            z-index: 999999;
+            // white-space: nowrap;
+        }
+        &--im {
+            margin-right: 1.5rem;
+            font-family: 'Sacramento', cursive;
+            // font-weight: 300;
+        }
+        &--tk {
+          background-image: $blue-gradient-1;
+          -webkit-background-clip: text;
+          color: transparent;
+          letter-spacing: .2rem;
+          font-family: 'Sacramento', cursive;
+          transform: scale(3.0);
+          height: 40rem;
+          text-shadow: 2px 4px 3px rgba(0,0,0,0.15);
+          opacity: 0;
+        }
+    }
+}
+

@@ -1,4 +1,4 @@
-.container{
+.container {
   &__main {
 	width: 100%;
 	min-height: 100vh;
@@ -33,8 +33,7 @@
 
 
 /* --------------------------------------------------------------------- */
-/* container main layout */
-
+/* nav layout */
 
 .nav {
   grid-row: 1 / -1;
@@ -46,6 +45,100 @@
 	}
 }
 
+/* --------------------------------------------------------------------- */
+/* home layout */
+
+.home {
+	&__container {
+        &--left {
+            @include flexCenterCenter($flex-direction: column, $align-items: flex-start);
+        }
+
+        &--right {
+            width: 50%;
+            text-align: center;
+            z-index: 1;
+            position: absolute;
+            left: 65%;
+            left: 60vw;
+            top: 30vh;
+        }
+    }
+}
+
+/* --------------------------------------------------------------------- */
+/* about layout */
+
+.about {
+	&__container {
+        &--left {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-end;
+
+            @media (max-width: 950px) {
+                width: 100%;
+                @include flexCenterCenter($flex-direction: column)
+            }
+        }
+
+        &--right {
+            width: 50%;
+            text-align: center;
+            height: 100vh;
+            position: relative;
+
+            @include flexCenterCenter($flex-direction: column);
+
+            @media (max-width: 950px) {
+                width: 100%;
+            }
+        }
+    }
+
+    &__arrows {
+        &--container {
+            @include flexCenterCenter($justify-content: space-between);
+            width: 15rem;
+            transform: translateY(1rem);
+            position: absolute;
+            bottom: 25vh;
+		}
+	}
+}
+
+/* --------------------------------------------------------------------- */
+/* skills layout */
+
+.skills {
+
+    &__container {
+        &--left {
+            @include flexCenterCenter($flex-direction: column, $align-items: flex-start, $justify-content: flex-end);
+            width: 50%;
+
+            @media (max-width: 950px) {
+                width: 100%;
+                margin-bottom: 10rem;
+                @include flexCenterCenter($flex-direction: column)
+            }
+        }
+
+        &--right {
+            width: 50%;
+            text-align: center;
+
+            @media (max-width: 950px) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+/* --------------------------------------------------------------------- */
+/* projects layout */
 
 .projects {
 	&__container {
@@ -250,6 +343,9 @@
 		}
   }
 }
+
+/* --------------------------------------------------------------------- */
+/* modal layout */
 
 .modal {
 	&__container {

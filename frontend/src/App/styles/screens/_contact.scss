@@ -15,26 +15,6 @@
         @include flexCenterCenter($flex-direction: column, $justify-content: space-between);
     }
 
-    &__header {
-        letter-spacing: .2rem;
-        margin-bottom: 2rem;
-        text-shadow: 2px 4px 3px rgba(0,0,0,0.25);
-        background-image: $blue-gradient-2;
-        -webkit-background-clip: text;
-        color: transparent;
-        align-self: flex-start;
-
-        @media (max-width: 950px) {
-            align-self: center;
-        }
-    }
-
-    &__paragraph {
-        margin-bottom: 1.5rem;
-        line-height: 2.25rem;
-        // text-shadow: 2px 4px 3px rgba(0,0,0,0.02);
-    }
-
     &__container {
 
         &--left {
@@ -118,7 +98,7 @@
             }
 
             &:focus {
-                background-color: $grey-13;
+                background-color: $blue-5;
             }
             
         }
@@ -192,10 +172,7 @@
     }
 }
 
-textarea {
-   font-family: inherit;
-   font-size: inherit;
-}
+
 
 
 .contact__focus-border {
