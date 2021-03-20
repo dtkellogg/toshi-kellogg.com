@@ -24,20 +24,48 @@ const activeStyleUnder950 = {
   transition: "all 0.01s"
 };
 
+const navItems = ["home", "about", "skills", "projects", "contact"]
+
 function Nav({ history }) {
-  const [hoveringHome, setHoveringHome] = useState(false);
-  const [hoveringAbout, setHoveringAbout] = useState(false);
-  const [hoveringSkills, setHoveringSkills] = useState(false);
-  const [hoveringProjects, setHoveringProjects] = useState(false);
-  const [hoveringContact, setHoveringContact] = useState(false);
+  // const [hoveringHome, setHoveringHome] = useState(false);
+  // const [hoveringAbout, setHoveringAbout] = useState(false);
+  // const [hoveringSkills, setHoveringSkills] = useState(false);
+  // const [hoveringProjects, setHoveringProjects] = useState(false);
+  // const [hoveringContact, setHoveringContact] = useState(false);
 
   const { width } = useWindowDimensions()
 
   return (
     <nav className="nav fadeInAnimated--6">
       <ul className="nav__list">
+        {navItems.map((el) => (
+          <HoverNavLink 
+            to={`/${el}`} 
+            text={el}
+            className=""
+          />
+        ))}
 
-        <NavLink 
+        {/* <NavLink
+          className="nav__list--item nav__link text-size-5 letter-spacing-sm"
+          exact
+          to={"/"}
+          activeStyle={width > 950 ? activeStyleOver950 : activeStyleUnder950}
+          onMouseOver={() => setHoveringHome(true)}
+          onMouseLeave={() => setHoveringHome(false)}
+        >
+          {!hoveringHome
+            ?
+            <FaHome
+              size={30}
+              className="nav__icon grey-11"
+            />
+            :
+            <span className="nav__hovering--text">Home</span>
+          }
+        </NavLink> */}
+
+        {/* <NavLink 
           className="nav__list--item nav__link text-size-5 letter-spacing-sm"
           exact 
           to={"/"}
@@ -126,7 +154,7 @@ function Nav({ history }) {
             :
             <span className="nav__hovering--text">Contact</span>
           }
-        </NavLink>
+        </NavLink> */}
 
 
         {/* <li className="nav__list--item">

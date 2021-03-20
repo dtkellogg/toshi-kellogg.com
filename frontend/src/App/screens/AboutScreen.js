@@ -30,8 +30,6 @@ function AboutScreen() {
     }
   }
 
-  console.log(image)
-
   return (
     <div className="about">
       <div className="about__container--left">

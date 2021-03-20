@@ -6,7 +6,6 @@ import { useDispatch, useSelector } from "react-redux";
 import Modal from '../components/Modal'
 
 // actions
-import { listProjects } from "../actions/projectActions"
 import { modalToggleOpen, modalSetProject } from "../actions/modalActions"
 
 // hooks
@@ -36,23 +35,25 @@ function ProjectsScreen() {
 
   return (
     <div className="projects">
+
       {isOpen && <Modal project={project} />}
+
       <ul className="projects__container">
         {projects.map((project) => {
-          const projectName = project.picture.split("/")[2].split(".")[0];
-          console.log(`projectName: ${projectName}`);
+          const abbreviatedName = project.picture.split("/")[2].split(".")[0];
+          const {_id, name} = project
 
           return (
-            <li className={`projects__item projects__item--${project._id}`}>
+            <li className={`projects__item projects__item--${_id}`} key={_id}>
               <div className="projects__card">
                 <img
-                  src={require(`../img/${projectName}.png`).default}
-                  alt={`${project.name} img`}
-                  className={`fadeInAnimated--${projectName} projects__photo projects__photo--${project._id}`}
+                  src={require(`../img/${abbreviatedName}.png`).default}
+                  alt={`${name} img`}
+                  className={`fadeInAnimated--${abbreviatedName} projects__photo projects__photo--${_id}`}
                 />
                 <button
                   className="btn__project-details text-size-3"
-                  onClick={(e) => handleModal(e, projects[project._id - 1])}
+                  onClick={(e) => handleModal(e, projects[_id - 1])}
                 >
                   Details
                 </button>
@@ -61,6 +62,7 @@ function ProjectsScreen() {
           )
         })}
       </ul>
+      
     </div>
   )
 }

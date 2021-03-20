@@ -55,7 +55,7 @@ export default function Modal({project}) {
   const node = useRef();
 
   return (
-    <div
+    <section
       className="modal"
       style={
         !isOpen
@@ -89,9 +89,9 @@ export default function Modal({project}) {
           {/* </div> */}
 
           {skills && (
-            <div className="modal__skills">
+            <ul className="modal__skills">
               {skills.map((skill) => (
-                <div className="modal__skills--container ">
+                <li className="modal__skills--container" key={skill}>
                   <span
                     className="iconify modal__skills--icon"
                     data-icon={icons[skill]}
@@ -99,15 +99,15 @@ export default function Modal({project}) {
                     style={{fontSize: "1.6rem"}}
                   ></span>
                   <div className="modal__skills--text text-size-5">{skill}</div>
-                </div>
+                </li>
               ))}
-            </div>
+            </ul>
           )}
 
           <div className="modal__paragraph--container">
-            <focus className="modal__subheader--1 text-size-3">Focus of project:</focus><div className="modal__paragraph--1 text-size-5">{description__1}</div>
-            <focus className="modal__subheader--2 text-size-3">What I learned:</focus><div className="modal__paragraph--2 text-size-5">{description__2}</div>
-            <focus className="modal__subheader--3 text-size-3">About the code:</focus><div className="modal__paragraph--3 text-size-5">{description__3}</div>
+            <div className="modal__subheader--1 text-size-3">Focus of project:</div><div className="modal__paragraph--1 text-size-5">{description__1}</div>
+            <div className="modal__subheader--2 text-size-3">What I learned:</div><div className="modal__paragraph--2 text-size-5">{description__2}</div>
+            <div className="modal__subheader--3 text-size-3">About the code:</div><div className="modal__paragraph--3 text-size-5">{description__3}</div>
           </div>
         </div>
 
@@ -126,7 +126,6 @@ export default function Modal({project}) {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
-  // }
 }

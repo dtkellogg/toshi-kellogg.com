@@ -91,6 +91,7 @@
 
   &__link {
     transition: all 0.2s;
+    fill: $grey-6;
   }
   
   &__hovering {
@@ -135,6 +136,7 @@
     // animation-delay: 2s;
     height: 100%;
     // color: $grey-6;
+    fill: inherit;
   
     &:hover {
       fill: 1px solid var(--grey-10);
