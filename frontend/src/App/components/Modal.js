@@ -8,19 +8,13 @@ import { modalToggleOpen } from "../actions/modalActions";
 // constants
 import { MODAL_SETPROJECT_RESET } from '../constants/modalConstants'
 
-const icons = {
-  "React": "vscode-icons:file-type-reactjs",
-  "Redux": "simple-icons:redux",
-  "React-router": "logos-react-router",
-  "NodeJS": "logos:nodejs",
-  "CSS3": "vscode-icons:file-type-css",
-  "SCSS": "vscode-icons:file-type-scss",
-  "HTML5": "vscode-icons:file-type-html",
-  "JavaScript": "logos:javascript"
-};
+// data
+import { icons } from "../data/icons"
+
 
 export default function Modal({project}) {
   const dispatch = useDispatch();
+  const node = useRef();
 
   const { description__1, description__2, description__3, github, name, skills,
     // video, 
@@ -28,31 +22,27 @@ export default function Modal({project}) {
 
   const modalIsOpen = useSelector((state) => state.modalIsOpen);
   const { isOpen } = modalIsOpen;
-  
+
+  const handleClick = e => {
+    if (node.current.contains(e.target)) {
+      // inside modal
+      return;
+    }
+  // outside modal 
+    dispatch({ type: MODAL_SETPROJECT_RESET })
+    dispatch(modalToggleOpen());
+  };
 
   useEffect(() => {
-    // add when mounted
     window.setTimeout(() => {
       document.addEventListener("click", handleClick);
     }, 100);
-    // return function to be called when unmounted
+
     return () => {
       document.removeEventListener("click", handleClick);
     };
   }, []);
 
-  const handleClick = e => {
-    if (node.current.contains(e.target)) {
-      // inside click
-      return;
-    }
-  // outside click 
-    dispatch({ type: MODAL_SETPROJECT_RESET })
-    dispatch(modalToggleOpen());
-  };
-
-
-  const node = useRef();
 
   return (
     <section

@@ -1,3 +1,4 @@
+// react
 import React from "react";
 import { withRouter } from "react-router-dom";
 
@@ -16,6 +17,7 @@ function Nav() {
       <ul className="nav__primary">
         {navItems.map((el) => (
           <NavLinkPrimary
+            key={el}
             to={`/${el}`} 
             text={el}
           />
@@ -23,12 +25,13 @@ function Nav() {
       </ul>
 
       <ul className="nav__secondary">
-          {navItemsSecondary.map((el) => (
-            <NavLinkSecondary
-              to={`/${el}`}
-              text={el}
-            />
-          ))}
+        {navItemsSecondary.map((el) => (
+          <NavLinkSecondary
+            key={el}
+            to={`/${el}`}
+            text={el}
+          />
+        ))}
       </ul>
       
     </nav>
