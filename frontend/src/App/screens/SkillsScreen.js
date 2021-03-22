@@ -15,16 +15,15 @@ function SkillsScreen() {
           <br />
           <br />
           <span className="skills__paragraph--2 text-size-3 fadeInAnimated--2">
-            HTML, CSS, JS (<span className="skills__blue-text">React</span> and <span className="skills__blue-text">Node</span>), builing small and medium web
+            HTML, CSS (<span className="skills__blue-text">SASS</span>), and JS (<span className="skills__blue-text">React</span> and <span className="skills__blue-text">Node</span>), building small and medium web
             applications.
           </span>
           <br />
           <br />
           <span className="skills__paragraph--3 text-size-3 fadeInAnimated--3">
             I am looking for a position that will give me a lot of work and 
-            expose me to industry standards so that I can learn improve 
-            different techniques, as well as contribute to a project that I can
-            feel proud of.
+            expose me to industry standards so that I can learn to improve 
+            different techniques, as well as contribute to a group.
           </span>
           <br />
           <br />

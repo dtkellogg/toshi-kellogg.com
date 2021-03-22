@@ -43,17 +43,16 @@ function AboutScreen() {
           <br />
           <br />
           <span className="about__text--2 text-size-3 fadeInAnimated--2">
-            Obsessive level of attention to detail, highly organized (and
-            clean), problem solver, math lover, teammate, independent worker who
-            spends his time running his own (small) business as a private tutor.
-            Passionate about running, strong personal relationships, learning
-            new skills, & traveling, particularly to third world countries.
+            Careful with innate attention to detail, prioritizing organized environments, with an interest in conceptul disscusions, a life-long
+            love for math, your best teammate, while also a highly motivated individual who
+            spends his time trying to enjoy the little parts of life.
+            Passionate about running, strong inter-personal relationships, thinking, & traveling, particularly to the Asia.
           </span>
           <br />
           <br />
           <span className="about__text--3 text-size-3 fadeInAnimated--3">
-            Interested in both the front and back end of web development.
-            Looking to work on ambitious projects with positive people.
+            Excited about the prospect of working in front or/and back end web development.
+            Looking to work on ambitious projects with synergistic people.
           </span>
         </div>
       </div>
