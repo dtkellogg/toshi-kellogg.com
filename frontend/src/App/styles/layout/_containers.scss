@@ -2,7 +2,6 @@
   &__main {
 	width: 100%;
 	min-height: 100vh;
-	// @include heightWidth100($height: 100vh);
     position: relative;
     display: grid;
     grid-template-rows: 1fr;
@@ -12,7 +11,6 @@
 	@media (max-width: 950px) {
 		grid-template-rows: 7rem 1fr;
 		grid-template-columns: 1fr;
-		// height: 200vh;
 	}
   }
 
@@ -154,9 +152,6 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: minmax(0, 2rem) 1fr minmax(0, 2rem) 1fr minmax(0, 2rem) 1fr minmax(0, 2rem) 1fr minmax(0, 2rem);
-        // grid-template-rows: repeat(4, 1fr);
-        // grid-template-columns: repeat(4, 1fr);
-        // grid-template-rows: repeat(3, 1fr);
         align-items: center;
         justify-items: center;
 
@@ -165,7 +160,6 @@
         @media (max-width: 950px) {
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem);
-            // grid-template-rows: minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem);
             height: 200vh;
         }
         @media (max-width: 950px) {
@@ -173,7 +167,6 @@
 			@include flexCenterCenter($flex-direction: column);
         }
         @media (max-width: 500px) {
-			// display: block;
 			height: 100%;
 
 			@include flexCenterCenter($flex-direction: column);
@@ -365,9 +358,6 @@
 		@include flexCenterCenter($flex-direction: column, $justify-content: space-between, $align-items: flex-start);
 		
 		@media (max-width: 950px) {
-			// width: 60rem;
-			// transform: translate(25%, 11vh);
-			
 			width: 60%;
 			transform: translate(0, 11vh);
 			left: 20%;

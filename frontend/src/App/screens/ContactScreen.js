@@ -10,6 +10,8 @@ import Map from "../components/Map"
 
 import Loader from "react-loader-spinner";
 
+import useValidate from "../hooks/useValidate"
+
 function ContactScreen() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -22,6 +24,7 @@ function ContactScreen() {
 
   const { addToast } = useToasts();
 
+  // I want to move the following validation code to a custom hook, but I can't figure out how to call it from handleSubmit (must be called on top layer)
   const validate = () => {
     const emailRegexp = /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/; // eslint-disable-line no-useless-escape
 
@@ -60,6 +63,7 @@ function ContactScreen() {
       return true;
     }
   };
+  ///////////////
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -67,9 +71,7 @@ function ContactScreen() {
     window.setTimeout(() => {
       setReadyToSubmit(false);
 
-      
     }, 4000);
-
 
     const isValid = validate();
 
@@ -107,10 +109,6 @@ function ContactScreen() {
     }
   }, [name, email, subject, message])
 
-  useEffect(() => {
-    console.log(`readyToSubmit: ${readyToSubmit}`)
-  }, [readyToSubmit]);
-
 
   return (
     <div className="contact">
@@ -127,7 +125,6 @@ function ContactScreen() {
 
         <form className="contact__form fadeInAnimated--2">
           <div className="contact__form--element contact__element--name">
-            {/* <label className="contact__form--label"></label> */}
             <input
               type="name"
               className="contact__form--input text-size-3"
@@ -139,7 +136,6 @@ function ContactScreen() {
           </div>
 
           <div className="contact__form--element contact__element--email">
-            {/* <label className="contact__form--label"></label> */}
             <input
               type="email"
               className="contact__form--input text-size-3"
@@ -151,7 +147,6 @@ function ContactScreen() {
           </div>
 
           <div className="contact__form--element contact__element--subject">
-            {/* <label className="contact__form--label"></label> */}
             <input
               type="subject"
               className="contact__form--input text-size-3"
@@ -163,7 +158,6 @@ function ContactScreen() {
           </div>
 
           <div className="contact__form--element contact__element--message">
-            {/* <label className="contact__form--label"></label> */}
             <textarea
               type="text"
               className="contact__form--input text-size-3"
@@ -189,7 +183,6 @@ function ContactScreen() {
               "backgroundColor": "var(--blue-1)"
             }
           }
-          // disabled={!readyToSubmit}
         >
           {!submitted ? (
             "Submit"
@@ -200,8 +193,6 @@ function ContactScreen() {
               height={25}
               width={30}
               className={"contact__loader"}
-              // style={{"margin": "1.45px 0"}}
-              // timeout={3000} //3 secs
             />
           )}
         </button>

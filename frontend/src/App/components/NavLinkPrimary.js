@@ -57,3 +57,8 @@ export default function NavLinkPrimary({ text, to }) {
     </NavLink>
   );
 }
+
+NavLinkPrimary.propTypes = {
+  text: PropTypes.string,
+  to: PropTypes.string
+}

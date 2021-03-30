@@ -33,3 +33,7 @@ function NavLinkSecondary({ text }) {
 }
 
 export default React.memo(NavLinkSecondary)
+
+NavLinkSecondary.propTypes = {
+    text: PropTypes.string
+}

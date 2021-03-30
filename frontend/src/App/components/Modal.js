@@ -2,6 +2,9 @@
 import React, { useEffect, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
+// prop-types
+import PropTypes from "prop-types";
+
 // actions
 import { modalToggleOpen } from "../actions/modalActions";
 
@@ -118,4 +121,8 @@ export default function Modal({project}) {
       </div>
     </section>
   );
+}
+
+Modal.propTypes = {
+  project: PropTypes.object
 }
