@@ -43,16 +43,16 @@ function AboutScreen() {
           <br />
           <br />
           <span className="about__text--2 text-size-3 fadeInAnimated--2">
-            Careful with innate attention to detail, prioritizing organized environments, with an interest in conceptul disscusions, a life-long
-            love for math, your best teammate, while also a highly motivated individual who
-            spends his time trying to enjoy the little parts of life.
-            Passionate about running, strong inter-personal relationships, thinking, & traveling, particularly to the Asia.
+            Careful with patience and attention to detail, prioritizing organized environments, 
+            with an interest in collaborative disscusions, an honest interest in problem solving, 
+            while also a highly motivated individual who spends his time trying to see if he can make a career out of programming.
+            Passionate about running, strong inter-personal relationships, thinking, & traveling, particularly to Asia.
           </span>
           <br />
           <br />
           <span className="about__text--3 text-size-3 fadeInAnimated--3">
-            Excited about the prospect of working in front or/and back end web development.
-            Looking to work on ambitious projects with synergistic people.
+            Excited about the prospect of working in front and/or back end web development.
+            Looking to work on ambitious projects with good people.
           </span>
         </div>
       </div>
