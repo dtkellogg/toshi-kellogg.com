@@ -1,6 +1,7 @@
 // react
 import React, {useState} from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 // components
 import Modal from '../components/Modal'
@@ -27,8 +28,9 @@ function ProjectsScreen() {
 
   const handleModal = (e, project) => {
     e.preventDefault();
-    setProject(project)
 
+    console.log(project)
+    setProject(project)
     dispatch(modalSetProject(project));
     dispatch(modalToggleOpen());
   };
@@ -36,7 +38,15 @@ function ProjectsScreen() {
   return (
     <div className="projects">
 
-      {isOpen && <Modal project={project} />}
+      {/* <CSSTransition in={isOpen} timeout={300} className="modal-transition" > */}
+        {/* <Modal project={project} /> */}
+      {/* </CSSTransition> */}
+      {/* {isOpen && <Modal project={project} 
+        style={isOpen && { animation: 'fadeIn 1s'}}
+      />} */}
+
+      {isOpen && <Modal project={project} /> }
+
 
       <ul className="projects__container">
         {projects.map((project) => {

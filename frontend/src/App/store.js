@@ -11,8 +11,8 @@ import { composeWithDevTools } from 'redux-devtools-extension'
 import { messageCreateReducer } from './reducers/messageReducer';
 import { projectDetailsReducer, projectListReducer } from './reducers/projectReducer';
 import {
-  modalSetProjectReducer,
-  modalIsOpenReducer,
+    modalSetProjectReducer,
+    modalIsOpenReducer,
 } from "./reducers/modalReducer";
 
 

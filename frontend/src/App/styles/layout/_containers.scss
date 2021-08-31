@@ -356,6 +356,8 @@
         background-color: $white;
         border-radius: 3rem;
         transform: translate(50%, 11vh);
+		opacity: 1;
+		transition: opacity 3s;
 
 		@include flexCenterCenter($flex-direction: column, $justify-content: space-between, $align-items: flex-start);
 		
@@ -389,6 +391,10 @@
         &--bottom {
             height: 6rem;
         }
+
+		&.hide {
+			opacity: 0;
+		}
 	}
 	
 	&__skills {

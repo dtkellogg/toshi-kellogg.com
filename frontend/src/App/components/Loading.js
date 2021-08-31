@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 
 // prop-types
 import PropTypes from "prop-types";
@@ -16,15 +16,15 @@ const styles = {
 };
 
 export default function Loading({ text = "Loading", speed = 300 }) {
-  const [content, setContent] = React.useState(text);
+  const [content, setContent] = useState(text);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (content !== "Loading") {
       document.title = content;
     }
   });
 
-  React.useEffect(() => {
+  useEffect(() => {
     const id = window.setInterval(() => {
       setContent((content) => {
         return content === `${text}...` ? text : `${content}.`;

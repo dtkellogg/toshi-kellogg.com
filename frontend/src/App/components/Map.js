@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactMapGL, { Marker } from "react-map-gl";
 import * as MapboxGl from 'mapbox-gl'
 import 'mapbox-gl/dist/mapbox-gl.css'
@@ -10,7 +10,7 @@ const { REACT_APP_MAPBOX_TOKEN, REACT_APP_MAPBOX_STYLES } = process.env;
 
 
 export default function Map() {
-  const [viewport, setViewport] = React.useState({
+  const [viewport, setViewport] = useState({
     latitude: 38.0858,
     longitude: -122.018,
     width: "100%",
