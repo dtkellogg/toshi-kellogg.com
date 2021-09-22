@@ -20,7 +20,7 @@ function NavLinkSecondary({ text }) {
     return (
         <a 
             className="nav__secondary--item" 
-            href={text === "github" ? "https://github.com/dtkellogg" : "https://google.com"} 
+            href={text === "github" ? "www.linkedin.com/in/damian-toshiya-kellogg" : "https://www.linkedin.com/in/damian-kellogg-b9a719116"} 
             {...attrs}
         >
             <Icon
