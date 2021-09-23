@@ -35,11 +35,12 @@
 
     &--item {
       margin: 2rem 0;
-      padding: 0.5rem 0;
+      // padding: 0.5rem 0;
       border-left: 4px solid $white;
       height: 4.25rem;
       fill: $grey-6;
       color: $grey-6;
+      // background: green;
 
       @media (max-width: 950px) {
         margin:  0 2rem;
@@ -112,11 +113,14 @@
   &__link {
     transition: all 0.2s;
     fill: $grey-6;
+    position: relative;
   }
   
   &__hovering {
     transition: all 0.2s;
-    height: 3.4rem;
+    height: 100%;
+    width: 100%;
+    // height: 3.4rem;
 
     &--container {
     }
@@ -127,7 +131,7 @@
       height: 100%;
       opacity: 0;
       height: 100%;
-      line-height: 3.25rem;
+      line-height: 3.5rem;
 
       &:hover {
         opacity: 1;
@@ -136,5 +140,11 @@
 
     &--children {
     }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 }
