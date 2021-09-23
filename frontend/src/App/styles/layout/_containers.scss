@@ -350,6 +350,8 @@
 /* modal layout */
 
 .modal {
+	position: relative;
+
 	&__container {
         height: 80vh;
         width: 50vw;
@@ -390,6 +392,10 @@
 
         &--bottom {
             height: 6rem;
+			width: 100%;
+			position: absolute;
+			bottom: -1px;
+
         }
 
 		&.hide {

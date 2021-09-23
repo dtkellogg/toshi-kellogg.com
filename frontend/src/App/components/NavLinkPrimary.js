@@ -2,7 +2,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { NavLink } from "react-router-dom";
-import { FaHome, FaUser, FaCog, FaFolder, FaEnvelope, } from "react-icons/fa";
+import { FaHome, FaUser, FaCog, FaFolder, FaEnvelope, FaJedi, FaBrain} from "react-icons/fa";
 
 // hooks
 import useHover from "../hooks/useHover";
@@ -34,7 +34,7 @@ export default function NavLinkPrimary({ text, to }) {
   const icons = {
     home: FaHome,
     about: FaUser,
-    skills: FaCog,
+    skills: FaBrain,
     projects: FaFolder,
     contact: FaEnvelope
   }
@@ -54,7 +54,7 @@ export default function NavLinkPrimary({ text, to }) {
         <div className="nav__hovering--text text-size-5 letter-spacing-sm">{capitalizedName}</div> 
         : 
         <Icon
-          size={30}
+          size={33}
           className="nav__icon"
         />}
     </NavLink>

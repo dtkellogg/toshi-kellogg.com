@@ -74,6 +74,7 @@
       background-color: $white;
       outline: none;
       transition: 0.15s;
+      cursor: pointer;
       @include flexCenterCenter();
 
       @media (max-width: 950px) {
@@ -145,6 +146,7 @@
             height: 3rem;
             border: 1px solid transparent;
             font-family: 'Josefin Slab', serif;
+            cursor: pointer;
 
             &:focus {
                 outline: none;
@@ -167,6 +169,7 @@
             border-radius: 0 0 3rem 3rem;
             border: 1px solid transparent;
             font-family: 'Josefin Slab', serif;
+            cursor: pointer;
 
             &:focus {
                 outline: none;

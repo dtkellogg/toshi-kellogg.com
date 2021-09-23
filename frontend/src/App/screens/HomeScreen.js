@@ -7,7 +7,7 @@ function HomeScreen() {
   useEffect(() => {
     
     window.setTimeout(() => {
-      addToast(`I am currently looking for web-development positions. For inquiries, please message me via the Contact Page.`, {
+      addToast(`Looking for a great software engineer? Serendipitously, your search ends today.`, {
         appearance: "info",
         autoDismiss: true,
       });
