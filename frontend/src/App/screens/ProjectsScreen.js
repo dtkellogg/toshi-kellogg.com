@@ -65,7 +65,7 @@ function ProjectsScreen() {
                   className="btn__project-details text-size-3"
                   onClick={(e) => handleModal(e, projects[_id - 1])}
                 >
-                  Details
+                  {name}
                 </button>
               </div>
             </li>
