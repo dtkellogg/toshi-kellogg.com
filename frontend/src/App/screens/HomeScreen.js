@@ -26,7 +26,7 @@ function HomeScreen() {
           <span className="fadeInAnimated--1-5 home__text--toshi">Toshi</span>
         </div>
         <div className="fadeInAnimated--2-25 home__text home__text--3 text-size-1">I like to build things for the web.</div>
-        <div className="fadeInAnimated--3 home__text home__text--5 text-size-3">I am a novice web developer based in San Francisco, specializing in MERN stacks.</div>
+        <div className="fadeInAnimated--3 home__text home__text--5 text-size-3">I am a web developer based in the San Francisco Bay Area, specializing in MERN stacks.</div>
       </div>
 
       <div className="home__container--right text-size-tk home__text--tk fadeInAnimated--4">TK</div>
