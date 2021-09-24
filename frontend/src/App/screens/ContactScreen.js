@@ -117,8 +117,8 @@ function ContactScreen() {
           Contact me
         </h1>
         <p className="contact__paragraph text-size-3 fadeInAnimated--1">
-          I am interested in <span className="skills__blue-text">entry level positions</span> - especially those that will
-          allow me to <span className="skills__blue-text">grow the most as a developer</span>. If you have any questions or
+          I am interested in <span className="skills__blue-text">team-based positions</span> - especially those that will
+          allow me to <span className="skills__blue-text">collaborate the most with other developers</span>. If you have any questions or
           interest in learning more about me, please don't hesitate to contact
           me using the form below.
         </p>

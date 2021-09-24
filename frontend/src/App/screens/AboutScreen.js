@@ -38,7 +38,9 @@ function AboutScreen() {
         </h1>
         <div className="about__text">
           <span className="about__text--1 text-size-3 fadeInAnimated--1">
-            Professionally new to the world of web development.
+            A self taught, but well rounded programmer. From having the ability to solve algorithms using
+            traditional strategies (such as DFS, DP, and Binary Search) to writing clean code that can
+            be written according to team standards, I will certainly prove to be a valuable asset for your project. 
           </span>
           <br />
           <br />
@@ -51,7 +53,7 @@ function AboutScreen() {
           <br />
           <br />
           <span className="about__text--3 text-size-3 fadeInAnimated--3">
-            Excited about the prospect of working in front and/or back end web development.
+            Excited about the prospect of working in a team, building the UI and back end of web applications.
             Looking to work on ambitious projects with good people.
           </span>
         </div>
