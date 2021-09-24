@@ -43,8 +43,8 @@
       // background: green;
 
       @media (max-width: 950px) {
-        margin:  0 2rem;
-        padding: 1.5rem 0;
+        margin: 0 2rem;
+        // padding: 1.5rem 0;
         height: 100%;
         width: 4.25rem;
         border-left: none;
@@ -130,11 +130,18 @@
       transition: all 0.5s;
       height: 100%;
       opacity: 0;
-      height: 100%;
       line-height: 3.5rem;
 
       &:hover {
         opacity: 1;
+      }
+
+      @media (max-width: 950px) {
+        width: 100%;
+        height: auto;
+        // margin: 1rem 0;
+        line-height: 7rem;
+        
       }
     }
 
