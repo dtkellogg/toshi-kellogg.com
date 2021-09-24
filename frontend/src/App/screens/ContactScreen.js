@@ -113,7 +113,7 @@ function ContactScreen() {
   return (
     <div className="contact">
       <div className="contact__container--left">
-        <h1 className="contact__header text-size-0 fadeInAnimated--0">
+        <h1 className="contact__header text-size-1 fadeInAnimated--0">
           Contact me
         </h1>
         <p className="contact__paragraph text-size-3 fadeInAnimated--1">
@@ -170,7 +170,7 @@ function ContactScreen() {
         </form>
 
         <button
-          className="btn__contact-form fadeInAnimated--2 text-size-3"
+          className="btn__contact-form fadeInAnimated--2 text-size-4"
           onClick={handleSubmit}
           style={ 
             !readyToSubmit ? {

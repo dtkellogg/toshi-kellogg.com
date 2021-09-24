@@ -33,7 +33,7 @@ function AboutScreen() {
   return (
     <div className="about">
       <div className="about__container--left">
-        <h1 className="about__header text-size-0 fadeInAnimated--0">
+        <h1 className="about__header text-size-1 fadeInAnimated--0">
           About Screen
         </h1>
         <div className="about__text">

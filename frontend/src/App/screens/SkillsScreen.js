@@ -7,7 +7,7 @@ function SkillsScreen() {
   return (
     <div className="skills">
       <div className="skills__container--left">
-        <h1 className="skills__header text-size-0 fadeInAnimated--0">Skills & Experience</h1>
+        <h1 className="skills__header text-size-1 fadeInAnimated--0">Skills & Experience</h1>
         <p className="skills__paragraph">
           <span className="skills__paragraph--1 text-size-3 fadeInAnimated--1">
             The main area of my expertise is building MERN stack web applications.

@@ -29,7 +29,7 @@ function HomeScreen() {
         <div className="fadeInAnimated--3 home__text home__text--5 text-size-3">I am a web developer based in the San Francisco Bay Area, specializing in MERN stacks.</div>
       </div>
 
-      <div className="home__container--right text-size-tk home__text--tk fadeInAnimated--4">TK</div>
+      {/* <div className="home__container--right text-size-tk home__text--tk fadeInAnimated--4">TK</div> */}
     </div>
   );
 }

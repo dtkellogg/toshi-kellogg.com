@@ -31,7 +31,9 @@ export default function Modal({ project }) {
 
 
   const handleClick = e => {
-    if(node.contains !== undefined) {
+    console.log(`node.contains: ${node.contains}`)
+
+    if(node.contains === undefined) {
 
       if (node.current.contains(e.target)) {
         // inside modal
@@ -119,14 +121,14 @@ export default function Modal({ project }) {
                       data-inline="false"
                       style={{fontSize: "1.6rem"}}
                     />
-                    <div className="modal__skills--text">{skill}</div>
+                    <div className="modal__skills--text text-size-3">{skill}</div>
                   </li>
                 ))}
               </ul>
             )}
 
             <div className="modal__paragraph--container">
-              <div className="modal__subheader--1 text-size-3">Focus of project:</div><div className="modal__paragraph--1 text-size-5">{description__1}</div>
+              <div className="modal__subheader--1 text-size-3">Abstract:</div><div className="modal__paragraph--1 text-size-5">{description__1}</div>
               <div className="modal__subheader--2 text-size-3">What I learned:</div><div className="modal__paragraph--2 text-size-5">{description__2}</div>
               <div className="modal__subheader--3 text-size-3">About the code:</div><div className="modal__paragraph--3 text-size-5">{description__3}</div>
             </div>

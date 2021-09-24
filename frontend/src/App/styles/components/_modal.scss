@@ -1,45 +1,44 @@
 .modal {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.685);
-    z-index: 9999999999;
-    transition: all 2s;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.685);
+	z-index: 9999999999;
+	transition: all 2s;
 
-    &__video {
-        width: 45rem;
-        height: 0;
-        overflow: hidden;
-        @include flexCenterCenter();
-    }
+	&__video {
+		width: 45rem;
+		height: 0;
+		overflow: hidden;
+		@include flexCenterCenter();
+	}
 
-    &__skills {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        width: 100%;
-        margin: 2rem 0;
+	&__skills {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		width: 100%;
+		margin: 2rem 0;
 
 
-        &--icon {
-            
-        }
+		&--icon {
+				
+		}
+	}
 
-    }
+	&__github {
+		width: 100%;
+		position: absolute;
+		bottom: 3rem;
+		border-radius: 0;
+	}
 
-    &__github {
-        width: 100%;
-        position: absolute;
-        bottom: 3rem;
-        border-radius: 0;
-    }
-
-    &__url {
-        width: 100%;
-        position: absolute;
-        bottom: 0rem;
-        border-radius: 0 0 3rem 3rem;
-    }
+	&__url {
+		width: 100%;
+		position: absolute;
+		bottom: 0rem;
+		border-radius: 0 0 3rem 3rem;
+	}
 }
 
 // .modal-transition-enter {

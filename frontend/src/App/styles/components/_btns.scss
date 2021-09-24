@@ -2,19 +2,15 @@
   
   &__project-details {
     font-family: inherit;
-    height: 11.75rem;
-    width: 11.75rem;
+    height: 11.5rem;
+    width: 11.5rem;
     line-height: 2.5rem;
     border-radius: 50%;
     color: $black;
     cursor: pointer;
     
     border: 1px solid $black;
-    transition: 0.5s;
     background: transparent;
-
-    position: absolute;
-    top: 20%;
     visibility: hidden;
     opacity: 0;
     transition: opacity .2s, visibility .2s;

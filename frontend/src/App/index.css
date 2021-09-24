@@ -1,8 +1,151 @@
+@font-face {
+    font-family: 'gorditablack_italic';
+    src: url('./fonts/gordita_black_italic-webfont.woff2') format('woff2'),
+         url('./fonts/gordita_black_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gorditablack';
+    src: url('./fonts/gordita_black-webfont.woff2') format('woff2'),
+         url('./fonts/gordita_black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gorditabold_italic';
+    src: url('./fonts/gordita_bold_italic-webfont.woff2') format('woff2'),
+         url('./fonts/gordita_bold_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gorditabold';
+    src: url('./fonts/gordita_bold-webfont.woff2') format('woff2'),
+         url('./fonts/gordita_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gorditalight_italic';
+    src: url('./fonts/gordita_light_italic-webfont.woff2') format('woff2'),
+         url('./fonts/gordita_light_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gorditalight';
+    src: url('./fonts/gordita_light-webfont.woff2') format('woff2'),
+         url('./fonts/gordita_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gorditamedium_italic';
+    src: url('./fonts/gordita_medium_italic-webfont.woff2') format('woff2'),
+         url('./fonts/gordita_medium_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gorditamedium';
+    src: url('./fonts/gordita_medium-webfont.woff2') format('woff2'),
+         url('./fonts/gordita_medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gorditaregular_italic';
+    src: url('./fonts/gordita_regular_italic-webfont.woff2') format('woff2'),
+         url('./fonts/gordita_regular_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gorditaregular';
+    src: url('./fonts/gordita_regular-webfont.woff2') format('woff2'),
+         url('./fonts/gordita_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gorditathin_italic';
+    src: url('./fonts/gordita_thin_italic-webfont.woff2') format('woff2'),
+         url('./fonts/gordita_thin_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gorditathin';
+    src: url('./fonts/gordita_thin-webfont.woff2') format('woff2'),
+         url('./fonts/gordita_thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+  font-family: 'gorditaregular', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

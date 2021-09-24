@@ -62,7 +62,7 @@ function ProjectsScreen() {
                   className={`fadeInAnimated--${abbreviatedName} projects__photo projects__photo--${_id}`}
                 />
                 <button
-                  className="btn__project-details text-size-3"
+                  className="btn__project-details text-size-4"
                   onClick={(e) => handleModal(e, projects[_id - 1])}
                 >
                   {name}
