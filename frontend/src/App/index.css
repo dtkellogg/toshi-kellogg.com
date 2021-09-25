@@ -4,11 +4,7 @@
          url('./fonts/gordita_black_italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'gorditablack';
@@ -16,11 +12,7 @@
          url('./fonts/gordita_black-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'gorditabold_italic';
@@ -28,11 +20,7 @@
          url('./fonts/gordita_bold_italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'gorditabold';
@@ -40,11 +28,7 @@
          url('./fonts/gordita_bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'gorditalight_italic';
@@ -52,11 +36,7 @@
          url('./fonts/gordita_light_italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'gorditalight';
@@ -64,11 +44,7 @@
          url('./fonts/gordita_light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'gorditamedium_italic';
@@ -76,11 +52,7 @@
          url('./fonts/gordita_medium_italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'gorditamedium';
@@ -88,11 +60,7 @@
          url('./fonts/gordita_medium-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'gorditaregular_italic';
@@ -100,11 +68,7 @@
          url('./fonts/gordita_regular_italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'gorditaregular';
@@ -112,11 +76,7 @@
          url('./fonts/gordita_regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'gorditathin_italic';
@@ -124,11 +84,7 @@
          url('./fonts/gordita_thin_italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'gorditathin';
@@ -136,9 +92,7 @@
          url('./fonts/gordita_thin-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
 
 body {
   margin: 0;
