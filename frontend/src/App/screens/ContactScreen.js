@@ -114,16 +114,19 @@ function ContactScreen() {
     <div className="contact">
       <div className="contact__container--left">
         <h1 className="contact__header text-size-1 fadeInAnimated--0">
-          Contact me
+          Contact
         </h1>
-        <p className="contact__paragraph text-size-3 fadeInAnimated--1">
-          I am interested in <span className="skills__blue-text">team-based positions</span> - especially those that will
-          allow me to <span className="skills__blue-text">collaborate the most with other developers</span>. If you have any questions or
-          interest in learning more about me, please don't hesitate to contact
-          me using the form below.
+        <p className="contact__paragraph--1 text-size-3 fadeInAnimated--1">
+          I am interested in <span className="skills__blue-text">team-based positions</span> - especially those 
+          that will allow me to work alongside the most talented developers.
+        </p>
+        <br />
+        <p className="contact__paragraph--2 text-size-3 fadeInAnimated--2">
+          If you have any desire to learn more about myself, or are interested in hiring my services, please do not 
+          hesitate to contact me using the form below.
         </p>
 
-        <form className="contact__form fadeInAnimated--2">
+        <form className="contact__form fadeInAnimated--3">
           <div className="contact__form--element contact__element--name">
             <input
               type="name"
@@ -170,7 +173,7 @@ function ContactScreen() {
         </form>
 
         <button
-          className="btn__contact-form fadeInAnimated--2 text-size-4"
+          className="btn__contact-form fadeInAnimated--3 text-size-4"
           onClick={handleSubmit}
           style={ 
             !readyToSubmit ? {

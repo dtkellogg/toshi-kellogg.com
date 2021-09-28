@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function SkillsFigure() {
     return (
-      <div className="tabs fadeInAnimated--3">
+      <div className="tabs fadeInAnimated--5">
         <input
           id="tab-1"
           type="radio"
@@ -69,178 +69,99 @@ export default function SkillsFigure() {
         <div className="content">
           <div className="content-1">
             <p>
-              As with most web developers, my journey began by learning the
-              fundamentals of HTML. As this is not technically considered
-              programming, it allowed me to get my feet wet in basic web design,
-              as I had never attempted the art myself. Being self taught, I was
-              able to learn the basics, such as HTML tags and attributes,
-              relatively quickly. The nuaisses, however, have come more slowly
-              as have experimented and learn a far share through practical
-              applications. These include differentiating between HTML tags such
-              as &lt;p&gt;, &lt;span&gt;, and &lt;div&gt;.
+              HTML, or Hypertext Markup Language, is used to organize an application. 
+              Through the use of various tags - such as header, div, nav, and ul - a programmer 
+              is able to write clean, syntactic code that is highly logical and easy to follow. 
+              Of course, this is only truly capable when a programmer has memorized the different 
+              use cases of the various tags. 
             </p>
             <p>
-              From here, I learned to apply HTML nomenclature to JSX in React
-              JS. Of course, learning HTML is only the tip of the iceberg in
-              regards to being a proficient programmer, but I nonetheless
-              realize its importance.
-            </p>
-            <p>
-              If you go to the projects page, you will find two applications
-              that were built primarily to implement what I taught myself about
-              HTML (and CSS). These are Thalassa Dive Resort and Indonesia
-              (2015).
+              Throughout my various projects, you will find HTML implemented through both standard 
+              syntax and in JSX. By developing a strong understanding of the markup, I have been able 
+              to make my projects easier to read and follow so that I am able to easily decipher what 
+              is going on in a file I haven’t looked at in a while. It has also allowed me to organize 
+              my work into code that sometimes has a variety of complex logic. Overall, HTML has allowed 
+              me to write code in a way that both I and other programmers can easily read and understand.
             </p>
           </div>
           <div className="content-2">
             <p>
-              After learning the basics of HTML, the obvious next course of
-              action was to learn the basic principles of CSS. This of course
-              began with the Box Model, but quickly involved tackling pseudo
-              elements and pseudo classes. When I felt confident that I had a
-              solid understanding of all three of these concept, I moved on to
-              Flexbox and CSS grid. These were relatively easy to understand
-              thanks to online courses by Jonas Schmedtmann. From there, I
-              continued under Schmedtmann’s guidance and learned more advanced
-              CSS, such as using the SCSS framework, the pragmatic BEM naming
-              convention, and media queries for different sized devices.
-            </p>
-            <p>
-              After some time getting used to this new language, I gained enough
-              confidence to teach myself other concepts (mainly through
-              YouTube), such as traditional class based animations and SVG
-              animations. Although I know that there is much more to learn (such
-              as three.js), I have myself enjoying learning and applying what I
-              can, and I had truly desire to keep expanding my knowledge.
+              CSS, or Cascading Style Sheets, is used to format an application. This ranges from relative 
+              placement of divisions, colors, spacing, sizing; without it, our applications would simply 
+              be a bore to look at. While mastering CSS takes incredible dedication and practice, there 
+              is much that can be done by having a strong understanding of the fundamentals, such as the 
+              box model. Through different forms of implementation, I have been able to develop beautiful 
+              web applications by simply writing CSS code. From animations on user events to cohesive color 
+              choices to make a more enjoyable UX experience, I have effectively implemented CSS into all 
+              of my applications. I have also taught myself to use SASS, or Syntactically Awesome Style Sheets, 
+              to write more organized CSS code. I have found that the use of SASS has made my projects easier 
+              to scale and manipulate, especially through the use of variables and the 7-1 directory pattern.
             </p>
           </div>
           <div className="content-3">
             <p>
-              After achieving a working knowledge of both HTML and CSS, I felt
-              confident enough to tackle an actual programming language. I
-              initially learning Ruby to gain admittance to my bootcamp of
-              choice (App Academy). Unfortunately, my timing coincided with the
-              onset of COVID-19, and due to App Academy’s failure to adjust
-              their prices accordingly (I was mainly interested in making
-              connections with people in the field), I decided to teach myself.
+              Although there are some nuance annoyances, the JavaScript language has a significant advantage 
+              over other scripting languages: it allows for the development of applications on both the front and back end.
             </p>
             <p>
-              I soon realized that the internet had much better resources
-              (including my instructor of choice, Jonas Schmedtmann) for an
-              amateur to learn JavaScript.
-            </p>
-            <p>
-              To be very honest, it took me a fair length of time to gain a
-              working understanding of JavaScript. This I attribute to getting
-              used to the syntax itself, but also as I was working concurrently
-              on my own tutoring business (Kellogg Tutoring). As with any
-              language, however, time proved to be fundamental. I spent
-              countless hours practice and studying from professionals in the
-              field, and eventually I felt confident. I pride myself on having a
-              strong math background and ability to think rationally,
-              methodically, and linguistically (Spanish and Japanese), and these
-              no doubt helped me learn my first programming language.
+              In order to build full stack applications, I have taken the necessary steps to become an efficient 
+              programmer in JavaScript. Through the many built in methods, I have built fast, simple, and clean 
+              applications with clear and easy to follow logic. In addition, I am able to solve relatively complex 
+              algorithm problems using the language, most notably when taking into account the time and space complexity 
+              of various solutions. JavaScript has allowed my full-stack applications to run seamlessly, and I have found 
+              that the ability to write both the client side and back end in the same language has led to a significant 
+              advantage, as I can easily make the entire stack readable to both myself and other programmers.
             </p>
           </div>
           <div className="content-4">
             <p>
-              Once I was able to achieve an applicable level of understand of
-              HTML, CSS and JS, I learned that the easiest way to get an app up
-              and running with both a front and back end is to use a framework.
-              Having already leared JS and it being 2020, React seemed an
-              obvious choice for someone relatively new to the work of
-              programming.
+              In order to build fast, scalable and intuitive applications, I chose to build my stacks using 
+              the React framework. While many programmers choose to use the Angular framework, I have found 
+              React to be the better alternative, especially due to its modern day use of components and ease 
+              of use with APIs. In addition, I have found the integration of HTML and CSS into React components 
+              through JSX to be incredibly powerful, easy to use, and logical, as I can organize my code and 
+              keep logic wherever I find most rational.
             </p>
             <p>
-              As it was, this part of my learning happened to take the most
-              time. I ended up spending hundreds of hours going through online
-              courses by Jonas Schmedtmann, Tyler McGinnis, Brad Traversy, and
-              Colt Steele. I am someone who sometimes takes more time to process
-              things, but I end up truly conceptually learning what I am trying
-              to learn. I have applied this to my own personal tutoring
-              business, as I have even taught classes that I have never taught
-              in previous years. However, as the long list of instructors show,
-              the whole process took me quite a while.
-            </p>
-            <p>
-              I began by learning the fundamentals of the class based React
-              syntax. However, by the time I started learning the framework,
-              React Hooks had already an extremely popular alternative to its
-              predecessor. Therefore, I learned everything there was to know
-              about class hooks, but I haven’t honestly memorized all of the
-              fundamental aspects of the syntax.
-            </p>
-            <p>
-              However, I now have a level of understanding of React Hooks that I
-              feel truly confident with. If needed, I can learn to convert class
-              based React components to hooks, as I have prioritized other
-              aspects of programming but don’t view it as entirely that
-              difficult.
-            </p>
-            <p>
-              I have honestly been enjoying working with React a lot, and I
-              really want to elevate my abilities by learning from a proven
-              professional (my grunt work stills are second to none, but I am
-              also quite capable to writing web applications on my own).
+              Through the use of React, I have been able to build highly organized and intuitive applications. 
+              By developing my own custom hooks, I have been able to make my components not only highly scalable, 
+              but also reusable to build other projects rapidly with a uniform thought process. Furthermore, I 
+              have built many applications using the built in hooks that come with React. From using useEffect 
+              to create timers and delays, to useState to deal with component based state, my projects effectively 
+              make use of the framework to its full capacity.
             </p>
           </div>
           <div className="content-5">
             <p>
-              To continue with my web development skills, and having learned a
-              frontend framework, I decided to learn Node.js. Before
-              implementing Node.js via the Express framework, I learned the
-              fundamentals of Node. This includes how it is single threaded (you
-              must avoid blocking the event loop), it’s uses (APIs, data
-              streaming, real-time chat) as well as its limitations to heavy
-              server-side processing. I also learned about Modules and how you
-              can use make your own or import third party packages from NPM. I
-              also learned about how requests are made, what they are, and how
-              to implement them, as well as routing. 
+              To build the backend of my projects using a uniform language throughout my stack, I chose to use Node.js. 
+              As a single-threaded, event-driven JavaScript runtime, Node.js has allowed me to write highly-scalable and 
+              fast code. This is all done by understanding how the event loop executes code asynchronously to handle new 
+              connections and operations in a non-blocking way. This approach allows Node.js to use less memory than its 
+              counterparts. In addition, I have found that the conventional use of routes, controllers, and middleware 
+              has allowed for a logical and scalable directory system. 
             </p>
             <p>
-              When I finally started
-              learning Node using Express, I familiarized myself with the file
-              structure (a server module, routes, controllers, models) and even
-              how to seed sample data. Most importantly, through many months of
-              practice, I have become able to truely understand how data is
-              moving around my application on the backend, and how all the
-              fundamental divisions of express function and work together. 
-            </p>
-            <p>
-              In an
-              effort to take my backend understanding and be able to produce a
-              full stack application, I also learned how to use MongoDB and
-              Postman. 
-            </p>
-            <p>
-              As with the other aspects of my own mental programming
-              database, I realize that there is still much more to learn.
-              However, I feel confident with the fundamentals and can full
-              utilize what I have learned to build full stack applications. So
-              far, my own personal full stack applications include a website for
-              my tutoring business, this website, and a project I made for a
-              philanthropy in Davis. I have also built full stack applications
-              following in the instruction of Jonas Schmedtmann, Tyler McGinnis,
-              and Brad Traversy.
+              Through the use of the Express.js framework, I have incorporated Node.js as my backend environment for my 
+              fullstack applications. It has allowed me to write intuitive backend code to handle API calls, interact with 
+              databases, and communicate with clients through the integration of Nodemailer for emails and Mailchimp for 
+              community newsletters. I have also learned to use the JavaScript runtime to handle authentication through JSON 
+              web tokens to allow for a user / client environment. 
             </p>
           </div>
           <div className="content-6">
             <p>
-              To take my programming skills one step further, I decided to learn
-              the popular state management framework Redux. As with everything
-              else, this took me a few applications to feel confident enough to
-              say that I understand the basics and can apply it in applications.
-              I understand that Redux is also used with other programming
-              languages, so I prioritized learning this framework.
+              To further make my stack scalable and organized, I have implemented Redux into my applications. The library 
+              has allowed the client side of my projects to store state changes in a single location which, as projects 
+              grow larger in size, has led to ease of state management across the component tree. While the store holds 
+              the tree’s state, the actions describe what happens to the application when they are called upon by reducer 
+              functions. Although many components still have their own state for localized logic, the implementation of 
+              Redux to hold state has made my projects cleaner, as there is no need to keep track of passing logic up and 
+              down components and worry about the connectivity of the overall tree.
             </p>
             <p>
-              Luckily, I was able to take an excelled course by Tyler McGinnis.
-              This course outlined and taught me all the basic fundamentals.
-              This includes understanding how the store holds all the state and
-              can be accessed in any part of the application by wrapping the app
-              in a provider, how reducers change the state based on methods
-              defined in actions, and how to to use react-redux to interact with
-              the store.
+              Throughout all of my full stack applications, I have made use of the power of Redux to handle my stack-wide 
+              state. From handling interactions with databases on the client side, to holding logic on whether a modal is 
+              open or not, I have found the use of Redux has made my applications rational and easily scalable.
             </p>
           </div>
         </div>

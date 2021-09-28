@@ -34,32 +34,36 @@ function AboutScreen() {
     <div className="about">
       <div className="about__container--left">
         <h1 className="about__header text-size-1 fadeInAnimated--0">
-          About Screen
+          About
         </h1>
         <div className="about__text">
           <span className="about__text--1 text-size-3 fadeInAnimated--1">
-            A self taught, but well rounded programmer. From having the ability to solve algorithms using
-            traditional strategies (such as DFS, DP, and Binary Search) to writing clean code that can
-            be written according to team standards, I will certainly prove to be a valuable asset for your project. 
+            A self taught, yet well rounded programmer with a strong background and understanding of data structures and algorithms.
           </span>
           <br />
           <br />
           <span className="about__text--2 text-size-3 fadeInAnimated--2">
-            Careful with patience and attention to detail, prioritizing organized environments, 
-            with an interest in collaborative disscusions, an honest interest in problem solving, 
-            while also a highly motivated individual who spends his time trying to see if he can make a career out of programming.
-            Passionate about running, strong inter-personal relationships, thinking, & traveling, particularly to Asia.
+            Coming from a bicultural background, thinking in different languages has always been a part of my psyche. Having completed 
+            my bachelor’s at UC Davis in Chemistry, I bring to the table a strong understanding of the fundamentals of mathematics, science and English. 
+            Coupled with extensive experience teaching high school and college students, I have fine tuned my problem solving skills to be able to write 
+            code efficiently and logically.
           </span>
           <br />
           <br />
           <span className="about__text--3 text-size-3 fadeInAnimated--3">
-            Excited about the prospect of working in a team, building the UI and back end of web applications.
-            Looking to work on ambitious projects with good people.
+            Besides knowing the material, my success in teaching has come from an innate ability to maintain patience and listen attentively. 
+            I prioritize a clean, systematic lifestyle, which I incorporate into my code.
+          </span>
+          <br />
+          <br />
+          <span className="about__text--4 text-size-3 fadeInAnimated--4">
+            When I am not programming, I enjoy spending my leisure time running or reading a novel. What truly inspires me in life is traveling, as I 
+            have been fortunate enough to have already been to many amazing places. I hope to continue my travels as I build more web applications in the future.
           </span>
         </div>
       </div>
 
-      <div className="about__container--right fadeInAnimated--3">
+      <div className="about__container--right fadeInAnimated--5">
         <img
           src={image.src}
           alt="My mom, dog and I (circa 2010)"
