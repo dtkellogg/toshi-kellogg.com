@@ -14,6 +14,7 @@
 .fadeInAnimated--hackerNewsClone, .fadeInAnimated--omnifood {
   opacity: 0;
   animation: fadeIn 2s forwards;
+  animation-delay: 0s;
 }
 
 .fadeInAnimated--1, .fadeInAnimated--nexter,
