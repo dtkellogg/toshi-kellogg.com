@@ -9,7 +9,7 @@
 	overflow: hidden;
 	
 	@media (max-width: 950px) {
-		grid-template-rows: 7rem 1fr;
+		grid-template-rows: 7rem calc(100vh - 7rem);
 		grid-template-columns: 1fr;
 	}
   }
@@ -53,10 +53,6 @@
 		padding: 3rem;
 		position: relative;
 		overflow: hidden;
-
-		@media (max-width: 950px) {
-			height: calc(100vh - 7rem);
-		}
 
         &--left {
 			@include flexCenterCenter($flex-direction: column, $align-items: flex-start);
