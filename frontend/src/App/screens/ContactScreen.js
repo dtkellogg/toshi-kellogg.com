@@ -111,7 +111,7 @@ function ContactScreen() {
 
 
   return (
-    <div className="contact">
+    <div className="contact__container">
       <div className="contact__container--left">
         <h1 className="contact__header text-size-1 fadeInAnimated--0">
           Contact

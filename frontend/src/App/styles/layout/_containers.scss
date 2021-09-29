@@ -65,9 +65,7 @@
             text-align: center;
             z-index: 1;
             position: absolute;
-            left: 65%;
             left: 50vw;
-			// top: 28.5rem;
 			top: 43%;
 			transform: translateY(-6rem) scale(3);
 			
@@ -83,16 +81,27 @@
 
 .about {
 	&__container {
-        &--left {
-            width: 50%;
-            display: flex;
+		@include heightWidth100($height: 100vh);
+		padding: 3rem;
+		display: flex;
+		align-items: center;
+
+		@media (max-width: 950px) {
+			height: 100%;
             flex-direction: column;
-            align-items: flex-start;
-            justify-content: flex-end;
+            padding: 3rem 6.0rem;
+        }
+
+        @media (max-width: 720px) {
+            padding: 3rem;
+        }
+
+        &--left {
+			@include flexCenterCenter($flex-direction: column, $align-items: flex-start, $justify-content: flex-end);
+            width: 50%;
 
             @media (max-width: 950px) {
                 width: 100%;
-                @include flexCenterCenter($flex-direction: column)
             }
         }
 
@@ -127,6 +136,21 @@
 .skills {
 
     &__container {
+		@include heightWidth100($height: 100vh);
+		padding: 3rem;
+		display: flex;
+		align-items: center;
+
+		@media (max-width: 950px) {
+			flex-direction: column;
+			height: 150vh;
+			padding: 3rem 6.0rem;
+		}
+
+        @media (max-width: 720px) {
+            padding: 3rem;
+        }
+
         &--left {
             @include flexCenterCenter($flex-direction: column, $align-items: flex-start, $justify-content: flex-end);
             width: 50%;
@@ -423,4 +447,64 @@
             padding: 0.5rem 0;
         }
 	}
+}
+
+/* --------------------------------------------------------------------- */
+/* contact layout */
+
+.contact {
+
+    &__container {
+        @include heightWidth100($height: 100vh);
+        @include flexCenterCenter($justify-content: space-between);
+        padding: 3rem;
+
+        @media (max-width: 950px) {
+            padding: 3rem 6.0rem 10rem 6.0rem;
+            @include heightWidth100($width: 100vw);
+            @include flexCenterCenter($flex-direction: column, $justify-content: space-between);
+        }
+
+        @media (max-width: 720px) {
+            padding: 3rem 3rem 10rem 3rem;
+            @include heightWidth100($width: 100vw);
+            @include flexCenterCenter($flex-direction: column, $justify-content: space-between);
+        }
+
+        &--left {
+            @include flexCenterCenter($flex-direction: column, $align-items: flex-start);
+            width: 51rem;
+            height: 100%;
+
+            @media (max-width: 1400px) {
+                width: 45rem;
+            }
+
+            @media (max-width: 1250px) {
+                width: 40rem;
+            }
+
+            @media (max-width: 1150px) {
+                width: 35rem;
+            }
+
+            @media (max-width: 950px) {
+                width: 100%;
+                margin-bottom: 5rem;
+            }
+        }
+
+        &--right {
+            @include flexCenterCenter($flex-direction: column);
+            width: auto;
+            height: 100%;
+            padding: 3rem;
+            overflow: hidden;
+
+            @media (max-width: 950px) {
+                padding: 0;
+                width: 100%;
+            }
+        }
+    }
 }

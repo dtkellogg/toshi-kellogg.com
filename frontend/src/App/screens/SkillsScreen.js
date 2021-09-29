@@ -5,7 +5,7 @@ import SkillsFigure from '../components/SkillsFigure'
 
 function SkillsScreen() {
   return (
-    <div className="skills">
+    <div className="skills__container">
       <div className="skills__container--left">
         <h1 className="skills__header text-size-1 fadeInAnimated--0">Skills & Experience</h1>
         <p className="skills__paragraph">

@@ -160,15 +160,6 @@
 }
 
 .about {
-  @include heightWidth100($height: 100vh);
-  padding: 3rem;
-  display: flex;
-  align-items: center;
-
-  @media (max-width: 950px) {
-    flex-direction: column;
-    height: 100%;
-  }
 
   &__header {
     margin-bottom: 2rem;
