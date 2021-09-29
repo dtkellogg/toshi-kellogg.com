@@ -130,7 +130,7 @@ function ContactScreen() {
           <div className="contact__form--element contact__element--name">
             <input
               type="name"
-              className="contact__form--input text-size-3"
+              className="contact__form--input text-size-4"
               placeholder="Name"
               value={name || ""}
               onChange={(e) => setName(e.target.value)}
@@ -141,7 +141,7 @@ function ContactScreen() {
           <div className="contact__form--element contact__element--email">
             <input
               type="email"
-              className="contact__form--input text-size-3"
+              className="contact__form--input text-size-4"
               placeholder="Email"
               value={email || ""}
               onChange={(e) => setEmail(e.target.value)}
@@ -152,7 +152,7 @@ function ContactScreen() {
           <div className="contact__form--element contact__element--subject">
             <input
               type="subject"
-              className="contact__form--input text-size-3"
+              className="contact__form--input text-size-4"
               placeholder="Subject"
               value={subject || ""}
               onChange={(e) => setSubject(e.target.value)}
@@ -163,7 +163,7 @@ function ContactScreen() {
           <div className="contact__form--element contact__element--message">
             <textarea
               type="text"
-              className="contact__form--input text-size-3"
+              className="contact__form--input text-size-4"
               placeholder="Message"
               value={message || ""}
               onChange={(e) => setMessage(e.target.value)}

@@ -112,9 +112,9 @@ export default function Modal({ project }) {
             {/* </div> */}
 
             {skills && (
-              <ul className="modal__skills">
+              <ul className="modal__container--skills">
                 {skills.map((skill) => (
-                  <li className="modal__skills--container" key={skill}>
+                  <li className="modal__skills--item" key={skill}>
                     <span
                       className="iconify modal__skills--icon"
                       data-icon={icons[skill]}

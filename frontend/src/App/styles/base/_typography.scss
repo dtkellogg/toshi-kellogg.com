@@ -250,6 +250,7 @@
     &--text {
       margin-left: 0.5rem;
       color: $grey-4;
+      white-space: nowrap;
 
       @media (max-width: 700px) {
         margin-left: 0.45rem;

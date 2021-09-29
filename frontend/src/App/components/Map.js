@@ -34,7 +34,7 @@ export default function Map() {
         mapStyle={REACT_APP_MAPBOX_STYLES}
         onViewportChange={(viewport) => setViewport(viewport)}
         scrollZoom={width > 950 && true}
-        userInteractionEnabled={true}
+        userInteractionEnabled={width > 950 && true}
         // onStyleLoad={(map) => onLoaded(map)}
       >
         <Marker latitude={37.9158} longitude={-122.158}>

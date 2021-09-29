@@ -436,16 +436,17 @@
 		&.hide {
 			opacity: 0;
 		}
-	}
 	
-	&__skills {
-
-        &--container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+		&--skills {
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			width: 100%;
+			margin: 1rem 0;
+			flex-wrap: wrap;
+		}
 	}
+
 
 	&__paragraph {
         &--container {
