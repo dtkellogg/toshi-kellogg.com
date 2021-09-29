@@ -48,6 +48,12 @@
 
 .home {
 	&__container {
+		@include heightWidth100();
+		@include flexCenterCenter($justify-content: space-between);
+		padding: 3rem;
+		position: relative;
+		overflow: hidden;
+
         &--left {
 			@include flexCenterCenter($flex-direction: column, $align-items: flex-start);
 			position: absolute;

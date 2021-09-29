@@ -18,7 +18,7 @@ function HomeScreen() {
   const { addToast } = useToasts();
 
   return (
-    <div className="home">
+    <div className="home__container">
       <div className="home__container--left">
         <div className="fadeInAnimated--0 home__text home__text--1 text-size-3">Hello,</div>
         <div className="home__text home__text--2 text-size-0">

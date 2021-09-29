@@ -1,7 +1,0 @@
-.home {
-    @include heightWidth100($height: 100vh);
-    @include flexCenterCenter($justify-content: space-between);
-    padding: 3rem;
-    position: relative;
-    overflow: hidden;
-}
