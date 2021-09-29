@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ReactMapGL, { Marker } from "react-map-gl";
 import * as MapboxGl from 'mapbox-gl'
 import 'mapbox-gl/dist/mapbox-gl.css'
+import useWindowDimensions from '../hooks/useWindowDimensions'
 
 // eslint-disable-next-line import/no-webpack-loader-syntax
 MapboxGl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
@@ -19,6 +20,8 @@ export default function Map() {
     display: "block",
   });
 
+  const { width } = useWindowDimensions()
+
   // const onLoaded = (map) => {
   //   map.resize();
   // };
@@ -30,7 +33,7 @@ export default function Map() {
         mapboxApiAccessToken={REACT_APP_MAPBOX_TOKEN}
         mapStyle={REACT_APP_MAPBOX_STYLES}
         onViewportChange={(viewport) => setViewport(viewport)}
-        scrollZoom={true}
+        scrollZoom={width > 950 && true}
         userInteractionEnabled={true}
         // onStyleLoad={(map) => onLoaded(map)}
       >
