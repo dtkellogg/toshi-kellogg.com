@@ -205,7 +205,9 @@ function ContactScreen() {
         <div className="contact__map">
           <Map />
         </div>
+        <div className="map__overlay" />
       </div>
+
     </div>
   );
 }

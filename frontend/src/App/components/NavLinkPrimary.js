@@ -2,7 +2,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { NavLink } from "react-router-dom";
-import { FaHome, FaUser, FaCog, FaFolder, FaEnvelope, FaJedi, FaBrain} from "react-icons/fa";
+import { FaHome, FaUser, FaFolder, FaEnvelope, FaBrain} from "react-icons/fa";
 
 // hooks
 import useHover from "../hooks/useHover";

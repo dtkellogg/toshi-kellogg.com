@@ -1,8 +1,7 @@
 .map {
+  @include heightWidth100();
   position: relative;
   z-index: 1000;
-  height: 100%;
-  width: 100%;
   overflow: hidden;
 
   &__marker {
@@ -19,6 +18,18 @@
       &:hover {
         transform: translateY(0.2rem);
       }
+    }
+  }
+
+  &__overlay {
+    @include heightWidth100();
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    z-index: 1001;
+
+    @media (max-width: 950px) {
+      display: block;
     }
   }
 }
