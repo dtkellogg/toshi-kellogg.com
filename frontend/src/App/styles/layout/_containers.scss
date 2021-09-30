@@ -150,11 +150,14 @@
 		padding: 3rem;
 		display: flex;
 		align-items: center;
+		justify-content: space-between;
+		position: relative;
 
 		@media (max-width: 950px) {
 			flex-direction: column;
-			height: 150vh;
+			height: 100%;
 			padding: 3rem 6.0rem;
+			justify-content: initial;
 		}
 
         @media (max-width: 720px) {
@@ -172,14 +175,14 @@
             }
         }
 
-        &--right {
-            width: 50%;
-            text-align: center;
+        // &--right {
+        //     width: 50%;
+        //     text-align: center;
 
-            @media (max-width: 950px) {
-                width: 100%;
-            }
-        }
+        //     @media (max-width: 950px) {
+        //         width: 100%;
+        //     }
+        // }
     }
 }
 
