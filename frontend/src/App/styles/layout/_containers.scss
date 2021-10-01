@@ -176,7 +176,9 @@
         }
 
         &--right {
+			@include flexCenterCenter($flex-direction: column);
             width: 50%;
+			height: 100%;
             text-align: center;
 
             @media (max-width: 950px) {
