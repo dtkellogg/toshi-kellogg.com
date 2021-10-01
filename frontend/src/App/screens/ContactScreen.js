@@ -201,7 +201,7 @@ function ContactScreen() {
         </button>
       </div>
 
-      <div className="contact__container--right fadeInAnimated--3">
+      <div className="contact__container--right fadeInAnimated--4">
         <div className="contact__map">
           <Map />
         </div>

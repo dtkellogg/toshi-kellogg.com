@@ -64,35 +64,37 @@ function AboutScreen() {
       </div>
 
       <div className="about__container--right fadeInAnimated--5">
-        <img
-          src={image.src}
-          alt="My mom, dog and I (circa 2010)"
-          className="about__image"
-        />
-        <div className="about__arrows--container">
-          <button
-            className="btn__about-screen--left"
-            disabled={image.num === 1}
-          >
-            <FaCaretLeft
-              size={40}
-              fill="var(--blue-4)"
-              onClick={handleBtnClick}
-            />
-          </button>
-          <span className="about__arrows--text text-size-4">
-            {image.num} of 2
-          </span>
-          <button
-            className="btn__about-screen--right"
-            disabled={image.num === 2}
-          >
-            <FaCaretRight
-              size={40}
-              fill="var(--blue-4)"
-              onClick={handleBtnClick}
-            />
-          </button>
+        <div className="about__container--img">
+          <img
+            src={image.src}
+            alt="My mom, dog and I (circa 2010)"
+            className="about__image"
+          />
+          <div className="about__arrows--container">
+            <button
+              className="btn__about-screen--left"
+              disabled={image.num === 1}
+            >
+              <FaCaretLeft
+                size={40}
+                fill="var(--blue-4)"
+                onClick={handleBtnClick}
+              />
+            </button>
+            <span className="about__arrows--text text-size-4">
+              {image.num} of 2
+            </span>
+            <button
+              className="btn__about-screen--right"
+              disabled={image.num === 2}
+            >
+              <FaCaretRight
+                size={40}
+                fill="var(--blue-4)"
+                onClick={handleBtnClick}
+              />
+            </button>
+          </div>
         </div>
       </div>
     </div>
