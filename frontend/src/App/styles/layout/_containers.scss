@@ -175,14 +175,14 @@
             }
         }
 
-        // &--right {
-        //     width: 50%;
-        //     text-align: center;
+        &--right {
+            width: 50%;
+            text-align: center;
 
-        //     @media (max-width: 950px) {
-        //         width: 100%;
-        //     }
-        // }
+            @media (max-width: 950px) {
+                width: 100%;
+            }
+        }
     }
 }
 

@@ -36,9 +36,9 @@ function SkillsScreen() {
         </p>
       </div>
 
-      {/* <div className="skills__container--right"> */}
+      <div className="skills__container--right">
         <SkillsFigure />
-      {/* </div> */}
+      </div>
     </div>
   );
 }
