@@ -26,6 +26,8 @@ export const sendMessage = (
             error.response && error.response.data.message
                 ? error.response.data.message
                 : error.message;
+
+        console.log(message)
                 
         dispatch({
             type: MESSAGE_CREATE_FAIL,
