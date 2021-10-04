@@ -5,11 +5,12 @@ import { FaCaretLeft, FaCaretRight } from "react-icons/fa";
 
 // images
 import aboutImage from '../img/aboutImage.jpg'
-import baliemValleyImage from '../img/baliemValleyImage.jpg'
+// import baliemValleyImage from '../img/baliemValleyImage.jpg'
+import toshiHeadshot from '../img/toshiHeadshot.jpg'
 
 function AboutScreen() {
   const [image, setImage] = useState({
-    src: baliemValleyImage,
+    src: toshiHeadshot,
     alt: "Me with the local headhunters (Baliem Valley, West Papua)",
     num: 1,
   });
@@ -17,7 +18,7 @@ function AboutScreen() {
   const handleBtnClick = () => {
     if(image.src === aboutImage) {
       setImage({
-        src: baliemValleyImage,
+        src: toshiHeadshot,
         alt: "Me with the local headhunters (Baliem Valley, West Papua)",
         num: 1
       });
@@ -57,7 +58,7 @@ function AboutScreen() {
           <br />
           <br />
           <span className="about__text--4 text-size-3 fadeInAnimated--4">
-            When I am not programming, I enjoy spending my leisure time running or reading a novel. What truly inspires me in life is traveling, as I 
+            When I am not programming, I enjoy spending my time running or reading a novel. What truly inspires me in life is traveling, as I 
             have been fortunate enough to have already been to many amazing places. I hope to continue my travels as I build more web applications in the future.
           </span>
         </div>
@@ -68,8 +69,9 @@ function AboutScreen() {
           <img
             src={image.src}
             alt="My mom, dog and I (circa 2010)"
-            className="about__image"
+            className={image.src === toshiHeadshot ? "about__image--toshi-headshot" : "about__image--about"}
           />
+          {/* <span className="about__image--background" /> */}
           <div className="about__arrows--container">
             <button
               className="btn__about-screen--left"

@@ -11,13 +11,13 @@
 // Number at end of the following fadeInAnimated classes will denote the time of delay (seconds).
 
 .fadeInAnimated--0, .fadeInAnimated--kelloggtutoring,
-.fadeInAnimated--hackerNewsClone, .fadeInAnimated--omnifood {
+.fadeInAnimated--omnifood, .fadeInAnimated--nexter {
   opacity: 0;
   animation: fadeIn 2s forwards;
   animation-delay: 0.001s;
 }
 
-.fadeInAnimated--1, .fadeInAnimated--nexter,
+.fadeInAnimated--1, 
 .fadeInAnimated--githubBattle, .fadeInAnimated--nightMarket  {
   opacity: 0;
   animation: fadeIn 2s forwards;
@@ -31,7 +31,7 @@
 }
 
 .fadeInAnimated--2, .fadeInAnimated--thalassa,
-.fadeInAnimated--tetris,  .fadeInAnimated--natours {
+.fadeInAnimated--tetris, .fadeInAnimated--hackerNewsClone,  .fadeInAnimated--natours {
   opacity: 0;
   animation: fadeIn 2s forwards;
   animation-delay: 2s;

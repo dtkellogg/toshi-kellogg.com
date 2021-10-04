@@ -16,6 +16,53 @@
         @media (max-width: 425px) {
             width: 30rem;
         }
+
+        &--toshi-headshot {
+            width: 50rem;
+            height: auto;
+            transform: rotate(-4deg);
+            border-radius: 69%;
+            box-shadow: 0.3rem 0.3rem 0.6rem #000;
+
+            @media (max-width: 600px) {
+                width: 40rem;
+            }
+
+            @media (max-width: 475px) {
+                width: 32.5rem;
+            }
+
+            @media (max-width: 400px) {
+                width: 30rem;
+            }
+        }
+
+        &--about {
+            width: 50rem;
+            height: auto;
+            box-shadow: 0.3rem 0.3rem 0.6rem #000;
+
+            @media (max-width: 600px) {
+                width: 40rem;
+            }
+
+            @media (max-width: 475px) {
+                width: 32.5rem;
+            }
+
+            @media (max-width: 400px) {
+                width: 30rem;
+            }
+        }
+
+        &--background {
+            position: absolute;
+            width: 50rem;
+            height: 50rem;
+            border-radius: 60%;
+            box-shadow: 0.3rem 0.3rem 0.6rem #000;
+            background-color: red;
+        }
     }
     
     &__arrows {
