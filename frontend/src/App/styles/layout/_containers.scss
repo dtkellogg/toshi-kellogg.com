@@ -415,10 +415,12 @@
 		@include flexCenterCenter($flex-direction: column, $justify-content: space-between, $align-items: flex-start);
 		
 		@media (max-width: 950px) {
+			height: 105vh;
 			width: 60%;
 			transform: translate(0, 11vh);
 			left: 20%;
 			position: absolute;
+			min-height: min-content;
 		}
 
 		@media (max-width: 800px) {

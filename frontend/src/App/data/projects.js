@@ -61,6 +61,21 @@ const projects = [
   },
   {
     _id: 5,
+    name: "Hash Basketball",
+    skills: ["React", "React-Router", "CSS3"],
+    description__1:
+      "This project was made as part of Tyler McGinnis’s React Router V5 course. It focused on implementing the different built in hooks of React Router.",
+    description__2:
+      "As this course's intention, I was able to learn about React Router V5 and how to use it. The different hooks from the react-router-dom package comprised a majority of the focus, and application as well as Tyler’s instruction made it very easy to understand. I did not master React Router simply by completing this course; it did, however, give me enough base knowledge to experiment with areas that my understanding was weak in when I applied it to different projects.",
+    description__3:
+      "The code consists of both front and back ends, but the back end is built only to run the application on Heroku. The frontend was built using create-react-app. It is composed of two main directories (components and hooks) and CSS files. As the focus of the project was on React Router, much of the meat of the code focuses on areas such as the switch and its relevant routes (used in multiple functions for nested routes), creating a custom Link with an active class, and using useParams to extract IDs from the URL. The six different custom hooks deal with making requests and using responses from an API (from the frontend).",
+    picture: "../img/hashBasketball.png",
+    video: "#",
+    github: "https://github.com/dtkellogg/kellogg-hash-basketball",
+    url: "https://kellogg-hash-basketball.herokuapp.com/",
+  },
+  {
+    _id: 6,
     name: "Hackernews Clone",
     skills: ["React", "React-Router", "CSS3"],
     description__1:
@@ -73,21 +88,6 @@ const projects = [
     video: "#",
     github: "https://github.com/dtkellogg/hacker-news-clone",
     url: "https://kellogg-hacker-news.herokuapp.com/",
-  },
-  {
-    _id: 6,
-    name: "Github Battle",
-    skills: ["React", "React-Router", "SCSS"],
-    description__1:
-      "This application was made as part of Tyler McGinnis’s React hooks course. The app was made from scratch (without a boilerplate i.e. create-react-app), and thus not only taught about React Hooks, but also discussed the inner workings of webpack.",
-    description__2:
-      "This course taught me a lot about React. It includes the use of many of React’s useful functionality, from providing a context or theme throughout the application to discussing the advantages of importing files when necessary to improve load speeds. The course also involved creating my first custom hook, as well as the fundamentals of React Router. Besides going into the different aspects of React Hooks, the course did an excellent job illustrating what create-react-app does because the application was built from scratch. Unfortunately, I have been unsuccessful with running the app on Heroku due to a current inadequate understanding of webpack. Nonetheless, the process of going through creating my own webpack file has given me the foundation to learn more about the topic on my own.",
-    description__3:
-      "As stated previously, the application has been built from scratch, including the index.html and webpack. The project is divided into two main directories, although the backend was built only to host the application on Heroku. The application follows fairly standard React architecture, as the React side is still connected to the application through a node.",
-    picture: "../img/githubBattle.png",
-    video: "#",
-    github: "https://github.com/dtkellogg/kellogg-github-battle",
-    url: "https://github-battle.ui.dev/",
   },
   {
     _id: 7,
@@ -165,19 +165,19 @@ const projects = [
     url: "https://kellogg-natours.herokuapp.com/",
   },
   {
-    _id: 12,
-    name: "Hash Basketball",
-    skills: ["React", "React-Router", "CSS3"],
+     _id: 12,
+    name: "Github Battle",
+    skills: ["React", "React-Router", "SCSS"],
     description__1:
-      "This project was made as part of Tyler McGinnis’s React Router V5 course. It focused on implementing the different built in hooks of React Router.",
+      "This application was made as part of Tyler McGinnis’s React hooks course. The app was made from scratch (without a boilerplate i.e. create-react-app), and thus not only taught about React Hooks, but also discussed the inner workings of webpack.",
     description__2:
-      "As this course's intention, I was able to learn about React Router V5 and how to use it. The different hooks from the react-router-dom package comprised a majority of the focus, and application as well as Tyler’s instruction made it very easy to understand. I did not master React Router simply by completing this course; it did, however, give me enough base knowledge to experiment with areas that my understanding was weak in when I applied it to different projects.",
+      "This course taught me a lot about React. It includes the use of many of React’s useful functionality, from providing a context or theme throughout the application to discussing the advantages of importing files when necessary to improve load speeds. The course also involved creating my first custom hook, as well as the fundamentals of React Router. Besides going into the different aspects of React Hooks, the course did an excellent job illustrating what create-react-app does because the application was built from scratch. Unfortunately, I have been unsuccessful with running the app on Heroku due to a current inadequate understanding of webpack. Nonetheless, the process of going through creating my own webpack file has given me the foundation to learn more about the topic on my own.",
     description__3:
-      "The code consists of both front and back ends, but the back end is built only to run the application on Heroku. The frontend was built using create-react-app. It is composed of two main directories (components and hooks) and CSS files. As the focus of the project was on React Router, much of the meat of the code focuses on areas such as the switch and its relevant routes (used in multiple functions for nested routes), creating a custom Link with an active class, and using useParams to extract IDs from the URL. The six different custom hooks deal with making requests and using responses from an API (from the frontend).",
-    picture: "../img/hashBasketball.png",
+      "As stated previously, the application has been built from scratch, including the index.html and webpack. The project is divided into two main directories, although the backend was built only to host the application on Heroku. The application follows fairly standard React architecture, as the React side is still connected to the application through a node.",
+    picture: "../img/githubBattle.png",
     video: "#",
-    github: "https://github.com/dtkellogg/kellogg-hash-basketball",
-    url: "https://kellogg-hash-basketball.herokuapp.com/",
+    github: "https://github.com/dtkellogg/kellogg-github-battle",
+    url: "https://github-battle.ui.dev/",
   },
 ];
 

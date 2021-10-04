@@ -122,7 +122,7 @@ function ContactScreen() {
         </p>
         <br />
         <p className="contact__paragraph--2 text-size-3 fadeInAnimated--2">
-          If you have any desire to learn more about myself, or are interested in hiring my services, please do not 
+          If you have any desire to learn more about myself, or are interested in hiring me, please do not 
           hesitate to contact me using the form below.
         </p>
 

@@ -8,6 +8,14 @@
         @media (max-width: 1150px) {
             width: 40rem;
         }
+
+        @media (max-width: 500px) {
+            width: 35rem;
+        }
+
+        @media (max-width: 425px) {
+            width: 30rem;
+        }
     }
     
     &__arrows {
