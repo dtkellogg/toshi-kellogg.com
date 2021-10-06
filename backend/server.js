@@ -49,9 +49,9 @@ app.use(corsMiddleware);
 // redirect all url requests to https
 app.use(enforce.HTTPS({ trustProtoHeader: true }));
 
-// // Body Parser Middleware - which has been deprecated as of Express 4.16+
-app.use(express.urlencoded({extended: true}));
-app.use(express.json()) // To parse the incoming requests with JSON payloads
+// // Body Parser Middleware
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 app.use(cookieParser());
 
 console.log('IN THE BACKEND')

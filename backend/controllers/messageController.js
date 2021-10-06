@@ -61,7 +61,7 @@ exports.sendMessage = async (req, res, next) => {
             subject: "Developer Inquiry", // Subject line
             text: "Hello!", // plain text body
             html: output, // html body
-            uri: "http://localhost:3000"
+            uri: "https://toshikellogg.com"
         };
 
 
