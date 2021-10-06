@@ -27,9 +27,11 @@ export default function App() {
       setTimeout(() => setLoading(false), 2500);
     }, []);
     
-    if(!loading) {
-      document.title = "Toshi Kellogg | Developer";
-    }
+    useEffect(() => {
+      if(!loading) {
+        document.title = "Toshi Kellogg | Developer";
+      }
+    }, [loading])
 
     return (
       <ToastProvider>
