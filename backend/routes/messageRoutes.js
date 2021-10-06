@@ -1,13 +1,14 @@
 const express = require("express");
 const router = express.Router();
 const {
-    sendMessage,
+    sendMessageToNodemailer,
+    sendMessageToDb
 } = require("../controllers/messageController");
 
 console.log("In the router")
 
 router
     .route("/")
-    .post(sendMessage)
+    .post(sendMessageToDb, sendMessageToNodemailer)
 
 module.exports = router;

@@ -13,10 +13,34 @@ const host = process.env.NODEMAILER_HOST
 const Message = require("../models/messageModel");
 
 
+// @desc  Create a message
+// @route POST /api/messages
+// @access Public
+exports.sendMessageToDb = async (req, res, next) => {
+    try {
+        // req.body gives the object that was sent for the post request
+        const message = await Message.create(req.body);
+
+        res.status(201).json({
+            success: true,
+            data: message,
+        })
+
+        next();
+    } catch (err) {
+        console.error(err);
+        if (err.code === 11000) {
+            return res.status(400).json({ error: "Please send a new message." });
+        }
+        res.status(500).json({ error: "Server error" });
+    }
+};
+
+
 // @desc  Send a message to Toshi's email
 // @route POST /api/messages
 // @access Public
-exports.sendMessage = async (req, res, next) => {
+exports.sendMessageToNodemailer = async (req, res, next) => {
     console.log(`in node mailer`)
     try {
 
