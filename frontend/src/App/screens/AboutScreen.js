@@ -72,7 +72,7 @@ function AboutScreen() {
             className={image.src === toshiHeadshot ? "about__image--toshi-headshot" : "about__image--about"}
           />
           {/* <span className="about__image--background" /> */}
-          <div className="about__arrows--container">
+          {/* <div className="about__arrows--container">
             <button
               className="btn__about-screen--left"
               disabled={image.num === 1}
@@ -96,7 +96,7 @@ function AboutScreen() {
                 onClick={handleBtnClick}
               />
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

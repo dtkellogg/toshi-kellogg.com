@@ -36,7 +36,7 @@ app.use(compression({ threshold: 0 }));
 app.use(cors())
 
 var corsMiddleware = function(req, res, next) {
-  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Origin', 'toshikellogg.com');
   res.header('Access-Control-Allow-Methods', 'OPTIONS, GET, PUT, PATCH, POST, DELETE');
   res.header('Access-Control-Allow-Headers', 'Content-Type, X-Requested-With, Authorization');
 
@@ -50,9 +50,9 @@ app.use(corsMiddleware);
 app.use(enforce.HTTPS({ trustProtoHeader: true }));
 
 // // Body Parser Middleware
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
-app.use(cookieParser());
+// app.use(bodyParser.urlencoded({ extended: false }));
+// app.use(bodyParser.json());
+// app.use(cookieParser());
 
 console.log('IN THE BACKEND')
 
