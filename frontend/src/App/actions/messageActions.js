@@ -15,7 +15,7 @@ export const sendMessage = (
         console.log("IN MSG ACTIONS")
 
         const { data } = await axios.post(
-            `https://kelloggtutoring.com/api/messages`,
+            `/api/messages`,
             { name, email, subject, message },
         );
 
