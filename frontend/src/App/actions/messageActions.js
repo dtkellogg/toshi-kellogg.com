@@ -12,8 +12,10 @@ export const sendMessage = (
             type: MESSAGE_CREATE_REQUEST,
         });
 
+        console.log("IN MSG ACTIONS")
+
         const { data } = await axios.post(
-            `/api/messages`,
+            `https://kelloggtutoring.com/api/messages`,
             { name, email, subject, message },
         );
 
@@ -28,6 +30,8 @@ export const sendMessage = (
                 : error.message;
 
         console.log(message)
+        console.log("FAIL")
+
                 
         dispatch({
             type: MESSAGE_CREATE_FAIL,

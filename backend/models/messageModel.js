@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 
+console.log("MSG MODEL")
 const MessageSchema = new mongoose.Schema({
     message: {
         type: String,
@@ -8,7 +9,6 @@ const MessageSchema = new mongoose.Schema({
     },
     name: {
         type: String,
-        // required: [true, "Please add a store ID"],
         trim: true,
         unique: false,
         maxlength: [20, "Name must be less than 20 chars"],
