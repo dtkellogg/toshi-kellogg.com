@@ -28,8 +28,6 @@ export default function Loading({ text = "Loading", speed = 300 }) {
     } else {
       document.title = content;
     }
-
-    console.log(`content: ${content.charAt(0)}`)
   }, [content]);
 
   useEffect(() => {

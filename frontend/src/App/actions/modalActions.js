@@ -8,9 +8,6 @@ export const modalToggleOpen = () => async (dispatch, getState) => {
     const { modalIsOpen } = getState();
     const isOpen = modalIsOpen.isOpen
 
-    console.log(modalIsOpen)
-    console.log(`isOpen: ${isOpen}`)
-
     dispatch({
       type: MODAL_ISOPEN_SUCCESS,
       payload: !isOpen,
@@ -37,9 +34,6 @@ export const modalSetProject = (id) => async (dispatch) => {
         dispatch({ type: MODAL_SETPROJECT_REQUEST });
 
         const { data } = await axios.get(`/api/projects/${id}`);
-
-        console.log(`data from modalSetProject: ${data}`)
-        console.log(data)
 
         dispatch({
             type: MODAL_SETPROJECT_SUCCESS,

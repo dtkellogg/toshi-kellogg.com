@@ -31,7 +31,6 @@ export default function Modal({ project }) {
 
 
   const handleClick = e => {
-    console.log(`node.contains: ${node.contains}`)
 
     if(node.contains === undefined) {
 

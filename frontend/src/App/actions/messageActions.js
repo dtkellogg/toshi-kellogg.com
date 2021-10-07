@@ -12,8 +12,6 @@ export const sendMessage = (
             type: MESSAGE_CREATE_REQUEST,
         });
 
-        console.log("IN MSG ACTIONS")
-
         const { data } = await axios.post(
             `/api/messages`,
             { name, email, subject, message },
@@ -28,9 +26,6 @@ export const sendMessage = (
             error.response && error.response.data.message
                 ? error.response.data.message
                 : error.message;
-
-        console.log(message)
-        console.log("FAIL")
 
                 
         dispatch({

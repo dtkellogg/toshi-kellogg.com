@@ -84,7 +84,6 @@ function ContactScreen() {
 
       await dispatch(sendMessage(name, email, subject, message))
         .then(() => {
-          console.log("MESSAGE SENT")
           window.setTimeout(() => {
             addToast("Thank you! Your message has been successfully submitted.", {
                 appearance: "success",

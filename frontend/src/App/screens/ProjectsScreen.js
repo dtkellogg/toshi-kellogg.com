@@ -28,8 +28,6 @@ function ProjectsScreen() {
 
   const handleModal = (e, project) => {
     e.preventDefault();
-
-    console.log(project)
     setProject(project)
     dispatch(modalSetProject(project));
     dispatch(modalToggleOpen());

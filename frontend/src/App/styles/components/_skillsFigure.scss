@@ -30,10 +30,8 @@
 	z-index: 1000;
 	width: 120px;
 	height: 40px;
-	left: 0px;
-	top: -40px;
+	visibility: hidden;
 	opacity: 0;
-	cursor: pointer;
 
 	@media (max-width: 1725px) {
 		width: 100px;
@@ -166,6 +164,8 @@
 	text-shadow: 1px 1px 1px rgba(255,255,255,0.3);
     border-radius: 3px 3px 0 0;
 	box-shadow: 2px 0 2px rgba(0,0,0,0.1), -2px 0 2px rgba(0,0,0,0.1);
+	cursor: pointer;
+	
 	
 	@media (max-width: 1725px) {
 		width: 100px;
