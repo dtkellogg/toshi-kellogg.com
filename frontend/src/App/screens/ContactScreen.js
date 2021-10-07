@@ -109,6 +109,10 @@ function ContactScreen() {
     }
   }, [name, email, subject, message])
 
+  useEffect(() => {
+    document.title = "Toshi Kellogg | Developer";
+  }, [])
+
 
   return (
     <div className="contact__container">

@@ -1,9 +1,14 @@
-import React from "react";
+import React, {useEffect} from "react";
 
 // components
 import SkillsFigure from '../components/SkillsFigure'
 
+
 function SkillsScreen() {
+  useEffect(() => {
+    document.title = "Toshi Kellogg | Developer";
+  }, [])
+
   return (
     <div className="skills__container">
       <div className="skills__container--left">

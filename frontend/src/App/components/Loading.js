@@ -18,11 +18,19 @@ const styles = {
 export default function Loading({ text = "Loading", speed = 300 }) {
   const [content, setContent] = useState(text);
 
+  if(document.title !== "Toshi Kellogg | Developer") {
+    document.title = "Toshi Kellogg | Developer";
+  }
+
   useEffect(() => {
-    if (content !== "Loading") {
+    if (content.charAt(0) !== "L") {
+      document.title = "Toshi Kellogg | Developer";
+    } else {
       document.title = content;
     }
-  });
+
+    console.log(`content: ${content.charAt(0)}`)
+  }, [content]);
 
   useEffect(() => {
     const id = window.setInterval(() => {
@@ -33,6 +41,7 @@ export default function Loading({ text = "Loading", speed = 300 }) {
 
     return () => window.clearInterval(id);
   }, [text, speed]);
+  
 
   // return <p style={styles.content}>{content}</p>;
   return <div className="dots-loader"></div>;

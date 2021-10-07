@@ -5,14 +5,16 @@ import { useToasts } from "react-toast-notifications";
 function HomeScreen() {
 
   useEffect(() => {
-    
     window.setTimeout(() => {
       addToast(`Looking for a great software engineer? Serendipitously, your search is over.`, {
         appearance: "info",
         autoDismiss: true,
       });
     }, 6500);
+  }, [])
 
+  useEffect(() => {
+    document.title = "Toshi Kellogg | Developer";
   }, [])
 
   const { addToast } = useToasts();

@@ -1,5 +1,5 @@
 // react
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import { FaCaretLeft, FaCaretRight } from "react-icons/fa";
 
@@ -30,6 +30,10 @@ function AboutScreen() {
       });
     }
   }
+
+  useEffect(() => {
+    document.title = "Toshi Kellogg | Developer";
+  }, [])
 
   return (
     <div className="about__container">

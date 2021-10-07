@@ -1,5 +1,5 @@
 // react
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
@@ -34,6 +34,10 @@ function ProjectsScreen() {
     dispatch(modalSetProject(project));
     dispatch(modalToggleOpen());
   };
+
+  useEffect(() => {
+    document.title = "Toshi Kellogg | Developer";
+  }, [])
 
   return (
     <div className="projects">
