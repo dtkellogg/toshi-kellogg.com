@@ -1,6 +1,8 @@
+import { HANDLE_INPUT_TEXT, RESET_INPUTS } from "../constants/formConstants"
+
 export const formReducer = (state = {initialState}, action) => {
   switch (action.type) {
-    case "HANDLE INPUT TEXT":
+    case HANDLE_INPUT_TEXT:
       return {
         ...state,
         [action.field]: action.payload,
@@ -15,7 +17,7 @@ export const formReducer = (state = {initialState}, action) => {
     //     ...state,
     //     submitted: !state.submitted,
     //   }
-    case "RESET INPUTS":
+    case RESET_INPUTS:
       return initialState
     default:
       return state
