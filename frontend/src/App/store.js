@@ -8,15 +8,14 @@ import thunk from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension'
 
 // reducers
+import { formReducer } from './reducers/formReducer';
 import { messageCreateReducer } from './reducers/messageReducer';
 import { projectDetailsReducer, projectListReducer } from './reducers/projectReducer';
-import {
-    modalSetProjectReducer,
-    modalIsOpenReducer,
-} from "./reducers/modalReducer";
+import { modalSetProjectReducer, modalIsOpenReducer } from "./reducers/modalReducer";
 
 
 const reducer = combineReducers({
+    formData: formReducer,
     messageCreate: messageCreateReducer,
     projectList: projectListReducer,
     projectDetails: projectDetailsReducer,

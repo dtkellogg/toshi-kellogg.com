@@ -1,27 +1,30 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useToasts } from "react-toast-notifications";
+import Loader from "react-loader-spinner";
 
 // actions
 import { sendMessage } from "../actions/messageActions";
+import { handleTextChange, resetInputs } from "../actions/formActions";
 
 // components
 import Map from "../components/Map"
 
-import Loader from "react-loader-spinner";
-
+// hooks
 import useValidate from "../hooks/useValidate"
 
+// function Validate(name, email, subject, message) {
+//   return useValidate(name, email, subject, message)
+// }
+
 function ContactScreen() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
-  const [message, setMessage] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [readyToSubmit, setReadyToSubmit] = useState(false)
 
-  const dispatch = useDispatch();
+  const formData = useSelector((state) => state.formData)
+  const {name, email, subject, message} = formData
 
+  const dispatch = useDispatch();
   const { addToast } = useToasts();
 
   // I want to move the following validation code to a custom hook, but I can't figure out how to call it from handleSubmit (must be called on top layer)
@@ -70,7 +73,6 @@ function ContactScreen() {
 
     window.setTimeout(() => {
       setReadyToSubmit(false);
-
     }, 4000);
 
     const isValid = validate();
@@ -90,10 +92,7 @@ function ContactScreen() {
                 autoDismiss: true,
               }
             );
-            setName("");
-            setEmail("");
-            setSubject("");
-            setMessage("");
+            dispatch(resetInputs())
           }, 4000);
         });
     }
@@ -132,10 +131,11 @@ function ContactScreen() {
           <div className="contact__form--element contact__element--name">
             <input
               type="name"
+              name="name"
               className="contact__form--input text-size-4"
               placeholder="Name"
-              value={name || ""}
-              onChange={(e) => setName(e.target.value)}
+              value={name}
+              onChange={(e) => dispatch(handleTextChange(e))}
             />
             <span className="contact__focus-border"></span>
           </div>
@@ -143,10 +143,11 @@ function ContactScreen() {
           <div className="contact__form--element contact__element--email">
             <input
               type="email"
+              name="email"
               className="contact__form--input text-size-4"
               placeholder="Email"
-              value={email || ""}
-              onChange={(e) => setEmail(e.target.value)}
+              value={email}
+              onChange={(e) => dispatch(handleTextChange(e))}
             />
             <span className="contact__focus-border"></span>
           </div>
@@ -154,10 +155,11 @@ function ContactScreen() {
           <div className="contact__form--element contact__element--subject">
             <input
               type="subject"
+              name="subject"
               className="contact__form--input text-size-4"
               placeholder="Subject"
-              value={subject || ""}
-              onChange={(e) => setSubject(e.target.value)}
+              value={subject}
+              onChange={(e) => dispatch(handleTextChange(e))}
             />
             <span className="contact__focus-border"></span>
           </div>
@@ -165,10 +167,11 @@ function ContactScreen() {
           <div className="contact__form--element contact__element--message">
             <textarea
               type="text"
+              name="message"
               className="contact__form--input text-size-4"
               placeholder="Message"
-              value={message || ""}
-              onChange={(e) => setMessage(e.target.value)}
+              value={message}
+              onChange={(e) => dispatch(handleTextChange(e))}
             />
             <span className="contact__focus-border"></span>
           </div>

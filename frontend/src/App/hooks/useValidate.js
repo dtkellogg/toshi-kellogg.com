@@ -1,6 +1,6 @@
 import { useToasts } from "react-toast-notifications";
 
-export default function useValidate(name, email, message, subject) {
+export default function useValidate(name, email, subject, message) {
     const { addToast } = useToasts();
     const emailRegexp = /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/; // eslint-disable-line no-useless-escape
 
