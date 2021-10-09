@@ -1,6 +1,7 @@
-import { useToasts } from "react-toast-notifications";
+import { useState, useToasts } from "react-toast-notifications";
 
-export default function useValidate(name, email, subject, message) {
+export default function useValidate(name = "", email = "", subject = "", message = "") {
+    const [isValid, setIsValid] = useState(false)
     const { addToast } = useToasts();
     const emailRegexp = /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/; // eslint-disable-line no-useless-escape
 
@@ -36,6 +37,8 @@ export default function useValidate(name, email, subject, message) {
             autoDismiss: true,
         });
     } else {
-        return true;
+        setIsValid(true);
     }
+
+    return isValid;
 };

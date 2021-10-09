@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 import { FaCaretLeft, FaCaretRight } from "react-icons/fa";
 
 // images
-import aboutImage from '../img/aboutImage.jpg'
+// import aboutImage from '../img/aboutImage.jpg'
 // import baliemValleyImage from '../img/baliemValleyImage.jpg'
 import toshiHeadshot from '../img/toshiHeadshot.jpg'
 
@@ -15,21 +15,21 @@ function AboutScreen() {
     num: 1,
   });
 
-  const handleBtnClick = () => {
-    if(image.src === aboutImage) {
-      setImage({
-        src: toshiHeadshot,
-        alt: "Me with the local headhunters (Baliem Valley, West Papua)",
-        num: 1
-      });
-    } else {
-      setImage({
-        src: aboutImage,
-        alt: "My mom, dog and I (circa 2010) ",
-        num: 2
-      });
-    }
-  }
+  // const handleBtnClick = () => {
+  //   if(image.src === aboutImage) {
+  //     setImage({
+  //       src: toshiHeadshot,
+  //       alt: "Me with the local headhunters (Baliem Valley, West Papua)",
+  //       num: 1
+  //     });
+  //   } else {
+  //     setImage({
+  //       src: aboutImage,
+  //       alt: "My mom, dog and I (circa 2010) ",
+  //       num: 2
+  //     });
+  //   }
+  // }
 
   useEffect(() => {
     document.title = "Toshi Kellogg | Developer";

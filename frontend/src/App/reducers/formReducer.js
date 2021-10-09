@@ -1,4 +1,4 @@
-import { HANDLE_INPUT_TEXT, RESET_INPUTS } from "../constants/formConstants"
+import { HANDLE_INPUT_TEXT, RESET_INPUTS, TOGGLE_READY_TO_SUBMIT, TOGGLE_SUBMITTED } from "../constants/formConstants"
 
 export const formReducer = (state = {initialState}, action) => {
   switch (action.type) {
@@ -7,16 +7,16 @@ export const formReducer = (state = {initialState}, action) => {
         ...state,
         [action.field]: action.payload,
       }
-    // case "TOGGLE READY TO SUBMIT":
-    //   return {
-    //     ...state,
-    //     readyToSubmit: !state.readyToSubmit,
-    //   }
-    // case "TOGGLE SUBMITTED":
-    //   return {
-    //     ...state,
-    //     submitted: !state.submitted,
-    //   }
+    case TOGGLE_READY_TO_SUBMIT:
+      return {
+        ...state,
+        readyToSubmit: action.payload,
+      }
+    case TOGGLE_SUBMITTED:
+      return {
+        ...state,
+        submitted: action.payload,
+      }
     case RESET_INPUTS:
       return initialState
     default:
@@ -29,4 +29,6 @@ const initialState = {
   email: "",
   subject: "",
   message: "",
+  readyToSubmit: false,
+  submitted: false,
 }

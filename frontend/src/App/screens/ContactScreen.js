@@ -4,106 +4,25 @@ import { useToasts } from "react-toast-notifications";
 import Loader from "react-loader-spinner";
 
 // actions
-import { sendMessage } from "../actions/messageActions";
-import { handleTextChange, resetInputs } from "../actions/formActions";
+import { handleTextChange, handleSubmit } from "../actions/formActions";
 
 // components
 import Map from "../components/Map"
+import { TOGGLE_READY_TO_SUBMIT } from "../constants/formConstants";
 
-// hooks
-import useValidate from "../hooks/useValidate"
-
-// function Validate(name, email, subject, message) {
-//   return useValidate(name, email, subject, message)
-// }
 
 function ContactScreen() {
-  const [submitted, setSubmitted] = useState(false);
-  const [readyToSubmit, setReadyToSubmit] = useState(false)
-
   const formData = useSelector((state) => state.formData)
-  const {name, email, subject, message} = formData
-
+  const {name, email, subject, message, readyToSubmit, submitted} = formData
+  
   const dispatch = useDispatch();
   const { addToast } = useToasts();
 
-  // I want to move the following validation code to a custom hook, but I can't figure out how to call it from handleSubmit (must be called on top layer)
-  const validate = () => {
-    const emailRegexp = /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/; // eslint-disable-line no-useless-escape
-
-    if (!emailRegexp.test(email) && message.length === 0 && subject.length === 0 && name.length === 0) {
-      addToast("Please fill out all fields.", {
-        appearance: "error",
-        autoDismiss: true,
-      });
-    }
-    else if (!emailRegexp.test(email) && message.length === 0 && subject.length === 0) {
-      addToast("Please submit a subject, message and valid email address.", {
-        appearance: "error",
-        autoDismiss: true,
-      });
-    } else if (!emailRegexp.test(email)) {
-      addToast("Please submit a valid email address.", {
-        appearance: "error",
-        autoDismiss: true,
-      });
-    } else if (message.length === 0 && subject.length === 0) {
-      addToast("Please add a message and subject.", {
-        appearance: "error",
-        autoDismiss: true,
-      });
-    } else if (message.length === 0) {
-      addToast("Please add a message.", {
-        appearance: "error",
-        autoDismiss: true,
-      });
-    } else if (subject.length === 0) {
-      addToast("Please add a subject.", {
-        appearance: "error",
-        autoDismiss: true,
-      });
-    } else {
-      return true;
-    }
-  };
-  ///////////////
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    window.setTimeout(() => {
-      setReadyToSubmit(false);
-    }, 4000);
-
-    const isValid = validate();
-
-    if (isValid) {
-      setSubmitted(true);
-
-      window.setTimeout(() => {
-        setSubmitted(false);
-      }, 4000);
-
-      await dispatch(sendMessage(name, email, subject, message))
-        .then(() => {
-          window.setTimeout(() => {
-            addToast("Thank you! Your message has been successfully submitted.", {
-                appearance: "success",
-                autoDismiss: true,
-              }
-            );
-            dispatch(resetInputs())
-          }, 4000);
-        });
-    }
-  };
-
   useEffect(() => {
-    if( name && email && subject && message ) {
-      setReadyToSubmit(true)
-    } 
-    else {
-      setReadyToSubmit(false)
+    if((name && email && subject && message && readyToSubmit === false)
+      ||
+    ((!name || !email || !subject || !message) && readyToSubmit === true)) {
+      dispatch({type: TOGGLE_READY_TO_SUBMIT, payload: !readyToSubmit})
     }
   }, [name, email, subject, message])
 
@@ -179,7 +98,7 @@ function ContactScreen() {
 
         <button
           className="btn__contact-form fadeInAnimated--3 text-size-4"
-          onClick={handleSubmit}
+          onClick={() => dispatch(handleSubmit(name, email, subject, message, addToast))}
           style={ 
             !readyToSubmit ? {
               "color": "var(--grey-4)",
