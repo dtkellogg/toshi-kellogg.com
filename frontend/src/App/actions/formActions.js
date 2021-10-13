@@ -1,6 +1,4 @@
 import { HANDLE_INPUT_TEXT, RESET_INPUTS, TOGGLE_SUBMITTED } from "../constants/formConstants"
-import { useToasts } from "react-toast-notifications";
-import React, { useState, useEffect } from "react";
 import { sendMessage } from "./messageActions";
 
 
@@ -26,8 +24,7 @@ export const handleSubmit = (name, email, subject, message, addToast) => async (
     const isValid = Validate(name, email, subject, message, addToast);
 
     if (isValid) {
-        dispatch({type: TOGGLE_SUBMITTED, payload: true})
-
+      dispatch({type: TOGGLE_SUBMITTED, payload: true})
 
       window.setTimeout(() => {
         dispatch({type: TOGGLE_SUBMITTED, payload: false})

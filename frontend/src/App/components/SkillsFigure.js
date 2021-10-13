@@ -90,7 +90,10 @@ export default function SkillsFigure() {
               placement of divisions, colors, spacing, sizing; without it, our applications would simply 
               be a bore to look at. While mastering CSS takes incredible dedication and practice, there 
               is much that can be done by having a strong understanding of the fundamentals, such as the 
-              box model. Through different forms of implementation, I have been able to develop beautiful 
+              box model.
+            </p>
+            <p>
+              Through different forms of implementation, I have been able to develop beautiful 
               web applications by simply writing CSS code. From animations on user events to cohesive color 
               choices to make a more enjoyable UX experience, I have effectively implemented CSS into all 
               of my applications. I have also taught myself to use SASS, or Syntactically Awesome Style Sheets, 

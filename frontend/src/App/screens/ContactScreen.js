@@ -9,6 +9,7 @@ import { handleTextChange, handleSubmit } from "../actions/formActions";
 // components
 import Map from "../components/Map"
 import { TOGGLE_READY_TO_SUBMIT } from "../constants/formConstants";
+import Input from "../components/formInput"
 
 
 function ContactScreen() {
@@ -19,7 +20,7 @@ function ContactScreen() {
   const { addToast } = useToasts();
 
   useEffect(() => {
-    if((name && email && subject && message && readyToSubmit === false)
+    if((name && email && subject && message && !readyToSubmit)
       ||
     ((!name || !email || !subject || !message) && readyToSubmit === true)) {
       dispatch({type: TOGGLE_READY_TO_SUBMIT, payload: !readyToSubmit})
@@ -29,6 +30,8 @@ function ContactScreen() {
   useEffect(() => {
     document.title = "Toshi Kellogg | Developer";
   }, [])
+
+  console.log(`name: ${name} email: ${email} subject: ${subject} message: ${message}, readyToSubmit: ${readyToSubmit}`)
 
 
   return (
@@ -47,53 +50,18 @@ function ContactScreen() {
         </p>
 
         <form className="contact__form fadeInAnimated--3">
-          <div className="contact__form--element contact__element--name">
-            <input
-              type="name"
-              name="name"
-              className="contact__form--input text-size-4"
-              placeholder="Name"
-              value={name}
-              onChange={(e) => dispatch(handleTextChange(e))}
-            />
-            <span className="contact__focus-border"></span>
-          </div>
-
-          <div className="contact__form--element contact__element--email">
-            <input
-              type="email"
-              name="email"
-              className="contact__form--input text-size-4"
-              placeholder="Email"
-              value={email}
-              onChange={(e) => dispatch(handleTextChange(e))}
-            />
-            <span className="contact__focus-border"></span>
-          </div>
-
-          <div className="contact__form--element contact__element--subject">
-            <input
-              type="subject"
-              name="subject"
-              className="contact__form--input text-size-4"
-              placeholder="Subject"
-              value={subject}
-              onChange={(e) => dispatch(handleTextChange(e))}
-            />
-            <span className="contact__focus-border"></span>
-          </div>
-
-          <div className="contact__form--element contact__element--message">
-            <textarea
-              type="text"
-              name="message"
-              className="contact__form--input text-size-4"
-              placeholder="Message"
-              value={message}
-              onChange={(e) => dispatch(handleTextChange(e))}
-            />
-            <span className="contact__focus-border"></span>
-          </div>
+          <Input containerClass="contact__form--element contact__element--name" inputClass="contact__form--input text-size-4" name="name"
+            type="name" value={name} placeholder="Name" onChange={(e) => dispatch(handleTextChange(e))}
+          />
+            <Input containerClass="contact__form--element contact__element--email" inputClass="contact__form--input text-size-4" name="email"
+            type="email" value={email} placeholder="Email" onChange={(e) => dispatch(handleTextChange(e))}
+          />
+            <Input containerClass="contact__form--element contact__element--subject" inputClass="contact__form--input text-size-4" name="subject"
+            type="subject" value={subject} placeholder="Subject" onChange={(e) => dispatch(handleTextChange(e))}
+          />
+            <Input containerClass="contact__form--element contact__element--message" inputClass="contact__form--input text-size-4" name="message"
+            type="text" value={message} placeholder="Message" textarea={true} onChange={(e) => dispatch(handleTextChange(e))}
+          />
         </form>
 
         <button
