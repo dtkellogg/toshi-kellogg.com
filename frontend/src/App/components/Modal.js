@@ -29,6 +29,10 @@ export default function Modal({ project }) {
   const [shouldRender, setRender] = useState(isOpen);
   const [animation, setAnimation] = useState(isOpen);
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
 
   const handleClick = e => {
 
