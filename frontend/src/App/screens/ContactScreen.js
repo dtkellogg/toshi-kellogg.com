@@ -31,8 +31,6 @@ function ContactScreen() {
     document.title = "Toshi Kellogg | Developer";
   }, [])
 
-  console.log(`name: ${name} email: ${email} subject: ${subject} message: ${message}, readyToSubmit: ${readyToSubmit}`)
-
 
   return (
     <div className="contact__container">
