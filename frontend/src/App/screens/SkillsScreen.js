@@ -10,9 +10,11 @@ function SkillsScreen() {
   }, [])
 
   return (
-    <div className="skills__container">
-      <div className="skills__container--left">
-        <h1 className="skills__header text-size-1 fadeInAnimated--0">Skills & Experience</h1>
+    <section className="skills__container">
+      <section className="skills__container--left">
+        <header className="skills__header fadeInAnimated--0">
+          <h1 className="text-size-1">Skills & Experience</h1>
+        </header>
         <p className="skills__paragraph">
           <span className="skills__paragraph--1 text-size-3 fadeInAnimated--1">
             My expertise is building web applications using a MERN stack.
@@ -39,12 +41,12 @@ function SkillsScreen() {
             Please check out my projects to learn more about what I have created in JavaScript.
           </span>
         </p>
-      </div>
+      </section>
 
-      <div className="skills__container--right">
+      <section className="skills__container--right">
         <SkillsFigure />
-      </div>
-    </div>
+      </section>
+    </section>
   );
 }
 

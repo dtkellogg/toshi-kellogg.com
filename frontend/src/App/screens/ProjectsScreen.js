@@ -38,7 +38,7 @@ function ProjectsScreen() {
   }, [])
 
   return (
-    <div className="projects">
+    <section className="projects">
 
       {/* <CSSTransition in={isOpen} timeout={300} className="modal-transition" > */}
         {/* <Modal project={project} /> */}
@@ -57,7 +57,7 @@ function ProjectsScreen() {
 
           return (
             <li className={`projects__item projects__item--${_id}`} key={_id}>
-              <div className="projects__card">
+              <figure className="projects__card">
                 <img
                   src={require(`../img/${abbreviatedName}.png`).default}
                   alt={`${name} img`}
@@ -69,13 +69,13 @@ function ProjectsScreen() {
                 >
                   {name}
                 </button>
-              </div>
+              </figure>
             </li>
           )
         })}
       </ul>
       
-    </div>
+    </section>
   )
 }
   

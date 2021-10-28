@@ -20,8 +20,8 @@ function HomeScreen() {
   const { addToast } = useToasts();
 
   return (
-    <div className="home__container">
-      <div className="home__container--left">
+    <section className="home__container">
+      <header className="home__container--left">
         <div className="fadeInAnimated--0 home__text home__text--1 text-size-3">Hello,</div>
         <div className="home__text home__text--2 text-size-0">
           <span className="fadeInAnimated--1 home__text--im">I'm</span>
@@ -29,10 +29,10 @@ function HomeScreen() {
         </div>
         <div className="fadeInAnimated--2-25 home__text home__text--3 text-size-2">I like to build JavaScript applications.</div>
         <div className="fadeInAnimated--3 home__text home__text--5 text-size-3">I am a web developer based in the San Francisco Bay Area, specializing in MERN stacks.</div>
-      </div>
+      </header>
 
       {/* <div className="home__container--right text-size-tk home__text--tk fadeInAnimated--4">TK</div> */}
-    </div>
+    </section>
   );
 }
 

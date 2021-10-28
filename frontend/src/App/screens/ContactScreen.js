@@ -33,11 +33,13 @@ function ContactScreen() {
 
 
   return (
-    <div className="contact__container">
-      <div className="contact__container--left">
-        <h1 className="contact__header text-size-1 fadeInAnimated--0">
-          Contact
-        </h1>
+    <section className="contact__container">
+      <section className="contact__container--left">
+        <header className="contact__header text-size-1 fadeInAnimated--0">
+          <h1 className="text-size-1">
+            Contact
+          </h1>
+        </header>
         <p className="contact__paragraph--1 text-size-3 fadeInAnimated--1">
           I am interested in <span className="skills__blue-text">team-based positions</span> - especially those 
           that will allow me to work alongside the most talented developers.
@@ -89,16 +91,16 @@ function ContactScreen() {
             />
           )}
         </button>
-      </div>
+      </section>
 
-      <div className="contact__container--right fadeInAnimated--4">
-        <div className="contact__map">
+      <section className="contact__container--right fadeInAnimated--4">
+        <figure className="contact__map">
           <Map />
-        </div>
+        </figure>
         <div className="map__overlay" />
-      </div>
+      </section>
 
-    </div>
+    </section>
   );
 }
 

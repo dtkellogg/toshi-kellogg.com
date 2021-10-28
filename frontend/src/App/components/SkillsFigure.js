@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function SkillsFigure() {
     return (
-      <div className="tabs fadeInAnimated--5">
+      <figure className="tabs fadeInAnimated--5">
         <input
           id="tab-1"
           type="radio"
@@ -66,7 +66,7 @@ export default function SkillsFigure() {
 
         {/* <div className="clear-shadow"></div> */}
 
-        <div className="content">
+        <section className="content">
           <div className="content-1">
             <p>
               HTML, or Hypertext Markup Language, is used to organize an application. 
@@ -167,8 +167,8 @@ export default function SkillsFigure() {
               open or not, I have found the use of Redux has made my applications rational and easily scalable.
             </p>
           </div>
-        </div>
-      </div>
+        </section>
+      </figure>
     );
 }
 

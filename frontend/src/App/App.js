@@ -37,7 +37,7 @@ export default function App() {
       <ToastProvider>
         <div className="container__main">
           <Nav />
-          <div className="container__body">
+          <main className="container__body">
             {!loading ?
               <React.Suspense fallback={<Loading />}>
                 <TransitionGroup>
@@ -62,7 +62,7 @@ export default function App() {
               </React.Suspense>
             : <Loading />
           }
-        </div>
+        </main>
       </div>
     </ToastProvider>
   );

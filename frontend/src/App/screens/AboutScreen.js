@@ -36,12 +36,14 @@ function AboutScreen() {
   }, [])
 
   return (
-    <div className="about__container">
-      <div className="about__container--left">
-        <h1 className="about__header text-size-1 fadeInAnimated--0">
-          About
-        </h1>
-        <div className="about__text">
+    <section className="about__container">
+      <section className="about__container--left">
+        <header className="about__header fadeInAnimated--0">
+          <h1 className="text-size-1">
+            About
+          </h1>
+        </header>
+        <section className="about__text">
           <span className="about__text--1 text-size-3 fadeInAnimated--1">
             A self taught, yet well rounded programmer with a strong background and understanding of data structures and algorithms.
           </span>
@@ -65,11 +67,11 @@ function AboutScreen() {
             When I am not programming, I enjoy spending my time running or reading a novel. What truly inspires me in life is traveling, as I 
             have been fortunate enough to have already been to many amazing places. I hope to continue my travels as I build more web applications in the future.
           </span>
-        </div>
-      </div>
+        </section>
+      </section>
 
-      <div className="about__container--right fadeInAnimated--5">
-        <div className="about__container--img">
+      <section className="about__container--right fadeInAnimated--5">
+        <figure className="about__container--img">
           <img
             src={image.src}
             alt="My mom, dog and I (circa 2010)"
@@ -101,9 +103,9 @@ function AboutScreen() {
               />
             </button>
           </div> */}
-        </div>
-      </div>
-    </div>
+        </figure>
+      </section>
+    </section>
   );
 }
 
