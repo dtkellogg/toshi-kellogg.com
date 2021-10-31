@@ -26,9 +26,10 @@ export default function App() {
     useEffect(() => {
       setTimeout(() => {
         setLoading(false)
+      }, 2000)
+      setTimeout(() => {
         window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
-      }, 5000)
-
+      }, 10000)
     }, []);
     
     useEffect(() => {
