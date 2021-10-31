@@ -1,12 +1,12 @@
 .container {
   &__main {
-	width: 100%;
-	min-height: 100vh;
+    width: 100%;
+    min-height: 100vh;
     position: relative;
     display: grid;
     grid-template-rows: 1fr;
-	grid-template-columns: 7rem 1fr;
-	overflow: hidden;
+    grid-template-columns: 7rem 1fr;
+    overflow: hidden;
 	
 	@media (max-width: 950px) {
 		grid-template-rows: 7rem 1fr;
@@ -58,30 +58,30 @@
 			height: calc(100vh - 7rem);
 		}
 
-        &--left {
+    &--left {
 			@include flexCenterCenter($flex-direction: column, $align-items: flex-start);
 			position: absolute;
-            top: 43%;
+      top: 43%;
 
 			@media (max-width: 950px) {
 				top: 35%;
 			}
-        }
+    }
 
-
-
-        &--right {
-            width: 50%;
-            text-align: center;
-            z-index: 1;
-            position: absolute;
-            left: 50vw;
-			top: 43%;
-			transform: translateY(-6rem) scale(3);
+    &--right {
+      // width: 50%;
+      // text-align: center;
+      // z-index: 1;
+      // position: absolute;
+      // left: 50vw;
+			// top: 43%;
+			// transform: translateY(-6rem) scale(3);
+      // // opacity: 0.5;
+      // overflow: none;
 			
-			@media (max-width: 950px) {
-				left: 55vw;
-			}
+			// @media (max-width: 950px) {
+			// 	left: 55vw;
+			// }
         }
     }
 }

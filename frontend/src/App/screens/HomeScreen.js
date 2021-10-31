@@ -32,6 +32,9 @@ function HomeScreen() {
       </header>
 
       {/* <div className="home__container--right text-size-tk home__text--tk fadeInAnimated--4">TK</div> */}
+      <section className="home__container--right">
+        {/* <video src="/videos/video1.mp4" type="video/mp4" autoPlay muted loop className="background-video"/> */}
+      </section>
     </section>
   );
 }

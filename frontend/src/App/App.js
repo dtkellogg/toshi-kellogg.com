@@ -34,8 +34,12 @@ export default function App() {
     }, [loading])
 
     return (
-      <ToastProvider>
+      <>
+        <ToastProvider>
+
+          <video src="/videos/video1.mp4" type="video/mp4" autoPlay muted loop className="background-video"/>
         <div className="container__main">
+          
           <Nav />
           <main className="container__body">
             {!loading ?
@@ -65,5 +69,6 @@ export default function App() {
         </main>
       </div>
     </ToastProvider>
+    </>
   );
 }

@@ -18,15 +18,15 @@ function SkillsScreen() {
         <p className="skills__paragraph">
           <span className="skills__paragraph--1 text-size-3 fadeInAnimated--1">
             My expertise is building web applications using a MERN stack.
-            I have extensive knowledge and experience in HTML, CSS 
-            (<span className="skills__blue-text">SASS</span>), JavaScript 
+            I have extensive knowledge and experience in <abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr>
+            (<abbr title="Syntactically Awesome Style Sheets" className="skills__blue-text">SASS</abbr>), JavaScript 
             (<span className="skills__blue-text">React</span> and <span className="skills__blue-text">Node</span>), and Redux.
           </span>
           <br />
           <br />
           <span className="skills__paragraph--2 text-size-3 fadeInAnimated--2">
             I am also able to solve algorithm problems using all of the standard strategies. 
-            These include recursion, DFS, BFS, DP, binary search, hash tables, arrays, and string manipulation.
+            These include recursion, <abbr title="Depth-First Search">DFS</abbr>, <abbr title="Breadth-First Search">BFS</abbr>, <abbr title="Dynamic Programming">DP</abbr>, binary search, hash tables, arrays, and string manipulation.
           </span>
           <br />
           <br />
