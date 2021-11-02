@@ -50,22 +50,24 @@
 	&__container {
 		@include heightWidth100();
 		@include flexCenterCenter($justify-content: space-between);
-		padding: 3rem;
+		padding: 6rem 3rem 0 3rem;
 		position: relative;
 		overflow: hidden;
+    grid-row: 1 / span 1;
+    grid-column: 1 / -1;
 
-		@media (max-width: 950px) {
-			height: calc(100vh - 7rem);
-		}
+		// @media (max-width: 950px) {
+		// 	height: calc(100vh - 7rem);
+		// }
 
     &--left {
 			@include flexCenterCenter($flex-direction: column, $align-items: flex-start);
-			position: absolute;
-      top: 43%;
+			// position: absolute;
+      // top: 43%;
 
-			@media (max-width: 950px) {
-				top: 35%;
-			}
+			// @media (max-width: 950px) {
+			// 	top: 35%;
+			// }
     }
 
     &--right {
@@ -91,61 +93,63 @@
 
 .about {
 	&__container {
-		@include heightWidth100($height: 100vh);
+		@include heightWidth100($height: 70vh);
 		padding: 3rem;
 		display: flex;
 		align-items: center;
 
 		@media (max-width: 950px) {
 			height: 100%;
-            flex-direction: column;
-            padding: 3rem 6.0rem;
-        }
+      flex-direction: column;
+      padding: 3rem 6.0rem;
+    }
 
-        @media (max-width: 720px) {
-            padding: 3rem;
-        }
+    @media (max-width: 720px) {
+        padding: 3rem;
+    }
 
-        &--left {
+    &--left {
 			@include flexCenterCenter($flex-direction: column, $align-items: flex-start, $justify-content: flex-end);
-            width: 50%;
+        width: 50%;
+        align-self: flex-start;
 
-            @media (max-width: 950px) {
-                width: 100%;
-            }
+        @media (max-width: 950px) {
+            width: 100%;
         }
+    }
 
-        &--right {
-            width: 50%;
-            text-align: center;
-            height: 100vh;
-            position: relative;
+    &--right {
+      width: 50%;
+      height: 100%;
+      text-align: center;
+      height: 100vh;
+      position: relative;
 
-            @include flexCenterCenter($flex-direction: column);
+      @include flexCenterCenter($flex-direction: column);
 
-            @media (max-width: 950px) {
-                height: 100%;
-				width: 100%;
-				margin-top: 5rem;
-            }
-        }
+      @media (max-width: 950px) {
+          height: 100%;
+          width: 100%;
+          margin-top: 5rem;
+      }
+    }
 
 		&--img {
 			@include flexCenterCenter($flex-direction: column);
 			@include heightWidth100();
 		}
+  }
+
+  &__arrows {
+    &--container {
+      @include flexCenterCenter($justify-content: space-between);
+      width: 15rem;
+      margin-top: 3rem;
+
+      @media (max-width: 950px) {
+        bottom: 14%;
+      }
     }
-
-    &__arrows {
-        &--container {
-            @include flexCenterCenter($justify-content: space-between);
-            width: 15rem;
-			margin-top: 3rem;
-
-			@media (max-width: 950px) {
-				bottom: 14%;
-			}
-		}
 	}
 }
 
@@ -158,6 +162,7 @@
 		@include heightWidth100($height: 100vh);
 		padding: 3rem;
 		display: flex;
+    flex-direction: row-reverse;
 		align-items: center;
 		justify-content: space-between;
 		position: relative;
@@ -169,32 +174,33 @@
 			justify-content: initial;
 		}
 
-        @media (max-width: 720px) {
-            padding: 3rem;
-        }
-
-        &--left {
-            @include flexCenterCenter($flex-direction: column, $align-items: flex-start, $justify-content: flex-end);
-            width: 50%;
-
-            @media (max-width: 950px) {
-                width: 100%;
-                margin-bottom: 10rem;
-                @include flexCenterCenter($flex-direction: column)
-            }
-        }
-
-        &--right {
-			@include flexCenterCenter($flex-direction: column);
-            width: 50%;
-			height: 100%;
-            text-align: center;
-
-            @media (max-width: 950px) {
-                width: 100%;
-            }
-        }
+    @media (max-width: 720px) {
+      padding: 3rem;
     }
+
+    &--left {
+      @include flexCenterCenter($flex-direction: column, $align-items: flex-start, $justify-content: flex-end);
+      width: 50%;
+      align-self: flex-start;
+
+      @media (max-width: 950px) {
+        width: 100%;
+        margin-bottom: 10rem;
+        @include flexCenterCenter($flex-direction: column)
+      }
+    }
+
+    &--right {
+			@include flexCenterCenter($flex-direction: column, $align-items: flex-start);
+      width: 50%;
+			height: 100%;
+      text-align: center;
+
+      @media (max-width: 950px) {
+        width: 100%;
+      }
+    }
+  }
 }
 
 /* --------------------------------------------------------------------- */
@@ -202,54 +208,55 @@
 
 .projects {
 	&__container {
-        height: 100vh;
+    height: 100vh;
+    grid-row: 2 / -1;
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: minmax(0, 2rem) 1fr minmax(0, 2rem) 1fr minmax(0, 2rem) 1fr minmax(0, 2rem) 1fr minmax(0, 2rem);
+    align-items: center;
+    justify-items: center;
+    margin-top: 4.5rem;
 
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: minmax(0, 2rem) 1fr minmax(0, 2rem) 1fr minmax(0, 2rem) 1fr minmax(0, 2rem) 1fr minmax(0, 2rem);
-        align-items: center;
-        justify-items: center;
+    background-color: $white;
 
-        background-color: $white;
-
-        @media (max-width: 950px) {
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem);
-            height: 200vh;
-        }
-        @media (max-width: 950px) {
-			height: 100%;
-			@include flexCenterCenter($flex-direction: column);
-        }
-        @media (max-width: 500px) {
-			height: 100%;
-
-			@include flexCenterCenter($flex-direction: column);
-        }
+    // @media (max-width: 950px) {
+    //   grid-template-columns: repeat(2, 1fr);
+    //   grid-template-rows: 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem) 2.5fr minmax(0, 1.5rem);
+    //   height: 200vh;
+    // }
+    // @media (max-width: 950px) {
+    //   height: 100%;
+    //   @include flexCenterCenter($flex-direction: column);
+    // }
+    // @media (max-width: 500px) {
+    //   height: 100%;
+    //   @include flexCenterCenter($flex-direction: column);
+    // }
 	}
 	
 	&__item {
 		&--1 {
-			grid-row: 2 / span 1;
-			grid-column: 1 / span 1;
+			grid-row: 1 / span 1;
+			grid-column: 2 / span 1;
 
 			@media (max-width: 950px) {
-				grid-row: 2 / span 1;
-				grid-column: 1 / span 1;
+				// grid-row: 2 / span 1;
+				// grid-column: 1 / span 1;
 			}
 			@media (max-width: 500px) {
-				grid-row: 2 / span 1;
-				grid-column: 1 / span 1;
+				// grid-row: 2 / span 1;
+				// grid-column: 1 / span 1;
 			}
 		}
 
 		&--2 {
-			grid-row: 2 / span 1;
-			grid-column: 2 / span 1;
+			grid-row: 1 / span 1;
+			grid-column: 4 / span 1;
 
 			@media (max-width: 950px) {
-				grid-row: 2 / span 1;
-				grid-column: 2 / span 1;
+				// grid-row: 2 / span 1;
+				// grid-column: 2 / span 1;
 			}
 			@media (max-width: 500px) {
 				grid-row: 4 / span 1;
@@ -258,8 +265,8 @@
 		}
 
 		&--3 {
-			grid-row: 2 / span 1;
-			grid-column: 3 / span 1;
+			grid-row: 1 / span 1;
+			grid-column: 6 / span 1;
 
 			@media (max-width: 950px) {
 				grid-row: 4 / span 1;
@@ -272,8 +279,8 @@
 		}
 
 		&--4 {
-			grid-row: 4 / span 1;
-			grid-column: 1 / span 1;
+			grid-row: 1 / span 1;
+			grid-column: 8 / span 1;
 
 			@media (max-width: 950px) {
 				grid-row: 4 / span 1;
@@ -286,7 +293,7 @@
 		}
 
 		&--5 {
-			grid-row: 4 / span 1;
+			grid-row: 2 / span 1;
 			grid-column: 2 / span 1;
 
 			@media (max-width: 950px) {
@@ -300,8 +307,8 @@
 		}
 
 		&--6 {
-			grid-row: 4 / span 1;
-			grid-column: 3 / span 1;
+			grid-row: 2 / span 1;
+			grid-column: 4 / span 1;
 
 			@media (max-width: 950px) {
 				grid-row: 6 / span 1;
@@ -314,8 +321,8 @@
 		}
 
 		&--7 {
-			grid-row: 6 / span 1;
-			grid-column: 1 / span 1;
+			grid-row: 2 / span 1;
+			grid-column: 6 / span 1;
 
 			@media (max-width: 950px) {
 				grid-row: 8 / span 1;
@@ -328,8 +335,8 @@
 		}
 
 		&--8 {
-			grid-row: 6 / span 1;
-			grid-column: 2 / span 1;
+			grid-row: 2 / span 1;
+			grid-column: 8 / span 1;
 
 			@media (max-width: 950px) {
 				grid-row: 8 / span 1;
@@ -342,8 +349,8 @@
 		}
 
 		&--9 {
-			grid-row: 6 / span 1;
-			grid-column: 3 / span 1;
+			grid-row: 3 / span 1;
+			grid-column: 2 / span 1;
 
 			@media (max-width: 950px) {
 				grid-row: 10 / span 1;
@@ -356,8 +363,8 @@
 		}
 
 		&--10 {
-			grid-row: 8 / span 1;
-			grid-column: 1 / span 1;
+			grid-row: 3 / span 1;
+			grid-column: 4 / span 1;
 
 			@media (max-width: 950px) {
 				grid-row: 10 / span 1;
@@ -370,8 +377,8 @@
 		}
 
 		&--11 {
-			grid-row: 8 / span 1;
-			grid-column: 2 / span 1;
+			grid-row: 3 / span 1;
+			grid-column: 6 / span 1;
 
 			@media (max-width: 950px) {
 				grid-row: 12 / span 1;
@@ -384,8 +391,8 @@
 		}
 
 		&--12 {
-			grid-row: 8 / span 1;
-			grid-column: 3 / span 1;
+			grid-row: 3 / span 1;
+			grid-column: 8 / span 1;
 
 			@media (max-width: 950px) {
 				grid-row: 12 / span 1;
@@ -405,11 +412,11 @@
 .modal {
 
 	&__container {
-        height: 80vh;
-        width: 50vw;
-        background-color: $white;
-        border-radius: 3rem;
-        transform: translate(50%, 11vh);
+    height: 80vh;
+    width: 50vw;
+    background-color: $white;
+    border-radius: 3rem;
+    transform: translate(50%, 11vh);
 		opacity: 1;
 		transition: opacity 3s;
 
@@ -437,12 +444,11 @@
 		}
 
         &--top {
-            @include flexCenterCenter($flex-direction: column, $justify-content: flex-start);
-			width: 100%;
-			height: 95%;
-            padding: 3rem;
-            overflow: hidden;
-
+          @include flexCenterCenter($flex-direction: column, $justify-content: flex-start);
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          padding: 3rem 3rem 13rem 3rem;
         }
 
         &--bottom {
@@ -482,7 +488,7 @@
 .contact {
 
     &__container {
-        @include heightWidth100($height: 100vh);
+        @include heightWidth100($height: calc(100vh - 7rem));
         @include flexCenterCenter($justify-content: space-between);
         padding: 3rem;
 

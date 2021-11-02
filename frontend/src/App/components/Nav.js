@@ -6,13 +6,13 @@ import { withRouter } from "react-router-dom";
 import NavLinkPrimary from "../components/NavLinkPrimary"
 import NavLinkSecondary from "../components/NavLinkSecondary"
 
-const navItems = ["home", "about", "skills", "projects", "contact"]
+const navItems = ["projects", "about", "contact"]
 const navItemsSecondary = ['linkedIn', 'github']
 
 function Nav() {
 
   return (
-    <nav className="nav fadeInAnimated--0">
+    <nav className="nav fadeInAnimated--2">
 
       <ul className="nav__primary">
         {navItems.map((el) => (

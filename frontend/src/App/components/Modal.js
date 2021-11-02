@@ -29,11 +29,6 @@ export default function Modal({ project }) {
   const [shouldRender, setRender] = useState(isOpen);
   const [animation, setAnimation] = useState(isOpen);
 
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
-
-
   const handleClick = e => {
 
     if(node.contains === undefined) {
@@ -140,14 +135,14 @@ export default function Modal({ project }) {
           <div className="modal__container--bottom">
             <div className="modal__github">
               <a href={github}>
-                <button className="modal__github--btn">
+                <button className="modal__github--btn text-size-3">
                   Github Repository
                 </button>
               </a>
             </div>
             <div className="modal__url">
               <a href={url}>
-                <button className="modal__url--btn">Launch Application</button>
+                <button className="modal__url--btn text-size-3">Launch Application</button>
               </a>
             </div>
           </div>

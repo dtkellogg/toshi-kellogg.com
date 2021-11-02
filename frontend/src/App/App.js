@@ -27,9 +27,6 @@ export default function App() {
       setTimeout(() => {
         setLoading(false)
       }, 2000)
-      setTimeout(() => {
-        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
-      }, 10000)
     }, []);
     
     useEffect(() => {
@@ -52,12 +49,12 @@ export default function App() {
                 <TransitionGroup>
                   <CSSTransition timeout={250} classNames="fade" key={location.key}>
                     <Switch location={location}>
-                      <Route exact path="/" render={() => <Home/>} />
+                      <Route exact path="/" render={() => <Projects/>} />
                       <Route exact path="/about" render={() => <About/>} />
                       <Route exact path="/skills" render={() => <Skills/>} />
                       <Route exact path="/projects" render={() => <Projects/>} />
                       <Route exact path="/contact" render={() => <Contact/>} />
-                      <Route path="*" render={() => <Home/>} />
+                      <Route path="*" render={() => <Projects/>} />
                       {/* <Route exact path="/" component={Home} />
                       <Route exact path="/about" component={About} />
                       <Route exact path="/skills" component={Skills} />

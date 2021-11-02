@@ -10,15 +10,13 @@
 
 // Number at end of the following fadeInAnimated classes will denote the time of delay (seconds).
 
-.fadeInAnimated--0, .fadeInAnimated--kelloggtutoring,
-.fadeInAnimated--omnifood, .fadeInAnimated--nexter {
+.fadeInAnimated--0 {
   opacity: 0;
   animation: fadeIn 2s forwards;
   animation-delay: 0.001s;
 }
 
-.fadeInAnimated--1, 
-.fadeInAnimated--githubBattle, .fadeInAnimated--nightMarket  {
+.fadeInAnimated--1 {
   opacity: 0;
   animation: fadeIn 2s forwards;
   animation-delay: 1s;
@@ -30,8 +28,7 @@
   animation-delay: 1.501s;
 }
 
-.fadeInAnimated--2, .fadeInAnimated--thalassa,
-.fadeInAnimated--tetris, .fadeInAnimated--hackerNewsClone,  .fadeInAnimated--natours {
+.fadeInAnimated--2 {
   opacity: 0;
   animation: fadeIn 2s forwards;
   animation-delay: 2s;
@@ -49,8 +46,7 @@
   animation-delay: 2.5s;
 }
 
-.fadeInAnimated--3, .fadeInAnimated--indonesia2015,
-.fadeInAnimated--hangman, .fadeInAnimated--hashBasketball {
+.fadeInAnimated--3, .fadeInAnimated--indonesia2015, .fadeInAnimated--kelloggtutoring, .fadeInAnimated--thalassa, .fadeInAnimated--nightMarket {
   opacity: 0;
   animation: fadeIn 2s forwards;
   animation-delay: 3s;
@@ -62,7 +58,7 @@
   animation-delay: 3.25s;
 }
 
-.fadeInAnimated--4 {
+.fadeInAnimated--4, .fadeInAnimated--hangman, .fadeInAnimated--hashBasketball, .fadeInAnimated--tetris, .fadeInAnimated--hackerNewsClone {
   opacity: 0;
   animation: fadeIn 2s forwards;
   animation-delay: 4s;
@@ -74,7 +70,8 @@
   animation-delay: 4.5s;
 }
 
-.fadeInAnimated--5 {
+.fadeInAnimated--5, .fadeInAnimated--natours, .fadeInAnimated--omnifood, .fadeInAnimated--nexter, 
+.fadeInAnimated--githubBattle  {
   opacity: 0;
   animation: fadeIn 2s forwards;
   animation-delay: 5s;

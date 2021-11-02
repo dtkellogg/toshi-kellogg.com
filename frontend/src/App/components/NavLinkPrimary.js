@@ -46,7 +46,7 @@ export default function NavLinkPrimary({ text, to }) {
     <NavLink
       className="nav__link nav__primary--item"
       exact
-      to={to === "/home" ? '/' : to}
+      to={to === "/projects" ? '/' : to}
       activeStyle={activeStyleUnder950}
       {...attrs}
     >

@@ -39,7 +39,17 @@ function ProjectsScreen() {
 
   return (
     <section className="projects">
-
+      
+      <section className="home__container home__container--left">
+      <div>
+        <span className="fadeInAnimated--0 home__text home__text--1 text-size-3">Hello,</span>
+        <span className="fadeInAnimated--1 home__text--im text-size-0" text-size-0>I'm</span>
+        <span className="fadeInAnimated--1-5 home__text--toshi text-size-0">Toshi</span>
+      </div>
+      {/* <div className="fadeInAnimated--2-25 home__text home__text--3 text-size-2">I like to build JavaScript applications.</div> */}
+      <div className="fadeInAnimated--2 home__text home__text--5 text-size-3">I am a web developer based in the San Francisco Bay Area, specializing in MERN stacks.</div>
+    </section>
+  
       {/* <CSSTransition in={isOpen} timeout={300} className="modal-transition" > */}
         {/* <Modal project={project} /> */}
       {/* </CSSTransition> */}
@@ -56,20 +66,18 @@ function ProjectsScreen() {
           const {_id, name} = project
 
           return (
-            <li className={`projects__item projects__item--${_id}`} key={_id}>
-              <figure className="projects__card">
-                <img
-                  src={require(`../img/${abbreviatedName}.png`).default}
-                  alt={`${name} img`}
-                  className={`fadeInAnimated--${abbreviatedName} projects__photo projects__photo--${_id}`}
-                />
-                <button
-                  className="btn__project-details text-size-4"
-                  onClick={(e) => handleModal(e, projects[_id - 1])}
-                >
-                  {name}
-                </button>
-              </figure>
+            <li className={`projects__item projects__item--${_id} projects__card fadeInAnimated--${abbreviatedName}`} key={_id}>
+              <img
+                src={require(`../img/${abbreviatedName}.png`).default}
+                alt={`${name} img`}
+                className={` projects__photo projects__photo--${_id}`}
+              />
+              <button
+                className="btn__project-details text-size-4"
+                onClick={(e) => handleModal(e, projects[_id - 1])}
+              >
+                {name}
+              </button>
             </li>
           )
         })}
