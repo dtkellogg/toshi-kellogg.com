@@ -42,7 +42,7 @@ export default function App() {
       <>
         <ToastProvider>
 
-        <video src="/videos/video1.mp4" type="video/mp4" autoPlay playsInline muted loop className="background-video"/>
+        {/* <video src="/videos/video1.mp4" type="video/mp4" autoPlay playsInline muted loop className="background-video"/> */}
         <div className="container__main">
           
           <Nav />
