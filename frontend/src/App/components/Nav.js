@@ -24,7 +24,7 @@ function Nav() {
         ))}
       </ul>
 
-      <ul className="nav__secondary">
+      {/* <ul className="nav__secondary">
         {navItemsSecondary.map((el) => (
           <NavLinkSecondary
             key={el}
@@ -32,7 +32,7 @@ function Nav() {
             text={el}
           />
         ))}
-      </ul>
+      </ul> */}
       
     </nav>
   );

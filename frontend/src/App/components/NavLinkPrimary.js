@@ -47,16 +47,16 @@ export default function NavLinkPrimary({ text, to }) {
       className="nav__link nav__primary--item"
       exact
       to={to === "/home" ? '/' : to}
-      activeStyle={width > 950 ? activeStyleOver950 : activeStyleUnder950}
+      activeStyle={activeStyleUnder950}
       {...attrs}
     >
-      {hovering ? 
+      {/* {hovering ?  */}
         <div className="nav__hovering--text text-size-5 letter-spacing-sm">{capitalizedName}</div> 
-        : 
+        {/* : 
         <Icon
           size={33}
           className="nav__icon"
-        />}
+        />} */}
     </NavLink>
   );
 }
