@@ -133,18 +133,14 @@ export default function Modal({ project }) {
           </div>
 
           <div className="modal__container--bottom">
-            <div className="modal__github">
               <a href={github}>
                 <button className="modal__github--btn text-size-3">
                   Github Repository
                 </button>
               </a>
-            </div>
-            <div className="modal__url">
               <a href={url}>
                 <button className="modal__url--btn text-size-3">Launch Application</button>
               </a>
-            </div>
           </div>
         </div>
       </section>

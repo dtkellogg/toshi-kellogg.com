@@ -1,6 +1,6 @@
 .nav {
   padding: 0 2rem 0 0;
-  @include flexCenterCenter($flex-direction: row, $justify-content: space-around);
+  @include flexCenterCenter($flex-direction: row-reverse, $justify-content: space-between);
   height: 100%;
   width: auto;
   width: 100vw;
@@ -20,7 +20,7 @@
       margin: 0 2rem;
       // padding: 1.5rem 0;
       height: 100%;
-      width: 4.25rem;
+      width: 5rem;
       border-left: none;
       border-top: 4px solid $white;
 
@@ -38,22 +38,15 @@
 
   &__secondary {
     text-align: center;
-    width: 100%;
-    @include flexCenterCenter($flex-direction: column);
+    width: min-content;
+    @include flexCenterCenter($justify-content: space-between);
+    margin: 0 0 0 2rem;
 
-    @media (max-width: 950px) {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      height: 100%;
-      width: auto;
-    }
 
     &--item {
       border-left: 4px solid $white;
       width: 100%;
-      margin: 0.5rem 0;
+      margin: 0.5rem 0.5rem;
 
       &:hover .social-media-icon {
         color: $black;

@@ -12,7 +12,7 @@ const navItemsSecondary = ['linkedIn', 'github']
 function Nav() {
 
   return (
-    <nav className="nav fadeInAnimated--2">
+    <nav className="nav fadeInAnimated--1-5">
 
       <ul className="nav__primary">
         {navItems.map((el) => (
@@ -24,7 +24,7 @@ function Nav() {
         ))}
       </ul>
 
-      {/* <ul className="nav__secondary">
+      <ul className="nav__secondary">
         {navItemsSecondary.map((el) => (
           <NavLinkSecondary
             key={el}
@@ -32,7 +32,7 @@ function Nav() {
             text={el}
           />
         ))}
-      </ul> */}
+      </ul>
       
     </nav>
   );

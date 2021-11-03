@@ -145,10 +145,10 @@
     &__github {
 
         &--btn {
-            width: 100%;
-            height: 6rem;
+            width: 22rem;
+            height: 4rem;
             border: 1px solid transparent;
-            // font-family: 'Josefin Slab', serif;
+            border-radius:  2rem;
             cursor: pointer;
             background-color: $blue-3;
             color: $grey-12;
@@ -169,11 +169,10 @@
     &__url {
 
         &--btn {
-            width: 100%;
-            height: 6rem;
-            border-radius: 0 0 3rem 3rem;
+            width: 22rem;
+            height: 4rem;
+            border-radius:  2rem;
             border: 1px solid transparent;
-            // font-family: 'Josefin Slab', serif;
             cursor: pointer;
             background-color: $blue-4;
             color: $grey-12;
