@@ -29,41 +29,36 @@ export default function Modal({ project }) {
   const [shouldRender, setRender] = useState(isOpen);
   const [animation, setAnimation] = useState(isOpen);
 
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
-
-
   const handleClick = e => {
 
-    if(node.contains === undefined) {
+    // if(node.contains === undefined) {
 
-      if (node.current.contains(e.target)) {
-        // inside modal
-        return;
-      }
-    }
+    //   if (node.current.contains(e.target)) {
+    //     // inside modal
+    //     return;
+    //   }
+    // }
 
     // outside modal 
-    if (isOpen) {
+    // if (isOpen) {
       setAnimation(false)
       window.setTimeout(() => {
         dispatch(modalToggleOpen());
         dispatch({ type: MODAL_SETPROJECT_RESET })
       }, 900);
-    }
+    // }
     
   };
 
-  useEffect(() => {
-    window.setTimeout(() => {
-      document.addEventListener("click", handleClick);
-    }, 100);
+  // useEffect(() => {     
+  //   window.setTimeout(() => {
+  //     document.addEventListener("click", handleClick);
+  //   }, 100);
 
-    return () => {
-      document.removeEventListener("click", handleClick);
-    };
-  }, []);
+  //   return () => {
+  //     document.removeEventListener("click", handleClick);
+  //   };
+  // }, []);
 
   useEffect(() => {
     if (isOpen) setRender(true);
@@ -78,6 +73,8 @@ export default function Modal({ project }) {
   };
 
 
+
+
   return (
     shouldRender && (
       <section
@@ -89,13 +86,11 @@ export default function Modal({ project }) {
         }}
         onAnimationEnd={onAnimationEnd}
       >
-        <button className="btn__modal--close" 
-        // onClick={(e) => handleModal(e)}
-        >
-          X
-        </button>
 
         <div className="modal__container" ref={node}>
+          <button className="btn__modal--close" onClick={(e) => handleClick(e)}>
+            X
+          </button>
           <div className="modal__container--top">
             <div className="modal__header text-size-2">{name}</div>
             {/* <div className="modal__video"> */}
@@ -138,18 +133,14 @@ export default function Modal({ project }) {
           </div>
 
           <div className="modal__container--bottom">
-            <div className="modal__github">
               <a href={github}>
-                <button className="modal__github--btn">
+                <button className="modal__github--btn text-size-3">
                   Github Repository
                 </button>
               </a>
-            </div>
-            <div className="modal__url">
               <a href={url}>
-                <button className="modal__url--btn">Launch Application</button>
+                <button className="modal__url--btn text-size-3">Launch Application</button>
               </a>
-            </div>
           </div>
         </div>
       </section>

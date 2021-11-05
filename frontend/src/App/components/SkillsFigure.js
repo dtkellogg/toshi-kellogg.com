@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function SkillsFigure() {
     return (
-      <figure className="tabs fadeInAnimated--5">
+      <figure className="tabs">
         <input
           id="tab-1"
           type="radio"

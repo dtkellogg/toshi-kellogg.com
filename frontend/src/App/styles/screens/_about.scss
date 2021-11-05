@@ -18,22 +18,26 @@
         }
 
         &--toshi-headshot {
-            width: 50rem;
+            width: 40rem;
             height: auto;
             transform: rotate(-4deg);
             border-radius: 69%;
             box-shadow: 0.3rem 0.3rem 0.6rem #000;
 
             @media (max-width: 600px) {
-                width: 40rem;
+                width: 30rem;
             }
 
             @media (max-width: 475px) {
-                width: 32.5rem;
+                width: 27.5rem;
             }
 
             @media (max-width: 400px) {
-                width: 30rem;
+                width: 25rem;
+            }
+
+            @media(max-height: 800px) {
+              width: 35rem;
             }
         }
 
