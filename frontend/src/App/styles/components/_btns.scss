@@ -25,6 +25,11 @@
     bottom: 0;
     text-align: center;
 
+    @media (max-width: 650px) {
+      height: 8rem;
+      width: 8rem;
+    }
+
     &:hover {
       border: 1px solid $blue-1;
       color: $blue-1;
