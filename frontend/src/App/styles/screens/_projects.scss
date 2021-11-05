@@ -84,7 +84,8 @@
 
     &__photo{
         transition: opacity .5s, visibility .2s;
-        box-shadow: .1rem .15rem .6rem $black;
+        // box-shadow: 4px 4px 10px 0px #00000059;
+        // z-index: 999999999999999999999;
 
         &:not(:hover) {
           opacity: 1;
