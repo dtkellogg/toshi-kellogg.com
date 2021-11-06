@@ -425,21 +425,25 @@
 		
 		@media (max-width: 950px) {
 			// height: 105vh;
-			width: 60%;
-			// transform: translate(0, 11vh);
+			width: 80vw;
+      // align-items: center;
+      // justify-content:center;
+			transform: translate(0, 5rem);
 			// left: 20%;
-			position: absolute;
+      margin: auto;
+			// position: absolute;
 			min-height: min-content;
 		}
 
 		@media (max-width: 800px) {
 			width: 85%;
+      height: 100vh;
 			// transform: translate(0, 11vh);
 			// left: 7.5%;
 		}
 		@media (max-width: 525px) {
-			width: 90%;
-			// height: 155vh;
+			width: 90vw;
+			height: 95vh;
 			// transform: translate(0, 11vh);
 			// left: 5%;
 		}
