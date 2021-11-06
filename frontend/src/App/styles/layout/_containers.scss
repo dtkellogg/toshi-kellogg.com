@@ -428,28 +428,19 @@
 		@include flexCenterCenter($flex-direction: column, $justify-content: space-between, $align-items: flex-start);
 		
 		@media (max-width: 950px) {
-			// height: 105vh;
 			width: 65vw;
-      // align-items: center;
-      // justify-content:center;
 			transform: translate(0, 5rem);
-			// left: 20%;
       margin: auto;
-			// position: absolute;
 			min-height: min-content;
       margin-bottom: 5rem;
 		}
 
 		@media (max-width: 800px) {
-			// width: 85%;
       width: 75vw;
       height: 85%;
-			// transform: translate(0, 11vh);
-			// left: 7.5%;
 		}
-		@media (max-width: 525px) {
-			// transform: translate(0, 11vh);
-			// left: 5%;
+		@media (max-width: 550px) {
+      width: 85vw;
 		}
 
       &--top {
