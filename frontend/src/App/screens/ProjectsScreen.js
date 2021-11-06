@@ -63,7 +63,7 @@ function ProjectsScreen() {
               delay={4000}
               wrapperClassName="test"
               options={{
-                strings: [' ReactJS.', ' NodeJS.', " clean code.", " communication."],
+                strings: [' MERN stacks.', ' ReactJS.', ' NodeJS.', " clean code.", " SASS.", " git.", " HTML5.", " CSS3."],
                 autoStart: true,
                 loop: true,
               }} 
@@ -79,7 +79,7 @@ function ProjectsScreen() {
                 delay={4000}
                 wrapperClassName="test"
                 options={{
-                  strings: [' ReactJS.', ' NodeJS.', " clean code.", " communication."],
+                  strings: [' MERN stacks.', ' ReactJS.', ' NodeJS.', " clean code.", " SASS.", " git."],
                   autoStart: true,
                   loop: true,
                 }} 
