@@ -88,10 +88,11 @@ export default function Modal({ project }) {
       >
 
         <div className="modal__container" ref={node}>
-          <button className="btn__modal--close" onClick={(e) => handleClick(e)}>
-            X
-          </button>
+          
           <div className="modal__container--top">
+            <button className="btn__modal--close" onClick={(e) => handleClick(e)}>
+              X
+            </button>
             <div className="modal__header text-size-2">{name}</div>
             {/* <div className="modal__video"> */}
 
