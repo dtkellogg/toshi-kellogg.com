@@ -153,6 +153,10 @@
             background-color: $blue-3;
             color: $grey-12;
 
+            @media (max-width: 600px) {
+              width: 15rem;
+            }
+
             &:focus {
                 outline: none;
             }
@@ -176,6 +180,10 @@
             cursor: pointer;
             background-color: $blue-4;
             color: $grey-12;
+
+            @media (max-width: 600px) {
+              width: 15rem;
+            }
 
             &:focus {
                 outline: none;

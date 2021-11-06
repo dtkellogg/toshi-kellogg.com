@@ -55,7 +55,10 @@ function ProjectsScreen() {
         <span className="fadeInAnimated--1 home__text--toshi text-size-1">Toshi.</span>
       </div>
       {/* <div className="fadeInAnimated--2-25 home__text home__text--3 text-size-2">I like to build JavaScript applications.</div> */}
-      <div className="fadeInAnimated--1-5 home__text home__text--5 text-size-2-5">I'm a web developer based in the Bay Area, specializing in {<Typewriter
+      <div>
+      <div className="fadeInAnimated--1-5 home__text home__text--5 text-size-2-5">
+        <span>I'm a web developer based in the Bay Area, specializing in</span> 
+        {<Typewriter
         // cursorClassName="hello"
         delay={4000}
         wrapperClassName="test"
@@ -93,7 +96,7 @@ function ProjectsScreen() {
           loop: true,
         }} 
       />
-      }</div>
+      }</div></div>
 
     {/* <div className="text-size-1">
       {showTypewriter1 ? <Typewriter
