@@ -156,6 +156,7 @@
       color: $grey-5;
       line-height: 2.5rem;
       display: flex;
+      white-space: nowrap;
 
       @media (max-width: 850px) {
         display: inline-block;
