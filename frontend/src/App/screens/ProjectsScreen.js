@@ -55,48 +55,39 @@ function ProjectsScreen() {
         <span className="fadeInAnimated--1 home__text--toshi text-size-1">Toshi.</span>
       </div>
       {/* <div className="fadeInAnimated--2-25 home__text home__text--3 text-size-2">I like to build JavaScript applications.</div> */}
-      <div>
-      <div className="fadeInAnimated--1-5 home__text home__text--5 text-size-2-5">
-        <span>I'm a web developer based in the Bay Area, specializing in</span> 
-        {<Typewriter
-        // cursorClassName="hello"
-        delay={4000}
-        wrapperClassName="test"
-        // loop={true}
-        // onInit={(typewriter) => {
-        //   typewriter
-        //     // .stop()
-        //     .typeString("I'm a web developer based in the Bay Area specializing in MERN stacks.")
-        //     .pauseFor(1000)
-        //     .deleteChars(12)
-        //     .typeString("ReactJS.")
-        //     .pauseFor(1200)
-        //     .deleteChars(8)
-        //     .typeString("NodeJS.")
-        //     .pauseFor(800)
-        //     .deleteChars(7)
-        //     .typeString("clean code.")
-        //     .pauseFor(1150)
-        //     .deleteChars(11)
-        //     .typeString("communication.")
-        //     .pauseFor(1100)
-        //     .deleteChars(14)
-        //     .typeString("teamwork.")
-        //     .pauseFor(1100)
-        //     .deleteChars(1)
-        //     .typeString(" with your mom. 💥")
-        //     .deleteChars(26)
-        //     .typeString("MERN stacks.")
-        //     .changeDeleteSpeed(50000)
-        //     .start()
-        // }}
-        options={{
-          strings: [' ReactJS.', ' NodeJS.', " clean code.", " communication."],
-          autoStart: true,
-          loop: true,
-        }} 
-      />
-      }</div></div>
+      {width > 608 ?
+        <div>
+          <div className="fadeInAnimated--1-5 home__text home__text--5 text-size-2-5">
+            <span>I'm a web developer based in the Bay Area, specializing in</span> 
+            {<Typewriter
+              delay={4000}
+              wrapperClassName="test"
+              options={{
+                strings: [' ReactJS.', ' NodeJS.', " clean code.", " communication."],
+                autoStart: true,
+                loop: true,
+              }} 
+            />}
+          </div>
+        </div>
+      : <div>
+          <div className="fadeInAnimated--1-5 home__text home__text--5 text-size-2-5">
+              <span>I'm a web developer based in the Bay Area</span> 
+              <br />
+            <div style={{display: 'flex'}}>specializing in 
+              {<Typewriter
+                delay={4000}
+                wrapperClassName="test"
+                options={{
+                  strings: [' ReactJS.', ' NodeJS.', " clean code.", " communication."],
+                  autoStart: true,
+                  loop: true,
+                }} 
+              />}
+              </div>
+          </div>
+        </div>
+    }
 
     {/* <div className="text-size-1">
       {showTypewriter1 ? <Typewriter

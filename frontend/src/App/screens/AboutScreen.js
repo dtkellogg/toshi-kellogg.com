@@ -49,27 +49,22 @@ function AboutScreen() {
         </header>
         <section className="about__text">
           <span className="about__text--1 text-size-3 fadeInAnimated--1">
-            A self taught, yet well rounded programmer with a strong background and understanding of data structures and algorithms.
+            Hello, I’m Toshi. I’m a self taught full stack programmer with a passion for data structures and algorithms.
           </span>
           <br />
           <br />
           <span className="about__text--2 text-size-3 fadeInAnimated--2">
-            Coming from a bicultural background, thinking in different languages has always been a part of my psyche. Having completed 
-            my bachelor’s at UC Davis in Chemistry, I bring to the table a strong understanding of the fundamentals of mathematics, science and English. 
-            Coupled with extensive experience teaching high school and college students, I have fine tuned my problem solving skills to be able to write 
-            code efficiently and logically.
+            Coming from a bicultural background, thinking in different languages comes intuitively. Having completed my bachelor’s at UC Davis in Chemistry and run my own college level tutoring service, I have fine tuned my ability to break down a problem into simple steps and write code efficiently and logically.
           </span>
           <br />
           <br />
           <span className="about__text--3 text-size-3 fadeInAnimated--3">
-            Besides knowing the material, my success in teaching has come from an innate ability to maintain patience and listen attentively. 
-            I prioritize a clean, systematic lifestyle, which I incorporate into my code.
+            Besides my love for mastering the material, my success as a programmer has come from an innate ability to maintain patience, stay curious, and listen attentively.
           </span>
           <br />
           <br />
           <span className="about__text--4 text-size-3 fadeInAnimated--4">
-            When I am not programming, I enjoy spending my time running or reading a novel. What truly inspires me in life is traveling, as I 
-            have been fortunate enough to have already been to many amazing places. I hope to continue my travels as I build more web applications in the future.
+            When I am not programming, I enjoy spending my time running, reading a novel, and traveling.
           </span>
         </section>
       </section>
