@@ -108,7 +108,7 @@
     }
 
     @media (max-width: 720px) {
-        padding: 3rem;
+        padding: 1rem 3rem 3rem 3rem;
     }
 
     &--left {
@@ -490,18 +490,18 @@
 .contact {
 
     &__container {
-        @include heightWidth100($height: calc(100vh - 7rem));
+        @include heightWidth100();
         @include flexCenterCenter($justify-content: space-between);
         padding: 3rem;
 
         @media (max-width: 950px) {
-            padding: 3rem 6.0rem 10rem 6.0rem;
+            padding: 1rem 6.0rem 10rem 6.0rem;
             @include heightWidth100($width: 100vw);
             @include flexCenterCenter($flex-direction: column, $justify-content: space-between);
         }
 
         @media (max-width: 720px) {
-            padding: 3rem 3rem 10rem 3rem;
+            padding: 1rem 3rem 10rem 3rem;
             @include heightWidth100($width: 100vw);
             @include flexCenterCenter($flex-direction: column, $justify-content: space-between);
         }
