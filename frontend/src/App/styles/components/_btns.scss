@@ -25,6 +25,12 @@
     bottom: 0;
     text-align: center;
 
+    @media (max-width: 950px) {
+      height: 13.5rem;
+      width: 13.5rem;
+      line-height: 2.5rem;
+    }
+
     @media (max-width: 650px) {
       height: 8.5rem;
       width: 8.5rem;

@@ -225,10 +225,10 @@
     background-color: $white;
     // height: 57.5rem;
 
-    @media (max-width: 1350px) {
-      grid-gap: 1rem;
-      margin: 1rem; 
-    }
+    // @media (max-width: 1350px) {
+    //   grid-gap: 1rem;
+    //   margin: 1rem; 
+    // }
     @media (max-width: 950px) {
       grid-template-rows: repeat(6, min-content);
       grid-template-columns: repeat(2, 1fr);
