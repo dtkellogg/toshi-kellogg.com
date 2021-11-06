@@ -233,10 +233,10 @@
       grid-template-rows: repeat(6, min-content);
       grid-template-columns: repeat(2, 1fr);
     }
-    // @media (max-width: 500px) {
-    //   height: 100%;
-    //   @include flexCenterCenter($flex-direction: column);
-    // }
+    @media (max-width: 450px) {
+      margin: 1.5rem; 
+      grid-gap: 1.5rem;
+    }
 	}
 	
 	&__item {
