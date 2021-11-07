@@ -1,6 +1,11 @@
-import React from 'react'
+import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { handleTextChange, handleSubmit } from "../actions/formActions";
 
-function Input({ containerClass, inputClass, type, value, placeholder, onChange, textarea, name}) {
+
+function Input({ containerClass, inputClass, type, value, placeholder, textarea, name}) {
+  const dispatch = useDispatch();
+
   return (
     <div className={containerClass}>
       {!textarea 
@@ -8,19 +13,20 @@ function Input({ containerClass, inputClass, type, value, placeholder, onChange,
           type={type}
           name={name}
           className={inputClass}
-          placeholder={placeholder}
+          // placeholder={placeholder}
           value={value}
-          onChange={onChange}
+          onChange={(e) => dispatch(handleTextChange(e))}
         />
         : <textarea
           type={type}
           name={name}
           className={inputClass}
-          placeholder={placeholder}
+          // placeholder={placeholder}
           value={value}
-          onChange={onChange}
+          onChange={(e) => dispatch(handleTextChange(e))}
         />
       }
+      <label className={value && 'filled'} htmlFor={name} >{placeholder}</label>
       <span className="contact__focus-border" />
     </div>
   )

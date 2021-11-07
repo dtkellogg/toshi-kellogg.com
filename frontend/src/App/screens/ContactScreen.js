@@ -51,16 +51,16 @@ function ContactScreen() {
 
         <form className="contact__form fadeInAnimated--3">
           <Input containerClass="contact__form--element contact__element--name" inputClass="contact__form--input text-size-4" name="name"
-            type="name" value={name} placeholder="Name" onChange={(e) => dispatch(handleTextChange(e))}
+            type="name" value={name} placeholder="Name"
           />
             <Input containerClass="contact__form--element contact__element--email" inputClass="contact__form--input text-size-4" name="email"
-            type="email" value={email} placeholder="Email" onChange={(e) => dispatch(handleTextChange(e))}
+            type="email" value={email} placeholder="Email"
           />
             <Input containerClass="contact__form--element contact__element--subject" inputClass="contact__form--input text-size-4" name="subject"
-            type="subject" value={subject} placeholder="Subject" onChange={(e) => dispatch(handleTextChange(e))}
+            type="subject" value={subject} placeholder="Subject"
           />
-            <Input containerClass="contact__form--element contact__element--message" inputClass="contact__form--input text-size-4" name="message"
-            type="text" value={message} placeholder="Message" textarea={true} onChange={(e) => dispatch(handleTextChange(e))}
+            <Input containerClass="contact__form--element contact__element--message" inputClass="contact__form--textarea text-size-4" name="message"
+            type="text" value={message} placeholder="Message" textarea={true}
           />
         </form>
 
@@ -69,7 +69,7 @@ function ContactScreen() {
           onClick={() => dispatch(handleSubmit(name, email, subject, message, addToast))}
           style={ 
             !readyToSubmit ? {
-              "color": "var(--grey-4)",
+              "color": "var(--grey-8)",
               "border": "1px solid var(--grey-7)",
               "backgroundColor": "var(--grey-11)"
              } : {
