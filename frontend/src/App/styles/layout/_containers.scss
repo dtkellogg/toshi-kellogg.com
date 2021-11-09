@@ -169,6 +169,27 @@
   }
 }
 
+.bar-graph {
+  display: grid;
+  grid-template-columns: 10rem 50rem;
+  grid-template-rows: 0.15fr repeat(7, 1fr);
+  grid-gap: 2.25rem 1rem;
+  align-items: center;
+
+  @media (max-width: 1350px) {
+    grid-template-columns: 10rem 40rem;
+  }
+
+  @media (max-width: 1200px) {
+    grid-template-columns: 10rem 30rem;
+  }
+
+  @media (max-width: 950px) {
+    grid-template-columns: 10vw 60vw;
+    margin-bottom: 7rem;
+  }
+}
+
 /* --------------------------------------------------------------------- */
 /* projects layout */
 

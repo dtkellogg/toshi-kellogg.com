@@ -19,7 +19,7 @@ const projects = [
     name: "Davis Night Market",
     skills: ["NodeJS", "React", "React-Router", "CSS3"],
     description__1:
-      "This application was designed to be used by a philanthropy in Davis whose work I really admire.",
+      "This application was designed to be used by a philanthropy in Davis, CA whose work I really admire.",
     description__2:
       "Through the process of designing and creating this application, I was able to learn about and test my functional knowledge. As a teacher myself, I have learned to appreciate the art of fucking up. Once you accept that making mistakes is an essential part to learning, and that it is not something to be ashamed of, you will be able to master what concepts you desire. Inevitably, I did feel embarrassed quiet a bit at the mistakes I was making (mainly, using a .gitignore file correctly). To that extent, I learned a lot about git, specifically how to incorporate it into your app so that your code can be uploaded to github as a simple application or with submodules. After countless mistakes, I finally created my own notes on how exactly to accomplish this goal. Other small details include seeing what naming conventions I prefer (such as Pages vs Screens as directories) and designing an overall night time theme with a starry night animation background. This was the first time I created a full MERN stack on my own, and this project served as a fundamental part of my understanding of how data moves throughout the entire stack.",
     description__3:
@@ -64,7 +64,7 @@ const projects = [
     name: "Hash Basketball",
     skills: ["React", "React-Router", "CSS3"],
     description__1:
-      "This application serves as the team page for a fabricated basketball team. It was made as part of Tyler McGinnis’s React Router V5 course.",
+      "This application serves as the team page for a fictional basketball team. It was made as part of Tyler McGinnis’s React Router V5 course.",
     description__2:
       "As this course's intention, I was able to learn about React Router V5 and how to use it. The different hooks from the react-router-dom package comprised a majority of the focus, and application as well as Tyler’s instruction made it very easy to understand. I did not master React Router simply by completing this course; it did, however, give me enough base knowledge to experiment with areas that my understanding was weak in when I applied it to different projects.",
     description__3:
@@ -79,7 +79,7 @@ const projects = [
     name: "Hackernews Clone",
     skills: ["React", "React-Router", "CSS3"],
     description__1:
-      "This project was part of a React course by Tyler McGinnis. It was designed to teach how to use React with functional components, React Router, JSX, and interacting with an API from the client side.",
+      "This project is a clone of Hacker News, and interacts with the same API. It was made as part of Tyler McGinnis’s React course.",
     description__2:
       "By going through the process of making this application, I was able to get a very good understanding of React, so that I felt confident to work with the framework upon its completion. The hands-on experience of creating this taught me a lot about React Hooks, such as the fundamental built in hooks (useReducer, useState, useEffect, useContext, etc.) as well as React Router, and JSX syntax. The React Router part of the application was simple, yet it helped me understand how to use its own built in functionality, such as Links and Routes and getting data from a url using useParams. The application also helped me understand how to apply the DRY principle to programming, as well as slimming down components by moving logic/functions to separate documents. Finally, I was able to practice working with a real API. As basic as that sounds, it was undoubtedly crucial towards my development as a programmer. I found it especially intriguing and useful to my overall understanding as it was all done on the front end, something that I appreciate knowing now that I do it mainly via Express.",
     description__3:

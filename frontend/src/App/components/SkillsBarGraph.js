@@ -11,7 +11,7 @@ export default function SkillsBarGraph() {
         </h1>
       </header>
       <section className="bar-graph fadeInAnimated--5">
-        <div className="bar-graph__key">
+        <div className="bar-graph__labels">
           <span className="font-size-4">Proficient</span>
           <span className="font-size-4">Expert</span>
         </div>
