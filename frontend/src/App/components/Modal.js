@@ -19,7 +19,7 @@ export default function Modal({ project }) {
   const dispatch = useDispatch();
   const node = useRef();
 
-  const { description__1, description__2, description__3, github, name, skills,
+  const { abstract, details, github, name, skills,
     // video, 
   url } = project
 
@@ -71,6 +71,9 @@ export default function Modal({ project }) {
     }
   };
 
+  console.log("details")
+  console.log(details)
+
   return (
     shouldRender && (
       <section
@@ -119,9 +122,14 @@ export default function Modal({ project }) {
             )}
 
             <div className="modal__paragraph--container">
-              <div className="modal__subheader--1 font-size-3">Abstract:</div><div className="modal__paragraph--1 font-size-5">{description__1}</div>
-              {/* <div className="modal__subheader--2 font-size-3">What I learned:</div><div className="modal__paragraph--2 font-size-5">{description__2}</div> */}
-              <div className="modal__subheader--3 font-size-3">About the code:</div><div className="modal__paragraph--3 font-size-5">{description__3}</div>
+              <div className="modal__subheader--1 font-size-3">Abstract:</div>
+              <div className="modal__paragraph--1 font-size-5">{abstract}</div>
+              <div className="modal__subheader--3 font-size-3">About the code:</div>
+              {details && (
+                <ul className="modal__paragraph--3 font-size-5">{details.map((detail) => {
+                  return <li className="modal__bullet-point">{detail}</li>
+                })}</ul>
+              )}
             </div>
           </div>
 
