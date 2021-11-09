@@ -85,7 +85,7 @@ export default function Modal({ project }) {
             <button className="btn__modal--close" onClick={(e) => handleClick(e)}>
               X
             </button>
-            <div className="modal__header text-size-2">{name}</div>
+            <div className="modal__header font-size-2">{name}</div>
             {/* <div className="modal__video"> */}
 
             {/* <video
@@ -112,27 +112,27 @@ export default function Modal({ project }) {
                       data-inline="false"
                       style={{fontSize: "1.6rem"}}
                     />
-                    <div className="modal__skills--text text-size-3">{skill}</div>
+                    <div className="modal__skills--text font-size-3">{skill}</div>
                   </li>
                 ))}
               </ul>
             )}
 
             <div className="modal__paragraph--container">
-              <div className="modal__subheader--1 text-size-3">Abstract:</div><div className="modal__paragraph--1 text-size-5">{description__1}</div>
-              {/* <div className="modal__subheader--2 text-size-3">What I learned:</div><div className="modal__paragraph--2 text-size-5">{description__2}</div> */}
-              <div className="modal__subheader--3 text-size-3">About the code:</div><div className="modal__paragraph--3 text-size-5">{description__3}</div>
+              <div className="modal__subheader--1 font-size-3">Abstract:</div><div className="modal__paragraph--1 font-size-5">{description__1}</div>
+              {/* <div className="modal__subheader--2 font-size-3">What I learned:</div><div className="modal__paragraph--2 font-size-5">{description__2}</div> */}
+              <div className="modal__subheader--3 font-size-3">About the code:</div><div className="modal__paragraph--3 font-size-5">{description__3}</div>
             </div>
           </div>
 
           <div className="modal__container--bottom">
               <a href={github}>
-                <button className="modal__github--btn text-size-3">
+                <button className="modal__github--btn font-size-3">
                   Github Repository
                 </button>
               </a>
               <a href={url}>
-                <button className="modal__url--btn text-size-3">Launch Application</button>
+                <button className="modal__url--btn font-size-3">Launch Application</button>
               </a>
           </div>
         </div>

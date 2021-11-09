@@ -35,37 +35,37 @@ export default function ContactScreen() {
   return (
     <section className="contact__container">
       <section className="contact__container--left">
-        <header className="contact__header text-size-1 fadeInAnimated--0">
-          <h1 className="text-size-1">
+        <header className="contact__header font-size-1 fadeInAnimated--0">
+          <h1 className="font-size-1">
             Contact
           </h1>
         </header>
-        <p className="contact__paragraph--1 text-size-3 fadeInAnimated--1">
+        <p className="contact__paragraph--1 font-size-3 fadeInAnimated--1">
           I am interested in <span className="skills__blue-text">team-based positions</span> - especially those 
           that will allow me to work alongside the most talented developers.
         </p>
         <br />
-        <p className="contact__paragraph--2 text-size-3 fadeInAnimated--2">
+        <p className="contact__paragraph--2 font-size-3 fadeInAnimated--2">
           If you have any questions for me, please fill out the form below.
         </p>
 
         <form className="contact__form fadeInAnimated--3">
-          <Input containerClass="contact__form--element contact__element--name" inputClass="contact__form--input text-size-4" name="name"
+          <Input containerClass="contact__form--element contact__element--name" inputClass="contact__form--input font-size-4" name="name"
             type="name" value={name} placeholder="Name"
           />
-            <Input containerClass="contact__form--element contact__element--email" inputClass="contact__form--input text-size-4" name="email"
+            <Input containerClass="contact__form--element contact__element--email" inputClass="contact__form--input font-size-4" name="email"
             type="email" value={email} placeholder="Email"
           />
-            <Input containerClass="contact__form--element contact__element--subject" inputClass="contact__form--input text-size-4" name="subject"
+            <Input containerClass="contact__form--element contact__element--subject" inputClass="contact__form--input font-size-4" name="subject"
             type="subject" value={subject} placeholder="Subject"
           />
-            <Input containerClass="contact__form--element contact__element--message" inputClass="contact__form--textarea text-size-4" name="message"
+            <Input containerClass="contact__form--element contact__element--message" inputClass="contact__form--textarea font-size-4" name="message"
             type="text" value={message} placeholder="Message" textarea={true}
           />
         </form>
 
         <button
-          className="btn__contact-form fadeInAnimated--3 text-size-4"
+          className="btn__contact-form fadeInAnimated--3 font-size-4"
           onClick={() => dispatch(handleSubmit(name, email, subject, message, addToast))}
           style={ 
             !readyToSubmit ? {

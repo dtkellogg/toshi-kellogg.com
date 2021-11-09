@@ -16,13 +16,13 @@ export default function Hero() {
   return (
     <section className="home__container home__container--left">
       <div>
-        <span className="fadeInAnimated--1 home__text--im text-size-1" text-size-0>Hello, I'm</span>
-        <span className="fadeInAnimated--1 home__text--toshi text-size-1">Toshi.</span>
+        <span className="fadeInAnimated--1 home__text--im font-size-1" font-size-0>Hello, I'm</span>
+        <span className="fadeInAnimated--1 home__text--toshi font-size-1">Toshi.</span>
       </div>
       
       {width > 608 ?
         <div>
-          <div className="fadeInAnimated--1-5 home__text home__text--5 text-size-2-5">
+          <div className="fadeInAnimated--1-5 home__text home__text--5 font-size-2-5">
             <span>I'm a web developer based in the Bay Area, specializing in</span> 
             {<Typewriter
               delay={4000}
@@ -36,7 +36,7 @@ export default function Hero() {
           </div>
         </div>
       : <div>
-          <div className="fadeInAnimated--1-5 home__text home__text--5 text-size-2-5">
+          <div className="fadeInAnimated--1-5 home__text home__text--5 font-size-2-5">
               <span>I'm a web developer based in the Bay Area</span> 
               <br />
             <div style={{display: 'flex'}}>specializing in 

@@ -42,10 +42,10 @@ export default function Map() {
           onStyleLoad={(map) => onLoaded(map)}
         >
           <Marker latitude={37.9158} longitude={-122.158}>
-            <div className="text-size-3 map__marker--lafayette">Lafayette</div>
+            <div className="font-size-3 map__marker--lafayette">Lafayette</div>
           </Marker>
           <Marker latitude={38.5682} longitude={-121.8017}>
-            <div className="text-size-3 map__marker--lafayette">Davis</div>
+            <div className="font-size-3 map__marker--lafayette">Davis</div>
           </Marker>
         </ReactMapGL>
       </div>

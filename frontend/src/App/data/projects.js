@@ -34,7 +34,7 @@ const projects = [
     name: "Thalassa Dive Resort",
     skills: ["HTML5", "SCSS"],
     description__1:
-      "This project was made to practice CSS. This not only includes fundamentals, such as Flexbox, CSS Grid, and the many CSS properties, but also a few more advanced tools. These include SCSS and general UX design incorporation.",
+      "This application is a design idea for redoing the current UI of a scuba diving resort I dove at in Sulawesi, Indonesia.",
     description__2:
       "As CSS and SCSS were not much more than concepts to me at this point, practicing actually using implementing what I learned proved to give me the most knowledge. I also was able to practice using NPM to install dependencies and run/design scripts. As with CSS, the application of what I had taught myself in these areas proved valuable, as I now feel confident in both areas.",
     description__3:
@@ -49,7 +49,7 @@ const projects = [
     name: "Indonesia (2015)",
     skills: ["HTML5", "CSS3", "JavaScript"],
     description__1:
-      "This was the first completely independent project that I made. It was intended to gain experience applying what I had taught myself about HTML, CSS, and JavaScript. To increase my interest in the project, I decided to make it about one of my favorite activities in life: traveling. The project displays highlights from my fourth trip to Indonesia.",
+      "This application is a simple 1 page HTML design to showcase highlights from my third trip to Indonesia",
     description__2:
       "As this was my first true solo programming endeavor, I was able to learn a lot about HTML, CSS and JavaScript simply through application. In regards to HTML, I learned how the standard markup language is organized between a head and a body, and the relevant code per each. I also got to learn the nuances between similar HTML tags, such as divs, sections, spans and ps, and classes and IDs. Furthermore, I was introduced to HTML entities to display special characters (such as &mdash; for a longer, more visually pleasing dash). This application also helped further my understanding of using jQuery and JavaScript to create simple animations to aid with UX. When I eventually decided to push my code up to github, I learned how to run a static webpage on Heroku through scripts in the applications package.json file.",
     description__3:
@@ -64,7 +64,7 @@ const projects = [
     name: "Hash Basketball",
     skills: ["React", "React-Router", "CSS3"],
     description__1:
-      "This project was made as part of Tyler McGinnis’s React Router V5 course. It focused on implementing the different built in hooks of React Router.",
+      "This application serves as the team page for a fabricated basketball team. It was made as part of Tyler McGinnis’s React Router V5 course.",
     description__2:
       "As this course's intention, I was able to learn about React Router V5 and how to use it. The different hooks from the react-router-dom package comprised a majority of the focus, and application as well as Tyler’s instruction made it very easy to understand. I did not master React Router simply by completing this course; it did, however, give me enough base knowledge to experiment with areas that my understanding was weak in when I applied it to different projects.",
     description__3:
