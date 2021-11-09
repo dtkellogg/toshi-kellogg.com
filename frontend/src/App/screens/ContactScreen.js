@@ -50,22 +50,22 @@ export default function ContactScreen() {
         </p>
 
         <form className="contact__form fadeInAnimated--3">
-          <Input containerClass="contact__form--element contact__element--name" inputClass="contact__form--input font-size-4" name="name"
+          <Input containerClass="contact__form--element contact__element--name" inputClass="contact__form--input font-size-3-5" name="name"
             type="name" value={name} placeholder="Name"
           />
-            <Input containerClass="contact__form--element contact__element--email" inputClass="contact__form--input font-size-4" name="email"
+            <Input containerClass="contact__form--element contact__element--email" inputClass="contact__form--input font-size-3-5" name="email"
             type="email" value={email} placeholder="Email"
           />
-            <Input containerClass="contact__form--element contact__element--subject" inputClass="contact__form--input font-size-4" name="subject"
+            <Input containerClass="contact__form--element contact__element--subject" inputClass="contact__form--input font-size-3-5" name="subject"
             type="subject" value={subject} placeholder="Subject"
           />
-            <Input containerClass="contact__form--element contact__element--message" inputClass="contact__form--textarea font-size-4" name="message"
+            <Input containerClass="contact__form--element contact__element--message" inputClass="contact__form--textarea font-size-3-5" name="message"
             type="text" value={message} placeholder="Message" textarea={true}
           />
         </form>
 
         <button
-          className="btn__contact-form fadeInAnimated--3 font-size-4"
+          className="btn__contact-form fadeInAnimated--3 font-size-3-5"
           onClick={() => dispatch(handleSubmit(name, email, subject, message, addToast))}
           style={ 
             !readyToSubmit ? {
