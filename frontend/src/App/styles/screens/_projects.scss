@@ -1,129 +1,74 @@
 .projects {
-    height: 100%;
+  height: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 10rem 1fr;
+
+  &__card {
+    @include flexCenterCenter();
+    @include heightWidth100();
+    height: min-content;
+    transition: all 0.5s;
+
+    &:hover .projects__details,
+    &:hover .projects__details--title,
+    &:hover .btn__project-details {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    &:hover .projects__photo {
+      opacity: 0;
+      animation: fadeOut 0.5s forwards;
+    }
+
+    &:hover .projects__details {
+      opacity: 1;
+      animation: fadeIn 0.5s forwards;
+    }
+
+    &--focus-border {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      width: 0;
+      background-color: $gold;
+    }
+  }
+
+  &__item {
+    object-fit: cover;
+    width: 100%;
+    overflow: hidden;
     position: relative;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 10rem 1fr;
+    background-color: $white;
+    display: inline;
 
-    &__card {
-        @include flexCenterCenter();
-        @include heightWidth100();
-        height: min-content;
-        transition: all 0.5s;
+    @include flexCenterCenter();
 
-        &:hover .projects__details,
-        &:hover .projects__details--title,
-        &:hover .btn__project-details {
-            visibility: visible;
-            opacity: 1;
-        }
+    &--1, &--2, &--3, &--4, &--5, &--6, &--7, &--8, &--9, &--10, &--11, &--12 {
+      @include flexCenterCenter($flex-direction: column);
+      overflow: hidden;
+    }
+  }
 
-        &:hover .projects__photo {
-            opacity: 0;
-            animation: fadeOut 0.5s forwards;
-        }
+  &__photo{
+    transition: opacity .5s, visibility .2s;
 
-        &:hover .projects__details {
-            opacity: 1;
-            animation: fadeIn 0.5s forwards;
-        }
-
-
-
-        &:hover .projects__card:not(:hover) {
-            // opacity: 1;
-        }
-
-        &:not(:hover) {
-          // opacity: 1;
-        }
-
-        &--focus-border {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-
-            height: 2px;
-            width: 0;
-            background-color: $gold;
-        }
+    &:not(:hover) {
+      opacity: 1;
+      animation: fadeIn 0.5s forwards;
     }
 
-    &__item {
-        object-fit: cover;
-        // max-width: fit-content;
-        width: 100%;
-        // max-height: 100%;
-        overflow: hidden;
-        position: relative;
-        background-color: $white;
-        display: inline;
+    &--1, &--2, &--3, &--4, &--5, &--6, &--7, &--8, &--9, &--10, &--11, &--12 {
+      max-height: 100%;
+      max-width: 100%;
 
-        @include flexCenterCenter();
-
-        &--1, &--2, &--3, &--4, &--5, &--6, &--7, &--8, &--9, &--10, &--11, &--12 {
-            @include flexCenterCenter($flex-direction: column);
-            // height: 100%;
-            overflow: hidden;
-
-            // @media (max-width: 950px) {
-            //     // height: 100%;
-            //     width: 50vw;
-            //     margin: 2rem 0;
-            // }
-            // @media (max-width: 600px) {
-            //     height: 30rem;
-            //     width: 50rem;
-            //     margin: 4rem 0;
-            // }
-            // @media (max-width: 500px) {
-            //     height: 30rem;
-            //     width: 40rem;
-            // }
-        }
+      &::after {
+        color: $white;
+      }
     }
-
-    &__photo{
-        transition: opacity .5s, visibility .2s;
-        // box-shadow: 4px 4px 10px 0px #00000059;
-        // z-index: 999999999999999999999;
-
-        &:not(:hover) {
-          opacity: 1;
-          animation: fadeIn 0.5s forwards;
-          // transition: 0.5s;
-        }
-
-        &--1, &--2, &--3, &--4, &--5, &--6, &--7, &--8, &--9, &--10, &--11, &--12 {
-            max-height: 100%;
-            max-width: 100%;
-            // justify-self: flex-end;
-            // position: absolute;
-            // top: 0;
-            // transform: scale(.9);
-
-
-            &::after {
-                color: $white;
-            }
-            // @media (max-width: 1100px) {
-            //     transform: scale(.6);
-            // }
-            // @media (max-width: 1000px) {
-            //     transform: scale(.65);
-            // }
-            // @media (max-width: 950px) {
-            //     transform: scale(.6);
-            // }
-            // @media (max-width: 800px) {
-            //     transform: scale(0.55);
-            // }
-            // @media (max-width: 600px) {
-            //     transform: scale(0.50);
-            // }
-            // @media (max-width: 450px) {
-            //     transform: scale(0.45);
-            // }
-        }
-    }
+  }
 }

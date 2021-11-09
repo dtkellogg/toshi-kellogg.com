@@ -24,9 +24,9 @@ function NavLinkSecondary({ text }) {
       {...attrs}
     >
       <Icon
-          size={30}
-          fill={!hovering ? "var(--grey-6)" : "var(--grey-4"}
-          className="nav__secondary--icon"
+        size={30}
+        fill={!hovering ? "var(--grey-6)" : "var(--grey-4"}
+        className="nav__secondary--icon"
       />
     </a>
   );

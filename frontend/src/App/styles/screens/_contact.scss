@@ -38,24 +38,11 @@
       }
     }
 
-    &--label {
-      // position: absolute;
-      // pointer-events: none;
-      // transform: translate(0, 23px) scale(1);
-      // transform-origin: top left;
-      // transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
-      // color: #6f81a5;
-      // font-size: 16px;
-      // line-height: 1;
-      // left: 16px;
-    }
-
     &--input {
       width: 100%;
       height: 100%;
       outline: none;
       font-weight: 400;
-      // font-family: 'Sacramento', cursive;
       font-family: inherit;
 
       border-radius: 3px;
@@ -83,7 +70,6 @@
       height: 100%;
       outline: none;
       font-weight: 400;
-      // font-family: 'Sacramento', cursive;
       font-family: inherit;
 
       border-radius: 3px;
@@ -95,7 +81,6 @@
       transition: 0.3s;
       line-height: 2.5rem;
       padding: 2.65rem 1.5rem 2.65rem 1.5rem;
-
 
       &:focus ~ .contact__focus-border {
         width: 100%;
@@ -109,25 +94,25 @@
   }
 
   &__element {
-      &--name {
-        grid-row: 1 / span 1;
-        grid-column: 1 / span 1;
-      }
+    &--name {
+      grid-row: 1 / span 1;
+      grid-column: 1 / span 1;
+    }
 
-      &--email {
-        grid-row: 1 / span 1;
-        grid-column: 2 / span 1;
-      }
+    &--email {
+      grid-row: 1 / span 1;
+      grid-column: 2 / span 1;
+    }
 
-      &--subject {
-        grid-row: 2 / span 1;
-        grid-column: 1 / span 2;
-      }
+    &--subject {
+      grid-row: 2 / span 1;
+      grid-column: 1 / span 2;
+    }
 
-      &--message {
-        grid-row: 3 / span 4;
-        grid-column: 1 / span 2;
-      }
+    &--message {
+      grid-row: 3 / span 4;
+      grid-column: 1 / span 2;
+    }
   }
 
   &__map {
@@ -155,16 +140,6 @@
       width: 55rem;
     }
 
-    // @media (max-width: 1250px) {
-    //   height: 50rem;
-    //   width: 50rem;
-    // }
-
-    // @media (max-width: 1150px) {
-    //   height: 45rem;
-    //   width: 45rem;
-    // }
-
     @media (max-width: 1050px) {
       height: 50rem;
       width: 50rem;
@@ -179,17 +154,15 @@
   &__loader {
     transform: translateY(2.5px);
   }
+
+  &__focus-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    height: 2px;
+    width: 0;
+    background-color: $blue-3;
+  }
 }
 
-
-
-
-.contact__focus-border {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-
-  height: 2px;
-  width: 0;
-  background-color: $blue-3;
-}

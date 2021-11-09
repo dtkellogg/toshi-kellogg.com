@@ -47,7 +47,6 @@ export default function Modal({ project }) {
         dispatch({ type: MODAL_SETPROJECT_RESET })
       }, 900);
     // }
-    
   };
 
   // useEffect(() => {     
@@ -71,9 +70,6 @@ export default function Modal({ project }) {
       }, 100);
     }
   };
-
-
-
 
   return (
     shouldRender && (
