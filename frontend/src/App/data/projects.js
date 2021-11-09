@@ -19,7 +19,7 @@ const projects = [
     name: "Davis Night Market",
     skills: ["NodeJS", "React", "React-Router", "CSS3"],
     description__1:
-      "This application was initially designed to be used by a philanthropy in Davis whose work I really admire. In the end, I decided not to give my work to the group as they mistreated one of their founders, who is a dear friend of mine.",
+      "This application was designed to be used by a philanthropy in Davis whose work I really admire.",
     description__2:
       "Through the process of designing and creating this application, I was able to learn about and test my functional knowledge. As a teacher myself, I have learned to appreciate the art of fucking up. Once you accept that making mistakes is an essential part to learning, and that it is not something to be ashamed of, you will be able to master what concepts you desire. Inevitably, I did feel embarrassed quiet a bit at the mistakes I was making (mainly, using a .gitignore file correctly). To that extent, I learned a lot about git, specifically how to incorporate it into your app so that your code can be uploaded to github as a simple application or with submodules. After countless mistakes, I finally created my own notes on how exactly to accomplish this goal. Other small details include seeing what naming conventions I prefer (such as Pages vs Screens as directories) and designing an overall night time theme with a starry night animation background. This was the first time I created a full MERN stack on my own, and this project served as a fundamental part of my understanding of how data moves throughout the entire stack.",
     description__3:
