@@ -131,12 +131,9 @@
   }
 
   &__map {
-    width: 110rem;
-    height: 100%;
-    box-shadow: .1rem .15rem .6rem $black;
-
     height: 75rem;
     width: 75rem;
+    box-shadow: .1rem .15rem .6rem $black;
 
     @media (max-width: 1800px) {
       height: 70rem;

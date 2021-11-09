@@ -112,10 +112,17 @@
       width: 51rem;
       margin-right: 10rem;
 
-      @media (max-width: 950px) {
-          width: 100%;
-      margin-right: 0;
+      @media (max-width: 1150px) {
+        width: 40%;
+      }
 
+      @media (max-width: 1050px) {
+        width: 37.5%;
+      }
+
+      @media (max-width: 950px) {
+        width: 100%;
+        margin-right: 0;
       }
     }
 
