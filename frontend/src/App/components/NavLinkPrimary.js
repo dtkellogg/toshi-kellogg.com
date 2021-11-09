@@ -50,13 +50,7 @@ export default function NavLinkPrimary({ text, to }) {
       activeStyle={activeStyleUnder950}
       {...attrs}
     >
-      {/* {hovering ?  */}
-        <div className="nav__hovering--text text-size-4 letter-spacing-sm">{capitalizedName}</div> 
-        {/* : 
-        <Icon
-          size={33}
-          className="nav__icon"
-        />} */}
+      <div className="nav__hovering--text text-size-4 letter-spacing-sm">{capitalizedName}</div> 
     </NavLink>
   );
 }

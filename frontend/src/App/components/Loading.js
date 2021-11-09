@@ -3,17 +3,6 @@ import React, {useState, useEffect} from "react";
 // prop-types
 import PropTypes from "prop-types";
 
-// styles
-const styles = {
-  content: {
-    fontSize: "15px",
-    position: "absolute",
-    left: "0",
-    right: "0",
-    margin: "10rem",
-    textAlign: "center",
-  },
-};
 
 export default function Loading({ text = "Loading", speed = 300 }) {
   const [content, setContent] = useState(text);
@@ -41,7 +30,6 @@ export default function Loading({ text = "Loading", speed = 300 }) {
   }, [text, speed]);
   
 
-  // return <p style={styles.content}>{content}</p>;
   return <div className="dots-loader"></div>;
 }
 

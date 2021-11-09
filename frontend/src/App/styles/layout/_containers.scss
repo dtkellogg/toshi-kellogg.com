@@ -8,10 +8,10 @@
     grid-template-columns: 1fr;
     overflow: hidden;
 	
-	@media (max-width: 950px) {
-		grid-template-rows: 7rem 1fr;
-		grid-template-columns: 1fr;
-	}
+    @media (max-width: 950px) {
+      grid-template-rows: 7rem 1fr;
+      grid-template-columns: 1fr;
+    }
   }
 
   &__body {
@@ -21,11 +21,6 @@
     height: 100%;
     grid-row: 2 / -1;
     grid-column: 1 / -1;
-	
-	// @media (max-width: 950px) {
-	// 	grid-row: 2 / -1;
-	// 	grid-column: 1 / -1;
-	// }
   }
 }
 
@@ -148,7 +143,7 @@
     //     }
 
     &--right {
-      width: 50%;
+      width: min-content;
       position: relative;
 
       @include flexCenterCenter($flex-direction: column);
@@ -514,58 +509,57 @@
 
 .contact {
 
-    &__container {
-        @include heightWidth100($height: calc(100vh - 7rem));
-        @include flexCenterCenter($justify-content: space-between);
-        padding: 3rem;
+  &__container {
+    @include heightWidth100($height: calc(100vh - 7rem));
+    @include flexCenterCenter($justify-content: space-evenly);
+    padding: 3rem;
 
-        @media (max-width: 950px) {
-          padding: 1rem 6.0rem 10rem 6.0rem;
-          @include heightWidth100($width: 100vw, $height: 100%);
-          @include flexCenterCenter($flex-direction: column, $justify-content: space-between);
-        }
-
-        @media (max-width: 720px) {
-          padding: 1rem 3rem 10rem 3rem;
-        }
-
-        &--left {
-            @include flexCenterCenter($flex-direction: column, $align-items: flex-start, $justify-content: flex-start);
-            width: 51rem;
-            height: 100%;
-
-            @media (max-width: 1400px) {
-                width: 45rem;
-            }
-
-            @media (max-width: 1250px) {
-                width: 40rem;
-            }
-
-            @media (max-width: 1150px) {
-                width: 35rem;
-            }
-
-            @media (max-width: 950px) {
-                width: 100%;
-                margin-bottom: 5rem;
-            }
-        }
-
-        &--right {
-            @include flexCenterCenter($flex-direction: column);
-            width: auto;
-            height: 100%;
-            padding: 3rem;
-            overflow: hidden;
-			position: relative;
-
-            @media (max-width: 950px) {
-                padding: 0;
-                width: 100%;
-            }
-        }
+    @media (max-width: 950px) {
+      @include heightWidth100($width: 100vw, $height: 100%);
+      padding: 1rem 6.0rem 10rem 6.0rem;
+      flex-direction: column;
     }
+
+    @media (max-width: 720px) {
+      padding: 1rem 3rem 10rem 3rem;
+    }
+
+    &--left {
+      @include flexCenterCenter($flex-direction: column);
+      width: 51rem;
+      height: 100%;
+
+      @media (max-width: 1400px) {
+        width: 45rem;
+      }
+
+      @media (max-width: 1250px) {
+        width: 40rem;
+      }
+
+      @media (max-width: 1150px) {
+        width: 35rem;
+      }
+
+      @media (max-width: 950px) {
+        width: 100%;
+        margin-bottom: 5rem;
+      }
+    }
+
+    &--right {
+      @include flexCenterCenter($flex-direction: column);
+      width: auto;
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+
+      @media (max-width: 950px) {
+        padding: 0;
+        width: 100%;
+      }
+    }
+  }
 }
 
 

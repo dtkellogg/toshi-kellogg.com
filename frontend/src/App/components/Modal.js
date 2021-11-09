@@ -79,11 +79,7 @@ export default function Modal({ project }) {
     shouldRender && (
       <section
         className="modal"
-        style={{ animation: `${animation ? "fadeIn" : "fadeOut"} 1s`
-          // !isOpen
-            // ? { opacity: "0", backgroundColor: "transparent", display: "none" }
-            // : { opacity: "1", backgroundColor: "rgba(0, 0, 0, 0.685)" }
-        }}
+        style={{ animation: `${animation ? "fadeIn" : "fadeOut"} 1s` }}
         onAnimationEnd={onAnimationEnd}
       >
 

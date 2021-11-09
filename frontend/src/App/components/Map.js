@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import ReactMapGL, { Marker } from "react-map-gl";
+
+// mapbox
 import * as MapboxGl from 'mapbox-gl'
 import 'mapbox-gl/dist/mapbox-gl.css'
+
+// hooks
 import useWindowDimensions from '../hooks/useWindowDimensions'
 
-// eslint-disable-next-line import/no-webpack-loader-syntax
-MapboxGl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
+MapboxGl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default; // eslint-disable-line import/no-webpack-loader-syntax
 
 const { REACT_APP_MAPBOX_TOKEN, REACT_APP_MAPBOX_STYLES } = process.env;
 
@@ -22,9 +25,9 @@ export default function Map() {
 
   const { width } = useWindowDimensions()
 
-  // const onLoaded = (map) => {
-  //   map.resize();
-  // };
+  const onLoaded = (map) => {
+    map.resize();
+  };
 
   return (
     <div className="map">
@@ -35,7 +38,7 @@ export default function Map() {
         onViewportChange={(viewport) => setViewport(viewport)}
         scrollZoom={width > 950 && true}
         userInteractionEnabled={width > 950 && true}
-        // onStyleLoad={(map) => onLoaded(map)}
+        onStyleLoad={(map) => onLoaded(map)}
       >
         <Marker latitude={37.9158} longitude={-122.158}>
           <div className="text-size-3 map__marker--lafayette">Lafayette</div>
