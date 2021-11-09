@@ -100,6 +100,7 @@
 		padding: 3rem;
 		display: flex;
 		align-items: center;
+    justify-content: space-evenly;
 
 		@media (max-width: 950px) {
 			height: 100%;
@@ -113,7 +114,7 @@
 
     &--left {
 			@include flexCenterCenter($flex-direction: column);
-      width: 50%;
+      width: 51rem;
       margin-right: 10rem;
 
       @media (max-width: 950px) {
@@ -122,6 +123,29 @@
 
       }
     }
+
+    // &--left {
+    //         @include flexCenterCenter($flex-direction: column, $align-items: flex-start, $justify-content: flex-start);
+    //         width: 51rem;
+    //         height: 100%;
+
+    //         @media (max-width: 1400px) {
+    //             width: 45rem;
+    //         }
+
+    //         @media (max-width: 1250px) {
+    //             width: 40rem;
+    //         }
+
+    //         @media (max-width: 1150px) {
+    //             width: 35rem;
+    //         }
+
+    //         @media (max-width: 950px) {
+    //             width: 100%;
+    //             margin-bottom: 5rem;
+    //         }
+    //     }
 
     &--right {
       width: 50%;
