@@ -64,7 +64,7 @@ const projects = [
     name: "Hash Basketball",
     skills: ["React", "React-Router", "CSS3"],
     description__1:
-      "This application serves as the team page for a fictional basketball team. It was made as part of Tyler McGinnis’s React Router V5 course.",
+      "This application serves as the team page for a fictional basketball team. It was made as part of a course by Tyler McGinnis.",
     description__2:
       "As this course's intention, I was able to learn about React Router V5 and how to use it. The different hooks from the react-router-dom package comprised a majority of the focus, and application as well as Tyler’s instruction made it very easy to understand. I did not master React Router simply by completing this course; it did, however, give me enough base knowledge to experiment with areas that my understanding was weak in when I applied it to different projects.",
     description__3:
@@ -79,7 +79,7 @@ const projects = [
     name: "Hackernews Clone",
     skills: ["React", "React-Router", "CSS3"],
     description__1:
-      "This project is a clone of Hacker News, and interacts with the same API. It was made as part of Tyler McGinnis’s React course.",
+      "This project is a clone of Hacker News, and interacts with the same API. It was made as part of course by Tyler McGinnis.",
     description__2:
       "By going through the process of making this application, I was able to get a very good understanding of React, so that I felt confident to work with the framework upon its completion. The hands-on experience of creating this taught me a lot about React Hooks, such as the fundamental built in hooks (useReducer, useState, useEffect, useContext, etc.) as well as React Router, and JSX syntax. The React Router part of the application was simple, yet it helped me understand how to use its own built in functionality, such as Links and Routes and getting data from a url using useParams. The application also helped me understand how to apply the DRY principle to programming, as well as slimming down components by moving logic/functions to separate documents. Finally, I was able to practice working with a real API. As basic as that sounds, it was undoubtedly crucial towards my development as a programmer. I found it especially intriguing and useful to my overall understanding as it was all done on the front end, something that I appreciate knowing now that I do it mainly via Express.",
     description__3:
@@ -94,7 +94,7 @@ const projects = [
     name: "Tetris",
     skills: ["React", "CSS3"],
     description__1:
-      "I chose this project independent of any paid class I signed up for as I thought it would expose me to a different implementation of web design than websites. This project introduced me to different applications of JS, helping me understand a bit more of its potential.",
+      "This is a vanilla JavaScript application cloning the classic puzzle game, Tetris.",
     description__2:
       "This application taught me how to create a game using React. It taught me about how I can break down a game into JavaScript, and it got me thinking of how I can potentially apply this thought process in future endeavours. The application also taught me about a popular CSS technique in React: Styled Components. Although I prefer to use CSS classes and SASS, I find it useful as knowing the various different syntaxes is necessary to understand all React code. The app also taught me about keycodes and how they can be implemented.",
     description__3:
@@ -109,7 +109,7 @@ const projects = [
     name: "Hangman",
     skills: ["React", "CSS3"],
     description__1:
-      "This project was completed as part of a React course. The project not only helped me understand the built in hooks of React, such as useReducer, but it also helped illustrate the differences in concepts and application of class based and functional components.",
+      "This is a React Hooks application cloning the classic word game, Hangman. It was part of a course by Colt Steele.",
     description__2:
       "Being as this was one of my very first projects with React, I learned a lot simply by doing. The process of coding through the project helped me understand how functionality in class based components is processed differently than in functional ones. For example, I now understand how lifecycle is handled differently as functional components use useEffect while class based ones use componentDidMount, componentWillUpdate and componentWillUnmount. Besides React, the project taught me about applying coding logic to a game. Although I have completed many kata in CodeWars, my application of coding/JS has been restricted to web development. This game provided me with a much appreciated, different aspect that adds to my interest in software development.",
     description__3:
@@ -124,7 +124,7 @@ const projects = [
     name: "Omnifood",
     skills: ["HTML5", "CSS3", "JavaScript"],
     description__1:
-      "This was my first web development project that incorporated HTML, CSS and JS. It was part of a course by Jonas Schmedtmann.",
+      "This application is for a fictional high quality food delivery service. It uses a variety of vanilla Javascript and CSS techniques to make an interactive UI. It was part of a course by Jonas Schmedtmann.",
     description__2:
       "This project gave me hands-on experience to feel more comfortable applying HTML, CSS and JS together in a single application. In regards to HTML, I learned basics such as creating links, making forms and using icons. The CSS helped me solidify my understanding of Flexbox and helped think about how to name classes (not BEM, but still helpful to see someone else’s naming style. The CSS is this course also taught me how to support functionality across all browsers using webkit. The project taught me about basic web design and gave me ideas for future endeavors. The JavaScript taught me how to animate portions of the UI to add a better user experience.",
     description__3:
@@ -139,7 +139,7 @@ const projects = [
     name: "Nexter",
     skills: ["HTML5", "CSS3"],
     description__1:
-      "This project was built as part of Jonas Schmedtmann’s advanced CSS course. It focused on concepts including CSS Grid and flexbox, while also offering insight into UX design through picture layering and the photo gallery. This project was focused on SASS.",
+      "This application is for a fictional real estate agency. It was part of a course by Jonas Schmedtmann.",
     description__2:
       "This course taught me a lot about both the conceptual side of CSS as well as ways that CSS can be applied to create beautiful websites. In addition, I also got to learn how to use SASS and implement its BEM naming convention.",
     description__3:
@@ -154,7 +154,7 @@ const projects = [
     name: "Natours",
     skills: ["HTML5", "SCSS"],
     description__1:
-      "This is a project that is part of Jonas Schmedtmann’s Advanced CSS course. The focus was on learning how to use SASS, as well as learning some usual application of CSS to drive animations.",
+      "This application is for a fictional travel agency. It was part of a course by Jonas Schmedtmann.",
     description__2:
       "This course helped me understand and learn how to apply various CSS concepts. Not only did I learn how to animate using only CSS, but I also learned how to created color gradients in texts, how to use pseudo classes to add effects to buttons and text, how to use clip-path to ambiguous create polygons, and the different states of a button. The course also taught me about SASS, including a logical file structure and the BEM syntax. These methods have drastically organized my CSS, something that I have learned to value as I have used it since. Making this project helped me understand what directory different types of CSS go to. Of minor significance, I also learned how to create the same effect of CSS Grid with only Flexbox. This is obviously not necessary for future projects as CSS Grid simplifies the process. But it helped me see how the two are related, and eventually understand how to use them both together (which I have read is the intended use).",
     description__3:
@@ -166,10 +166,10 @@ const projects = [
   },
   {
      _id: 12,
-    name: "Github Battle",
+    name: "GitHub Battle",
     skills: ["React", "React-Router", "SCSS"],
     description__1:
-      "This application was made as part of Tyler McGinnis’s React hooks course. The app was made from scratch (without a boilerplate i.e. create-react-app), and thus not only taught about React Hooks, but also discussed the inner workings of webpack.",
+      "This application uses the Github API to battle pairs of actual GitHub users and view popular repositories by programming language. It was part of a course by Tyler McGinnis.",
     description__2:
       "This course taught me a lot about React. It includes the use of many of React’s useful functionality, from providing a context or theme throughout the application to discussing the advantages of importing files when necessary to improve load speeds. The course also involved creating my first custom hook, as well as the fundamentals of React Router. Besides going into the different aspects of React Hooks, the course did an excellent job illustrating what create-react-app does because the application was built from scratch. Unfortunately, I have been unsuccessful with running the app on Heroku due to a current inadequate understanding of webpack. Nonetheless, the process of going through creating my own webpack file has given me the foundation to learn more about the topic on my own.",
     description__3:
