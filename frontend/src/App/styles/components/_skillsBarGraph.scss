@@ -337,5 +337,9 @@
   &__container {
     width: 100%;
     @include flexCenterCenter($flex-direction: column);
+
+    @media (max-width: 950px) {
+      margin-bottom: 7rem;
+    }
   }
 }
