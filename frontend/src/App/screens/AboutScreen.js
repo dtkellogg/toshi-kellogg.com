@@ -5,7 +5,7 @@ import React, { useEffect } from 'react'
 import SkillsBarGraph from '../components/SkillsBarGraph'
 
 
-function AboutScreen() {
+export default function AboutScreen() {
 
   useEffect(() => {
     document.title = "Toshi Kellogg | Developer";
@@ -37,15 +37,8 @@ function AboutScreen() {
       </section>
 
       <section className="about__container--right">
-        <header className="skills-graph__header fadeInAnimated--4">
-          <h1 className="text-size-1">
-            Skills
-          </h1>
-        </header>
         <SkillsBarGraph />
       </section>
     </section>
   );
 }
-
-export default AboutScreen

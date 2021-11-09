@@ -1,10 +1,10 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 
 // components
 import SkillsFigure from '../components/SkillsFigure'
 
 
-function SkillsScreen() {
+export default function SkillsScreen() {
   useEffect(() => {
     document.title = "Toshi Kellogg | Developer";
   }, [])
@@ -49,5 +49,3 @@ function SkillsScreen() {
     </section>
   );
 }
-
-export default SkillsScreen;

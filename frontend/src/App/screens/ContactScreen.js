@@ -12,7 +12,7 @@ import { TOGGLE_READY_TO_SUBMIT } from "../constants/formConstants";
 import Input from "../components/formInput"
 
 
-function ContactScreen() {
+export default function ContactScreen() {
   const formData = useSelector((state) => state.formData)
   const {name, email, subject, message, readyToSubmit, submitted} = formData
   
@@ -94,14 +94,10 @@ function ContactScreen() {
       </section>
 
       <section className="contact__container--right fadeInAnimated--4">
-        <figure className="contact__map">
-          <Map />
-        </figure>
+        <Map />
         <div className="map__overlay" />
       </section>
 
     </section>
   );
 }
-
-export default ContactScreen;

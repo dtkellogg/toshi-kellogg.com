@@ -1,4 +1,4 @@
-.bar-graph-horizontal {
+.bar-graph {
   display: grid;
   grid-template-columns: 10rem 50rem;
   grid-template-rows: 0.15fr repeat(7, 1fr);
@@ -14,10 +14,9 @@
 
   @media (max-width: 950px) {
     grid-template-columns: 10vw 60vw;
+    margin-bottom: 7rem;
   }
-}
 
-.skills-graph {
   &__key {
     grid-row: 1 / span 1;
     grid-column: 2 / span 1;
@@ -37,51 +36,86 @@
   }
 }
 
-.bar-one {
-  grid-row: 2 / span 1;
-  grid-column: 2 / span 1;
-  z-index: 9999;
+.bar {
+  border-radius: 3px;
+  height: 25px;
+  float: left;
+  overflow: hidden;
   width: 0;
-}
-
-.bar-two {
-  grid-row: 3 / span 1;
-  grid-column: 2 / span 1;
   z-index: 9999;
-  width: 0;
-}
 
-.bar-three {
-  grid-row: 4 / span 1;
-  grid-column: 2 / span 1;
-  z-index: 9999;
-}
+  &__1 {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+    background-color: rgb(164, 229, 255);
+    -webkit-animation: show-bar-one 1.2s 6.1s forwards;
+    -moz-animation: show-bar-one 1.2s 6.1s forwards;
+    animation: show-bar-one 1.2s 6.1s forwards;
+  }
 
-.bar-four {
-  grid-row: 5 / span 1;
-  grid-column: 2 / span 1;
-  z-index: 9999;
-}
+  &__2 {
+    grid-row: 3 / span 1;
+    grid-column: 2 / span 1;
+    background-color: #6fc0e0;
+    -webkit-animation: show-bar-two 1.2s 6.2s forwards;
+    -moz-animation: show-bar-two 1.2s 6.2s forwards;
+    animation: show-bar-two 1.2s 6.2s forwards;
+  }
 
-.bar-five {
-  grid-row: 6 / span 1;
-  grid-column: 2 / span 1;
-  z-index: 9999;
-}
+  &__3 {
+    grid-row: 4 / span 1;
+    grid-column: 2 / span 1;
+    background-color: #64b2d1;
+    -webkit-animation: show-bar-three 1.2s 6.3s forwards;
+    -moz-animation: show-bar-three 1.2s 6.3s forwards;
+    animation: show-bar-three 1.2s 6.3s forwards;
+  }
 
-.bar-six {
-  grid-row: 7 / span 1;
-  grid-column: 2 / span 1;
-  z-index: 9999;
-}
+  &__4 {
+    grid-row: 5 / span 1;
+    grid-column: 2 / span 1;
+    background-color: #5292ac;
+    -webkit-animation: show-bar-four 1.2s 6.4s forwards;
+    -moz-animation: show-bar-four 1.2s 6.4s forwards;
+    animation: show-bar-four 1.2s 6.4s forwards;
+  }
 
-.bar-seven {
-  grid-row: 8 / span 1;
-  grid-column: 2 / span 1;
-  z-index: 9999;
+  &__5 {
+    grid-row: 6 / span 1;
+    grid-column: 2 / span 1;
+    background-color: #407286;
+    -webkit-animation: show-bar-five 1.2s 6.5s forwards;
+    -moz-animation: show-bar-five 1.2s 6.5s forwards;
+    animation: show-bar-five 1.2s 6.5s forwards;
+  }
+
+  &__6 {
+    grid-row: 7 / span 1;
+    grid-column: 2 / span 1;
+    background-color: #2e515f;
+    -webkit-animation: show-bar-six 1.2s 6.6s forwards;
+    -moz-animation: show-bar-six 1.2s 6.6s forwards;
+    animation: show-bar-six 1.2s 6.6s forwards;
+  }
+
+  &__7 {
+    grid-row: 8 / span 1;
+    grid-column: 2 / span 1;
+
+    background-color: #284753;
+    -webkit-animation: show-bar-seven 1.2s 6.7s forwards;
+    -moz-animation: show-bar-seven 1.2s 6.7s forwards;
+    animation: show-bar-seven 1.2s 6.7s forwards;
+  }
 }
 
 .skill {
+  -webkit-animation: fade-in-text 2.2s 0.1s forwards;
+  -moz-animation: fade-in-text 2.2s 0.1s forwards;
+  animation: fade-in-text 2.2s 0.1s forwards;
+  opacity: 0;
+  font-family: inherit;
+
   &__1 {
     grid-row: 2 / span 1;
     grid-column: 1 / span 1;
@@ -125,108 +159,43 @@
   overflow: hidden;
   width: 100%;
   background-color: $grey-11;
+
+  &__1 {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+  }
+
+  &__2 {
+    grid-row: 3 / span 1;
+    grid-column: 2 / span 1;
+  }
+
+  &__3 {
+    grid-row: 4 / span 1;
+    grid-column: 2 / span 1;
+  }
+
+  &__4 {
+    grid-row: 5 / span 1;
+    grid-column: 2 / span 1;
+  }
+
+  &__5 {
+    grid-row: 6 / span 1;
+    grid-column: 2 / span 1;
+  }
+
+  &__6 {
+    grid-row: 7 / span 1;
+    grid-column: 2 / span 1;
+  }
+
+  &__7 {
+    grid-row: 8 / span 1;
+    grid-column: 2 / span 1;
+  }
 }
 
-.bar-background-1 {
-  grid-row: 2 / span 1;
-  grid-column: 2 / span 1;
-}
-
-.bar-background-2 {
-  grid-row: 3 / span 1;
-  grid-column: 2 / span 1;
-}
-
-.bar-background-3 {
-  grid-row: 4 / span 1;
-  grid-column: 2 / span 1;
-}
-
-.bar-background-4 {
-  grid-row: 5 / span 1;
-  grid-column: 2 / span 1;
-}
-
-.bar-background-5 {
-  grid-row: 6 / span 1;
-  grid-column: 2 / span 1;
-}
-
-.bar-background-6 {
-  grid-row: 7 / span 1;
-  grid-column: 2 / span 1;
-}
-
-.bar-background-7 {
-  grid-row: 8 / span 1;
-  grid-column: 2 / span 1;
-}
-
-/* Bar Graph Horizontal */
-.bar-graph .skill {
-  -webkit-animation: fade-in-text 2.2s 0.1s forwards;
-  -moz-animation: fade-in-text 2.2s 0.1s forwards;
-  animation: fade-in-text 2.2s 0.1s forwards;
-  opacity: 0;
-  font-family: inherit;
-}
-
-.bar-one, .bar-two, .bar-three, .bar-four, .bar-five, .bar-six, .bar-seven {
-  border-radius: 3px;
-  height: 25px;
-  float: left;
-  overflow: hidden;
-  width: 0;
-}
-
-.bar-graph-one .bar-one {
-  background-color: rgb(164, 229, 255);
-  -webkit-animation: show-bar-one 1.2s 6.1s forwards;
-  -moz-animation: show-bar-one 1.2s 6.1s forwards;
-  animation: show-bar-one 1.2s 6.1s forwards;
-}
-
-.bar-graph-one .bar-two {
-  background-color: #6fc0e0;
-  -webkit-animation: show-bar-two 1.2s 6.2s forwards;
-  -moz-animation: show-bar-two 1.2s 6.2s forwards;
-  animation: show-bar-two 1.2s 6.2s forwards;
-}
-
-.bar-graph-one .bar-three {
-  background-color: #64b2d1;
-  -webkit-animation: show-bar-three 1.2s 6.3s forwards;
-  -moz-animation: show-bar-three 1.2s 6.3s forwards;
-  animation: show-bar-three 1.2s 6.3s forwards;
-}
-
-.bar-graph-one .bar-four {
-  background-color: #5292ac;
-  -webkit-animation: show-bar-four 1.2s 6.4s forwards;
-  -moz-animation: show-bar-four 1.2s 6.4s forwards;
-  animation: show-bar-four 1.2s 6.4s forwards;
-}
-
-.bar-graph-one .bar-five {
-  background-color: #407286;
-  -webkit-animation: show-bar-five 1.2s 6.5s forwards;
-  -moz-animation: show-bar-five 1.2s 6.5s forwards;
-  animation: show-bar-five 1.2s 6.5s forwards;
-}
-
-.bar-graph-one .bar-six {
-  background-color: #2e515f;
-  -webkit-animation: show-bar-six 1.2s 6.6s forwards;
-  -moz-animation: show-bar-six 1.2s 6.6s forwards;
-  animation: show-bar-six 1.2s 6.6s forwards;
-}
-
-.bar-graph-one .bar-seven {
-  background-color: #284753;
-  -webkit-animation: show-bar-seven 1.2s 6.7s forwards;
-  -moz-animation: show-bar-seven 1.2s 6.7s forwards;
-  animation: show-bar-seven 1.2s 6.7s forwards;
-}
 
 /* Bar Graph Horizontal Animations */
 @keyframes show-bar-one {
@@ -298,53 +267,5 @@
   }
   100% {
     opacity: 1;
-  }
-}
-
-
-////////////////////////////////////////////////////////////////
-
-.meter {
-  fill: $blue-3;
-  color: black;
-}
-
-.skills {
-  &__graph {
-    &--meter {
-      // background-color: red;
-      width: 100%;
-      height: 5rem;
-
-      &:-moz-meter-optimum::-moz-meter-bar {
-        background: $blue-2;
-      }
-    }
-  }
-}
-
-.ph_meter {
-    background: lightgrey;
-    width: 300px;
-}
-
-.ph_meter:-moz-meter-sub-optimum::-moz-meter-bar {
-    background: antiquewhite;
-}
-.ph_meter:-moz-meter-sub-sub-optimum::-moz-meter-bar {
-    background: steelblue;
-}
-
-
-
-
-.skills-bar-graph {
-  &__container {
-    width: 100%;
-    @include flexCenterCenter($flex-direction: column);
-
-    @media (max-width: 950px) {
-      margin-bottom: 7rem;
-    }
   }
 }

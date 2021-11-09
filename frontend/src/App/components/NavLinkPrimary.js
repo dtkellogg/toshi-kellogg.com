@@ -6,17 +6,8 @@ import { FaHome, FaUser, FaFolder, FaEnvelope, FaBrain} from "react-icons/fa";
 
 // hooks
 import useHover from "../hooks/useHover";
-import useWindowDimensions from '../hooks/useWindowDimensions'
-import useCapitalizeFirstLetter from '../hooks/useCapitalizeFirstLetter'
 
-// active styles
-const activeStyleOver950 = {
-  color: "var(--blue-4)",
-  fill: "var(--blue-4)",
-  borderLeft: "4px solid var(--blue-3)",
-};
-
-const activeStyleUnder950 = {
+const activeStyle = {
   color: "var(--blue-4)",
   fill: "var(--blue-4)",
   borderTop: "4px solid var(--blue-3)",
@@ -28,8 +19,6 @@ function capitalizeFirstLetter(string) {
 
 export default function NavLinkPrimary({ text, to }) {
   const [hovering, attrs] = useHover();
-
-  const { width } = useWindowDimensions()
 
   const icons = {
     home: FaHome,
@@ -47,7 +36,7 @@ export default function NavLinkPrimary({ text, to }) {
       className="nav__link nav__primary--item"
       exact
       to={to === "/projects" ? '/' : to}
-      activeStyle={activeStyleUnder950}
+      activeStyle={activeStyle}
       {...attrs}
     >
       <div className="nav__hovering--text text-size-4 letter-spacing-sm">{capitalizedName}</div> 

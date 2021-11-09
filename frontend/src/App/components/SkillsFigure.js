@@ -172,4 +172,3 @@ export default function SkillsFigure() {
     </figure>
   );
 }
-
