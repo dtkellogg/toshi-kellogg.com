@@ -19,7 +19,7 @@ export default function Modal({ project }) {
   const dispatch = useDispatch();
   const node = useRef();
 
-  const { abstract, details, github, name, skills,
+  const { abstract, features, github, name, skills, html, css, scss, js, reactJS, nodeJS, redux, git,
     // video, 
   url } = project
 
@@ -71,8 +71,8 @@ export default function Modal({ project }) {
     }
   };
 
-  console.log("details")
-  console.log(details)
+  console.log("features")
+  console.log(features)
 
   return (
     shouldRender && (
@@ -125,10 +125,74 @@ export default function Modal({ project }) {
               <div className="modal__subheader--1 font-size-3">Abstract:</div>
               <div className="modal__paragraph--1 font-size-5">{abstract}</div>
               <div className="modal__subheader--3 font-size-3">About the code:</div>
-              {details && (
-                <ul className="modal__paragraph--3 font-size-5">{details.map((detail) => {
-                  return <li className="modal__bullet-point">{detail}</li>
+              {/* {features && (
+                <ul className="modal__paragraph--3 font-size-5">{features.map((feature) => {
+                  return <li className="modal__feature">{feature}</li>
                 })}</ul>
+              )} */}
+              {html && (
+                <ul className="modal__paragraph--3 font-size-5">
+                  <span className="modal__feature--label">HTML</span>
+                  {html.map((value) => {
+                    return <li className="modal__feature">{value}</li>
+                  })}
+                </ul>
+              )}
+              {css && (
+                <ul className="modal__paragraph--3 font-size-5">
+                  <span className="modal__feature--label">CSS</span>
+                  {css.map((value) => {
+                    return <li className="modal__feature">{value}</li>
+                  })}
+                </ul>
+              )}
+              {scss && (
+                <ul className="modal__paragraph--3 font-size-5">
+                  <span className="modal__feature--label">SCSS</span>
+                  {scss.map((value) => {
+                    return <li className="modal__feature">{value}</li>
+                  })}
+                </ul>
+              )}
+              {js && (
+                <ul className="modal__paragraph--3 font-size-5">
+                  <span className="modal__feature--label">JavaScript</span>
+                  {js.map((value) => {
+                    return <li className="modal__feature">{value}</li>
+                  })}
+                </ul>
+              )}
+              {reactJS && (
+                <ul className="modal__paragraph--3 font-size-5">
+                  <span className="modal__feature--label">React</span>
+                  {reactJS.map((value) => {
+                    return <li className="modal__feature">{value}</li>
+                  })}
+                </ul>
+              )}
+              {nodeJS && (
+                <ul className="modal__paragraph--3 font-size-5">
+                  <span className="modal__feature--label">Node</span>
+                  {nodeJS.map((value) => {
+                    return <li className="modal__feature">{value}</li>
+                  })}
+                </ul>
+              )}
+              {redux && (
+                <ul className="modal__paragraph--3 font-size-5">
+                  <span className="modal__feature--label">Redux</span>
+                  {redux.map((value) => {
+                    return <li className="modal__feature">{value}</li>
+                  })}
+                </ul>
+              )}
+              {git && (
+                <ul className="modal__paragraph--3 font-size-5">
+                  <span className="modal__feature--label">Git</span>
+                  {git.map((value) => {
+                    return <li className="modal__feature">{value}</li>
+                  })}
+                </ul>
               )}
             </div>
           </div>

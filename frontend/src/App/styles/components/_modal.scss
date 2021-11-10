@@ -38,9 +38,14 @@
 		border-radius: 0 0 3rem 3rem;
 	}
 
-  &__bullet-point {
+  &__feature {
     list-style-type: disc;
     list-style-position: inside;
     display: list-item;
+    margin-left: 4rem;
+
+    &--label {
+      margin-left: 2rem;
+    }
   }
 }
