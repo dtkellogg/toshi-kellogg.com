@@ -19,7 +19,7 @@ export default function Modal({ project }) {
   const dispatch = useDispatch();
   const node = useRef();
 
-  const { abstract, features, github, name, skills, html, css, scss, js, reactJS, nodeJS, redux, security,
+  const { abstract, github, name, skills, html, css, scss, js, reactJS, nodeJS, redux, security,
     // video, 
   url } = project
 
@@ -71,8 +71,6 @@ export default function Modal({ project }) {
     }
   };
 
-  console.log("features")
-  console.log(features)
 
   return (
     shouldRender && (
@@ -164,7 +162,7 @@ export default function Modal({ project }) {
               )}
               {reactJS && (
                 <ul className="modal__paragraph--3 font-size-5">
-                  <span className="modal__feature--label">React</span>
+                  <span className="modal__feature--label">React.js</span>
                   {reactJS.map((value) => {
                     return <li className="modal__feature">{value}</li>
                   })}
@@ -172,7 +170,7 @@ export default function Modal({ project }) {
               )}
               {nodeJS && (
                 <ul className="modal__paragraph--3 font-size-5">
-                  <span className="modal__feature--label">Node</span>
+                  <span className="modal__feature--label">Node.js</span>
                   {nodeJS.map((value) => {
                     return <li className="modal__feature">{value}</li>
                   })}

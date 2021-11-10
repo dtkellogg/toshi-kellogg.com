@@ -2,19 +2,15 @@ const projects = [
   {
     _id: 1,
     name: "Kellogg Tutoring",
-    skills: ["NodeJS", "React", "React-Router", "Redux", "SCSS"],
+    skills: ["Node.js", "React.js", "React-Router", "Redux", "SCSS"],
     abstract:
       "This is a full stack MERN application I made and designed for my own small business.",
     html: ["Semantic HTML.", "Consistent, clean code with proper use of white space."],
     css: ["CSS media queries for responsive design (Desktop and Mobile views available).", "UX emphasis on accessibility."],
     scss: ["Mixins, Extends, & Variables.", "BEM naming convention.", "7-1 pattern (7 folders, 1 file) SASS directory structure."],
-    reactJS: ["Clients can view, make, and pay for appointments.", "Clients can also leave reviews and message the business.", "Admin side created to manage appointments, users, and reviews.", "Calendar made from scratch that displays the entire appointment history.", "DRY principle applied.", "Custom hooks created.", ],
-    nodeJS: ["Error handling using Async / Await."],
-    // redux: [""],
+    reactJS: ["Clients can view, make, and pay for appointments.", "Clients can also leave reviews and message the business.", "Admin side created to manage appointments, users, and reviews.", "Calendar made from scratch that displays the entire appointment history.", "Mapbox.", "Error handling with PropTypes.", "Custom hooks created.", "DRY principle applied."],
+    nodeJS: ["Used the Express framework.", "Error handling using Async / Await.", "API interaction using CRUD operations.", "Nodemailer.", "Various scripts written to handle development and production.", "Seeder data for development."],
     security: ["SSL certificate.", "JSON Web Tokens.", "HTTPS."],
-    features:
-      // {HTML: ["Semantic HTML.", "Consistent, clean code with proper use of white space."], CSS: ["CSS grid and flexbox.", "UX emphasis on accessibility."], SCSS: [], JS: [], React: [], Node: [], Redux: []},
-      ["Redux", "BEM naming", "Express backend", "Clients can also leave reviews and message the business", "Calendar made from scratch that displays the entire appointment history.", "Admin side created to manage appointments, users, and reviews.", "User side to view, make, and pay for appointments, and to leave reviews and message the business."],
     picture: "../img/kelloggtutoring.png",
     video: "../videos/kelloggtutoring.mov",
     github: "https://github.com/dtkellogg/KelloggTutoring",
@@ -23,18 +19,14 @@ const projects = [
   {
     _id: 2,
     name: "Davis Night Market",
-    skills: ["NodeJS", "React", "React-Router", "CSS3"],
+    skills: ["Node.js", "React.js", "React-Router", "CSS3"],
     abstract:
       "This application was designed to be used by a philanthropy in Davis, CA whose work I really admire.",
     html: ["Semantic HTML.", "Consistent, clean code with proper use of white space."],
     css: ["CSS grid and flexbox.", "CSS media queries for responsive design (Desktop and Mobile views available).", "UX emphasis on accessibility."],
-    js: [""],
-    reactJS: [""],
-    nodeJS: [""],
-    redux: [""],
-    security: [""],
-    features:
-      ["", "", "", "", "", "", "", "", "",],
+    reactJS: ["SVG animations.", "Mapbox.", "API interaction using CRUD operations via Axios.", "Custom hooks for email validation created.", "API interaction using CRUD operations.", "DRY principle applied."],
+    nodeJS: ["Used the Express framework.", "Error handling using Async / Await.", "Nodemailer,", "Various scripts written to handle development and production.",],
+    security: ["JSON Web Tokens.", "HTTPS"],
     picture: "../img/nightMarket.png",
     video: "../videos/nightMarket.mov",
     github: "https://github.com/dtkellogg/night-market-mern",
@@ -52,10 +44,7 @@ const projects = [
     js: [""],
     reactJS: [""],
     nodeJS: [""],
-    redux: [""],
     security: [""],
-    features:
-      ["", "", "", "", "", "", "", "", "",],
     picture: "../img/thalassa.png",
     video: "#",
     github: "https://github.com/dtkellogg/thalassa",
@@ -72,10 +61,7 @@ const projects = [
     js: [""],
     reactJS: [""],
     nodeJS: [""],
-    redux: [""],
     security: [""],
-    features:
-      ["", "", "", "", "", "", "", "", "",],
     picture: "../img/indonesia2015.png",
     video: "#",
     github: "https://github.com/dtkellogg/indonesia2015",
@@ -84,7 +70,7 @@ const projects = [
   {
     _id: 5,
     name: "Hash Basketball",
-    skills: ["React", "React-Router", "CSS3"],
+    skills: ["React.js", "React-Router", "CSS3"],
     abstract:
       "This application serves as the team page for a fictional basketball team. It was made as part of a course by Tyler McGinnis.",
     html: ["Semantic HTML.", "Consistent, clean code with proper use of white space."],
@@ -92,10 +78,7 @@ const projects = [
     js: [""],
     reactJS: [""],
     nodeJS: [""],
-    redux: [""],
     security: [""],
-    features:
-      ["", "", "", "", "", "", "", "", "",],
     picture: "../img/hashBasketball.png",
     video: "#",
     github: "https://github.com/dtkellogg/kellogg-hash-basketball",
@@ -104,7 +87,7 @@ const projects = [
   {
     _id: 6,
     name: "Hacker News",
-    skills: ["React", "React-Router", "CSS3"],
+    skills: ["React.js", "React-Router", "CSS3"],
     abstract:
       "This project is a clone of Hacker News, and interacts with the same API. It was made as part of course by Tyler McGinnis.",
     html: ["Semantic HTML.", "Consistent, clean code with proper use of white space."],
@@ -112,10 +95,7 @@ const projects = [
     js: [""],
     reactJS: [""],
     nodeJS: [""],
-    redux: [""],
     security: [""],
-    features:
-      ["", "", "", "", "", "", "", "", "",],
     picture: "../img/hackerNewsClone.png",
     video: "#",
     github: "https://github.com/dtkellogg/hacker-news-clone",
@@ -124,7 +104,7 @@ const projects = [
   {
     _id: 7,
     name: "Tetris",
-    skills: ["React", "CSS3"],
+    skills: ["React.js", "CSS3"],
     abstract:
       "This is a vanilla JavaScript application cloning the classic puzzle game, Tetris.",
     html: ["Semantic HTML.", "Consistent, clean code with proper use of white space."],
@@ -132,10 +112,7 @@ const projects = [
     js: [""],
     reactJS: [""],
     nodeJS: [""],
-    redux: [""],
     security: [""],
-    features:
-      ["", "", "", "", "", "", "", "", "",],
     picture: "../img/tetris.png",
     video: "#",
     github: "https://github.com/dtkellogg/tetris",
@@ -144,7 +121,7 @@ const projects = [
   {
     _id: 8,
     name: "Hangman",
-    skills: ["React", "CSS3"],
+    skills: ["React.js", "CSS3"],
     abstract:
       "This is a React Hooks application cloning the classic word game, Hangman. It was part of a course by Colt Steele.",
     html: ["Semantic HTML.", "Consistent, clean code with proper use of white space."],
@@ -152,10 +129,7 @@ const projects = [
     js: [""],
     reactJS: [""],
     nodeJS: [""],
-    redux: [""],
     security: [""],
-    features:
-      ["", "", "", "", "", "", "", "", "",],
     picture: "../img/hangman.png",
     video: "#",
     github: "https://github.com/dtkellogg/kellogg-hangman",
@@ -172,10 +146,7 @@ const projects = [
     js: [""],
     reactJS: [""],
     nodeJS: [""],
-    redux: [""],
     security: [""],
-    features:
-      ["", "", "", "", "", "", "", "", "",],
     picture: "../img/omnifood.png",
     video: "#",
     github: "https://github.com/dtkellogg/kellogg-omnifood",
@@ -192,10 +163,7 @@ const projects = [
     js: [""],
     reactJS: [""],
     nodeJS: [""],
-    redux: [""],
     security: [""],
-    features:
-      ["", "", "", "", "", "", "", "", "",],
     picture: "../img/nexter.png",
     video: "#",
     github: "https://github.com/dtkellogg/kellogg-nexter",
@@ -213,10 +181,7 @@ const projects = [
     js: [""],
     reactJS: [""],
     nodeJS: [""],
-    redux: [""],
     security: [""],
-    features:
-      ["", "", "", "", "", "", "", "", "",],
     picture: "../img/natours.png",
     video: "#",
     github: "https://github.com/dtkellogg/kellogg-natours",
@@ -225,7 +190,7 @@ const projects = [
   {
      _id: 12,
     name: "GitHub Battle",
-    skills: ["React", "React-Router", "SCSS"],
+    skills: ["React.js", "React-Router", "SCSS"],
     abstract:
       "This application uses the Github API to battle pairs of actual GitHub users and view popular repositories by programming language. It was part of a course by Tyler McGinnis.",
     html: ["Semantic HTML.", "Consistent, clean code with proper use of white space."],
@@ -234,10 +199,7 @@ const projects = [
     js: [""],
     reactJS: [""],
     nodeJS: [""],
-    redux: [""],
-    security: [""],
-    features:
-      ["", "", "", "", "", "", "", "", "",],
+    security: ["HTTPS"],
     picture: "../img/githubBattle.png",
     video: "#",
     github: "https://github.com/dtkellogg/kellogg-github-battle",

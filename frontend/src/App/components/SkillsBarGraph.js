@@ -32,11 +32,11 @@ export default function SkillsBarGraph() {
         <div className="bar bar__4"></div>
         <div className="bar-background bar-background__4"></div>
 
-        <span className="skill skill__5 font-size-4">React</span>
+        <span className="skill skill__5 font-size-4">React.js</span>
         <div className="bar bar__5"></div>
         <div className="bar-background bar-background__5"></div>
 
-        <span className="skill skill__6 font-size-4">Node</span>
+        <span className="skill skill__6 font-size-4">Node.js</span>
         <div className="bar bar__6"></div>
         <div className="bar-background bar-background__6"></div>
 
