@@ -7,11 +7,11 @@ const projects = [
       "This is a full stack MERN application I made and designed for my own small business.",
     html: ["Semantic HTML.", "Consistent, clean code with proper use of white space."],
     css: ["CSS media queries for responsive design (Desktop and Mobile views available).", "UX emphasis on accessibility."],
-    scss: ["Mixins, Extends, & Variables.", "7-1 pattern (7 folders, 1 file) SASS directory structure."],
+    scss: ["Mixins, Extends, & Variables.", "BEM naming convention.", "7-1 pattern (7 folders, 1 file) SASS directory structure."],
     reactJS: ["Clients can view, make, and pay for appointments.", "Clients can also leave reviews and message the business.", "Admin side created to manage appointments, users, and reviews.", "Calendar made from scratch that displays the entire appointment history.", "DRY principle applied.", "Custom hooks created.", ],
     nodeJS: ["Error handling using Async / Await."],
     // redux: [""],
-    // git: [""],
+    security: ["SSL certificate.", "JSON Web Tokens.", "HTTPS."],
     features:
       // {HTML: ["Semantic HTML.", "Consistent, clean code with proper use of white space."], CSS: ["CSS grid and flexbox.", "UX emphasis on accessibility."], SCSS: [], JS: [], React: [], Node: [], Redux: []},
       ["Redux", "BEM naming", "Express backend", "Clients can also leave reviews and message the business", "Calendar made from scratch that displays the entire appointment history.", "Admin side created to manage appointments, users, and reviews.", "User side to view, make, and pay for appointments, and to leave reviews and message the business."],
@@ -26,6 +26,13 @@ const projects = [
     skills: ["NodeJS", "React", "React-Router", "CSS3"],
     abstract:
       "This application was designed to be used by a philanthropy in Davis, CA whose work I really admire.",
+    html: ["Semantic HTML.", "Consistent, clean code with proper use of white space."],
+    css: ["CSS grid and flexbox.", "CSS media queries for responsive design (Desktop and Mobile views available).", "UX emphasis on accessibility."],
+    js: [""],
+    reactJS: [""],
+    nodeJS: [""],
+    redux: [""],
+    security: [""],
     features:
       ["", "", "", "", "", "", "", "", "",],
     picture: "../img/nightMarket.png",
@@ -39,6 +46,14 @@ const projects = [
     skills: ["HTML5", "SCSS"],
     abstract:
       "This application is a design idea for redoing the current UI of a scuba diving resort I dove at in Sulawesi, Indonesia.",
+    html: ["Semantic HTML.", "Consistent, clean code with proper use of white space."],
+    css: ["CSS grid and flexbox.", "CSS media queries for responsive design (Desktop and Mobile views available).", "UX emphasis on accessibility."],
+    scss: ["Mixins, Extends, & Variables.", "BEM naming convention.", "7-1 pattern (7 folders, 1 file) SASS directory structure."],
+    js: [""],
+    reactJS: [""],
+    nodeJS: [""],
+    redux: [""],
+    security: [""],
     features:
       ["", "", "", "", "", "", "", "", "",],
     picture: "../img/thalassa.png",
@@ -52,6 +67,13 @@ const projects = [
     skills: ["HTML5", "CSS3", "JavaScript"],
     abstract:
       "This application is a simple 1 page HTML design to showcase highlights from my third trip to Indonesia",
+    html: ["Semantic HTML.", "Consistent, clean code with proper use of white space."],
+    css: ["CSS grid and flexbox.", "CSS media queries for responsive design (Desktop and Mobile views available).", "UX emphasis on accessibility."],
+    js: [""],
+    reactJS: [""],
+    nodeJS: [""],
+    redux: [""],
+    security: [""],
     features:
       ["", "", "", "", "", "", "", "", "",],
     picture: "../img/indonesia2015.png",
@@ -65,6 +87,13 @@ const projects = [
     skills: ["React", "React-Router", "CSS3"],
     abstract:
       "This application serves as the team page for a fictional basketball team. It was made as part of a course by Tyler McGinnis.",
+    html: ["Semantic HTML.", "Consistent, clean code with proper use of white space."],
+    css: ["CSS grid and flexbox.", "CSS media queries for responsive design (Desktop and Mobile views available).", "UX emphasis on accessibility."],
+    js: [""],
+    reactJS: [""],
+    nodeJS: [""],
+    redux: [""],
+    security: [""],
     features:
       ["", "", "", "", "", "", "", "", "",],
     picture: "../img/hashBasketball.png",
@@ -78,6 +107,13 @@ const projects = [
     skills: ["React", "React-Router", "CSS3"],
     abstract:
       "This project is a clone of Hacker News, and interacts with the same API. It was made as part of course by Tyler McGinnis.",
+    html: ["Semantic HTML.", "Consistent, clean code with proper use of white space."],
+    css: ["CSS grid and flexbox.", "CSS media queries for responsive design (Desktop and Mobile views available).", "UX emphasis on accessibility."],
+    js: [""],
+    reactJS: [""],
+    nodeJS: [""],
+    redux: [""],
+    security: [""],
     features:
       ["", "", "", "", "", "", "", "", "",],
     picture: "../img/hackerNewsClone.png",
@@ -91,6 +127,13 @@ const projects = [
     skills: ["React", "CSS3"],
     abstract:
       "This is a vanilla JavaScript application cloning the classic puzzle game, Tetris.",
+    html: ["Semantic HTML.", "Consistent, clean code with proper use of white space."],
+    css: ["CSS grid and flexbox.", "CSS media queries for responsive design (Desktop and Mobile views available).", "UX emphasis on accessibility."],
+    js: [""],
+    reactJS: [""],
+    nodeJS: [""],
+    redux: [""],
+    security: [""],
     features:
       ["", "", "", "", "", "", "", "", "",],
     picture: "../img/tetris.png",
@@ -104,6 +147,13 @@ const projects = [
     skills: ["React", "CSS3"],
     abstract:
       "This is a React Hooks application cloning the classic word game, Hangman. It was part of a course by Colt Steele.",
+    html: ["Semantic HTML.", "Consistent, clean code with proper use of white space."],
+    css: ["CSS grid and flexbox.", "CSS media queries for responsive design (Desktop and Mobile views available).", "UX emphasis on accessibility."],
+    js: [""],
+    reactJS: [""],
+    nodeJS: [""],
+    redux: [""],
+    security: [""],
     features:
       ["", "", "", "", "", "", "", "", "",],
     picture: "../img/hangman.png",
@@ -117,6 +167,13 @@ const projects = [
     skills: ["HTML5", "CSS3", "JavaScript"],
     abstract:
       "This application is for a fictional high quality food delivery service. It uses a variety of vanilla Javascript and CSS techniques to make an interactive UI. It was part of a course by Jonas Schmedtmann.",
+    html: ["Semantic HTML.", "Consistent, clean code with proper use of white space."],
+    css: ["CSS grid and flexbox.", "CSS media queries for responsive design (Desktop and Mobile views available).", "UX emphasis on accessibility."],
+    js: [""],
+    reactJS: [""],
+    nodeJS: [""],
+    redux: [""],
+    security: [""],
     features:
       ["", "", "", "", "", "", "", "", "",],
     picture: "../img/omnifood.png",
@@ -130,6 +187,13 @@ const projects = [
     skills: ["HTML5", "CSS3"],
     abstract:
       "This application is for a fictional real estate agency. It was part of a course by Jonas Schmedtmann.",
+    html: ["Semantic HTML.", "Consistent, clean code with proper use of white space."],
+    css: ["CSS grid and flexbox.", "CSS media queries for responsive design (Desktop and Mobile views available).", "UX emphasis on accessibility."],
+    js: [""],
+    reactJS: [""],
+    nodeJS: [""],
+    redux: [""],
+    security: [""],
     features:
       ["", "", "", "", "", "", "", "", "",],
     picture: "../img/nexter.png",
@@ -143,6 +207,14 @@ const projects = [
     skills: ["HTML5", "SCSS"],
     abstract:
       "This application is for a fictional travel agency. It was part of a course by Jonas Schmedtmann.",
+    html: ["Semantic HTML.", "Consistent, clean code with proper use of white space."],
+    css: ["CSS grid and flexbox.", "CSS media queries for responsive design (Desktop and Mobile views available).", "UX emphasis on accessibility."],
+    scss: ["Mixins, Extends, & Variables.", "BEM naming convention.", "7-1 pattern (7 folders, 1 file) SASS directory structure."],
+    js: [""],
+    reactJS: [""],
+    nodeJS: [""],
+    redux: [""],
+    security: [""],
     features:
       ["", "", "", "", "", "", "", "", "",],
     picture: "../img/natours.png",
@@ -156,6 +228,14 @@ const projects = [
     skills: ["React", "React-Router", "SCSS"],
     abstract:
       "This application uses the Github API to battle pairs of actual GitHub users and view popular repositories by programming language. It was part of a course by Tyler McGinnis.",
+    html: ["Semantic HTML.", "Consistent, clean code with proper use of white space."],
+    css: ["CSS grid and flexbox.", "CSS media queries for responsive design (Desktop and Mobile views available).", "UX emphasis on accessibility."],
+    scss: ["Mixins, Extends, & Variables.", "BEM naming convention.", "7-1 pattern (7 folders, 1 file) SASS directory structure."],
+    js: [""],
+    reactJS: [""],
+    nodeJS: [""],
+    redux: [""],
+    security: [""],
     features:
       ["", "", "", "", "", "", "", "", "",],
     picture: "../img/githubBattle.png",

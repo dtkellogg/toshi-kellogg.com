@@ -19,7 +19,7 @@ export default function Modal({ project }) {
   const dispatch = useDispatch();
   const node = useRef();
 
-  const { abstract, features, github, name, skills, html, css, scss, js, reactJS, nodeJS, redux, git,
+  const { abstract, features, github, name, skills, html, css, scss, js, reactJS, nodeJS, redux, security,
     // video, 
   url } = project
 
@@ -186,10 +186,10 @@ export default function Modal({ project }) {
                   })}
                 </ul>
               )}
-              {git && (
+              {security && (
                 <ul className="modal__paragraph--3 font-size-5">
-                  <span className="modal__feature--label">Git</span>
-                  {git.map((value) => {
+                  <span className="modal__feature--label">Security</span>
+                  {security.map((value) => {
                     return <li className="modal__feature">{value}</li>
                   })}
                 </ul>
