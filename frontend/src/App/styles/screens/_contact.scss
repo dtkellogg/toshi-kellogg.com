@@ -52,7 +52,7 @@
       border-radius: 3px;
       border: 1px solid $grey-7;
       background-color: $grey-12;
-      box-shadow: 0.05rem 0.05rem .1rem $black;
+      // box-shadow: 0.05rem 0.05rem .1rem $black;
       position: relative;
       transition: 0.3s;
       line-height: 2.5rem;
@@ -76,7 +76,7 @@
       border-radius: 3px;
       border: 1px solid $grey-7;
       background-color: $grey-12;
-      box-shadow: 0.05rem 0.05rem .1rem $black;
+      // box-shadow: 0.05rem 0.05rem .1rem $black;
       position: relative;
       transition: 0.3s;
       line-height: 2.5rem;
@@ -118,7 +118,7 @@
   &__map {
     height: 75rem;
     width: 75rem;
-    box-shadow: .1rem .15rem .6rem $black;
+    box-shadow: .25rem .25rem .5rem $black;
 
     @media (max-width: 1800px) {
       height: 70rem;

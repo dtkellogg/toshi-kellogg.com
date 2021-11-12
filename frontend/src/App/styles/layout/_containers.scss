@@ -449,7 +449,7 @@
       @include flexCenterCenter($flex-direction: column);
       width: auto;
       height: 100%;
-      overflow: hidden;
+      // overflow: hidden;
       position: relative;
 
       @media (max-width: 950px) {
