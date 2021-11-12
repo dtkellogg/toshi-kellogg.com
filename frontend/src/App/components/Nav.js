@@ -12,7 +12,7 @@ const navItemsSecondary = ['linkedIn', 'github']
 function Nav() {
 
   return (
-    <nav className="nav fadeInAnimated--1-5">
+    <nav className="nav">
 
       <ul className="nav__primary">
         {navItems.map((el) => (

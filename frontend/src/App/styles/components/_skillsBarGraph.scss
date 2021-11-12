@@ -1,4 +1,6 @@
 .bar-graph {
+  @include fadeInAnimated--5;
+  
   &__labels {
     grid-row: 1 / span 1;
     grid-column: 2 / span 1;

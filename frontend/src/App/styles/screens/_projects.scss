@@ -52,6 +52,54 @@
       @include flexCenterCenter($flex-direction: column);
       overflow: hidden;
     }
+
+    &--1 {
+      @include fadeInAnimated--2;
+    }
+
+    &--2 {
+      @include fadeInAnimated--2-2;
+    }
+
+    &--3 {
+      @include fadeInAnimated--2-4;
+    }
+
+    &--4 {
+      @include fadeInAnimated--2-6;
+    }
+
+    &--5 {
+      @include fadeInAnimated--2-8;
+    }
+
+    &--6 {
+      @include fadeInAnimated--3;
+    }
+
+    &--7 {
+      @include fadeInAnimated--3-2;
+    }
+
+    &--8 {
+      @include fadeInAnimated--3-4;
+    }
+
+    &--9 {
+      @include fadeInAnimated--3-6;
+    }
+
+    &--10 {
+      @include fadeInAnimated--3-8;
+    }
+
+    &--11 {
+      @include fadeInAnimated--4;
+    }
+
+    &--12 {
+      @include fadeInAnimated--4-2;
+    }
   }
 
   &__photo{

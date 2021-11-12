@@ -24,7 +24,7 @@ export default function Projects({project, setProject}) {
         const abbreviatedName = project.picture.split("/")[2].split(".")[0];
         const {_id, name} = project
         return (
-          <li className={`projects__item projects__item--${_id} projects__card fadeInAnimated--${abbreviatedName}`} key={_id}>
+          <li className={`projects__item projects__item--${_id} projects__card`} key={_id}>
             <img
               src={require(`../img/${abbreviatedName}.png`).default}
               alt={`${name} img`}

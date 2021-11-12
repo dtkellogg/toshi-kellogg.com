@@ -1,4 +1,5 @@
 .nav {
+  @include fadeInAnimated--1-5;
   @include flexCenterCenter($flex-direction: row-reverse, $justify-content: space-between);
   padding: 0 2rem 0 0;
   height: 100%;

@@ -5,12 +5,12 @@ export default function SkillsBarGraph() {
 
   return (
     <>
-      <header className="bar-graph__header fadeInAnimated--4">
+      <header className="bar-graph__header">
         <h1>
           Skills
         </h1>
       </header>
-      <section className="bar-graph fadeInAnimated--5">
+      <section className="bar-graph">
         <div className="bar-graph__labels">
           <span className="">Proficient</span>
           <span className="">Expert</span>

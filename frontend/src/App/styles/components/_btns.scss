@@ -45,6 +45,7 @@
 
   &__contact-form {
     @include font-size-3-5;
+    @include fadeInAnimated--3;
     align-self: flex-end;
     margin-right: 0rem;
     height: 3.5rem;

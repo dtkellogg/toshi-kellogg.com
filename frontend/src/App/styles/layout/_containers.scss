@@ -421,6 +421,7 @@
 
 .contact {
   &__container {
+    @include fadeInAnimated--4;
     @include heightWidth100($height: calc(100vh - 7rem));
     @include flexCenterCenter($justify-content: space-evenly);
 
@@ -468,15 +469,6 @@
         padding: 0;
         width: 100%;
       }
-    }
-  }
-}
-
-
-.skills {
-  &__graph {
-    &--container {
-      width: 20rem;
     }
   }
 }
