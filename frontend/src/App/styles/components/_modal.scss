@@ -41,10 +41,10 @@
     list-style-type: disc;
     list-style-position: outside;
     display: list-item;
-    margin-left: 4rem;
+    margin-left: 6rem;
 
-    &--label {
-      margin-left: 1.0rem;
+    @media (max-width: 550px) {
+      margin-left: 5rem;
     }
   }
 }

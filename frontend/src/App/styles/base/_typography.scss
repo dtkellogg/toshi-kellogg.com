@@ -346,6 +346,20 @@
     &--1 {
       margin-left: 2rem;
       margin-bottom: 1.0rem;
+
+      @media (max-width: 550px) {
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  &__feature {
+    &--label {
+      margin-left: 2.0rem;
+
+      @media (max-width: 550px) {
+        margin-left: 1rem;
+      }
     }
   }
 }
