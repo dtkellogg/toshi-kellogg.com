@@ -7,7 +7,6 @@
     border-radius: 50%;
     color: $black;
     cursor: pointer;
-    
     border: 1px solid $black;
     background: transparent;
     visibility: hidden;
@@ -55,7 +54,7 @@
     color: $grey-7;
     border: 1px solid $grey-7;
     background-color: $grey-12;
-    box-shadow: 0.05rem 0.05rem .1rem $black;
+    // box-shadow: 0.05rem 0.05rem .1rem $black;
 
     display: flex;
     align-items: center;

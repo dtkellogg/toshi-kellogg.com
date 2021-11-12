@@ -7,6 +7,7 @@ function Input({ containerClass, inputClass, type, value, placeholder, textarea,
   const dispatch = useDispatch();
 
   console.log(localStorage.getItem(name))
+  
   return (
     <div className={containerClass}>
       {!textarea 

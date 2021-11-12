@@ -4,6 +4,8 @@ import { sendMessage } from "./messageActions";
 
 
 export const handleTextChange = (e) => async (dispatch) => {
+  console.log(`EEE:`)
+  console.log(e)
   dispatch({
     type: HANDLE_INPUT_TEXT,
     field: e.target.name,
@@ -11,6 +13,9 @@ export const handleTextChange = (e) => async (dispatch) => {
   })
 
   localStorage.setItem(`${e.target.name}`, `${e.target.value}`)
+
+  localStorage.getItem('name') && localStorage.getItem('email') && localStorage.getItem('subject') && localStorage.getItem('message')
+    && localStorage.setItem("readyToSubmit", 'true')
 }
 
 export const resetInputs = () => async (dispatch) => {
@@ -39,10 +44,11 @@ export const handleSubmit = (name, email, subject, message, addToast) => async (
             autoDismiss: true,
           }
         );
+        localStorage.clear()
         dispatch({type: RESET_INPUTS})
         }, 4000);
       }
-    );
+      );
   }
 }
 

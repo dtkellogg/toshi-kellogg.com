@@ -24,11 +24,27 @@ export const formReducer = (state = {initialState}, action) => {
   }
 }
 
+const nameFromStorage = localStorage.getItem('name')
+  ? localStorage.getItem("name")
+  : ""
+const emailFromStorage = localStorage.getItem('email')
+  ? localStorage.getItem("email")
+  : ""
+const subjectFromStorage = localStorage.getItem('subject')
+  ? localStorage.getItem("subject")
+  : ""
+const messageFromStorage = localStorage.getItem('message')
+  ? localStorage.getItem("message")
+  : ""
+const readyToSubmitFromStorage = localStorage.getItem('readyToSubmit')
+  ? localStorage.getItem("readyToSubmit")
+  : ""
+
 const initialState = {
-  name: "",
-  email: "",
-  subject: "",
-  message: "",
-  readyToSubmit: false,
+  name: nameFromStorage,
+  email: emailFromStorage,
+  subject: subjectFromStorage,
+  message: messageFromStorage,
+  readyToSubmit: readyToSubmitFromStorage,
   submitted: false,
-}
+};

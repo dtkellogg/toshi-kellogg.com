@@ -20,12 +20,19 @@ export default function ContactScreen() {
   const { addToast } = useToasts();
 
   useEffect(() => {
-    if((name && email && subject && message && !readyToSubmit)
-      ||
-    ((!name || !email || !subject || !message) && readyToSubmit === true)) {
+    if((name && email && subject && message && !readyToSubmit) || ((!name || !email || !subject || !message) && readyToSubmit === true)) {
       dispatch({type: TOGGLE_READY_TO_SUBMIT, payload: !readyToSubmit})
     }
-  }, [name, email, subject, message])
+  }, [name, email, subject, message, localStorage.getItem("name")])
+
+  console.log(`${name} ${email} ${subject} ${message} ${readyToSubmit}`)
+
+  // useEffect(() => {
+  //   if(localStorage.getItem('name')) {
+  //     console.log('HELLO')
+  //     dispatch(handleTextChange({name: 'name', value: localStorage.getItem('name')}))
+  //   }
+  // }, [])
 
   useEffect(() => {
     document.title = "Toshi Kellogg | Developer";
@@ -51,16 +58,16 @@ export default function ContactScreen() {
 
         <form className="contact__form fadeInAnimated--3">
           <Input containerClass="contact__form--element contact__element--name" inputClass="contact__form--input font-size-3-5" name="name"
-            type="name" value={name} placeholder="Name"
+            type="name" value={localStorage.getItem(name) ? localStorage.getItem(name) : name} placeholder="Name"
           />
             <Input containerClass="contact__form--element contact__element--email" inputClass="contact__form--input font-size-3-5" name="email"
-            type="email" value={email} placeholder="Email"
+            type="email" value={localStorage.getItem(email) ? localStorage.getItem(email) : email} placeholder="Email"
           />
             <Input containerClass="contact__form--element contact__element--subject" inputClass="contact__form--input font-size-3-5" name="subject"
-            type="subject" value={subject} placeholder="Subject"
+            type="subject" value={localStorage.getItem(subject) ? localStorage.getItem(subject) : subject} placeholder="Subject"
           />
             <Input containerClass="contact__form--element contact__element--message" inputClass="contact__form--textarea font-size-3-5" name="message"
-            type="text" value={message} placeholder="Message" textarea={true}
+            type="text" value={localStorage.getItem(message) ? localStorage.getItem(message) : message} placeholder="Message" textarea={true}
           />
         </form>
 
