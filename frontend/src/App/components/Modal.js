@@ -122,7 +122,7 @@ export default function Modal({ project }) {
             <div className="modal__paragraph--container">
               <div className="modal__subheader--1 font-size-3">Abstract:</div>
               <div className="modal__paragraph--1 font-size-5">{abstract}</div>
-              <div className="modal__subheader--3 font-size-3">About the code:</div>
+              <div className="modal__subheader--3 font-size-3">About the Code:</div>
               {/* {features && (
                 <ul className="modal__paragraph--3 font-size-5">{features.map((feature) => {
                   return <li className="modal__feature">{feature}</li>

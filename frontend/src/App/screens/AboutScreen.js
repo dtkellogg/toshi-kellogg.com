@@ -24,7 +24,7 @@ export default function AboutScreen() {
             Hello, I’m Toshi. I’m a self taught full stack programmer with a passion for data structures and algorithms.
           </span>
           <span className="about__text--2 font-size-3 fadeInAnimated--2">
-            Coming from a bicultural background, thinking in different languages comes intuitively. Having completed my bachelor’s at UC Davis in Chemistry and run my own college level tutoring service, I have fine tuned my ability to break down a problem into simple steps and write code efficiently and logically. Besides my love for mastering the material, my success as a programmer has come from an innate ability to maintain patience, stay curious, and listen attentively.
+            Coming from a bicultural background, thinking in different languages comes intuitively. Having completed my bachelor’s at UC Davis in chemistry and running my own college level tutoring business, I have fine tuned my ability to break down problems - translating to efficient and logical code. My success as a programmer comes from an innate ability to maintain patience and curiosity, while also always listening attentively.
           </span>
           <span className="about__text--3 font-size-3 fadeInAnimated--3">
             When I am not programming, I enjoy spending my time running, reading a novel, and traveling.
