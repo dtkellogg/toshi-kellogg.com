@@ -15,9 +15,8 @@
 
 	&__skills {
 		&--item {
-			display: flex;
-			align-items: center;
-			justify-content: center;
+      @include flexCenterCenter();
+      margin: 0 0.5rem;
 		}
 
 		&--icon {
