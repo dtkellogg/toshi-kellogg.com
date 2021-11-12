@@ -15,12 +15,12 @@ import { modalSetProjectReducer, modalIsOpenReducer } from "./reducers/modalRedu
 
 
 const reducer = combineReducers({
-    formData: formReducer,
-    messageCreate: messageCreateReducer,
-    projectList: projectListReducer,
-    projectDetails: projectDetailsReducer,
-    modalSetProject: modalSetProjectReducer,
-    modalIsOpen: modalIsOpenReducer
+  formData: formReducer,
+  messageCreate: messageCreateReducer,
+  projectList: projectListReducer,
+  projectDetails: projectDetailsReducer,
+  modalSetProject: modalSetProjectReducer,
+  modalIsOpen: modalIsOpenReducer
 })
 
 const initialState = {

@@ -1,5 +1,5 @@
 // react
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect, lazy } from "react";
 import { Switch, Route, useLocation } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import { ToastProvider } from "react-toast-notifications";
@@ -9,10 +9,10 @@ import Nav from "./components/Nav";
 import Loading from "./components/Loading";
 
 // screens   
-const About = React.lazy(() => import("./screens/AboutScreen"));
-const Skills = React.lazy(() => import("./screens/SkillsScreen"));
-const Projects = React.lazy(() => import("./screens/ProjectsScreen"));
-const Contact = React.lazy(() => import("./screens/ContactScreen"));
+const About = lazy(() => import("./screens/AboutScreen"));
+const Skills = lazy(() => import("./screens/SkillsScreen"));
+const Projects = lazy(() => import("./screens/ProjectsScreen"));
+const Contact = lazy(() => import("./screens/ContactScreen"));
 
 
 export default function App() {
