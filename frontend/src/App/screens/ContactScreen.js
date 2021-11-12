@@ -14,7 +14,7 @@ import Input from "../components/formInput"
 
 export default function ContactScreen() {
   const formData = useSelector((state) => state.formData)
-  const {name, email, subject, message, readyToSubmit, submitted} = formData
+  let {name, email, subject, message, readyToSubmit, submitted} = formData
   
   const dispatch = useDispatch();
   const { addToast } = useToasts();
@@ -23,16 +23,7 @@ export default function ContactScreen() {
     if((name && email && subject && message && !readyToSubmit) || ((!name || !email || !subject || !message) && readyToSubmit === true)) {
       dispatch({type: TOGGLE_READY_TO_SUBMIT, payload: !readyToSubmit})
     }
-  }, [name, email, subject, message, localStorage.getItem("name")])
-
-  console.log(`${name} ${email} ${subject} ${message} ${readyToSubmit}`)
-
-  // useEffect(() => {
-  //   if(localStorage.getItem('name')) {
-  //     console.log('HELLO')
-  //     dispatch(handleTextChange({name: 'name', value: localStorage.getItem('name')}))
-  //   }
-  // }, [])
+  }, [name, email, subject, message])
 
   useEffect(() => {
     document.title = "Toshi Kellogg | Developer";
@@ -51,23 +42,22 @@ export default function ContactScreen() {
           I am interested in <span className="skills__blue-text">team-based positions</span> - especially those 
           that will allow me to work alongside the most talented developers.
         </p>
-        <br />
         <p className="contact__paragraph--2 font-size-3 fadeInAnimated--2">
           If you have any questions for me, please fill out the form below.
         </p>
 
         <form className="contact__form fadeInAnimated--3">
           <Input containerClass="contact__form--element contact__element--name" inputClass="contact__form--input font-size-3-5" name="name"
-            type="name" value={localStorage.getItem(name) ? localStorage.getItem(name) : name} placeholder="Name"
+            type="name" value={localStorage.getItem("name") ? localStorage.getItem("name") : name} placeholder="Name"
           />
             <Input containerClass="contact__form--element contact__element--email" inputClass="contact__form--input font-size-3-5" name="email"
-            type="email" value={localStorage.getItem(email) ? localStorage.getItem(email) : email} placeholder="Email"
+            type="email" value={localStorage.getItem("email") ? localStorage.getItem("email") : email} placeholder="Email"
           />
             <Input containerClass="contact__form--element contact__element--subject" inputClass="contact__form--input font-size-3-5" name="subject"
-            type="subject" value={localStorage.getItem(subject) ? localStorage.getItem(subject) : subject} placeholder="Subject"
+            type="subject" value={localStorage.getItem("subject") ? localStorage.getItem("subject") : subject} placeholder="Subject"
           />
             <Input containerClass="contact__form--element contact__element--message" inputClass="contact__form--textarea font-size-3-5" name="message"
-            type="text" value={localStorage.getItem(message) ? localStorage.getItem(message) : message} placeholder="Message" textarea={true}
+            type="text" value={localStorage.getItem("message") ? localStorage.getItem("message") : message} placeholder="Message" textarea={true}
           />
         </form>
 

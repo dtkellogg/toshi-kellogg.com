@@ -361,6 +361,10 @@
       align-self: flex-start;
     }
 
+    &--1 {
+      margin-bottom: 1rem;
+    }
+
     &--2 {
       margin-bottom: 2.5rem;
     }
@@ -375,8 +379,8 @@
 
 .bar-graph {
   &__header {
-    transform: translateY(-0.5rem);
     align-self: flex-start;
+    margin-bottom: 2rem;
 
     @media (max-width: 950px) {
       transform: translate(0, 0);

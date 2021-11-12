@@ -18,7 +18,14 @@ export const formReducer = (state = {initialState}, action) => {
         submitted: action.payload,
       }
     case RESET_INPUTS:
-      return initialState
+      return {
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+        readyToSubmit: false,
+        submitted: false,
+      }
     default:
       return state
   }
