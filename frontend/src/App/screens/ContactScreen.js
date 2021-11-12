@@ -43,7 +43,7 @@ export default function ContactScreen() {
           that will allow me to work alongside the most talented developers.
         </p>
         <p className="contact__paragraph--2 font-size-3 fadeInAnimated--2">
-          If you have any questions for me, please fill out the form below.
+          If you have any questions, please fill out and submit the form below.
         </p>
 
         <form className="contact__form fadeInAnimated--3">
