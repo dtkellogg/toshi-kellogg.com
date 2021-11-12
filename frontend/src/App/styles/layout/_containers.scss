@@ -358,7 +358,7 @@
 		
 		@media (max-width: 950px) {
 			width: 65vw;
-			transform: translate(0, 5rem);
+			transform: translate(0, 4rem);
       margin: auto;
 			min-height: min-content;
       margin-bottom: 5rem;
@@ -370,6 +370,7 @@
 		}
 		@media (max-width: 550px) {
       width: 85vw;
+			transform: translate(0, 3rem);
 		}
 
     &--top {
