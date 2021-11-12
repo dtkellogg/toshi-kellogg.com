@@ -86,7 +86,7 @@ export default function Modal({ project }) {
             <button className="btn__modal--close" onClick={(e) => handleClick(e)}>
               X
             </button>
-            <div className="modal__header font-size-2">{name}</div>
+            <div className="modal__header">{name}</div>
             {/* <div className="modal__video"> */}
 
             {/* <video
@@ -113,23 +113,23 @@ export default function Modal({ project }) {
                       data-inline="false"
                       style={{fontSize: "1.6rem"}}
                     />
-                    <div className="modal__skills--text font-size-3">{skill}</div>
+                    <div className="modal__skills--text">{skill}</div>
                   </li>
                 ))}
               </ul>
             )}
 
             <div className="modal__paragraph--container">
-              <div className="modal__subheader--1 font-size-3">Abstract:</div>
-              <div className="modal__paragraph--1 font-size-5">{abstract}</div>
-              <div className="modal__subheader--3 font-size-3">About the Code:</div>
+              <div className="modal__subheader--1">Abstract:</div>
+              <div className="modal__paragraph--1">{abstract}</div>
+              <div className="modal__subheader--2">About the Code:</div>
               {/* {features && (
-                <ul className="modal__paragraph--3 font-size-5">{features.map((feature) => {
+                <ul className="modal__paragraph--2">{features.map((feature) => {
                   return <li className="modal__feature">{feature}</li>
                 })}</ul>
               )} */}
               {html && (
-                <ul className="modal__paragraph--3 font-size-5">
+                <ul className="modal__paragraph--2">
                   <span className="modal__feature--label">HTML</span>
                   {html.map((value) => {
                     return <li className="modal__feature">{value}</li>
@@ -137,7 +137,7 @@ export default function Modal({ project }) {
                 </ul>
               )}
               {css && (
-                <ul className="modal__paragraph--3 font-size-5">
+                <ul className="modal__paragraph--2">
                   <span className="modal__feature--label">CSS</span>
                   {css.map((value) => {
                     return <li className="modal__feature">{value}</li>
@@ -145,7 +145,7 @@ export default function Modal({ project }) {
                 </ul>
               )}
               {scss && (
-                <ul className="modal__paragraph--3 font-size-5">
+                <ul className="modal__paragraph--2">
                   <span className="modal__feature--label">SCSS</span>
                   {scss.map((value) => {
                     return <li className="modal__feature">{value}</li>
@@ -153,7 +153,7 @@ export default function Modal({ project }) {
                 </ul>
               )}
               {js && (
-                <ul className="modal__paragraph--3 font-size-5">
+                <ul className="modal__paragraph--2">
                   <span className="modal__feature--label">JavaScript</span>
                   {js.map((value) => {
                     return <li className="modal__feature">{value}</li>
@@ -161,7 +161,7 @@ export default function Modal({ project }) {
                 </ul>
               )}
               {reactJS && (
-                <ul className="modal__paragraph--3 font-size-5">
+                <ul className="modal__paragraph--2">
                   <span className="modal__feature--label">React.js</span>
                   {reactJS.map((value) => {
                     return <li className="modal__feature">{value}</li>
@@ -169,7 +169,7 @@ export default function Modal({ project }) {
                 </ul>
               )}
               {nodeJS && (
-                <ul className="modal__paragraph--3 font-size-5">
+                <ul className="modal__paragraph--2">
                   <span className="modal__feature--label">Node.js</span>
                   {nodeJS.map((value) => {
                     return <li className="modal__feature">{value}</li>
@@ -177,7 +177,7 @@ export default function Modal({ project }) {
                 </ul>
               )}
               {redux && (
-                <ul className="modal__paragraph--3 font-size-5">
+                <ul className="modal__paragraph--2">
                   <span className="modal__feature--label">Redux</span>
                   {redux.map((value) => {
                     return <li className="modal__feature">{value}</li>
@@ -185,7 +185,7 @@ export default function Modal({ project }) {
                 </ul>
               )}
               {security && (
-                <ul className="modal__paragraph--3 font-size-5">
+                <ul className="modal__paragraph--2">
                   <span className="modal__feature--label">Security</span>
                   {security.map((value) => {
                     return <li className="modal__feature">{value}</li>
@@ -197,12 +197,12 @@ export default function Modal({ project }) {
 
           <div className="modal__container--bottom">
               <a href={github}>
-                <button className="modal__github--btn font-size-3">
+                <button className="modal__github--btn">
                   Github Repository
                 </button>
               </a>
               <a href={url}>
-                <button className="modal__url--btn font-size-3">Launch Application</button>
+                <button className="modal__url--btn">Launch Application</button>
               </a>
           </div>
         </div>

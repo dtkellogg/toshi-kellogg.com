@@ -1,0 +1,53 @@
+// ex. 1 - From Medium (Dinesh Kumar)
+
+// $font-weights:(
+//  “light”: 300,
+//  “regular”: 400,
+//  “bold”: 700
+// );
+
+// @function weight($weight-name){
+//   @return map-get($font-weights , $weight-name)
+// }
+
+// .main {
+//   font-weight: weight(light);  // font-weight: 300;
+// }
+
+
+////////////////////////////////////////////////////////////////
+
+
+// ex. 2 - From Engage Interactive (Simon)
+
+@function z($name, $z-indexes-list: $z-indexes) {
+  @if index($z-indexes-list, $name) {
+    @return (length($z-indexes-list) - index($z-indexes-list, $name)) + 1;
+  } @else {
+  @warn 'There is no item "#{$name}" in this list; choose one of: #{$z-indexes-list}';
+  @return null;
+  }
+}
+
+// // List
+// $z-indexes: (
+//  'modal',
+//  'site-nav',
+//  'site-header',
+//  'site-content',
+//  'site-footer'
+// );
+ 
+// // Example
+// .modal { z-index: z(modal); }
+// .site-nav { z-index: z(site-nav); }
+// .site-header { z-index: z(site-header); }
+// .site-content { z-index: z(site-content); }
+// .site-footer { z-index: z(site-footer; }
+ 
+// // Output
+// .modal { z-index: 5; }
+// .site-nav { z-index: 4; }
+// .site-header { z-index: 3; }
+// .site-content { z-index: 2; }
+// .site-footer { z-index: 1; }

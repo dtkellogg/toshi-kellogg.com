@@ -31,7 +31,7 @@ export default function Projects({project, setProject}) {
               className={` projects__photo projects__photo--${_id}`}
             />
             <button
-              className="btn__project-details font-size-4"
+              className="btn__project-details"
               onClick={(e) => handleModal(e, projects[_id - 1])}
             >
               {name}

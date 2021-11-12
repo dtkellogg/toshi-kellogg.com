@@ -1,11 +1,12 @@
 .map {
   @include heightWidth100();
   position: relative;
-  z-index: 1000;
+  z-index: z(map);
   overflow: hidden;
 
   &__marker {
     &--lafayette, &--davis {
+      @include font-size-3;
       font-family: 'gorditalight', serif;
       color: $black;
       background-color: $blue-1;
@@ -26,7 +27,7 @@
     background-color: transparent;
     position: absolute;
     bottom: 0;
-    z-index: 1001;
+    z-index: z(map__overlay);
 
     @media (max-width: 950px) {
       display: block;

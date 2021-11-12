@@ -4,6 +4,10 @@
     grid-column: 2 / span 1;
     display: flex;
     justify-content: space-between;
+
+    span {
+      @include font-size-4;
+    }
   }
 }
 
@@ -13,7 +17,7 @@
   float: left;
   overflow: hidden;
   width: 0;
-  z-index: 9999;
+  z-index: z(bar);
 
   &__1 {
     grid-row: 2 / span 1;
@@ -80,6 +84,7 @@
 }
 
 .skill {
+  @include font-size-4;
   -webkit-animation: fade-in-text 2.2s 0.1s forwards;
   -moz-animation: fade-in-text 2.2s 0.1s forwards;
   animation: fade-in-text 2.2s 0.1s forwards;

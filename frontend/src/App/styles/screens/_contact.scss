@@ -45,6 +45,7 @@
     }
 
     &--input {
+      @include font-size-3-5;
       @include heightWidth100();
       outline: none;
       font-weight: 400;
@@ -69,6 +70,7 @@
     }
 
     &--textarea {
+      @include font-size-3-5;
       @include heightWidth100();
       outline: none;
       font-weight: 400;

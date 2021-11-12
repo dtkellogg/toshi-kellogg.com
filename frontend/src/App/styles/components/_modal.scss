@@ -3,7 +3,7 @@
 	height: 100%;
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.685);
-	z-index: 9999999999;
+	z-index: z(modal);
 	transition: all 2s;
 
 	&__video {

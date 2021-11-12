@@ -1,5 +1,6 @@
 .btn {
   &__project-details {
+    @include font-size-4;
     font-family: inherit;
     height: 11.5rem;
     width: 11.5rem;
@@ -12,7 +13,7 @@
     visibility: hidden;
     opacity: 0;
     transition: opacity .2s, visibility .2s;
-    z-index: 9999999;
+    z-index: z(btn__project--details);
     outline: none;
     transition: 0.15s;
     position: absolute;
@@ -43,6 +44,7 @@
   }
 
   &__contact-form {
+    @include font-size-3-5;
     align-self: flex-end;
     margin-right: 0rem;
     height: 3.5rem;
@@ -146,6 +148,7 @@
 
   &__github {
     &--btn {
+      @include font-size-3;
       width: 22rem;
       height: 4rem;
       border: 1px solid transparent;
@@ -173,6 +176,7 @@
 
   &__url {
     &--btn {
+      @include font-size-3;
       width: 22rem;
       height: 4rem;
       border-radius:  2rem;

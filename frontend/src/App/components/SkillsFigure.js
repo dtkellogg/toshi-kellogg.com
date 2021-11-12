@@ -11,7 +11,7 @@ export default function SkillsFigure() {
         className="tab-selector-1"
         defaultChecked={true}
       />
-      <label htmlFor="tab-1" className="tab-label-1">
+      <label htmlFor="tab-1" className="tabs-label-1">
         HTML
       </label>
 
@@ -21,7 +21,7 @@ export default function SkillsFigure() {
         name="radio-set"
         className="tab-selector-2"
       />
-      <label htmlFor="tab-2" className="tab-label-2">
+      <label htmlFor="tab-2" className="tabs-label-2">
         CSS
       </label>
 
@@ -31,7 +31,7 @@ export default function SkillsFigure() {
         name="radio-set"
         className="tab-selector-3"
       />
-      <label htmlFor="tab-3" className="tab-label-3">
+      <label htmlFor="tab-3" className="tabs-label-3">
         JS
       </label>
 
@@ -41,7 +41,7 @@ export default function SkillsFigure() {
         name="radio-set"
         className="tab-selector-4"
       />
-      <label htmlFor="tab-4" className="tab-label-4">
+      <label htmlFor="tab-4" className="tabs-label-4">
         React
       </label>
 
@@ -51,7 +51,7 @@ export default function SkillsFigure() {
         name="radio-set"
         className="tab-selector-5"
       />
-      <label htmlFor="tab-5" className="tab-label-5">
+      <label htmlFor="tab-5" className="tabs-label-5">
         Node
       </label>
 
@@ -61,7 +61,7 @@ export default function SkillsFigure() {
         name="radio-set"
         className="tab-selector-6"
       />
-      <label htmlFor="tab-6" className="tab-label-5">
+      <label htmlFor="tab-6" className="tabs-label-5">
         Redux
       </label>
 

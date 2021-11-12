@@ -33,36 +33,36 @@ export default function ContactScreen() {
   return (
     <section className="contact__container">
       <section className="contact__container--left">
-        <header className="contact__header font-size-1 fadeInAnimated--0">
-          <h1 className="font-size-1">
+        <header className="contact__header fadeInAnimated--0">
+          <h1>
             Contact
           </h1>
         </header>
-        <p className="contact__paragraph--1 font-size-3 fadeInAnimated--1">
+        <p className="contact__paragraph--1 fadeInAnimated--1">
           I am interested in <span className="skills__blue-text">team-based positions</span> - especially those 
           that will allow me to work alongside the most talented developers.
         </p>
-        <p className="contact__paragraph--2 font-size-3 fadeInAnimated--2">
+        <p className="contact__paragraph--2 fadeInAnimated--2">
           If you have any questions, please fill out and submit the form below.
         </p>
 
         <form className="contact__form fadeInAnimated--3">
-          <Input containerClass="contact__form--element contact__element--name" inputClass="contact__form--input font-size-3-5" name="name"
+          <Input containerClass="contact__form--element contact__element--name" inputClass="contact__form--input" name="name"
             type="name" value={localStorage.getItem("name") ? localStorage.getItem("name") : name} placeholder="Name"
           />
-            <Input containerClass="contact__form--element contact__element--email" inputClass="contact__form--input font-size-3-5" name="email"
+            <Input containerClass="contact__form--element contact__element--email" inputClass="contact__form--input" name="email"
             type="email" value={localStorage.getItem("email") ? localStorage.getItem("email") : email} placeholder="Email"
           />
-            <Input containerClass="contact__form--element contact__element--subject" inputClass="contact__form--input font-size-3-5" name="subject"
+            <Input containerClass="contact__form--element contact__element--subject" inputClass="contact__form--input" name="subject"
             type="subject" value={localStorage.getItem("subject") ? localStorage.getItem("subject") : subject} placeholder="Subject"
           />
-            <Input containerClass="contact__form--element contact__element--message" inputClass="contact__form--textarea font-size-3-5" name="message"
+            <Input containerClass="contact__form--element contact__element--message" inputClass="contact__form--textarea" name="message"
             type="text" value={localStorage.getItem("message") ? localStorage.getItem("message") : message} placeholder="Message" textarea={true}
           />
         </form>
 
         <button
-          className="btn__contact-form fadeInAnimated--3 font-size-3-5"
+          className="btn__contact-form fadeInAnimated--3"
           onClick={() => dispatch(handleSubmit(name, email, subject, message, addToast))}
           style={ 
             !readyToSubmit ? {
