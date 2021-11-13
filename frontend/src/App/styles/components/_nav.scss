@@ -42,9 +42,9 @@
   }
 
   &__secondary {
+    @include flexCenterCenter($justify-content: space-between);
     text-align: center;
     width: min-content;
-    @include flexCenterCenter($justify-content: space-between);
     margin: 0 0 0 2rem;
 
 

@@ -421,7 +421,7 @@
 
 .contact {
   &__container {
-    @include fadeInAnimated--4;
+    @include fadeInAnimated--0;
     @include heightWidth100($height: calc(100vh - 7rem));
     @include flexCenterCenter($justify-content: space-evenly);
 

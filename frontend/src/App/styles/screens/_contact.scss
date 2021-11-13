@@ -119,6 +119,7 @@
   }
 
   &__map {
+    @include fadeInAnimated--4;
     height: 75rem;
     width: 75rem;
     box-shadow: .25rem .25rem .5rem $black;
