@@ -1,16 +1,19 @@
 import axios from 'axios'
 import { MODAL_ISOPEN_REQUEST, MODAL_ISOPEN_SUCCESS, MODAL_ISOPEN_FAIL, MODAL_SETPROJECT_REQUEST, MODAL_SETPROJECT_SUCCESS, MODAL_SETPROJECT_FAIL } from "../constants/modalConstants";
 
-export const modalToggleOpen = () => async (dispatch, getState) => {
+export const modalToggleOpen = (e) => async (dispatch, getState) => {
   try {
     dispatch({ type: MODAL_ISOPEN_REQUEST });
 
-    const { modalIsOpen } = getState();
-    const isOpen = modalIsOpen.isOpen
+    // const { modalIsOpen } = getState();
+    // const isOpen = modalIsOpen.isOpen
+
+    console.log("EEE")
+    console.log(e)
 
     dispatch({
       type: MODAL_ISOPEN_SUCCESS,
-      payload: !isOpen,
+      payload: e,
     });
   } catch (error) {
     dispatch({

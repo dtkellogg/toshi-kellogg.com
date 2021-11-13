@@ -23,39 +23,38 @@ export const listProjects = () => async (dispatch) => {
 };
 
 export const getProjectDetails = (id) => async (dispatch, getState) => {
-    try {
-        dispatch({
-            type: PROJECT_DETAILS_REQUEST,
-        })
+  try {
+    dispatch({
+      type: PROJECT_DETAILS_REQUEST,
+    })
 
-        // Note: destructuring twice
-        const { userLogin: { userInfo } } = getState();
+    // Note: destructuring twice
+    const { userLogin: { userInfo } } = getState();
 
-        const config = {
-            headers: {
-                "Content-Type": "application/json",
-                Authorization: `Bearer ${userInfo.token}`
-            },
-        };
+    const config = {
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${userInfo.token}`
+      },
+    };
 
-        const { data } = await axios.get(
-            `/api/projects/${id}`,
-            config
-        );
+    const { data } = await axios.get(
+      `/api/projects/${id}`,
+      config
+    );
 
-        dispatch({
-            type: PROJECT_DETAILS_SUCCESS,
-            payload: data,
-        });
+    dispatch({
+      type: PROJECT_DETAILS_SUCCESS,
+      payload: data,
+    });
 
-    } catch (error) {
-
-        dispatch({
-            type: PROJECT_DETAILS_FAIL,
-            payload:
-                error.response && error.response.data.message
-                    ? error.response.data.message
-                    : error.message,
-        });
-    }
+  } catch (error) {
+    dispatch({
+      type: PROJECT_DETAILS_FAIL,
+      payload:
+        error.response && error.response.data.message
+          ? error.response.data.message
+          : error.message,
+    });
+  }
 };

@@ -15,7 +15,7 @@ export default function Projects({project, setProject}) {
     e.preventDefault();
     setProject(project)
     dispatch(modalSetProject(project));
-    dispatch(modalToggleOpen());
+    dispatch(modalToggleOpen(true));
   };
 
   return (

@@ -22,7 +22,7 @@ export default function ProjectsScreen() {
     document.title = "Toshi Kellogg | Developer";
 
     return () => {
-      dispatch(modalToggleOpen());
+      dispatch(modalToggleOpen(false));
     }
   }, [])
 
