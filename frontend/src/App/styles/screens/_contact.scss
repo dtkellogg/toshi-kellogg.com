@@ -1,6 +1,6 @@
 .contact {
   &__form {
-    @include fadeInAnimated--3;
+    @include fadeInAnimated($delay: 3s);
     width: 100%;
     height: 40rem;
     display: grid;
@@ -9,8 +9,7 @@
     gap: 0.5rem;
 
     &--element {
-      width: 100%;
-      height: 100%;
+      @include heightWidth100();
       position: relative;
       display: flex;
       flex-direction: column;
@@ -54,7 +53,6 @@
       border-radius: 3px;
       border: 1px solid $grey-7;
       background-color: $grey-12;
-      // box-shadow: 0.05rem 0.05rem .1rem $black;
       position: relative;
       transition: 0.3s;
       line-height: 2.5rem;
@@ -79,7 +77,6 @@
       border-radius: 3px;
       border: 1px solid $grey-7;
       background-color: $grey-12;
-      // box-shadow: 0.05rem 0.05rem .1rem $black;
       position: relative;
       transition: 0.3s;
       line-height: 2.5rem;
@@ -119,7 +116,7 @@
   }
 
   &__map {
-    @include fadeInAnimated--4;
+    @include fadeInAnimated($delay: 4s);
     height: 75rem;
     width: 75rem;
     box-shadow: .25rem .25rem .5rem $black;

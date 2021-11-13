@@ -83,7 +83,7 @@ export default function Modal({ project }) {
         <div className="modal__container" ref={node}>
           
           <div className="modal__container--top">
-            <button className="btn__modal--close" onClick={(e) => handleClick(e)}>
+            <button className="modal__btn--close" onClick={(e) => handleClick(e)}>
               X
             </button>
             <div className="modal__header">{name}</div>
@@ -197,12 +197,12 @@ export default function Modal({ project }) {
 
           <div className="modal__container--bottom">
               <a href={github}>
-                <button className="modal__github--btn">
+                <button className="modal__btn--github">
                   Github Repository
                 </button>
               </a>
               <a href={url}>
-                <button className="modal__url--btn">Launch Application</button>
+                <button className="modal__btn--url">Launch Application</button>
               </a>
           </div>
         </div>

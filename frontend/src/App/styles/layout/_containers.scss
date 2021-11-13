@@ -25,16 +25,14 @@
 }
 
 
-/* --------------------------------------------------------------------- */
-/* nav layout */
+//---------------------- nav ----------------------//
 
 .nav {
   grid-row: 1 / span 1;
   grid-column: 1 / -1;
 }
 
-/* --------------------------------------------------------------------- */
-/* home layout */
+//---------------------- home ----------------------//
 
 .home {
 	&__container {
@@ -62,8 +60,7 @@
   }
 }
 
-/* --------------------------------------------------------------------- */
-/* about layout */
+//---------------------- about ----------------------//
 
 .about {
 	&__container {
@@ -104,10 +101,9 @@
     }
 
     &--right {
+      @include flexCenterCenter($flex-direction: column);
       width: min-content;
       position: relative;
-
-      @include flexCenterCenter($flex-direction: column);
 
       @media (max-width: 950px) {
         height: 100%;
@@ -123,8 +119,7 @@
   }
 }
 
-/* --------------------------------------------------------------------- */
-/* skills layout */
+//---------------------- skills ----------------------//
 
 .skills {
   &__container {
@@ -172,36 +167,51 @@
 }
 
 .bar-graph {
-  display: grid;
-  grid-template-columns: 10rem 50rem;
-  grid-template-rows: 0.15fr repeat(7, 1fr);
-  grid-gap: 2.25rem 1rem;
-  align-items: center;
+  &__container {
+    &--body {
+      @include fadeInAnimated($delay: 5s);
+      display: grid;
+      grid-template-columns: 10rem 50rem;
+      grid-template-rows: 0.15fr repeat(7, 1fr);
+      grid-gap: 2.25rem 1rem;
+      align-items: center;
+  
+      @media (max-width: 1350px) {
+        grid-template-columns: 10rem 40rem;
+      }
+  
+      @media (max-width: 1200px) {
+        grid-template-columns: 10rem 30rem;
+      }
+  
+      @media (max-width: 950px) {
+        grid-template-columns: 10vw 60vw;
+        margin-bottom: 7rem;
+      }
+  
+      @media (max-width: 600px) {
+        grid-gap: 2.25rem 2rem;
+      }
+  
+      @media (max-width: 450px) {
+        grid-gap: 2.25rem 2.5rem;
+      }
+    }
 
-  @media (max-width: 1350px) {
-    grid-template-columns: 10rem 40rem;
-  }
+    &--scale {
+      grid-row: 1 / span 1;
+      grid-column: 2 / span 1;
+      display: flex;
+      justify-content: space-between;
 
-  @media (max-width: 1200px) {
-    grid-template-columns: 10rem 30rem;
-  }
-
-  @media (max-width: 950px) {
-    grid-template-columns: 10vw 60vw;
-    margin-bottom: 7rem;
-  }
-
-  @media (max-width: 600px) {
-    grid-gap: 2.25rem 2rem;
-  }
-
-  @media (max-width: 450px) {
-    grid-gap: 2.25rem 2.5rem;
+      span {
+        @include font-size-4;
+      }
+    }
   }
 }
 
-/* --------------------------------------------------------------------- */
-/* projects layout */
+//---------------------- projects ----------------------//
 
 .projects {
 	&__container {
@@ -340,25 +350,23 @@
   }
 }
 
-/* --------------------------------------------------------------------- */
-/* modal layout */
+//---------------------- modal ----------------------//
 
 .modal {
-
 	&__container {
 		@include flexCenterCenter($flex-direction: column, $justify-content: space-between, $align-items: flex-start);
+    transform: translate(50%, 5rem);
     height: 80vh;
     width: 50vw;
     background-color: $white;
     border-radius: 3rem;
-    transform: translate(50%, 5rem);
 		opacity: 1;
 		transition: opacity 3s;
     position: relative;
 		
 		@media (max-width: 950px) {
-			width: 65vw;
 			transform: translate(0, 4rem);
+			width: 65vw;
       margin: auto;
 			min-height: min-content;
       margin-bottom: 5rem;
@@ -369,14 +377,13 @@
       height: 85%;
 		}
 		@media (max-width: 550px) {
-      width: 85vw;
 			transform: translate(0, 3rem);
+      width: 85vw;
 		}
 
     &--top {
       @include flexCenterCenter($flex-direction: column, $justify-content: flex-start);
-      width: 100%;
-      height: 100%;
+      @include heightWidth100();
       overflow: hidden;
       padding: 3rem 3rem 8rem 3rem;
       position: relative;
@@ -396,11 +403,8 @@
 		}
 	
 		&--skills {
-			display: flex;
-			align-items: center;
-			justify-content: space-around;
+      @include flexCenterCenter($justify-content: space-around);
 			width: 100%;
-			// margin: 1rem 0;
 			margin-top: 1rem;
 			flex-wrap: wrap;
 		}
@@ -416,12 +420,11 @@
 	}
 }
 
-/* --------------------------------------------------------------------- */
-/* contact layout */
+//---------------------- contact ----------------------//
 
 .contact {
   &__container {
-    @include fadeInAnimated--0;
+    @include fadeInAnimated();
     @include heightWidth100($height: calc(100vh - 7rem));
     @include flexCenterCenter($justify-content: space-evenly);
 
@@ -462,7 +465,6 @@
       @include flexCenterCenter($flex-direction: column);
       width: auto;
       height: 100%;
-      // overflow: hidden;
       position: relative;
 
       @media (max-width: 950px) {

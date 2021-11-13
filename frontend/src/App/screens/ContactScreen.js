@@ -62,7 +62,7 @@ export default function ContactScreen() {
         </form>
 
         <button
-          className="btn__contact-form"
+          className="contact__btn--submit"
           onClick={() => dispatch(handleSubmit(name, email, subject, message, addToast))}
           style={ 
             !readyToSubmit ? {

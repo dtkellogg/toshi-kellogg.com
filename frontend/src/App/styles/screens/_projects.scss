@@ -13,7 +13,7 @@
 
     &:hover .projects__details,
     &:hover .projects__details--title,
-    &:hover .btn__project-details {
+    &:hover .projects__btn--details {
       visibility: visible;
       opacity: 1;
     }
@@ -54,51 +54,51 @@
     }
 
     &--1 {
-      @include fadeInAnimated--2;
+      @include fadeInAnimated($delay: 2s);
     }
 
     &--2 {
-      @include fadeInAnimated--2-2;
+      @include fadeInAnimated($delay: 2.2s);
     }
 
     &--3 {
-      @include fadeInAnimated--2-4;
+      @include fadeInAnimated($delay: 2.4s);
     }
 
     &--4 {
-      @include fadeInAnimated--2-6;
+      @include fadeInAnimated($delay: 2.6s);
     }
 
     &--5 {
-      @include fadeInAnimated--2-8;
+      @include fadeInAnimated($delay: 2.8s);
     }
 
     &--6 {
-      @include fadeInAnimated--3;
+      @include fadeInAnimated($delay: 3s);
     }
 
     &--7 {
-      @include fadeInAnimated--3-2;
+      @include fadeInAnimated($delay: 3.2s);
     }
 
     &--8 {
-      @include fadeInAnimated--3-4;
+      @include fadeInAnimated($delay: 3.4s);
     }
 
     &--9 {
-      @include fadeInAnimated--3-6;
+      @include fadeInAnimated($delay: 3.6s);
     }
 
     &--10 {
-      @include fadeInAnimated--3-8;
+      @include fadeInAnimated($delay: 3.8s);
     }
 
     &--11 {
-      @include fadeInAnimated--4;
+      @include fadeInAnimated($delay: 4s);
     }
 
     &--12 {
-      @include fadeInAnimated--4-2;
+      @include fadeInAnimated($delay: 4.2s);
     }
   }
 

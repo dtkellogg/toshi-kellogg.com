@@ -1,3 +1,4 @@
+//---------------------- font-weights ----------------------//
 // ex. 1 - From Medium (Dinesh Kumar)
 
 // $font-weights:(
@@ -14,11 +15,7 @@
 //   font-weight: weight(light);  // font-weight: 300;
 // }
 
-
-////////////////////////////////////////////////////////////////
-
-
-// ex. 2 - From Engage Interactive (Simon)
+//---------------------- z-index ----------------------//
 
 @function z($name, $z-indexes-list: $z-indexes) {
   @if index($z-indexes-list, $name) {
@@ -28,26 +25,3 @@
   @return null;
   }
 }
-
-// // List
-// $z-indexes: (
-//  'modal',
-//  'site-nav',
-//  'site-header',
-//  'site-content',
-//  'site-footer'
-// );
- 
-// // Example
-// .modal { z-index: z(modal); }
-// .site-nav { z-index: z(site-nav); }
-// .site-header { z-index: z(site-header); }
-// .site-content { z-index: z(site-content); }
-// .site-footer { z-index: z(site-footer; }
- 
-// // Output
-// .modal { z-index: 5; }
-// .site-nav { z-index: 4; }
-// .site-header { z-index: 3; }
-// .site-content { z-index: 2; }
-// .site-footer { z-index: 1; }

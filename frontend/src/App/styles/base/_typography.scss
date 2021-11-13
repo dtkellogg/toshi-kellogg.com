@@ -1,11 +1,11 @@
-//---------------------- screens ----------------------//
+//---------------------- home / hero ----------------------//
 
 .home {
   &__text {
     margin: 0.5rem 0;
 
     &--toshi {
-      @include fadeInAnimated--1;
+      @include fadeInAnimated($delay: 1s);
       @include font-size-1;
       font-family: 'gorditaregular', serif;
       letter-spacing: .2rem;
@@ -27,11 +27,10 @@
     }
 
     &--4 {
-
     }
 
     &--5 {
-      @include fadeInAnimated--1-5;
+      @include fadeInAnimated($delay: 1.5s);
       @include font-size-2-5;
       color: $grey-5;
       line-height: 2.5rem;
@@ -44,7 +43,7 @@
     }
 
     &--im {
-      @include fadeInAnimated--1;
+      @include fadeInAnimated($delay: 1s);
       @include font-size-1;
       margin-right: 1.0rem;
       font-family: 'gorditaregular', serif;
@@ -64,9 +63,15 @@
   }
 }
 
+.Typewriter {
+  margin-left: 0.50rem;
+}
+
+//---------------------- about ----------------------//
+
 .about {
   &__header {
-    @include fadeInAnimated--0;
+    @include fadeInAnimated();
     margin-bottom: 2rem;
     letter-spacing: .2rem;
     align-self: flex-start;
@@ -94,15 +99,15 @@
     }
 
     &--1 {
-      @include fadeInAnimated--1;
+      @include fadeInAnimated($delay: 1s);
     }
 
     &--2 {
-      @include fadeInAnimated--2;
+      @include fadeInAnimated($delay: 2s);
     }
 
     &--3 {
-      @include fadeInAnimated--3;
+      @include fadeInAnimated($delay: 3s);
     }
   }
 
@@ -113,9 +118,11 @@
   }
 }
 
+//---------------------- skills ----------------------//
+
 .skills {
   &__header {
-    @include fadeInAnimated--0;
+    @include fadeInAnimated();
     margin-bottom: 2rem;
     letter-spacing: .2rem;
     align-self: flex-start;
@@ -139,19 +146,19 @@
     }
 
     &--1 {
-      @include fadeInAnimated--1;
+      @include fadeInAnimated($delay: 1s);
     }
 
     &--2 {
-      @include fadeInAnimated--2;
+      @include fadeInAnimated($delay: 2s);
     }
 
     &--3 {
-      @include fadeInAnimated--3;
+      @include fadeInAnimated($delay: 3s);
     }
 
     &--4 {
-      @include fadeInAnimated--4;
+      @include fadeInAnimated($delay: 4s);
     }
   }
 
@@ -159,6 +166,26 @@
     color: $blue-3;
   }
 }
+
+.bar-graph {
+  &__header {
+    @include fadeInAnimated($delay: 4s);
+    align-self: flex-start;
+    margin-bottom: 2rem;
+
+    @media (max-width: 950px) {
+      transform: translate(0, 0);
+      margin-bottom: 2rem;
+      align-self: center;
+    }
+
+    h1 {
+      @include font-size-1;
+    }
+  }
+}
+
+//---------------------- projects ----------------------//
 
 .projects {
   &__details {
@@ -170,7 +197,6 @@
     transition: opacity .2s, visibility .2s;
     width: min-content;
     color: $white;
-
     height: 10rem;
     width: 10rem;
     line-height: 10rem;
@@ -190,6 +216,8 @@
     }
   }
 }
+
+//---------------------- modal ----------------------//
 
 .modal {
   &__skills {
@@ -271,9 +299,11 @@
   }
 }
 
+//---------------------- contact ----------------------//
+
 .contact {
   &__header {
-    @include fadeInAnimated--0;
+    @include fadeInAnimated();
     letter-spacing: .2rem;
     margin-bottom: 2rem;
     align-self: flex-start;
@@ -297,37 +327,13 @@
     }
 
     &--1 {
-      @include fadeInAnimated--1;
+      @include fadeInAnimated($delay: 1s);
       margin-bottom: 1.75rem;
     }
 
     &--2 {
-      @include fadeInAnimated--2;
+      @include fadeInAnimated($delay: 2s);
       margin-bottom: 2.5rem;
-    }
-  }
-}
-
-//---------------------- miscellaneous ----------------------//
-
-.Typewriter {
-  margin-left: 0.50rem;
-}
-
-.bar-graph {
-  &__header {
-    @include fadeInAnimated--4;
-    align-self: flex-start;
-    margin-bottom: 2rem;
-
-    @media (max-width: 950px) {
-      transform: translate(0, 0);
-      margin-bottom: 2rem;
-      align-self: center;
-    }
-
-    h1 {
-      @include font-size-1;
     }
   }
 }

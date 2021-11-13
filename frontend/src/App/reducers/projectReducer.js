@@ -28,17 +28,17 @@ export const projectListReducer = (
 };
 
 export const projectDetailsReducer = (state = { project: {} }, action) => {
-    switch (action.type) {
-        case PROJECT_DETAILS_REQUEST:
-            return { ...state, loading: true };
+  switch (action.type) {
+    case PROJECT_DETAILS_REQUEST:
+      return { ...state, loading: true };
 
-        case PROJECT_DETAILS_SUCCESS:
-            return { loading: false, project: action.payload };
+    case PROJECT_DETAILS_SUCCESS:
+      return { loading: false, project: action.payload };
 
-        case PROJECT_DETAILS_FAIL:
-            return { loading: false, error: action.payload };
+    case PROJECT_DETAILS_FAIL:
+      return { loading: false, error: action.payload };
 
-        default:
-            return state;
-    }
+    default:
+      return state;
+  }
 };

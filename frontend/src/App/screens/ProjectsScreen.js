@@ -12,7 +12,7 @@ import { modalToggleOpen } from "../actions/modalActions";
 
 
 export default function ProjectsScreen() {
-  const [project, setProject] = useState(""); // eslint-disable-line no-unused-vars
+  const [project, setProject] = useState("");
   const dispatch = useDispatch()
 
   const modalIsOpen = useSelector((state) => state.modalIsOpen);
