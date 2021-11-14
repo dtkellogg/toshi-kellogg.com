@@ -172,13 +172,14 @@
     @include fadeInAnimated($delay: 4s);
     align-self: flex-start;
     margin-bottom: 2rem;
-
+    width: 100%;
+    
     @media (max-width: 950px) {
+      @include flexCenterCenter();
       transform: translate(0, 0);
       margin-bottom: 2rem;
-      align-self: center;
     }
-
+    
     h1 {
       @include font-size-1;
     }
