@@ -4,7 +4,7 @@ import { useToasts } from "react-toast-notifications";
 import Loader from "react-loader-spinner";
 
 // components
-import { default as Input } from "../components/FormInput"
+import { default as Input } from "./FormInput"
 
 // actions
 import { handleSubmit } from "../actions/formActions";
