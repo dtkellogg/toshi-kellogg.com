@@ -9,6 +9,6 @@ console.log("In the router")
 
 router
   .route("/")
-  .post(sendMessageToNodemailer)
+  .post(sendMessageToDb, sendMessageToNodemailer)
 
 module.exports = router;
