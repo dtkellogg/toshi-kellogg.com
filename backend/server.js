@@ -5,9 +5,6 @@ const dotenv = require("dotenv");
 const enforce = require("express-sslify");
 const https = require("https");
 const colors = require("colors");
-const bodyParser = require("body-parser")
-const cookieParser = require("cookie-parser");
-const multer = require("multer")
 
 // middleware
 const cors = require("cors")
@@ -21,16 +18,18 @@ const connectDB = require('./config/db.js')
 const messageRoutes = require('./routes/messageRoutes')
 const projectRoutes = require('./routes/projectRoutes')
 
+// env variables
 dotenv.config();
 
+// db
 connectDB();
 
 const app = express();
 
 app.use(express.json());
+app.use(enforce.HTTPS({ trustProtoHeader: true }));  // redirect all url requests to https
 app.use(compression({ threshold: 0 }));  // compress responses
 app.use(cors())  // CORS
-app.use(enforce.HTTPS({ trustProtoHeader: true }));  // redirect all url requests to https
 app.use(corsMiddleware);
 // routes
 app.use('/api/messages', messageRoutes)
