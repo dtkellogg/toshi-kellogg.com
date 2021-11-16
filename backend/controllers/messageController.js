@@ -46,7 +46,7 @@ exports.sendMessageToNodemailer = async (req, res, next) => {
     console.log("Inside the nodemail server.js post request");
 
     const output = `
-      <p>You have a new message from toshi-kellogg.com</p>
+      <p>You have a new message from toshikellogg.com</p>
       <h3>Contact Details</h3>
       <ul>
       <li>Name: ${req.body.name}</li>
