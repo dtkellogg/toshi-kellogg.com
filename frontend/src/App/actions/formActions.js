@@ -2,6 +2,7 @@ import { HANDLE_INPUT_TEXT, RESET_INPUTS, TOGGLE_SUBMITTED } from "../constants/
 import { sendMessage } from "./messageActions";
 
 
+import useValidate from '../hooks/useValidate'
 
 export const handleTextChange = (e) => async (dispatch) => {
   console.log(`EEE:`)
@@ -22,12 +23,16 @@ export const resetInputs = () => async (dispatch) => {
   dispatch({type: RESET_INPUTS})
 }
 
-export const handleSubmit = (name, email, subject, message, addToast) => async (dispatch) => {
+export const handleSubmit = (e, addToast) => async (dispatch, getState) => {
+  e.preventDefault()
+  
   window.setTimeout(() => {
     dispatch({type: TOGGLE_SUBMITTED, payload: false})
   }, 4000);
 
-  const isValid = Validate(name, email, subject, message, addToast);
+
+  const { formData: { name, email, subject, message, submitted } } = getState()
+  const isValid = useValidate(name, email, subject, message, addToast);
 
   if (isValid) {
     dispatch({type: TOGGLE_SUBMITTED, payload: true})
@@ -51,42 +56,3 @@ export const handleSubmit = (name, email, subject, message, addToast) => async (
       );
   }
 }
-
-const Validate = (name, email, subject, message, addToast) => {
-  const emailRegexp = /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/; // eslint-disable-line no-useless-escape
-
-  if (!emailRegexp.test(email) && message.length === 0 && subject.length === 0 && name.length === 0) {
-    addToast("Please fill out all fields.", {
-      appearance: "error",
-      autoDismiss: true,
-    });
-  }
-  else if (!emailRegexp.test(email) && message.length === 0 && subject.length === 0) {
-    addToast("Please submit a subject, message and valid email address.", {
-      appearance: "error",
-      autoDismiss: true,
-    });
-  } else if (!emailRegexp.test(email)) {
-    addToast("Please submit a valid email address.", {
-      appearance: "error",
-      autoDismiss: true,
-    });
-  } else if (message.length === 0 && subject.length === 0) {
-    addToast("Please add a message and subject.", {
-      appearance: "error",
-      autoDismiss: true,
-    });
-  } else if (message.length === 0) {
-    addToast("Please add a message.", {
-      appearance: "error",
-      autoDismiss: true,
-    });
-  } else if (subject.length === 0) {
-    addToast("Please add a subject.", {
-      appearance: "error",
-      autoDismiss: true,
-    });
-  } else {
-    return true;
-  }
-};

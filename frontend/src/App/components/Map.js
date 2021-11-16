@@ -30,25 +30,23 @@ export default function Map() {
   };
 
   return (
-    <figure className="contact__map">
-      <div className="map">
-        <ReactMapGL
-          {...viewport}
-          mapboxApiAccessToken={REACT_APP_MAPBOX_TOKEN}
-          mapStyle={REACT_APP_MAPBOX_STYLES}
-          onViewportChange={(viewport) => setViewport(viewport)}
-          scrollZoom={width > 950 && true}
-          userInteractionEnabled={width > 950 && true}
-          onStyleLoad={(map) => onLoaded(map)}
-        >
-          <Marker latitude={37.9158} longitude={-122.158}>
-            <div className="map__marker--lafayette">Lafayette</div>
-          </Marker>
-          <Marker latitude={38.5682} longitude={-121.8017}>
-            <div className="map__marker--davis">Davis</div>
-          </Marker>
-        </ReactMapGL>
-      </div>
+    <figure className="map">
+      <ReactMapGL
+        {...viewport}
+        mapboxApiAccessToken={REACT_APP_MAPBOX_TOKEN}
+        mapStyle={REACT_APP_MAPBOX_STYLES}
+        onViewportChange={(viewport) => setViewport(viewport)}
+        scrollZoom={width > 950 && true}
+        userInteractionEnabled={width > 950 && true}
+        onStyleLoad={(map) => onLoaded(map)}
+      >
+        <Marker latitude={37.9158} longitude={-122.158}>
+          <div className="map__marker--lafayette">Lafayette</div>
+        </Marker>
+        <Marker latitude={38.5682} longitude={-121.8017}>
+          <div className="map__marker--davis">Davis</div>
+        </Marker>
+      </ReactMapGL>
     </figure>
   );
 }

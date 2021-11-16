@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { handleTextChange } from "../actions/formActions";
 
 
-function Input({ containerClass, inputClass, type, value, placeholder, textarea, name}) {
+export default function FormInput({ containerClass, inputClass, type, value, placeholder, textarea, name}) {
   const dispatch = useDispatch();
 
   console.log(localStorage.getItem(name))
@@ -32,8 +32,6 @@ function Input({ containerClass, inputClass, type, value, placeholder, textarea,
   )
 }
 
-export default Input
-
-Input.defaultProps = {
+FormInput.defaultProps = {
   textarea: false,
 }

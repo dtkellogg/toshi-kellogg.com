@@ -3,6 +3,54 @@
   position: relative;
   z-index: z(map);
   overflow: hidden;
+  @include fadeInAnimated($delay: 4s);
+    height: 75rem;
+    width: 75rem;
+    box-shadow: .1rem .1rem .5rem $black;
+
+    @media (max-width: 1800px) {
+      height: 70rem;
+      width: 70rem;
+    }
+
+    @media (max-width: 1600px) {
+      height: 65rem;
+      width: 65rem;
+    }
+
+    @media (max-width: 1600px) {
+      height: 62.5rem;
+      width: 62.5rem;
+    }
+
+    @media (max-width: 1400px) {
+      height: 60rem;
+      width: 60rem;
+    }
+
+    @media (max-width: 1300px) {
+      height: 55rem;
+      width: 55rem;
+    }
+
+    @media (max-width: 1200px) {
+      height: 52.5rem;
+      width: 52.5rem;
+    }
+
+    @media (max-width: 1100px) {
+      height: 47.5rem;
+      width: 47.5rem;
+    }
+
+    @media (max-width: 1000px) {
+      height: 45rem;
+      width: 45rem;
+    }
+
+    @media (max-width: 950px) {
+      width: 100%;
+    }
 
   &__marker {
     &--lafayette, &--davis {

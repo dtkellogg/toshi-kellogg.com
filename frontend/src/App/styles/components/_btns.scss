@@ -43,7 +43,7 @@
 
       &:hover {
         border: 1px solid $blue-1;
-        color: $blue-1;
+        color: $blue-2;
         transition: 0.15s;
       }
     }
@@ -140,6 +140,10 @@
       border: 1px solid $grey-7;
       background-color: $grey-12;
       transition: all 0.3s;
+      position: absolute;
+      right: 0;
+      margin-top: 5rem;
+      transform: translateY(2rem);
       
       @media (max-width: 950px) {
         margin-right: 0;

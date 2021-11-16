@@ -16,19 +16,19 @@ export default function SkillsBarGraph() {
           <span className="">Expert</span>
         </div>
 
-        <span className="bar-graph__skill--1">HTML</span>
+        <abbr title="HyperText Markup Language" className="bar-graph__skill--1">HTML</abbr>
         <div className="bar-graph__bar--1"></div>
         <div className="bar-graph__bar-background--1"></div>
 
-        <span className="bar-graph__skill--2">CSS</span>
+        <abbr title="Cascading Style Sheets" className="bar-graph__skill--2">CSS</abbr>
         <div className="bar-graph__bar--2"></div>
         <div className="bar-graph__bar-background--2"></div>
 
-        <span className="bar-graph__skill--3">SASS</span>
+        <abbr title="Syntactically Awesome Style Sheets" className="bar-graph__skill--3">SASS</abbr>
         <div className="bar-graph__bar--3"></div>
         <div className="bar-graph__bar-background--3"></div>
 
-        <span className="bar-graph__skill--4">JS</span>
+        <abbr title="JavaScript" className="bar-graph__skill--4">JS</abbr>
         <div className="bar-graph__bar--4"></div>
         <div className="bar-graph__bar-background--4"></div>
 

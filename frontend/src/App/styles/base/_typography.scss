@@ -161,10 +161,6 @@
       @include fadeInAnimated($delay: 4s);
     }
   }
-
-  &__blue-text {
-    color: $blue-3;
-  }
 }
 
 .bar-graph {
