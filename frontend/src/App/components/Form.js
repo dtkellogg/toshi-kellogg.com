@@ -4,8 +4,8 @@ import { useToasts } from "react-toast-notifications";
 import Loader from "react-loader-spinner";
 
 // components
-import FormInput from "./FormInput2"
-// import { default as Input } from "./FormInput"
+// import FormInput from "./FormInput2"
+import { default as Input } from "./FormInput"
 
 // actions
 import { handleSubmit } from "../actions/formActions";
@@ -21,16 +21,16 @@ export default function Form() {
   return (
     <>
       <form className="contact__container--form">
-        <FormInput containerClass="contact__form--element contact__element--name" inputClass="contact__form--input" name="name"
+        <Input containerClass="contact__form--element contact__element--name" inputClass="contact__form--input" name="name"
           type="name" value={localStorage.getItem("name") ? localStorage.getItem("name") : name} placeholder="Name"
         />
-          <FormInput containerClass="contact__form--element contact__element--email" inputClass="contact__form--input" name="email"
+          <Input containerClass="contact__form--element contact__element--email" inputClass="contact__form--input" name="email"
           type="email" value={localStorage.getItem("email") ? localStorage.getItem("email") : email} placeholder="Email"
         />
-          <FormInput containerClass="contact__form--element contact__element--subject" inputClass="contact__form--input" name="subject"
+          <Input containerClass="contact__form--element contact__element--subject" inputClass="contact__form--input" name="subject"
           type="subject" value={localStorage.getItem("subject") ? localStorage.getItem("subject") : subject} placeholder="Subject"
         />
-          <FormInput containerClass="contact__form--element contact__element--message" inputClass="contact__form--textarea" name="message"
+          <Input containerClass="contact__form--element contact__element--message" inputClass="contact__form--textarea" name="message"
           type="text" value={localStorage.getItem("message") ? localStorage.getItem("message") : message} placeholder="Message" textarea={true}
         />
         <button
