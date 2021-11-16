@@ -6,8 +6,6 @@ import { handleTextChange } from "../actions/formActions";
 export default function FormInput({ containerClass, inputClass, type, value, placeholder, textarea, name}) {
   const dispatch = useDispatch();
 
-  console.log(localStorage.getItem(name))
-  
   return (
     <div className={containerClass}>
       {!textarea 
