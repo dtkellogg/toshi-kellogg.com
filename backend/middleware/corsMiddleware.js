@@ -1,5 +1,3 @@
-const asyncHandler = require("express-async-handler");
-
 const corsMiddleware = (req, res, next) => {
   try{
     res.header('Access-Control-Allow-Origin', 'toshikellogg.com');
