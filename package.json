@@ -31,6 +31,7 @@
     "express-async-handler": "^1.1.4",
     "express-sslify": "^1.2.0",
     "fs": "0.0.1-security",
+    "googleapis": "^91.0.0",
     "https": "^1.0.0",
     "jsonwebtoken": "^8.5.1",
     "moment": "^2.29.1",

@@ -1,4 +1,5 @@
 const nodemailer = require("nodemailer");
+const { google } =require("googleapis");
 const request = require("request");
 
 // Environment variables
@@ -9,6 +10,7 @@ const host = process.env.NODEMAILER_HOST
 
 // Model
 const Message = require("../models/messageModel");
+
 
 // @desc  Create a message
 // @route POST /api/messages
@@ -54,17 +56,28 @@ exports.sendMessageToNodemailer = async (req, res, next) => {
       <p>${req.body.message}</p>
     `;
 
+    const oAuth2Client = new google.auth.OAuth2(process.env.NODEMAILER_CLIENT_ID, process.env.NODEMAILER_CLIENT_SECRET, process.env.NODEMAILER_REDIRECT_URI)
+    oAuth2Client.setCredentials({refresh_token: process.env.NODEMAILER_REFRESH_TOKEN})
+    const accessToken = await oAuth2Client.getAccessToken()
+
+
     // create reusable transporter object using the default SMTP transport
     const transporter = nodemailer.createTransport({
       host: process.env.NODEMAILER_HOST,
       service: "Gmail",
-      port: 587,
-      // secure: true, // true for 465, false for other ports
-      secure: false, // true for 465, false for other ports
+      // port: 587,
+      // secure: false, // true for 465, false for other ports
+      port: 465,
+      secure: true, // true for 465, false for other ports
       requireTLS: true,
       auth: {
+        type: 'OAuth2',
         user: process.env.NODEMAILER_FROM_EMAIL, // generated ethereal user
         pass: process.env.NODEMAILER_EMAIL_PASSWORD, // generated ethereal password
+        clientId: process.env.NODEMAILER_CLIENT_ID,
+        clientSecret: process.env.NODEMAILER_CLIENT_SECRET,
+        refreshToken: process.env.NODEMAILER_REFRESH_TOKEN,
+        accessToken: accessToken
       },
       tls: {
         rejectUnauthorized: false,
