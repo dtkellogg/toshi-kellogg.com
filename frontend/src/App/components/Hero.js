@@ -27,7 +27,7 @@ export default function Hero() {
             delay={4000}
             wrapperClassName="test"
             options={{
-              strings: [' MERN stacks.', ' ReactJS.', ' NodeJS.', " clean code.", " SASS.", " git.", " HTML5.", " CSS3."],
+              strings: [' JavaScript.', ' MERN stacks.', ' ReactJS.', ' NodeJS.', " clean code.", " SASS.", " git.", " HTML5.", " CSS3."],
               autoStart: true,
               loop: true,
             }} 
@@ -41,7 +41,7 @@ export default function Hero() {
               delay={4000}
               wrapperClassName="test"
               options={{
-                strings: [' MERN stacks.', ' ReactJS.', ' NodeJS.', " clean code.", " SASS.", " git."],
+                strings: [' JavaScript.', ' MERN stacks.', ' ReactJS.', ' NodeJS.', " clean code.", " SASS.", " git."],
                 autoStart: true,
                 loop: true,
               }} 

@@ -8,8 +8,7 @@ import thunk from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension'
 
 // reducers
-import { formReducer } from './reducers/formReducer';
-import { messageCreateReducer } from './reducers/messageReducer';
+import { messageCreateReducer, formReducer } from './reducers/messageReducer';
 import { projectDetailsReducer, projectListReducer } from './reducers/projectReducer';
 import { modalSetProjectReducer, modalIsOpenReducer } from "./reducers/modalReducer";
 
@@ -49,10 +48,6 @@ const initialState = {
     submitted: false,
   }
 };
-
-// const initialState = {
-  
-// };
 
 const middleware = [thunk];
 

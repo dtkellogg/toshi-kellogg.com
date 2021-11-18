@@ -1,5 +1,6 @@
 import axios from 'axios'
 import { MODAL_ISOPEN_REQUEST, MODAL_ISOPEN_SUCCESS, MODAL_ISOPEN_FAIL, MODAL_SETPROJECT_REQUEST, MODAL_SETPROJECT_SUCCESS, MODAL_SETPROJECT_FAIL } from "../constants/modalConstants";
+import projects from '../data/projects'
 
 export const modalToggleOpen = (e) => async (dispatch, getState) => {
   try {
@@ -20,24 +21,14 @@ export const modalToggleOpen = (e) => async (dispatch, getState) => {
   }
 };
 
-export const modalSetProject = (id) => async (dispatch) => {
+export const modalSetProject = (project) => async (dispatch) => {
   try {
-    if(id === 'close') {
-      dispatch({
-        type: MODAL_SETPROJECT_SUCCESS,
-        payload: ""
-      })
-    } else {
       dispatch({ type: MODAL_SETPROJECT_REQUEST });
 
-      const { data } = await axios.get(`/api/projects/${id}`);
-
       dispatch({
         type: MODAL_SETPROJECT_SUCCESS,
-        payload: data
+        payload: project
       })
-
-    }
   } catch (error) {
     dispatch({
       type: MODAL_SETPROJECT_FAIL,

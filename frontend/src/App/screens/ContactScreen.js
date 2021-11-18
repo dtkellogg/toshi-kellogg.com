@@ -6,7 +6,7 @@ import Map from "../components/Map"
 import Form from "../components/Form"
 
 // constants
-import { TOGGLE_READY_TO_SUBMIT } from "../constants/formConstants";
+import { TOGGLE_READY_TO_SUBMIT } from "../constants/messageConstants";
 
 
 export default function ContactScreen() {

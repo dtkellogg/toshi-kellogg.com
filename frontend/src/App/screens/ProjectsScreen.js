@@ -12,7 +12,6 @@ import { modalToggleOpen } from "../actions/modalActions";
 
 
 export default function ProjectsScreen() {
-  const [project, setProject] = useState("");
   const dispatch = useDispatch()
 
   const modalIsOpen = useSelector((state) => state.modalIsOpen);
@@ -29,8 +28,8 @@ export default function ProjectsScreen() {
   return (
     <section className="projects">
       <Hero />
-      {isOpen && <Modal project={project} /> }
-      <Projects project={project} setProject={setProject} />  
+      {isOpen && <Modal /> }
+      <Projects />  
     </section>
   )
 }

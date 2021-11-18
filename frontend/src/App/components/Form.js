@@ -4,11 +4,10 @@ import { useToasts } from "react-toast-notifications";
 import Loader from "react-loader-spinner";
 
 // components
-// import FormInput from "./FormInput2"
 import { default as Input } from "./FormInput"
 
 // actions
-import { handleSubmit } from "../actions/formActions";
+import { sendMessage } from "../actions/messageActions";
 
 
 export default function Form() {
@@ -35,7 +34,7 @@ export default function Form() {
         />
         <button
           className="contact__btn--submit"
-          onClick={(e) => dispatch(handleSubmit(e, addToast))}
+          onClick={(e) => dispatch(sendMessage(e, addToast))}
           type="submit"
           style={ 
             !readyToSubmit ? {

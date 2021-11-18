@@ -7,11 +7,8 @@ const emailTo = process.env.NODEMAILER_TO_EMAIL;
 const password = process.env.NODEMAILER_EMAIL_PASSWORD;
 const host = process.env.NODEMAILER_HOST
 
-
-
 // Model
 const Message = require("../models/messageModel");
-
 
 // @desc  Create a message
 // @route POST /api/messages
@@ -57,8 +54,6 @@ exports.sendMessageToNodemailer = async (req, res, next) => {
       <p>${req.body.message}</p>
     `;
 
-
-
     // create reusable transporter object using the default SMTP transport
     const transporter = nodemailer.createTransport({
       host: process.env.NODEMAILER_HOST,
@@ -75,7 +70,6 @@ exports.sendMessageToNodemailer = async (req, res, next) => {
         rejectUnauthorized: false,
       },
     });
-
 
     // send mail with defined transport object
     const mailOptions = {
@@ -97,16 +91,16 @@ exports.sendMessageToNodemailer = async (req, res, next) => {
         console.log(`Preview URL: %s`, nodemailer.gettestMessageUrl(info))
       }
       // request(mailOptions, (err, response, body) => {
-    //     if (err) {
-  //         // res.redirect("/components/404");
-  //         console.log(`errNodeMailer: ${err}`)
-    //     } else {
-  //         console.log(response.data)
-  //         if (response.statusCode === 200) {
-  //         } else {
-//             res.redirect("/");
-  //         }
-    //     }
+      //   if (err) {
+      //     res.redirect("/components/404");
+      //     console.log(`errNodeMailer: ${err}`)
+      //   } else {
+      //     console.log(response.data)
+      //     if (response.statusCode === 200) {
+      //     } else {
+      //       res.redirect("/");
+      //     }
+      //   }
       // });
     },
 

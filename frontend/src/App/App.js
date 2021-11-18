@@ -1,12 +1,16 @@
 // react
 import React, { useState, useEffect, lazy } from "react";
 import { Switch, Route, useLocation } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import { ToastProvider } from "react-toast-notifications";
 
 // components
 import Nav from "./components/Nav";
 import Loading from "./components/Loading";
+
+import { listProjects } from "./actions/projectActions"
+
 
 // screens   
 const About = lazy(() => import("./screens/AboutScreen"));
@@ -17,9 +21,12 @@ const Contact = lazy(() => import("./screens/ContactScreen"));
 
 export default function App() {
     const location = useLocation();
+    const dispatch = useDispatch();
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
+      dispatch(listProjects())
+
       setTimeout(() => {
         setLoading(false)
       }, 2000)

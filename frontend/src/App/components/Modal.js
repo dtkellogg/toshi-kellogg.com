@@ -15,10 +15,11 @@ import { MODAL_SETPROJECT_RESET } from '../constants/modalConstants'
 import { icons } from "../data/icons"
 
 
-export default function Modal({ project }) {
+export default function Modal() {
   const dispatch = useDispatch();
   const node = useRef();
 
+  const { project } = useSelector((state) => state.modalSetProject)
   const { abstract, github, name, skills, html, css, scss, js, reactJS, nodeJS, redux, security,
     // video, 
   url } = project
@@ -211,6 +212,6 @@ export default function Modal({ project }) {
   );
 }
 
-Modal.propTypes = {
-  project: PropTypes.object
-}
+// Modal.propTypes = {
+//   project: PropTypes.object
+// }

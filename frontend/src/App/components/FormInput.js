@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { handleTextChange } from "../actions/formActions";
+import { handleTextChange } from "../actions/messageActions";
 
 
 export default function FormInput({ containerClass, inputClass, type, value, placeholder, textarea, name}) {

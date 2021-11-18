@@ -28,20 +28,7 @@ export const getProjectDetails = (id) => async (dispatch, getState) => {
       type: PROJECT_DETAILS_REQUEST,
     })
 
-    // Note: destructuring twice
-    const { userLogin: { userInfo } } = getState();
-
-    const config = {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${userInfo.token}`
-      },
-    };
-
-    const { data } = await axios.get(
-      `/api/projects/${id}`,
-      config
-    );
+    const { data } = await axios.get(`/api/projects/${id}`);
 
     dispatch({
       type: PROJECT_DETAILS_SUCCESS,

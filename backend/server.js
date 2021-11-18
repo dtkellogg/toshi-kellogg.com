@@ -11,19 +11,16 @@ const cors = require("cors")
 const compression = require('compression')
 const { corsMiddleware } = require('./middleware/corsMiddleware')
 
-// database
-const connectDB = require('./config/db.js')
-
 // routes
 const messageRoutes = require('./routes/messageRoutes')
 const projectRoutes = require('./routes/projectRoutes')
 
-// env variables
-dotenv.config();
+// database
+const connectDB = require('./config/db.js')
 
-// db
-connectDB();
 
+dotenv.config();  // env variables
+connectDB();  // db
 const app = express();
 
 app.use(express.json());
@@ -71,7 +68,6 @@ if (process.env.NODE_ENV === "development") {
     key: fs.readFileSync("./SSL/server.key", "utf8"),
     cert: fs.readFileSync("./SSL/toshikellogg_com.crt", "utf8"),
   };
-
 
   https.createServer(options, app).listen(PORT, () => {
     console.log(

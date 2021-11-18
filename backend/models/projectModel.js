@@ -13,15 +13,32 @@ const projectSchema = mongoose.Schema({
     type: Array,
     required: true,
   },
-  description__1: {
+  abstract: {
     type: String,
     required: true,
   },
-  description__2: {
-    type: String,
-    required: true,
+  html: {
+    type: Array,
   },
-  description__3: {
+  css: {
+    type: Array,
+  },
+  scss: {
+    type: Array,
+  },
+  js: {
+    type: Array,
+  },
+  reactJS: {
+    type: Array,
+  },
+  nodeJS: {
+    type: Array,
+  },
+  security: {
+    type: Array,
+  },
+  picture: {
     type: String,
     required: true,
   },
@@ -31,13 +48,9 @@ const projectSchema = mongoose.Schema({
   },
   github: {
     type: String,
-    default: false,
+    required: true,
   },
   url: {
-    type: String,
-    default: false,
-  },
-  picture: {
     type: String,
     required: true,
   },
