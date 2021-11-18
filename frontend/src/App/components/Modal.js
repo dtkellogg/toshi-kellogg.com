@@ -2,9 +2,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
-// prop-types
-import PropTypes from "prop-types";
-
 // actions
 import { modalToggleOpen } from "../actions/modalActions";
 
@@ -129,7 +126,7 @@ export default function Modal() {
                   return <li className="modal__feature">{feature}</li>
                 })}</ul>
               )} */}
-              {html && (
+              {html && html.length > 0 && (
                 <ul className="modal__paragraph--2">
                   <span className="modal__feature--label">HTML</span>
                   {html.map((value) => {
@@ -137,7 +134,7 @@ export default function Modal() {
                   })}
                 </ul>
               )}
-              {css && (
+              {css && css.length > 0 && (
                 <ul className="modal__paragraph--2">
                   <span className="modal__feature--label">CSS</span>
                   {css.map((value) => {
@@ -145,7 +142,7 @@ export default function Modal() {
                   })}
                 </ul>
               )}
-              {scss && (
+              {scss && scss.length > 0 && (
                 <ul className="modal__paragraph--2">
                   <span className="modal__feature--label">SCSS</span>
                   {scss.map((value) => {
@@ -153,7 +150,7 @@ export default function Modal() {
                   })}
                 </ul>
               )}
-              {js && (
+              {js && js.length > 0 && (
                 <ul className="modal__paragraph--2">
                   <span className="modal__feature--label">JavaScript</span>
                   {js.map((value) => {
@@ -161,7 +158,7 @@ export default function Modal() {
                   })}
                 </ul>
               )}
-              {reactJS && (
+              {reactJS && reactJS.length > 0 && (
                 <ul className="modal__paragraph--2">
                   <span className="modal__feature--label">React.js</span>
                   {reactJS.map((value) => {
@@ -169,7 +166,7 @@ export default function Modal() {
                   })}
                 </ul>
               )}
-              {nodeJS && (
+              {nodeJS && nodeJS.length > 0 && (
                 <ul className="modal__paragraph--2">
                   <span className="modal__feature--label">Node.js</span>
                   {nodeJS.map((value) => {
@@ -177,7 +174,7 @@ export default function Modal() {
                   })}
                 </ul>
               )}
-              {redux && (
+              {redux && redux.length > 0 && (
                 <ul className="modal__paragraph--2">
                   <span className="modal__feature--label">Redux</span>
                   {redux.map((value) => {
@@ -185,7 +182,7 @@ export default function Modal() {
                   })}
                 </ul>
               )}
-              {security && (
+              {security && security.length > 0 && (
                 <ul className="modal__paragraph--2">
                   <span className="modal__feature--label">Security</span>
                   {security.map((value) => {
@@ -211,7 +208,3 @@ export default function Modal() {
     )
   );
 }
-
-// Modal.propTypes = {
-//   project: PropTypes.object
-// }
