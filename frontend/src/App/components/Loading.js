@@ -7,13 +7,13 @@ import PropTypes from "prop-types";
 export default function Loading({ text = "Loading", speed = 300 }) {
   const [content, setContent] = useState(text);
 
-  if(document.title !== "Toshi Kellogg | Developer") {
-    document.title = "Toshi Kellogg | Developer";
+  if(document.title !== "Toshi Kellogg | Web Developer") {
+    document.title = "Toshi Kellogg | Web Developer";
   }
 
   useEffect(() => {
     if (content.charAt(0) !== "L") {
-      document.title = "Toshi Kellogg | Developer";
+      document.title = "Toshi Kellogg | Web Developer";
     } else {
       document.title = content;
     }

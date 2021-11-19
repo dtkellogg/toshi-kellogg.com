@@ -8,7 +8,7 @@ import SkillsBarGraph from '../components/SkillsBarGraph'
 export default function AboutScreen() {
 
   useEffect(() => {
-    document.title = "Toshi Kellogg | Developer";
+    document.title = "Toshi Kellogg | Web Developer";
   }, [])
 
   return (

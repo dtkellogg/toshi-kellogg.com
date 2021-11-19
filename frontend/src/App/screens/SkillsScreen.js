@@ -6,7 +6,7 @@ import SkillsFigure from '../components/SkillsFigure'
 
 export default function SkillsScreen() {
   useEffect(() => {
-    document.title = "Toshi Kellogg | Developer";
+    document.title = "Toshi Kellogg | Web Developer";
   }, [])
 
   return (

@@ -22,7 +22,7 @@ export default function ContactScreen() {
   }, [name, email, subject, message])
 
   useEffect(() => {
-    document.title = "Toshi Kellogg | Developer";
+    document.title = "Toshi Kellogg | Web Developer";
   }, [])
 
 

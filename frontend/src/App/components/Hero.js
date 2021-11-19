@@ -10,7 +10,7 @@ export default function Hero() {
   const { width } = useWindowDimensions()
 
   useEffect(() => {
-    document.title = "Toshi Kellogg | Developer";
+    document.title = "Toshi Kellogg | Web Developer";
   }, [])
 
   return (

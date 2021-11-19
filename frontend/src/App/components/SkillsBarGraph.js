@@ -28,7 +28,7 @@ export default function SkillsBarGraph() {
         <div className="bar-graph__bar--3"></div>
         <div className="bar-graph__bar-background--3"></div>
 
-        <abbr title="JavaScript" className="bar-graph__skill--4">JS</abbr>
+        <abbr title="JavaScript" className="bar-graph__skill--4">JavaScript</abbr>
         <div className="bar-graph__bar--4"></div>
         <div className="bar-graph__bar-background--4"></div>
 

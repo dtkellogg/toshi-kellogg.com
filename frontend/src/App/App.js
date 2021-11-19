@@ -34,7 +34,7 @@ export default function App() {
     
     useEffect(() => {
       if(!loading) {
-        document.title = "Toshi Kellogg | Developer";
+        document.title = "Toshi Kellogg | Web Developer";
       }
     }, [loading])
 

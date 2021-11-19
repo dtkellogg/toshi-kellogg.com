@@ -18,7 +18,7 @@ export default function ProjectsScreen() {
   const { isOpen } = modalIsOpen;
 
   useEffect(() => {
-    document.title = "Toshi Kellogg | Developer";
+    document.title = "Toshi Kellogg | Web Developer";
 
     return () => {
       dispatch(modalToggleOpen(false));
