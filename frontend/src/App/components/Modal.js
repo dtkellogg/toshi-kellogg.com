@@ -2,6 +2,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
+// components
+import ModalSkill from "./ModalSkill"
+
 // actions
 import { modalToggleOpen } from "../actions/modalActions";
 
@@ -24,7 +27,6 @@ export default function Modal() {
   const modalIsOpen = useSelector((state) => state.modalIsOpen);
   const { isOpen } = modalIsOpen;
 
-  const [shouldRender, setRender] = useState(isOpen);
   const [animation, setAnimation] = useState(isOpen);
 
   const handleClick = e => {
@@ -56,37 +58,21 @@ export default function Modal() {
   //     document.removeEventListener("click", handleClick);
   //   };
   // }, []);
-
-  useEffect(() => {
-    if (isOpen) setRender(true);
-  }, [isOpen]);
-
-  const onAnimationEnd = () => {
-    if (!isOpen) {
-      window.setTimeout(() => {
-        setRender(false);
-      }, 100);
-    }
-  };
-
+  
 
   return (
-    shouldRender && (
-      <section
-        className="modal"
-        style={{ animation: `${animation ? "fadeIn" : "fadeOut"} 1s` }}
-        onAnimationEnd={onAnimationEnd}
-      >
-
-        <div className="modal__container" ref={node}>
-          
-          <div className="modal__container--top">
-            <button className="modal__btn--close" onClick={(e) => handleClick(e)}>
-              X
-            </button>
-            <div className="modal__header">{name}</div>
-            {/* <div className="modal__video"> */}
-
+    <section
+      className="modal"
+      style={{ animation: `${animation ? "fadeIn" : "fadeOut"} 1s` }}
+      // onAnimationEnd={onAnimationEnd}
+    >
+      <div className="modal__container" ref={node}>
+        <div className="modal__container--top">
+          <button className="modal__btn--close" onClick={(e) => handleClick(e)}>
+            X
+          </button>
+          <div className="modal__header">{name}</div>
+          {/* <div className="modal__video"> */}
             {/* <video
               src={kelloggtutoring__video}
               // src={`${modifiedName}__video`}
@@ -99,112 +85,50 @@ export default function Modal() {
               loop={true}
               muted={true}
             /> */}
-            {/* </div> */}
+          {/* </div> */}
 
-            {skills && (
-              <ul className="modal__container--skills">
-                {skills.map((skill) => (
-                  <li className="modal__skills--item" key={skill}>
-                    <span
-                      className="iconify modal__skills--icon"
-                      data-icon={icons[skill]}
-                      data-inline="false"
-                      style={{fontSize: "1.6rem"}}
-                    />
-                    <div className="modal__skills--text">{skill}</div>
-                  </li>
-                ))}
-              </ul>
-            )}
+          {skills && (
+            <ul className="modal__container--skills">
+              {skills.map((skill) => (
+                <li className="modal__skills--item" key={skill}>
+                  <span
+                    className="iconify modal__skills--icon"
+                    data-icon={icons[skill]}
+                    data-inline="false"
+                    style={{fontSize: "1.6rem"}}
+                  />
+                  <div className="modal__skills--text">{skill}</div>
+                </li>
+              ))}
+            </ul>
+          )}
 
-            <div className="modal__paragraph--container">
-              <div className="modal__subheader--1">Abstract:</div>
-              <div className="modal__paragraph--1">{abstract}</div>
-              <div className="modal__subheader--2">About the Code:</div>
-              {/* {features && (
-                <ul className="modal__paragraph--2">{features.map((feature) => {
-                  return <li className="modal__feature">{feature}</li>
-                })}</ul>
-              )} */}
-              {html && html.length > 0 && (
-                <ul className="modal__paragraph--2">
-                  <span className="modal__feature--label">HTML</span>
-                  {html.map((value) => {
-                    return <li className="modal__feature">{value}</li>
-                  })}
-                </ul>
-              )}
-              {css && css.length > 0 && (
-                <ul className="modal__paragraph--2">
-                  <span className="modal__feature--label">CSS</span>
-                  {css.map((value) => {
-                    return <li className="modal__feature">{value}</li>
-                  })}
-                </ul>
-              )}
-              {scss && scss.length > 0 && (
-                <ul className="modal__paragraph--2">
-                  <span className="modal__feature--label">SCSS</span>
-                  {scss.map((value) => {
-                    return <li className="modal__feature">{value}</li>
-                  })}
-                </ul>
-              )}
-              {js && js.length > 0 && (
-                <ul className="modal__paragraph--2">
-                  <span className="modal__feature--label">JavaScript</span>
-                  {js.map((value) => {
-                    return <li className="modal__feature">{value}</li>
-                  })}
-                </ul>
-              )}
-              {reactJS && reactJS.length > 0 && (
-                <ul className="modal__paragraph--2">
-                  <span className="modal__feature--label">React.js</span>
-                  {reactJS.map((value) => {
-                    return <li className="modal__feature">{value}</li>
-                  })}
-                </ul>
-              )}
-              {nodeJS && nodeJS.length > 0 && (
-                <ul className="modal__paragraph--2">
-                  <span className="modal__feature--label">Node.js</span>
-                  {nodeJS.map((value) => {
-                    return <li className="modal__feature">{value}</li>
-                  })}
-                </ul>
-              )}
-              {redux && redux.length > 0 && (
-                <ul className="modal__paragraph--2">
-                  <span className="modal__feature--label">Redux</span>
-                  {redux.map((value) => {
-                    return <li className="modal__feature">{value}</li>
-                  })}
-                </ul>
-              )}
-              {security && security.length > 0 && (
-                <ul className="modal__paragraph--2">
-                  <span className="modal__feature--label">Security</span>
-                  {security.map((value) => {
-                    return <li className="modal__feature">{value}</li>
-                  })}
-                </ul>
-              )}
-            </div>
-          </div>
-
-          <div className="modal__container--bottom">
-              <a href={github}>
-                <button className="modal__btn--github">
-                  Github Repository
-                </button>
-              </a>
-              <a href={url}>
-                <button className="modal__btn--url">Launch Application</button>
-              </a>
+          <div className="modal__paragraph--container">
+            <div className="modal__subheader--1">Abstract:</div>
+            <div className="modal__paragraph--1">{abstract}</div>
+            <div className="modal__subheader--2">About the Code:</div>
+            {html && html.length > 0 && <ModalSkill name="HTML" skill={html}/>}
+            {css && css.length > 0 && <ModalSkill name="CSS" skill={css}/>}
+            {scss && scss.length > 0 && <ModalSkill name="SCSS" skill={scss}/>}
+            {js && js.length > 0 && <ModalSkill name="JavaScript" skill={js}/>}
+            {reactJS && reactJS.length > 0 && <ModalSkill name="React.js" skill={reactJS}/>}
+            {nodeJS && nodeJS.length > 0 && <ModalSkill name="Node.js" skill={nodeJS}/>}
+            {redux && redux.length > 0 && <ModalSkill name="Redux" skill={redux}/>}
+            {security && security.length > 0 && <ModalSkill name="Security" skill={security}/>}
           </div>
         </div>
-      </section>
-    )
-  );
+
+        <div className="modal__container--bottom">
+            <a href={github}>
+              <button className="modal__btn--github">
+                Github Repository
+              </button>
+            </a>
+            <a href={url}>
+              <button className="modal__btn--url">Launch Application</button>
+            </a>
+        </div>
+      </div>
+    </section>
+  )
 }
