@@ -39,7 +39,7 @@
 		@include heightWidth100();
 		@include flexCenterCenter($justify-content: space-between);
 		padding: 3rem;
-    padding-top: 1.5rem;
+    padding-top: 1.25rem;
 		position: relative;
     grid-row: 1 / span 1;
     grid-column: 1 / -1;
