@@ -41,7 +41,7 @@ export default function Hero() {
               delay={4000}
               wrapperClassName="test"
               options={{
-                strings: [' JavaScript.', ' MERN stacks.', ' ReactJS.', ' NodeJS.', " clean code.", " SASS.", " git."],
+                strings: [' JavaScript.', ' MERN stacks.', ' ReactJS.', ' NodeJS.', " clean code.", " SASS.", " Git."],
                 autoStart: true,
                 loop: true,
               }} 

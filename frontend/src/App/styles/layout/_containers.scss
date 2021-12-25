@@ -226,7 +226,7 @@
     margin: 0 2rem; 
     // margin-top: 2rem;
     grid-gap: 2rem;
-    height: 100%;
+    height: min-content;
     background-color: $white;
 
     @media (max-width: 950px) {

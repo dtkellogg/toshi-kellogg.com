@@ -1,5 +1,5 @@
 .projects {
-  height: calc(100vh - 7rem);
+  height: min-content;
   position: relative;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
