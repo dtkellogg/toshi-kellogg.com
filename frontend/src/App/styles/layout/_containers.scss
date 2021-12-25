@@ -38,8 +38,7 @@
 	&__container {
 		@include heightWidth100();
 		@include flexCenterCenter($justify-content: space-between);
-		padding: 3rem;
-    padding-top: 1.25rem;
+		padding: 0 3rem;
 		position: relative;
     grid-row: 1 / span 1;
     grid-column: 1 / -1;
@@ -224,7 +223,7 @@
     align-items: center;
     justify-items: center;
     margin: 2rem; 
-    // margin-top: 2rem;
+    margin-top: 1rem;
     grid-gap: 2rem;
     height: min-content;
     background-color: $white;
