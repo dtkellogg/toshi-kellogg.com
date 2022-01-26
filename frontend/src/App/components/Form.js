@@ -20,17 +20,17 @@ export default function Form() {
   return (
     <>
       <form className="contact__container--form">
-        <Input containerClass="contact__form--element contact__element--name" inputClass="contact__form--input" name="name"
-          type="name" value={localStorage.getItem("name") ? localStorage.getItem("name") : name} placeholder="Name"
+        <Input containerClass="contact__form--element contact__element--name" name="name"
+          type="name" value={localStorage.getItem("name") ? localStorage.getItem("name") : name}
         />
-        <Input containerClass="contact__form--element contact__element--email" inputClass="contact__form--input" name="email"
-          type="email" value={localStorage.getItem("email") ? localStorage.getItem("email") : email} placeholder="Email"
+        <Input containerClass="contact__form--element contact__element--email" name="email"
+          type="email" value={localStorage.getItem("email") ? localStorage.getItem("email") : email}
         />
-        <Input containerClass="contact__form--element contact__element--subject" inputClass="contact__form--input" name="subject"
-          type="subject" value={localStorage.getItem("subject") ? localStorage.getItem("subject") : subject} placeholder="Subject"
+        <Input containerClass="contact__form--element contact__element--subject" name="subject"
+          type="subject" value={localStorage.getItem("subject") ? localStorage.getItem("subject") : subject}
         />
         <Input containerClass="contact__form--element contact__element--message" inputClass="contact__form--textarea" name="message"
-          type="text" value={localStorage.getItem("message") ? localStorage.getItem("message") : message} placeholder="Message" textarea={true}
+          type="text" value={localStorage.getItem("message") ? localStorage.getItem("message") : message} textarea={true}
         />
         <button
           className="contact__btn--submit"
