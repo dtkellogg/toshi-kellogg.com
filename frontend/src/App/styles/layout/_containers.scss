@@ -16,8 +16,6 @@
 
   &__body { 
     background-color: $white;
-    position: relative;
-    display: inline-grid;
     height: 100%;
     grid-row: 2 / -1;
     grid-column: 1 / -1;
@@ -214,6 +212,12 @@
 //---------------------- projects ----------------------//
 
 .projects {
+  height: calc(100vh - 7rem);
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 10rem 1fr;
+
 	&__container {
     grid-row: 2 / -1;
     grid-column: 1 / -1;
