@@ -1,6 +1,4 @@
-import axios from 'axios'
 import { MODAL_ISOPEN_REQUEST, MODAL_ISOPEN_SUCCESS, MODAL_ISOPEN_FAIL, MODAL_SETPROJECT_REQUEST, MODAL_SETPROJECT_SUCCESS, MODAL_SETPROJECT_FAIL } from "../constants/modalConstants";
-import projects from '../data/projects'
 
 export const modalToggleOpen = (e) => async (dispatch, getState) => {
   try {
@@ -23,12 +21,12 @@ export const modalToggleOpen = (e) => async (dispatch, getState) => {
 
 export const modalSetProject = (project) => async (dispatch) => {
   try {
-      dispatch({ type: MODAL_SETPROJECT_REQUEST });
+    dispatch({ type: MODAL_SETPROJECT_REQUEST });
 
-      dispatch({
-        type: MODAL_SETPROJECT_SUCCESS,
-        payload: project
-      })
+    dispatch({
+      type: MODAL_SETPROJECT_SUCCESS,
+      payload: project
+    })
   } catch (error) {
     dispatch({
       type: MODAL_SETPROJECT_FAIL,

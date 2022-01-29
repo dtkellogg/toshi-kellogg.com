@@ -5,7 +5,6 @@ const {
   sendMessageToDb
 } = require("../controllers/messageController");
 
-console.log("In the router")
 
 router
   .route("/")

@@ -1,12 +1,14 @@
-import React, { useState } from "react";
-import ReactMapGL, { Marker } from "react-map-gl";
+import React, { useState, lazy } from "react";
+import { Marker } from "react-map-gl";
 
 // mapbox
 import * as MapboxGl from 'mapbox-gl'
-import 'mapbox-gl/dist/mapbox-gl.css'
+lazy(() => import('mapbox-gl/dist/mapbox-gl.css'))
 
 // hooks
 import useWindowDimensions from '../hooks/useWindowDimensions'
+
+const ReactMapGL = lazy(() => import("react-map-gl"))
 
 MapboxGl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default; // eslint-disable-line import/no-webpack-loader-syntax
 

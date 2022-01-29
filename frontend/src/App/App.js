@@ -1,7 +1,7 @@
 // react
 import React, { useState, useEffect, lazy } from "react";
 import { Switch, Route, useLocation } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import { ToastProvider } from "react-toast-notifications";
 
@@ -30,7 +30,7 @@ export default function App() {
       setTimeout(() => {
         setLoading(false)
       }, 2000)
-    }, []);
+    }, []);  // eslint-disable-line react-hooks/exhaustive-deps
     
     useEffect(() => {
       if(!loading) {

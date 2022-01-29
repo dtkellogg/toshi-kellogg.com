@@ -2,10 +2,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { NavLink } from "react-router-dom";
-import { FaHome, FaUser, FaFolder, FaEnvelope, FaBrain} from "react-icons/fa";
 
 // hooks
 import useHover from "../hooks/useHover";
+import useCapitalizeFirstLetter from "../hooks/useCapitalizeFirstLetter"
 
 const activeStyle = {
   color: "var(--blue-4)",
@@ -13,23 +13,10 @@ const activeStyle = {
   borderTop: "4px solid var(--blue-3)",
 };
 
-function capitalizeFirstLetter(string) {
-  return string.charAt(0).toUpperCase() + string.slice(1);
-}
-
 export default function NavLinkPrimary({ text, to }) {
-  const [hovering, attrs] = useHover();
+  const [ , attrs] = useHover();
 
-  const icons = {
-    home: FaHome,
-    about: FaUser,
-    skills: FaBrain,
-    projects: FaFolder,
-    contact: FaEnvelope
-  }
-
-  const Icon = icons[text]
-  const capitalizedName = capitalizeFirstLetter(text)
+  const capitalizedName = useCapitalizeFirstLetter(text)
 
   return (
     <NavLink

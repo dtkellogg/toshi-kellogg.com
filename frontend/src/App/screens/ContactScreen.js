@@ -19,11 +19,11 @@ export default function ContactScreen() {
     if((name && email && subject && message && !readyToSubmit) || ((!name || !email || !subject || !message) && readyToSubmit === true)) {
       dispatch({type: TOGGLE_READY_TO_SUBMIT, payload: !readyToSubmit})
     }
-  }, [name, email, subject, message])
+  }, [name, email, subject, message, dispatch, readyToSubmit])
 
   useEffect(() => {
     document.title = "Toshi Kellogg | Web Developer";
-  }, [])
+  }, [])  // eslint-disable-line react-hooks/exhaustive-deps
 
 
   return (

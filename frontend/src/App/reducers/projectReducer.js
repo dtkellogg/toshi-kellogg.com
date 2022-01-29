@@ -1,5 +1,3 @@
-import axios from 'axios'
-
 import {
   PROJECT_DETAILS_REQUEST,
   PROJECT_DETAILS_SUCCESS,

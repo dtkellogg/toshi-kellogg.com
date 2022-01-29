@@ -1,5 +1,5 @@
 // react
-import React from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 // actions
@@ -17,9 +17,9 @@ export default function Projects() {
     dispatch(modalToggleOpen(true));
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     dispatch(listProjects())
-  }, [])
+  }, [])  // eslint-disable-line react-hooks/exhaustive-deps
 
   if(projects) {
     return (
@@ -30,7 +30,7 @@ export default function Projects() {
           return (
             <li className={`projects__item projects__item--${_id} projects__card`} key={_id}>
               <img
-                src={require(`../img/${abbreviatedName}.png`).default}
+                src={require(`../img/${abbreviatedName}.webp`).default}
                 alt={`${name} img`}
                 className={` projects__photo projects__photo--${_id}`}
               />

@@ -1,5 +1,5 @@
 // react
-import React, {useState, useEffect} from "react";
+import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
 // components
@@ -23,7 +23,7 @@ export default function ProjectsScreen() {
     return () => {
       dispatch(modalToggleOpen(false));
     }
-  }, [])
+  }, [])  // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <section className="projects">
