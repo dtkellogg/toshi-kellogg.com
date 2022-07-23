@@ -20,27 +20,27 @@ const Contact = lazy(() => import("./screens/ContactScreen"));
 
 
 export default function App() {
-    const location = useLocation();
-    const dispatch = useDispatch();
-    const [loading, setLoading] = useState(true);
+  const location = useLocation();
+  const dispatch = useDispatch();
+  const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-      dispatch(listProjects())
+  useEffect(() => {
+    dispatch(listProjects())
 
-      setTimeout(() => {
-        setLoading(false)
-      }, 2000)
-    }, []);  // eslint-disable-line react-hooks/exhaustive-deps
-    
-    useEffect(() => {
-      if(!loading) {
-        document.title = "Toshi Kellogg | Web Developer";
-      }
-    }, [loading])
+    setTimeout(() => {
+      setLoading(false)
+    }, 2000)
+  }, []);  // eslint-disable-line react-hooks/exhaustive-deps
+  
+  useEffect(() => {
+    if(!loading) {
+      document.title = "Toshi Kellogg | Web Developer";
+    }
+  }, [loading])
 
-    return (
-      <>
-        <ToastProvider>
+  return (
+    <>
+      <ToastProvider>
         {/* <video src="/videos/video1.mp4" type="video/mp4" autoPlay playsInline muted loop className="background-video"/> */}
         <div className="container__main">
           <Nav />
