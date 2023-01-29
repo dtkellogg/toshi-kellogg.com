@@ -24,6 +24,8 @@ export default function App() {
   const dispatch = useDispatch();
   const [loading, setLoading] = useState(true);
 
+  console.log('location', location);
+
   useEffect(() => {
     dispatch(listProjects())
 
