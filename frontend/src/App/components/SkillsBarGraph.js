@@ -102,6 +102,10 @@ export default function SkillsBarGraph() {
         <span className="bar-graph__skill--11">Redux</span>
         <div className="bar-graph__bar--11"></div>
         <div className="bar-graph__bar-background--11"></div>
+
+        <span className="bar-graph__skill--12">TypeScript</span>
+        <div className="bar-graph__bar--12"></div>
+        <div className="bar-graph__bar-background--12"></div>
       </section>
     </figure>
   )
