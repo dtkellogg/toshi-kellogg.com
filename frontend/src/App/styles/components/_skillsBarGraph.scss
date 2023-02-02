@@ -1,6 +1,6 @@
 .bar-graph {  
   &__skill {
-    &--1, &--2, &--3, &--4, &--5, &--6, &--7 {
+    &--0, &--1, &--2, &--3, &--4, &--5, &--6, &--7, &--8, &--9, &--10, &--11 {
       @include font-size-4;
       -webkit-animation: fade-in-text 2.2s 0.1s forwards;
       -moz-animation: fade-in-text 2.2s 0.1s forwards;
@@ -9,44 +9,69 @@
       font-family: inherit;
     }
 
-    &--1 {
+    &--0 {
       grid-row: 2 / span 1;
       grid-column: 1 / span 1;
     }
 
-    &--2 {
+    &--1 {
       grid-row: 3 / span 1;
       grid-column: 1 / span 1;
     }
 
-    &--3 {
+    &--2 {
       grid-row: 4 / span 1;
       grid-column: 1 / span 1;
     }
 
-    &--4 {
+    &--3 {
       grid-row: 5 / span 1;
       grid-column: 1 / span 1;
     }
 
-    &--5 {
+    &--4 {
       grid-row: 6 / span 1;
       grid-column: 1 / span 1;
     }
 
-    &--6 {
+    &--5 {
       grid-row: 7 / span 1;
       grid-column: 1 / span 1;
     }
 
-    &--7 {
+    &--6 {
       grid-row: 8 / span 1;
+      grid-column: 1 / span 1;
+    }
+
+    &--7 {
+      grid-row: 9 / span 1;
+      grid-column: 1 / span 1;
+    }
+
+    &--8 {
+      grid-row: 10 / span 1;
+      grid-column: 1 / span 1;
+    }
+
+    &--9 {
+      grid-row: 11 / span 1;
+      grid-column: 1 / span 1;
+    }
+
+    &--10 {
+      grid-row: 12 / span 1;
+      grid-column: 1 / span 1;
+    }
+
+    &--11 {
+      grid-row: 13 / span 1;
       grid-column: 1 / span 1;
     }
   }
 
   &__bar {
-    &--1, &--2, &--3, &--4, &--5, &--6, &--7 {
+    &--0, &--1, &--2, &--3, &--4, &--5, &--6, &--7, &--8, &--9, &--10, &--11 {
       border-radius: 3px;
       height: 25px;
       float: left;
@@ -55,72 +80,117 @@
       z-index: z(bar);
     }
 
-    &--1 {
+    &--0 {
       grid-row: 2 / span 1;
       grid-column: 2 / span 1;
-      background-color: rgb(164, 229, 255);
+      background-color: #e1f5fe;
       -webkit-animation: show-bar-one 1.2s 6.1s forwards;
       -moz-animation: show-bar-one 1.2s 6.1s forwards;
       animation: show-bar-one 1.2s 6.1s forwards;
     }
 
-    &--2 {
+    &--1 {
       grid-row: 3 / span 1;
       grid-column: 2 / span 1;
-      background-color: #6fc0e0;
+      background-color: #b3e5fc;
       -webkit-animation: show-bar-two 1.2s 6.2s forwards;
       -moz-animation: show-bar-two 1.2s 6.2s forwards;
       animation: show-bar-two 1.2s 6.2s forwards;
     }
 
-    &--3 {
+    &--2 {
       grid-row: 4 / span 1;
       grid-column: 2 / span 1;
-      background-color: #64b2d1;
+      background-color: #81d4fa;
       -webkit-animation: show-bar-three 1.2s 6.3s forwards;
       -moz-animation: show-bar-three 1.2s 6.3s forwards;
       animation: show-bar-three 1.2s 6.3s forwards;
     }
 
-    &--4 {
+    &--3 {
       grid-row: 5 / span 1;
       grid-column: 2 / span 1;
-      background-color: #5292ac;
+      background-color: #4fc3f7;
       -webkit-animation: show-bar-four 1.2s 6.4s forwards;
       -moz-animation: show-bar-four 1.2s 6.4s forwards;
       animation: show-bar-four 1.2s 6.4s forwards;
     }
 
-    &--5 {
+    &--4 {
       grid-row: 6 / span 1;
       grid-column: 2 / span 1;
-      background-color: #407286;
+      background-color: #29b6f6;
       -webkit-animation: show-bar-five 1.2s 6.5s forwards;
       -moz-animation: show-bar-five 1.2s 6.5s forwards;
       animation: show-bar-five 1.2s 6.5s forwards;
     }
 
-    &--6 {
+    &--5 {
       grid-row: 7 / span 1;
       grid-column: 2 / span 1;
-      background-color: #2e515f;
+      background-color: #03a9f4;
       -webkit-animation: show-bar-six 1.2s 6.6s forwards;
       -moz-animation: show-bar-six 1.2s 6.6s forwards;
       animation: show-bar-six 1.2s 6.6s forwards;
     }
 
-    &--7 {
+    &--6 {
       grid-row: 8 / span 1;
       grid-column: 2 / span 1;
-      background-color: #284753;
+      background-color: #039be5;
       -webkit-animation: show-bar-seven 1.2s 6.7s forwards;
       -moz-animation: show-bar-seven 1.2s 6.7s forwards;
       animation: show-bar-seven 1.2s 6.7s forwards;
     }
+
+    &--7 {
+      grid-row: 9 / span 1;
+      grid-column: 2 / span 1;
+      background-color: #0288d1;
+      -webkit-animation: show-bar-eight 1.2s 6.8s forwards;
+      -moz-animation: show-bar-eight 1.2s 6.8s forwards;
+      animation: show-bar-eight 1.2s 6.8s forwards;
+    }
+
+    &--8 {
+      grid-row: 10 / span 1;
+      grid-column: 2 / span 1;
+      background-color: #0277bd;
+      -webkit-animation: show-bar-nine 1.2s 6.9s forwards;
+      -moz-animation: show-bar-nine 1.2s 6.9s forwards;
+      animation: show-bar-nine 1.2s 6.9s forwards;
+    }
+
+    &--9 {
+      grid-row: 11 / span 1;
+      grid-column: 2 / span 1;
+      background-color: #00619a;
+      -webkit-animation: show-bar-ten 1.2s 7.0s forwards;
+      -moz-animation: show-bar-ten 1.2s 7.0s forwards;
+      animation: show-bar-ten 1.2s 7.0s forwards;
+    }
+
+    &--10 {
+      grid-row: 12 / span 1;
+      grid-column: 2 / span 1;
+      background-color: #004d7a;
+      -webkit-animation: show-bar-eleven 1.2s 7.1s forwards;
+      -moz-animation: show-bar-eleven 1.2s 7.1s forwards;
+      animation: show-bar-eleven 1.2s 7.1s forwards;
+    }
+
+    &--11 {
+      grid-row: 13 / span 1;
+      grid-column: 2 / span 1;
+      background-color: #003655;
+      -webkit-animation: show-bar-twelve 1.2s 7.2s forwards;
+      -moz-animation: show-bar-twelve 1.2s 7.2s forwards;
+      animation: show-bar-twelve 1.2s 7.2s forwards;
+    }
   }
 
   &__bar-background {
-    &--1, &--2, &--3, &--4, &--5, &--6, &--7 {
+    &--0, &--1, &--2, &--3, &--4, &--5, &--6, &--7, &--8, &--9, &--10, &--11 {
       border-radius: 3px;
       height: 25px;
       float: left;
@@ -129,38 +199,63 @@
       background-color: $grey-11;
     }
 
-    &--1 {
+    &--0 {
       grid-row: 2 / span 1;
       grid-column: 2 / span 1;
     }
 
-    &--2 {
+    &--1 {
       grid-row: 3 / span 1;
       grid-column: 2 / span 1;
     }
 
-    &--3 {
+    &--2 {
       grid-row: 4 / span 1;
       grid-column: 2 / span 1;
     }
 
-    &--4 {
+    &--3 {
       grid-row: 5 / span 1;
       grid-column: 2 / span 1;
     }
 
-    &--5 {
+    &--4 {
       grid-row: 6 / span 1;
       grid-column: 2 / span 1;
     }
 
-    &--6 {
+    &--5 {
       grid-row: 7 / span 1;
       grid-column: 2 / span 1;
     }
 
-    &--7 {
+    &--6 {
       grid-row: 8 / span 1;
+      grid-column: 2 / span 1;
+    }
+
+    &--7 {
+      grid-row: 9 / span 1;
+      grid-column: 2 / span 1;
+    }
+
+    &--8 {
+      grid-row: 10 / span 1;
+      grid-column: 2 / span 1;
+    }
+
+    &--9 {
+      grid-row: 11 / span 1;
+      grid-column: 2 / span 1;
+    }
+
+    &--10 {
+      grid-row: 12 / span 1;
+      grid-column: 2 / span 1;
+    }
+
+    &--11 {
+      grid-row: 13 / span 1;
       grid-column: 2 / span 1;
     }
   }

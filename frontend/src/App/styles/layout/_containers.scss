@@ -173,7 +173,7 @@
       @include fadeInAnimated($delay: 5s);
       display: grid;
       grid-template-columns: 10rem 50rem;
-      grid-template-rows: 0.15fr repeat(7, 1fr);
+      grid-template-rows: 0.15fr repeat(12, 1fr);
       grid-gap: 2.25rem 1rem;
       align-items: center;
   

@@ -62,7 +62,7 @@
     width: 0;
   }
   100% {
-    width: 81.1%;
+    width: 87.1%;
   }
 }
 
@@ -71,7 +71,57 @@
     width: 0;
   }
   100% {
+    width: 90.3%;
+  }
+}
+
+@keyframes show-bar-eight {
+  0% {
+    width: 0;
+  }
+
+  100% {
     width: 85.3%;
+  }
+}
+
+@keyframes show-bar-nine {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 85.3%;
+  }
+}
+
+@keyframes show-bar-ten {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 80.3%;
+  }
+}
+
+@keyframes show-bar-eleven {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 80.3%;
+  }
+}
+
+@keyframes show-bar-twelve {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 87.3%;
   }
 }
 
