@@ -21,7 +21,7 @@ export default function Map() {
     height: "100%",
     zoom: 8.3,
     display: "block",
-  });
+  }); 
 
   const { width } = useWindowDimensions()
 
