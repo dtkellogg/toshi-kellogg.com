@@ -21,6 +21,8 @@ export default function Projects() {
     dispatch(listProjects())
   }, [])  // eslint-disable-line react-hooks/exhaustive-deps
 
+  console.log(projects)
+
   if(projects) {
     return (
       <ul className="projects__container">

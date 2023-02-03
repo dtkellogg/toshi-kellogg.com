@@ -27,8 +27,8 @@ export default function ProjectsScreen() {
 
   return (
     <section className="projects">
-      <Hero />
       { isOpen && <Modal /> }
+      <Hero />
       <Projects />  
     </section>
   )

@@ -35,6 +35,20 @@ const projectSchema = mongoose.Schema({
   nodeJS: {
     type: Array,
   },
+
+  tailwindCSS: {
+    type: Array,
+  },
+  nextJS: {
+    type: Array,
+  },
+  typeScript: {
+    type: Array,
+  },
+  graphQL: {
+    type: Array,
+  },
+
   security: {
     type: Array,
   },

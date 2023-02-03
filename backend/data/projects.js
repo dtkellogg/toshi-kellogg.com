@@ -172,6 +172,25 @@ const projects = [
     github: "https://github.com/dtkellogg/kellogg-github-battle",
     url: "https://github-battle.ui.dev/",
   },
+  {
+    _id: 13,
+    name: "The Papafam News",
+    skills: ["Next.js", "TypeScript", "TailwindCSS", "GraphQL"],
+    abstract: "This application uses the Mediastack API to display live news. It was part of Sonny Sangha's YouTube series.",
+    // html: ["Semantic HTML.", "Consistent, clean code with proper use of white space."],
+    css: ["CSS grid and flexbox.", "CSS media queries for responsive design (Desktop and Mobile optimized).", "UX emphasis on accessibility."],
+    // scss: ["Mixins, Extends, & Variables.", "BEM naming convention.", "7-1 pattern (7 folders, 1 file) SASS directory structure."],
+    // reactJS: ["Light and dark modes created.", "Application built without frameworks (webpack configured manually).", "Error handling with PropTypes.", "Custom hooks created.", "DRY principle applied."],
+    tailwindCSS: ["Used exclusively for styling"],
+    nextJS: ["Next.js 13"],
+    typeScript: ["Used for all JS"],
+    graphQL: ["StepZen used to query Rest API with GraphQL response"],
+    security: ["HTTPS."],
+    picture: "#",
+    video: "#",
+    github: "https://github.com/dtkellogg/next-sonnysangha-project",
+    url: "https://next-sonnysangha-project.vercel.app/",
+  },
 ];
 
 module.exports = projects;
