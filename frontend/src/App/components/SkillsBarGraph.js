@@ -71,41 +71,49 @@ export default function SkillsBarGraph() {
         <div className="bar-graph__bar--3"></div>
         <div className="bar-graph__bar-background--3"></div>
 
-        <abbr title="JavaScript" className="bar-graph__skill--4">JavaScript</abbr>
+        <abbr title="JavaScript" className="bar-graph__skill--4">Material Design</abbr>
         <div className="bar-graph__bar--4"></div>
         <div className="bar-graph__bar-background--4"></div>
 
-        <span className="bar-graph__skill--5">React.js</span>
+        <span className="bar-graph__skill--5">JavaScript</span>
         <div className="bar-graph__bar--5"></div>
         <div className="bar-graph__bar-background--5"></div>
 
-        <span className="bar-graph__skill--6">Vue.js</span>
+        <span className="bar-graph__skill--6">TypeScript</span>
         <div className="bar-graph__bar--6"></div>
         <div className="bar-graph__bar-background--6"></div>
 
-        <span className="bar-graph__skill--7">Next.js</span>
+        <span className="bar-graph__skill--7">React.js</span>
         <div className="bar-graph__bar--7"></div>
         <div className="bar-graph__bar-background--7"></div>
 
-        <span className="bar-graph__skill--8">Nuxt.js</span>
+        <span className="bar-graph__skill--8">React Native</span>
         <div className="bar-graph__bar--8"></div>
         <div className="bar-graph__bar-background--8"></div>
 
-        <span className="bar-graph__skill--9">Node.js</span>
+        <span className="bar-graph__skill--9">Vue.js</span>
         <div className="bar-graph__bar--9"></div>
         <div className="bar-graph__bar-background--9"></div>
 
-        <span className="bar-graph__skill--10">GraphQL</span>
+        <span className="bar-graph__skill--10">Next.js</span>
         <div className="bar-graph__bar--10"></div>
         <div className="bar-graph__bar-background--10"></div>
 
-        <span className="bar-graph__skill--11">Redux</span>
+        <span className="bar-graph__skill--11">Nuxt.js</span>
         <div className="bar-graph__bar--11"></div>
         <div className="bar-graph__bar-background--11"></div>
 
-        <span className="bar-graph__skill--12">TypeScript</span>
+        <span className="bar-graph__skill--12">Node.js</span>
         <div className="bar-graph__bar--12"></div>
         <div className="bar-graph__bar-background--12"></div>
+
+        <span className="bar-graph__skill--13">GraphQL</span>
+        <div className="bar-graph__bar--13"></div>
+        <div className="bar-graph__bar-background--13"></div>
+
+        <span className="bar-graph__skill--14">Redux</span>
+        <div className="bar-graph__bar--14"></div>
+        <div className="bar-graph__bar-background--14"></div>
       </section>
     </figure>
   )

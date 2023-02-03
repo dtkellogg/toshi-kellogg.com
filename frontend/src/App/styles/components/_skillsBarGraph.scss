@@ -1,12 +1,13 @@
 .bar-graph {  
   &__skill {
-    &--0, &--1, &--2, &--3, &--4, &--5, &--6, &--7, &--8, &--9, &--10, &--11, &--12 {
+    &--0, &--1, &--2, &--3, &--4, &--5, &--6, &--7, &--8, &--9, &--10, &--11, &--12, &--13, &--14 {
       @include font-size-4;
       -webkit-animation: fade-in-text 2.2s 0.1s forwards;
       -moz-animation: fade-in-text 2.2s 0.1s forwards;
       animation: fade-in-text 2.2s 0.1s forwards;
       opacity: 0;
       font-family: inherit;
+      white-space: nowrap;
     }
 
     &--0 {
@@ -68,14 +69,25 @@
       grid-row: 13 / span 1;
       grid-column: 1 / span 1;
     }
+
     &--12 {
       grid-row: 14 / span 1;
+      grid-column: 1 / span 1;
+    }
+
+    &--13 {
+      grid-row: 15 / span 1;
+      grid-column: 1 / span 1;
+    }
+
+    &--14 {
+      grid-row: 16 / span 1;
       grid-column: 1 / span 1;
     }
   }
 
   &__bar {
-    &--0, &--1, &--2, &--3, &--4, &--5, &--6, &--7, &--8, &--9, &--10, &--11, &--12 {
+    &--0, &--1, &--2, &--3, &--4, &--5, &--6, &--7, &--8, &--9, &--10, &--11, &--12, &--13, &--14 {
       border-radius: 3px;
       height: 25px;
       float: left;
@@ -196,14 +208,32 @@
       grid-row: 14 / span 1;
       grid-column: 2 / span 1;
       background-color: #00253a;
-      -webkit-animation: show-bar-twelve 1.2s 7.3s forwards;
-      -moz-animation: show-bar-twelve 1.2s 7.3s forwards;
-      animation: show-bar-twelve 1.2s 7.3s forwards;
+      -webkit-animation: show-bar-thirteen 1.2s 7.3s forwards;
+      -moz-animation: show-bar-thirteen 1.2s 7.3s forwards;
+      animation: show-bar-thirteen 1.2s 7.3s forwards;
+    }
+
+    &--13 {
+      grid-row: 15 / span 1;
+      grid-column: 2 / span 1;
+      background-color: #00131e;
+      -webkit-animation: show-bar-fourteen 1.2s 7.4s forwards;
+      -moz-animation: show-bar-fourteen 1.2s 7.4s forwards;
+      animation: show-bar-fourteen 1.2s 7.4s forwards;
+    }
+
+    &--14 {
+      grid-row: 16 / span 1;
+      grid-column: 2 / span 1;
+      background-color: #00080c;
+      -webkit-animation: show-bar-fifteen 1.2s 7.5s forwards;
+      -moz-animation: show-bar-fifteen 1.2s 7.5s forwards;
+      animation: show-bar-fifteen 1.2s 7.5s forwards;
     }
   }
 
   &__bar-background {
-    &--0, &--1, &--2, &--3, &--4, &--5, &--6, &--7, &--8, &--9, &--10, &--11, &--12 {
+    &--0, &--1, &--2, &--3, &--4, &--5, &--6, &--7, &--8, &--9, &--10, &--11, &--12, &--13, &--14 {
       border-radius: 3px;
       height: 25px;
       float: left;
@@ -271,9 +301,19 @@
       grid-row: 13 / span 1;
       grid-column: 2 / span 1;
     }
-    
+
     &--12 {
       grid-row: 14 / span 1;
+      grid-column: 2 / span 1;
+    }
+
+    &--13 {
+      grid-row: 15 / span 1;
+      grid-column: 2 / span 1;
+    }
+
+    &--14 {
+      grid-row: 16 / span 1;
       grid-column: 2 / span 1;
     }
   }

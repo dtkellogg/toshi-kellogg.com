@@ -72,7 +72,7 @@
 .about {
   &__header {
     @include fadeInAnimated();
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     letter-spacing: .2rem;
     align-self: flex-start;
     font-family: 'gorditaregular', serif;
@@ -123,7 +123,7 @@
 .skills {
   &__header {
     @include fadeInAnimated();
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     letter-spacing: .2rem;
     align-self: flex-start;
     font-family: 'gorditaregular', serif;
@@ -167,13 +167,13 @@
   &__header {
     @include fadeInAnimated($delay: 4s);
     align-self: flex-start;
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
     width: 100%;
     
     @media (max-width: 950px) {
       @include flexCenterCenter();
       transform: translate(0, 0);
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
     }
     
     h1 {

@@ -63,11 +63,12 @@
 
 .about {
 	&__container {
-		@include heightWidth100($height: calc(100vh - 7rem));
+		// @include heightWidth100($height: calc(100vh - 7rem));
+    width: 100%;
 		display: flex;
 		align-items: flex-start;
     justify-content: space-evenly;
-    // padding-top: 16vh;
+    padding-bottom: 3rem;
 
 		@media (max-width: 950px) {
       align-items: center;
@@ -172,21 +173,21 @@
     &--body {
       @include fadeInAnimated($delay: 5s);
       display: grid;
-      grid-template-columns: 10rem 50rem;
+      grid-template-columns: 12.5rem 50rem;
       grid-template-rows: 0.15fr repeat(13, 1fr);
       grid-gap: 1.5rem 1rem;
       align-items: center;
   
       @media (max-width: 1350px) {
-        grid-template-columns: 10rem 40rem;
+        grid-template-columns: 12.5rem 40rem;
       }
   
       @media (max-width: 1200px) {
-        grid-template-columns: 10rem 30rem;
+        grid-template-columns: 12.5rem 30rem;
       }
   
       @media (max-width: 950px) {
-        grid-template-columns: 10vw 60vw;
+        grid-template-columns: 12.5rem 60vw;
         margin-bottom: 7rem;
       }
   
