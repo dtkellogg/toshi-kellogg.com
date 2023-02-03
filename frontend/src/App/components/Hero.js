@@ -27,7 +27,7 @@ export default function Hero() {
             delay={4000}
             wrapperClassName="test"
             options={{
-              strings: [' JavaScript.', ' ReactJS.', ' NextJS.', ' VueJS.', ' NuxtJS.', ' NodeJS.', ' GraphQL.', ' CSS3.', ' SASS.', ' git.', ' HTML5.'],
+              strings: [' JavaScript.', ' React.js.', ' Vue.js.', ' CSS.', ' Node.js', ' GraphQL.', ' Next.js.', ' Nuxt.js.', ' SASS.', ' git.', ' HTML5.'],
               autoStart: true,
               loop: true,
             }} 
@@ -41,7 +41,7 @@ export default function Hero() {
               delay={4000}
               wrapperClassName="test"
               options={{
-                strings: [' JavaScript.', ' ReactJS.', ' NextJS.', ' VueJS.', ' NuxtJS.', ' NodeJS.', ' GraphQL.', ' CSS3.', ' SASS.', ' git.', ' HTML5.'],
+                strings: [' JavaScript.', ' React.js.', ' Vue.js.', ' CSS.', ' Node.js', ' GraphQL.', ' Next.js.', ' Nuxt.js.', ' SASS.', ' git.', ' HTML5.'],
                 autoStart: true,
                 loop: true,
               }} 

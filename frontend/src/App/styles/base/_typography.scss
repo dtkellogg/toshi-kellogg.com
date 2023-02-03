@@ -91,7 +91,7 @@
       @include font-size-3;
       display: block;
       line-height: 2.6rem;
-      color: $grey-5;
+      color: $grey-1;
     }
 
     &--1, &--2 {
@@ -167,7 +167,7 @@
   &__header {
     @include fadeInAnimated($delay: 4s);
     align-self: flex-start;
-    margin-bottom: 0rem;
+    margin-bottom: 1.5rem;
     width: 100%;
     
     @media (max-width: 950px) {
@@ -319,7 +319,7 @@
     &--1, &--2 {
       @include font-size-3;
       line-height: 2.6rem;
-      color: $grey-5;
+      color: $grey-1;
       align-self: flex-start;
     }
 
