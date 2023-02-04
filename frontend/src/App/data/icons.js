@@ -15,4 +15,5 @@ export const icons = {
   "TypeScript": "logos:typescript-icon",
   "TailwindCSS": "vscode-icons:file-type-tailwind",
   "GraphQL": "vscode-icons:file-type-graphql",
+  "React Native": "vscode-icons:file-type-reactjs",  // still need to test this
 };

@@ -20,7 +20,7 @@ export default function Modal() {
   const node = useRef();
 
   const { project } = useSelector((state) => state.modalSetProject)
-  const { abstract, github, name, skills, html, css, scss, js, reactJS, nodeJS, redux, security, typeScript,
+  const { abstract, github, name, skills, html, css, scss, js, reactJS, nodeJS, redux, security, typeScript, graphQL, nextJS, tailwindCSS,
     // video, 
   url } = project
 
@@ -117,6 +117,9 @@ export default function Modal() {
             {security && security.length > 0 && <ModalSkill name="Security" skill={security}/>}
 
             {typeScript && typeScript.length > 0 && <ModalSkill name="TypeScript" skill={typeScript}/>}
+            {graphQL && graphQL.length > 0 && <ModalSkill name="GraphQL" skill={graphQL}/>}
+            {nextJS && nextJS.length > 0 && <ModalSkill name="NextJS" skill={nextJS}/>}
+            {tailwindCSS && tailwindCSS.length > 0 && <ModalSkill name="TailwindCSS" skill={tailwindCSS}/>}
           </div>
         </div>
 
