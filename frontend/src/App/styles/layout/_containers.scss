@@ -195,10 +195,12 @@
       }
   
       @media (max-width: 600px) {
+        grid-template-columns: 10rem 60vw;
         grid-gap: 2.25rem 2rem;
       }
   
-      @media (max-width: 450px) {
+      @media (max-width: 460px) {
+        grid-template-columns: 8.5rem 50vw;
         grid-gap: 2.25rem 2.5rem;
       }
     }
