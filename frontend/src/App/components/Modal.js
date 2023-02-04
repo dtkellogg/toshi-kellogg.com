@@ -116,10 +116,10 @@ export default function Modal() {
             {redux && redux.length > 0 && <ModalSkill name="Redux" skill={redux}/>}
             {security && security.length > 0 && <ModalSkill name="Security" skill={security}/>}
 
-            {typeScript && typeScript.length > 0 && <ModalSkill name="TypeScript" skill={typeScript}/>}
-            {graphQL && graphQL.length > 0 && <ModalSkill name="GraphQL" skill={graphQL}/>}
             {nextJS && nextJS.length > 0 && <ModalSkill name="NextJS" skill={nextJS}/>}
+            {typeScript && typeScript.length > 0 && <ModalSkill name="TypeScript" skill={typeScript}/>}
             {tailwindCSS && tailwindCSS.length > 0 && <ModalSkill name="TailwindCSS" skill={tailwindCSS}/>}
+            {graphQL && graphQL.length > 0 && <ModalSkill name="GraphQL" skill={graphQL}/>}
           </div>
         </div>
 
