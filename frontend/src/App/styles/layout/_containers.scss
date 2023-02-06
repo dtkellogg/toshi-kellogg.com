@@ -238,7 +238,6 @@
     display: grid;
     grid-row: 2 / -1;
     grid-column: 1 / -1;
-    // grid-template-rows: repeat(auto-fit, minmax(25rem,1fr));
     grid-template-columns: repeat(auto-fit, minmax(45rem,1fr));
     // grid-template-rows: repeat(3, 1fr);
     // grid-template-columns: repeat(4, 1fr);
@@ -247,7 +246,6 @@
     margin: 2em; 
     margin-top: 1em;
     grid-gap: 2em;
-    // height: min-content;
     background-color: $white;
     flex: 1;
 
