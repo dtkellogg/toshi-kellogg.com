@@ -87,7 +87,6 @@
     &--left {
 			@include flexCenterCenter($flex-direction: column);
       width: 51rem;
-      // margin-right: 10rem;
       margin-bottom: auto !important;
 
       @media (max-width: 1150px) {
