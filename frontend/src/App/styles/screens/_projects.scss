@@ -43,7 +43,7 @@
 
     @include flexCenterCenter();
 
-    &--1, &--2, &--3, &--4, &--5, &--6, &--7, &--8, &--9, &--10, &--11, &--12, &--13 {
+    &--1, &--2, &--3, &--4, &--5, &--6, &--7, &--8, &--9, &--10, &--11, &--12, &--13, &--14 {
       @include flexCenterCenter($flex-direction: column);
       overflow: hidden;
     }
@@ -99,6 +99,10 @@
     &--13 {
       @include fadeInAnimated($delay: 4.4s);
     }
+
+    &--14 {
+      @include fadeInAnimated($delay: 4.6s);
+    }
   }
 
   &__photo{
@@ -109,7 +113,7 @@
       animation: fadeIn 0.5s forwards;
     }
 
-    &--1, &--2, &--3, &--4, &--5, &--6, &--7, &--8, &--9, &--10, &--11, &--12, &--13 {
+    &--1, &--2, &--3, &--4, &--5, &--6, &--7, &--8, &--9, &--10, &--11, &--12, &--13, &--14 {
       max-height: 100%;
       max-width: 100%;
       height: 100%;
