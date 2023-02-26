@@ -6,6 +6,7 @@ import Typewriter from "typewriter-effect"
 // hooks
 import useWindowDimensions from '../hooks/useWindowDimensions'
 
+
 export default function Hero() {
   const { width } = useWindowDimensions()
 
