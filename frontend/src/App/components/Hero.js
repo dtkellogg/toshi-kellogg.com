@@ -12,7 +12,7 @@ export default function Hero() {
 
   useEffect(() => {
     document.title = "Toshi Kellogg | Web Developer";
-  }, [])
+  }, []) 
 
   return (
     <header className="home__container home__container--left">
