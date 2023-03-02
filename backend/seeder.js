@@ -33,7 +33,7 @@ const importData = async () => {
 
 const destroyData = async () => {
   try {
-    // so data isn't taken from database with data already loaded
+    // So data isn't taken from database with data already loaded
     await Project.deleteMany()
 
     console.log(`Data destroyed!`.red.inverse)
