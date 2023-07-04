@@ -27,4 +27,4 @@ COPY --from=frontend /app/frontend/build ./public
 
 EXPOSE 5000
 
-CMD [ "npm", "start" ]
+CMD [ "npm", "dev" ]
