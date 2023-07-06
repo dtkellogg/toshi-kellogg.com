@@ -21,6 +21,18 @@ export default function Projects() {
     dispatch(listProjects())
   }, [])  // eslint-disable-line react-hooks/exhaustive-deps
 
+  projects.sort((a, b) => {
+    if (a._id < b._id) {
+      return -1;
+    }
+    if (a._id > b._id) {
+      return 1;
+    }
+    return 0;
+  });
+
+  // projects.filter(obj => obj.name !== "GitHub Battle");
+
   console.log(projects)
 
   if(projects) {
