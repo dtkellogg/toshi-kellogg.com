@@ -31,14 +31,16 @@ export default function Projects() {
     return 0;
   });
 
-  // projects.filter(obj => obj.name !== "GitHub Battle");
+  let filteredProjects = projects.filter(obj => obj.name !== "GitHub Battle");
+  filteredProjects = filteredProjects.filter(obj => obj.name !== "Hacker News");
 
-  console.log(projects)
+  console.log(projects.filter(obj => obj.name !== "GitHub Battle"))
 
-  if(projects) {
+  if(filteredProjects) {
+
     return (
       <ul className="projects__container">
-        {projects.map((project) => {
+        {filteredProjects.map((project) => {
           const abbreviatedName = project.picture.split("/")[2].split(".")[0];
           const {_id, name} = project
           return (
