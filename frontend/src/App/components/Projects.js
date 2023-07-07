@@ -36,7 +36,7 @@ export default function Projects() {
 
   console.log(projects.filter(obj => obj.name !== "GitHub Battle"))
 
-  if(filteredProjects) {
+  if (filteredProjects) {
 
     return (
       <ul className="projects__container">
