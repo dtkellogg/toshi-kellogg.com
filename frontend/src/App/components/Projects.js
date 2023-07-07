@@ -24,11 +24,11 @@ export default function Projects() {
   projects.sort((a, b) => {
     if (a._id < b._id) {
       return -1;
-    }
-    if (a._id > b._id) {
+    } else if (a._id > b._id) {
       return 1;
+    } else {
+      return 0;
     }
-    return 0;
   });
 
   let filteredProjects = projects.filter(obj => obj.name !== "GitHub Battle");
