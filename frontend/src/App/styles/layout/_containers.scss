@@ -384,26 +384,27 @@
 .modal {
 	&__container {
 		@include flexCenterCenter($flex-direction: column, $justify-content: space-between, $align-items: flex-start);
-    transform: translate(50%, 5rem);
+    // transform: translate(50%, 5rem);
     height: 80vh;
-    width: 50vw;
+    width: 55rem;
+    margin: 1rem auto;
     background-color: $white;
     border-radius: 3rem;
 		opacity: 1;
 		transition: opacity 3s;
     position: relative;
 		
-		@media (max-width: 950px) {
+		// @media (max-width: 950px) {
 			transform: translate(0, 4rem);
-			width: 65vw;
+			// width: 65vw;
       margin: auto;
 			min-height: min-content;
       margin-bottom: 5rem;
-		}
+		// }
 
 		@media (max-width: 800px) {
       width: 75vw;
-      height: 85%;
+      height: min-content;
 		}
 		@media (max-width: 550px) {
 			transform: translate(0, 3rem);
@@ -434,7 +435,7 @@
 		&--skills {
       @include flexCenterCenter($justify-content: space-around);
 			width: 100%;
-			margin-top: 1rem;
+			// margin-top: 1rem;
 			flex-wrap: wrap;
 		}
 	}
@@ -443,7 +444,7 @@
 	&__paragraph {
     &--container {
       overflow-y: scroll;
-      margin: 1.5rem 0;
+      // margin: 1.5rem 0;
       width: 100%;
     }
 	}
