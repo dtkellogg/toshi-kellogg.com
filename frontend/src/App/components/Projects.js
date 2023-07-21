@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { modalToggleOpen, modalSetProject } from "../actions/modalActions"
 import { listProjects } from "../actions/projectActions"
 
-import kelloggTutoringImg from "../img/kelloggtutoring.webp"
+import kelloggtutoringImg from "../img/kelloggtutoring.webp"
 
 export default function Projects() {
   const dispatch = useDispatch();
