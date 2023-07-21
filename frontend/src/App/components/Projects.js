@@ -6,7 +6,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { modalToggleOpen, modalSetProject } from "../actions/modalActions"
 import { listProjects } from "../actions/projectActions"
 
-import kelloggtutoringImg from "../img/kelloggtutoring.webp"
+import kelloggTutoringImg from "../img/kelloggtutoring.webp"
+import nightMarketImg from "../img/nightMarket.webp"
 
 export default function Projects() {
   const dispatch = useDispatch();
@@ -48,7 +49,13 @@ export default function Projects() {
           return (
             <li className={`projects__item projects__item--${_id} projects__card`} key={_id}>
               <img
-                src={require(`../img/${abbreviatedName}.webp`).default}
+                src={
+                  name === 'Kellogg Tutoring'
+                    ? kelloggTutoringImg
+                    : name === 'Davis Night Market'
+                    ? nightMarketImg
+                    : nightMarketImg
+                }
                 // src={require(`../img/${abbreviatedName}.webp`).default}
                 alt={`${name} img`}
                 className={` projects__photo projects__photo--${_id}`}
