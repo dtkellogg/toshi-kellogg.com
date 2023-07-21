@@ -89,15 +89,15 @@
     &--github, &--url {
       @extend %btn;
       @include font-size-3;
-      width: 22rem;
-      height: 4rem;
+      width: 16rem;
+      height: 3.5rem;
       border: 1px solid transparent;
       border-radius:  2rem;
       color: $grey-12;
 
-      @media (max-width: 600px) {
-        width: 15rem;
-      }
+      // @media (max-width: 600px) {
+      //   width: 15rem;
+      // }
 
       &:focus {
         outline: none;

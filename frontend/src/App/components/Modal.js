@@ -128,11 +128,11 @@ export default function Modal() {
         <div className="modal__container--bottom">
             <a href={github}>
               <button className="modal__btn--github">
-                Github Repository
+                Repository
               </button>
             </a>
             <a href={url}>
-              <button className="modal__btn--url">Launch Application</button>
+              <button className="modal__btn--url">Application</button>
             </a>
         </div>
       </div>
