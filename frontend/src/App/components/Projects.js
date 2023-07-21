@@ -48,7 +48,7 @@ export default function Projects() {
           return (
             <li className={`projects__item projects__item--${_id} projects__card`} key={_id}>
               <img
-                src={kelloggTutoringImg}
+                src={require(`../img/${abbreviatedName}.webp`).default}
                 // src={require(`../img/${abbreviatedName}.webp`).default}
                 alt={`${name} img`}
                 className={` projects__photo projects__photo--${_id}`}
