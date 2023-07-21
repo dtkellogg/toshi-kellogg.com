@@ -8,10 +8,10 @@
     grid-template-columns: 1fr;
     overflow: hidden;
 	
-    @media (max-width: 950px) {
-      grid-template-rows: 7rem 1fr;
-      grid-template-columns: 1fr;
-    }
+    // @media (max-width: 950px) {
+    //   grid-template-rows: 7rem 1fr;
+    //   grid-template-columns: 1fr;
+    // }
   }
 
   &__body { 
